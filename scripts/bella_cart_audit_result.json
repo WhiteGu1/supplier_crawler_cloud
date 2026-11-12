@@ -1,0 +1,3434 @@
+{
+  "total_bella_items": 141,
+  "single_unit_count": 22,
+  "compliant_box_count": 64,
+  "compliant_pack_count": 23,
+  "non_compliant_count": 32,
+  "items": [
+    {
+      "product_id": 43034,
+      "name": "UÑAS PRESS ON COFFIN NAEZ BC1764/17606",
+      "sku": "160023",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/unas-press-on-coffin-naez-bc1764-17606/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (3盒)",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 42376,
+      "name": "Uñas Press On Con Diseños Surtidos Naez 1820/18207",
+      "sku": "175573",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/unas-press-on-con-disenos-surtidos-naez-1820-18207/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (3盒)",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 42406,
+      "name": "Base de maquillaje líquida HUDA MATTE ME DD-HM-58753/87532",
+      "sku": "175394",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillaje-liquida-huda-matte-me-dd-hm-58753-87532/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=6)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 42084,
+      "name": "PALETA DE SOMBRAS CITY GIRL RL-12270",
+      "sku": "180166",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-city-girl-rl-12270/",
+      "box_qty": 21,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: caja-21unida (21件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          21,
+          "caja-21unida"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "非整盒(21)，但符合小包(3)倍数 (8包)",
+      "rec_qty": 42
+    },
+    {
+      "product_id": 46458,
+      "name": "SEMI 10ML CITY GIRL #11",
+      "sku": "7101",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/semi-10ml-city-girl-11/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 46427,
+      "name": "SEMI 10ML CITY GIRL #71",
+      "sku": "7366",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/semi-10ml-city-girl-71/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA 6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 44231,
+      "name": "LABIAL EN BARRA MISS BETTY DH-K5927/59275",
+      "sku": "129676",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/labial-en-barra-miss-betty-dh-k5927-59275/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (6包)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46463,
+      "name": "SEMI 10ML CITY GIRL #59",
+      "sku": "7078",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/semi-10ml-city-girl-59/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 40008,
+      "name": "Agua Micelar TEI con Aloe Vera54344",
+      "sku": "204902",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/agua-micelar-tei-con-aloe-vera54344/",
+      "box_qty": 10,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: X10 UNIDAD (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "X10 UNIDAD"
+        ],
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(10)，但符合小包(3)倍数 (2包)",
+      "rec_qty": 10
+    },
+    {
+      "product_id": 41605,
+      "name": "Uñas Press On Con Diseños Surtidos Naez BC1824/18245",
+      "sku": "187550",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/unas-press-on-con-disenos-surtidos-naez-bc1824-18245/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (3盒)",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 42659,
+      "name": "Tips Soft  Gel 50PCS  Almendra Medio Charm Limit  CML-02A",
+      "sku": "170840",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/tips-soft-gel-50pcs-almendra-medio-charm-limit-cml-02a/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: pack-10u (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "pack-10u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 50
+    },
+    {
+      "product_id": 42472,
+      "name": "Parches Para Ojos Mascarilla TEI K3031",
+      "sku": "173986",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/parches-para-ojos-mascarilla-tei-k3031/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: pack-10u (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "pack-10u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 50
+    },
+    {
+      "product_id": 40346,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1124 /11247",
+      "sku": "201490",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/vinchas-para-maquillajes-naez-bc1124-11247/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (3盒)",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 45186,
+      "name": "LABIAL EN BARRA EFECTO BRILLOSO 4ANGELS CD:AR1085/85197",
+      "sku": "105340",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/labial-en-barra-efecto-brilloso-4angels-cdar1085-85197/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA X24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA X24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (6包)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46431,
+      "name": "SEMI 10ML CITY GIRL #74",
+      "sku": "7308",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/semi-10ml-city-girl-74/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA 6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 43140,
+      "name": "Corrector Líquido Sparkling Girls HD High Definition DH-SP-3018/190395 SPARKLING GIRLS",
+      "sku": "158660",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/corrector-liquido-sparkling-girls-hd-high-definition-dh-sp-3018-190395-sparkling-girls/",
+      "box_qty": 24,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12-unidad"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(12)倍数 (3包)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46228,
+      "name": "GLOSS DE ALOE VERA QOIDEN ROSE 60105",
+      "sku": "21183",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/gloss-de-aloe-vera-qoiden-rose/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 48 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 48"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X 6 UNIDADES"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 41484,
+      "name": "Pack 15pcs Aceite Revitalizante para Cutículas en Lápiz BC1322/13226  Naez",
+      "sku": "188726",
+      "cart_qty": 1,
+      "url": "https://bellacentral.com.ar/producto/pack-12pcs-aceite-revitalizante-para-cuticulas-en-lapiz-bc1322-13226-naez/",
+      "box_qty": 15,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 15件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=15",
+      "rec_qty": 15
+    },
+    {
+      "product_id": 45938,
+      "name": "SET PERFILADORES CITY 15048/MD-003",
+      "sku": "64748",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/set-x3-perfiladores-city-15048-md-003/",
+      "box_qty": 20,
+      "sub_pack_qty": 10,
+      "raw_desc": "变体盒装: CAJA 20U (20件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          20,
+          "CAJA 20U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          10,
+          "10 UNIDAD"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=20(小包=10)",
+      "rec_qty": 80
+    },
+    {
+      "product_id": 42919,
+      "name": "DELINEADOR DE CEJAS EN LAPIZ AR1176",
+      "sku": "164466",
+      "cart_qty": 34,
+      "url": "https://bellacentral.com.ar/producto/delineador-de-cejas-en-lapiz-ar1176/",
+      "box_qty": 36,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: caja-36u (36件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          36,
+          "caja-36u"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=36",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 45884,
+      "name": "MASCARA KERATINA 270G FIDELITE 61190 ART/403",
+      "sku": "71269",
+      "cart_qty": 4,
+      "url": "https://bellacentral.com.ar/producto/mascara-keratina-270g-fidelite-61190-art-403/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 4
+    },
+    {
+      "product_id": 43282,
+      "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MY891005/10059",
+      "sku": "156209",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/toallita-desmaquillantes-con-agua-micelar-my891005-10059/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 45971,
+      "name": "ILUMINADOR LIQUIDO MISS LARA 03510/DH83524",
+      "sku": "59882",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/iluminador-liquido-miss-lara-03510-dh83524/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: X CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "X CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDADES"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 44737,
+      "name": "DELINEADOR LAPIZ LABIO KARITE 2690-47   54501",
+      "sku": "117755",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/lapiz-labio-karite-2690-47/",
+      "box_qty": 288,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: CAJAJ 288U (288件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          288,
+          "CAJAJ 288U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(288)，但符合小包(12)倍数 (4包)",
+      "rec_qty": 288
+    },
+    {
+      "product_id": 41156,
+      "name": "Pack 12pcs Esponjas de Maquillaje Blender Difuminadoras en Tonos Rosa y Beige NAEZ DD3080/23038",
+      "sku": "192179",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/pack-12pcs-esponjas-de-maquillaje-blender-difuminadoras-en-tonos-rosa-y-beige-naez-dd3080-23038/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 12件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=12",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 44599,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1121",
+      "sku": "120022",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/vinchas-para-maquillajes-naez-bc1121/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 46104,
+      "name": "ILUMINADOR EN CREMA 80145/12963",
+      "sku": "42108",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/iluminador-en-crema-80145/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6U"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 45882,
+      "name": "MASCARA ALMENDRAS 270G FIDELITE 61213 ART/405",
+      "sku": "71276",
+      "cart_qty": 4,
+      "url": "https://bellacentral.com.ar/producto/mascara-almendras-270g-fidelite-61213-art-405/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 4
+    },
+    {
+      "product_id": 44100,
+      "name": "RUBOR EN POLVO MISS LARA MS-503/31825",
+      "sku": "133922",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/rubor-en-polvo-miss-lara-ms-503-31825/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 12U (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "CAJA 12U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 40019,
+      "name": "SOMBRAS LÍQUIDAS PARA OJOS TEI TEI8555",
+      "sku": "204398",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/sombras-liquidas-para-ojos-tei-tei8555/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40934,
+      "name": "PALETA DE SOMBRAS 48 COLORES TEI TEI8383/16978",
+      "sku": "194272",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-48-colores-tei-tei8383-16978/",
+      "box_qty": 6,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: caja-6-unidad (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          6,
+          "caja-6-unidad"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(6)的整数倍 (2盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 41077,
+      "name": "Paleta de Sombras para Ojos Magic Sevencool DD-SC-9336/01094",
+      "sku": "192692",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-para-ojos-magic-sevencool-dd-sc-9336-01094/",
+      "box_qty": 24,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 41379,
+      "name": "Paleta De Sombras 9 Tonos Chocolate Eyeshadow Palette K&#8217;APEINE DD-KPE-YY009030/74051",
+      "sku": "189749",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-9-tonos-chocolate-eyeshadow-palette-kapeine-dd-kpe-yy009030-74051/",
+      "box_qty": 6,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 6-unidad (6件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (4盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 41378,
+      "name": "Paleta De Sombras 9 Tonos Smoked Eyeshadow Palette Tonos Oscuros K&#8217;APEINE DD-KPE-YY009028/740367",
+      "sku": "189754",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-9-tonos-smoked-eyeshadow-palette-tonos-oscuros-kapeine-dd-kpe-yy009028-74036/",
+      "box_qty": 6,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 6-unidad (6件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (4盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 41337,
+      "name": "Paleta De Sombras E Yez + Glitter 4 Angels 4 Colores AR1203/98340",
+      "sku": "190095",
+      "cart_qty": 34,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-e-yez-glitter-4-angels-4-colores-ar1180-98340/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=6)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 42299,
+      "name": "CUARTETO DE SOMBRAS  TYL1407",
+      "sku": "176562",
+      "cart_qty": 34,
+      "url": "https://bellacentral.com.ar/producto/cuarteto-de-sombras-tyl1407/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 10-unidad (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "10-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 40
+    },
+    {
+      "product_id": 40550,
+      "name": "POLVO TRASLUCIDO MINERAL– CITY GIRL F6608",
+      "sku": "199061",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/polvo-traslucido-mineral-city-girl-f6608/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: caja-12u (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "caja-12u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (4盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46348,
+      "name": "LAS VARANO REMOVEDOR 120ML R120",
+      "sku": "9893",
+      "cart_qty": 30,
+      "url": "https://bellacentral.com.ar/producto/las-varano-removedor-120-ml/",
+      "box_qty": 60,
+      "sub_pack_qty": 10,
+      "raw_desc": "变体包装: 60-unidad (60件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "10-unidad"
+        ],
+        [
+          3,
+          "3-unidad"
+        ],
+        [
+          60,
+          "60-unidad"
+        ]
+      ],
+      "compliance": "非整盒(60)，但符合小包(10)倍数 (3包)",
+      "rec_qty": 60
+    },
+    {
+      "product_id": 46349,
+      "name": "ACEITE DE CUTICULAS 15ML NAVI 91518",
+      "sku": "9891",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/aceite-de-cuticula-navi-91518/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA X12U (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "CAJA X12U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(6)倍数 (1包)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 46196,
+      "name": "PALETA DE SOMBRAS X4 MISS LARA 02233",
+      "sku": "28123",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-x4-miss-lara/",
+      "box_qty": 24,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: X CAJA DE 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          24,
+          "X CAJA DE 24U"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42808,
+      "name": "MASCARA DE PESTAÑAS TEI TEI8291",
+      "sku": "168288",
+      "cart_qty": 72,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-tei-tei8291/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (3盒)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 46299,
+      "name": "LABIAL LIP STICK COLOR 2IN1 MISS BETTY 33386/83002",
+      "sku": "13260",
+      "cart_qty": 28,
+      "url": "https://bellacentral.com.ar/producto/labial-lip-stick-color-2in1-miss-betty-6923958583002/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 28
+    },
+    {
+      "product_id": 46482,
+      "name": "DOTTIN PARA DECORAR UÑA 00173/JQ-017",
+      "sku": "6680",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/dottin-para-decorar-una-02521/",
+      "box_qty": 6,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: X6 UNIDADES (6件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDADES"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (4盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43704,
+      "name": "MASCARA DE PESTAÑAS MINII TANGO DH-MT-M342/13429",
+      "sku": "144541",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-minii-tango-dh-mt-m342-13429/",
+      "box_qty": 36,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 36U (36件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          36,
+          "CAJA 36U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(36)的整数倍 (1盒)",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 48542,
+      "name": "DELINEADOR DE LABIOS 4 ANGELS AR1238/03006",
+      "sku": "209214",
+      "cart_qty": 42,
+      "url": "https://bellacentral.com.ar/producto/delineador-de-labios-4-angels-ar1238-03006/",
+      "box_qty": 72,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: caja-72u (72件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          72,
+          "caja-72u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=72(小包=12)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 40034,
+      "name": "LABIAL LIQUIDO  4 Angels AR1233/02894",
+      "sku": "204291",
+      "cart_qty": 42,
+      "url": "https://bellacentral.com.ar/producto/labial-liquido-4-angels-ar1233-02894/",
+      "box_qty": 48,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-48u (48件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          48,
+          "caja-48u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "非整盒(48)，但符合小包(6)倍数 (7包)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 44561,
+      "name": "LABIAL LIQUIDO VINTY TEI8026",
+      "sku": "120435",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/labial-liquido-vinty-tei8026/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (2盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 40286,
+      "name": "LABIAL LIQUIDO MATTE LARGA DURACION BEAUTY PINK 21 CS6696/01767",
+      "sku": "202175",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/labial-liquido-matte-larga-duracion-beauty-pink-21-cs6696-01767/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40717,
+      "name": "RUBOR  MAGICO DH80102/81290",
+      "sku": "196870",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/rubor-magico-dh80102-81290/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: caja-12u (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          12,
+          "caja-12u"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42764,
+      "name": "Rubor En Polvo Para Mejillas Matte Finish Miss Glisten DD-HR-PD-25/00259",
+      "sku": "169116",
+      "cart_qty": 70,
+      "url": "https://bellacentral.com.ar/producto/rubor-en-polvo-para-mejillas-matte-finish-miss-glisten-dd-hr-pd-25-00259/",
+      "box_qty": 36,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-36u (36件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          36,
+          "caja-36u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=36(小包=6)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 45683,
+      "name": "RUBOR LABIAL 2IN1 GEGEBEAR GX1236",
+      "sku": "81820",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/rubor-labial-2in1-gegebear-gx1236/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (2包)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42896,
+      "name": "Rubor liquido PINK TOUCH  PINK 21 CS5580/484626",
+      "sku": "165872",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/rubor-liquido-pink-touch-pink-21-cs5580-484626/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (2盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 44566,
+      "name": "MASCARA DE PESTAÑAS 4ANGELS AR1152",
+      "sku": "120333",
+      "cart_qty": 66,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-4angels-ar1152/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (11包)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 42922,
+      "name": "MASCARA DE PESTAÑAS 2 EN 1  4ANGEL AR1174",
+      "sku": "164435",
+      "cart_qty": 36,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-2-en-1-4angel-ar1174/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 12 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 12"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6U"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 36
+    },
+    {
+      "product_id": 40271,
+      "name": "MASCARA DE PESTAÑAS VOLUMINIZADORA PINK SHOCK PINK 21 CS6754/01613",
+      "sku": "202259",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-voluminizadora-pink-shock-pink-21-cs6754-01613/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-12u (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "caja-12u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 44122,
+      "name": "MASCARA DE PESTAÑAS ARABE DH509-232/22053",
+      "sku": "133761",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-arabe-dh509-232-22053/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 44123,
+      "name": "MASCARILLA FACIAL PERSONAJES 36 MODELO DH509-222/223/224/KTMM",
+      "sku": "133757",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/mascarilla-facial-personajes-36-modelo-dh509-222-223-224-ktmm/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: PACK 10U (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "PACK 10U"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 70
+    },
+    {
+      "product_id": 44587,
+      "name": "VINCHAS+MUÑEQUERA NAEZ BC2191",
+      "sku": "120130",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/vinchasmunequera-naez-bc2191/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          12,
+          "PACK 12U"
+        ],
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 42470,
+      "name": "MASCARILLA FACIAL TEI SURTIDO",
+      "sku": "174000",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/mascarilla-facial-tei-surtido/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: pack-10u (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "pack-10u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 70
+    },
+    {
+      "product_id": 43122,
+      "name": "Mascarilla Facial De Miel De Manuka Y Vitamina E BQY15921/715921 BIOAQUA",
+      "sku": "158817",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/kit-limpieza-de-nariz-3-pasos-bioaqua-bqy00911-800911-bioaqua-2/",
+      "box_qty": 20,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 20 UNIDAD SURTIDOS (20件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          20,
+          "20 UNIDAD SURTIDOS"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=20",
+      "rec_qty": 80
+    },
+    {
+      "product_id": 45600,
+      "name": "CEPILLO PARA DUCHA MELY 63819",
+      "sku": "85540",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/cepillo-para-ducha-mely-63819/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 44200,
+      "name": "MASCARILLA PARA PUNTO NEGRO ARABE 5 MODELO DH509-231/27133",
+      "sku": "130055",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/mascarilla-para-punto-negro-arabe-5-modelo-dh509-231-27133/",
+      "box_qty": 120,
+      "sub_pack_qty": 60,
+      "raw_desc": "变体包装: pack-120u (120件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          60,
+          "60-unidad"
+        ],
+        [
+          120,
+          "pack-120u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=120(小包=60)",
+      "rec_qty": 120
+    },
+    {
+      "product_id": 44598,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1122",
+      "sku": "120026",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/vinchas-para-maquillajes-naez-bc1122/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43118,
+      "name": "Mascarilla Facial Antioxidante De Flor De Loto De Nieve DH-BQY48035/748035 BIOAQUA",
+      "sku": "158840",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/mascarilla-facial-antioxidante-de-flor-de-loto-de-nieve-dh-bqy48035-748035-bioaqua/",
+      "box_qty": 20,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 20 UNIDAD SURTIDOS (20件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          20,
+          "20 UNIDAD SURTIDOS"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=20",
+      "rec_qty": 40
+    },
+    {
+      "product_id": 44604,
+      "name": "VINCHAS+MUÑEQUERA NAEZ BC1115",
+      "sku": "120004",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/vinchasmunequera-naez-bc1115/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 43880,
+      "name": "SET Blister de hebillas y colitas de pelo NAEZ BC2263/22631",
+      "sku": "140938",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/set-blister-de-hebillas-y-colitas-de-pelo-naez-bc2263-22631/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40946,
+      "name": "Broches para Pelo  MYE1-0006/00063",
+      "sku": "193945",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/broches-para-pelo-mye1-0006-00063/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (4盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46049,
+      "name": "LIP GLOSS DOULEEC 81035/22513",
+      "sku": "48064",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/lip-gloss-douleec-81035/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA 12U (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          12,
+          "CAJA 12U"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42405,
+      "name": "Primer facial gel HUDA MATTE ME DD-HM-58756/87568",
+      "sku": "175404",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/primer-facial-gel-huda-matte-me-dd-hm-58756-87568/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (2盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 44247,
+      "name": "PRIMER DE MAQUILLAJE MISS FON DH-ZF06/26331",
+      "sku": "129527",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/primer-de-maquillaje-miss-fon-dh-zf06-26331/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 46288,
+      "name": "LABIAL LIP GLOSS BARBY DH75043/23370",
+      "sku": "14509",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/labial-lip-gloss-barby-dh75043-23370/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDADES"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43138,
+      "name": "Corrector Líquido Sparkling Girls Instant Age Rewind Eraser DH-SP-1013/678902 SPARKLING GIRLS",
+      "sku": "158685",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/corrector-liquido-sparkling-girls-instant-age-rewind-eraser-dh-sp-1013-678902-sparkling-girls/",
+      "box_qty": 24,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=12)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 46144,
+      "name": "PRIMER PARA SOMBRAS SHEGLAM 00017/79057",
+      "sku": "36199",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/primer-parasombras-sheglam-00017-79057/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 46352,
+      "name": "LAS VARANO PRIMER SIN ACIDO PSA11",
+      "sku": "9879",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/las-varano-primer-sin-acido/",
+      "box_qty": 10,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: X10 UNIDAD (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "X10 UNIDAD"
+        ],
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(10)，但符合小包(3)倍数 (4包)",
+      "rec_qty": 20
+    },
+    {
+      "product_id": 42554,
+      "name": "CORRECTOR EN BARRA MINI TANGO DH-L272/20724",
+      "sku": "172857",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/corrector-en-barra-mini-tango-dh-l272-20724-2/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43438,
+      "name": "Corrector Líquido Matte Meike Glamour &#8211; Full Cover de Alta Cobertura DH-MK0274/02740",
+      "sku": "151640",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/corrector-liquido-matte-meike-glamour-full-cover-de-alta-cobertura-dh-mk0274-02740/",
+      "box_qty": 24,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=12)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 46346,
+      "name": "CHERIMOYA PRIMER CON ACIDO CH046",
+      "sku": "9901",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/cherimoya-primer-con-acido/",
+      "box_qty": 16,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: X16 UNIDAD (16件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          16,
+          "X16 UNIDAD"
+        ],
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(16)，但符合小包(3)倍数 (4包)",
+      "rec_qty": 16
+    },
+    {
+      "product_id": 43284,
+      "name": "MASCARA CAPILAR SKALA",
+      "sku": "156192",
+      "cart_qty": 8,
+      "url": "https://bellacentral.com.ar/producto/mascara-capilar-skala/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 8
+    },
+    {
+      "product_id": 44282,
+      "name": "LAPIZ CORRECTOR BARRA DH509-086/21880",
+      "sku": "128142",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/lapiz-corrector-barra-dh509-086-21880/",
+      "box_qty": 24,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 44343,
+      "name": "PALETA DE CORRECTOR DH-ME6014E/19115",
+      "sku": "126784",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-corrector-dh-me6014e-19115/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 12U (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "CAJA 12U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42248,
+      "name": "Labial en Barra Matte Miss Betty DD-MIB-K6120/561209",
+      "sku": "177002",
+      "cart_qty": 66,
+      "url": "https://bellacentral.com.ar/producto/brillo-labial-humectante-infantil-magic-love-miss-betty-dd-mib-l6297-562978/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (11包)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 44408,
+      "name": "LABIAL EN BARRA MISS BETTY DH-K5930/59305",
+      "sku": "125519",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/labial-en-barra-miss-betty-dh-k5930-59305/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40620,
+      "name": "BASE DE MAQUILLAJE PINK 21 CS6636/88990",
+      "sku": "198202",
+      "cart_qty": 32,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillaje-pink-21-cs6636-88990/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=6)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 44029,
+      "name": "BASE DE MAQUILLAJE PINK21 CS3403/56029",
+      "sku": "135823",
+      "cart_qty": 32,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillaje-pink21-cs3403-56029/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=24(小包=6)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 42516,
+      "name": "Set De Polvos Aurora Sólido X6 Tonos Cromo Nail SP6245/016245",
+      "sku": "173215",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/set-de-polvos-aurora-solido-x6-tonos-cromo-nail-sp6245-016245/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 45367,
+      "name": "BASE DE MAQUILLAJES 4ANGELS AR1092",
+      "sku": "98441",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillajes-4angels-ar1092/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40707,
+      "name": "Colección de 8 Colores Efecto Aurora / Unicornio RIMERA 15 ES01-08-09",
+      "sku": "197120",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/coleccion-de-8-colores-efecto-aurora-unicornio-rimera-15-es01-08-09/",
+      "box_qty": 8,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: caja-8u-1-8 (8件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          8,
+          "caja-8u-1-8"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(8)的整数倍 (3盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43424,
+      "name": "PRESS GEL CAPPING ELOISE 10 ML 10144",
+      "sku": "152090",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/press-gel-capping-eloise-10-ml-10144/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-12u (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          12,
+          "caja-12u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 43093,
+      "name": "Ultrabond 15 ML CHERIMOYA  CH045",
+      "sku": "159060",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/ultrabond-15-ml-cherimoya-ch045/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: caja-6u (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "caja-6u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (4盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 45652,
+      "name": "ULTRABOND PRIMER 10ML CITY GIRL PX2438/13092",
+      "sku": "84043",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/ultrabond-primer-10ml-city-girl-px2438-13092/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA 6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (2盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 45021,
+      "name": "#156 ESMALTE SEMI CITY GIRL",
+      "sku": "109739",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/156-esmalte-semi-city-girl/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA X6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA X6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 43757,
+      "name": "ESMALTE SEMI BLANCO NEGRO VIA LACTEA SAR-103  00781",
+      "sku": "143788",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/esmalte-semi-blanco-charm-limit-dh86042-03034/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: caja-12u (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          12,
+          "caja-12u"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(12)的整数倍 (1盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 45057,
+      "name": "SERIE A+B 24UNIDAD ESMALTE SEMI ROJO CHARM LIMIT DH89013",
+      "sku": "109262",
+      "cart_qty": 1,
+      "url": "https://bellacentral.com.ar/producto/serie-ab-24unidad-esmalte-semi-rojo-charm-limit-dh89013/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 1
+    },
+    {
+      "product_id": 45033,
+      "name": "#149 ESMALTE SEMI CITY GIRL",
+      "sku": "109639",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/149-esmalte-semi-city-girl/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA X6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA X6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 45027,
+      "name": "#136 ESMALTE SEMI CITY GIRL",
+      "sku": "109684",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/136-esmalte-semi-city-girl/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA X6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA X6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 45436,
+      "name": "#49 ESMALTE SEMI CITY GIRL",
+      "sku": "93383",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/49-esmalte-semi-city-girl/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA 6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (1盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 45438,
+      "name": "#33 ESMALTE SEMI CITY GIRL",
+      "sku": "93324",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/33-esmalte-semi-city-girl/",
+      "box_qty": 6,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体盒装: CAJA 6U (6件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          6,
+          "CAJA 6U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(6)的整数倍 (2盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 46264,
+      "name": "*3 UNIDAD ESMALTE SEMI MELY COLOR 860000",
+      "sku": "19247",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/esmalte-semi-mely-color/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 44677,
+      "name": "SERIE 12PCS ESMALTE SEMI OJO DE GATO CHARM LIMIT 08855",
+      "sku": "119019",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/serie-12pcs-esmalte-semi-ojo-de-gato-charm-limit-08855/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA 12COLORES (12件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": false,
+      "all_box_options": [
+        [
+          12,
+          "CAJA 12COLORES"
+        ]
+      ],
+      "all_pack_options": [],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40175,
+      "name": "PEGAMENTO PARA UÑAS RÁPIDO Y FIRME X 5 UNIDADES NAEZ DD2977/329777",
+      "sku": "203361",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/pegamento-para-unas-rapido-y-firme-x-5-unidades-naez-dd2977-329777/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=12(小包=6)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 42692,
+      "name": "Uñas Press On Con Diseños Surtidos Naez BC1795/17958",
+      "sku": "170451",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/unas-press-on-con-disenos-surtidos-naez-bc1795-17958/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 45105,
+      "name": "BASE DE MAQUILLAJES LIQUIDO 4ANGELS AR1120/AR1121",
+      "sku": "108441",
+      "cart_qty": 96,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillajes-liquido-ar1120/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (4盒)",
+      "rec_qty": 96
+    },
+    {
+      "product_id": 41483,
+      "name": "Pegamento para Uñas con Pincel DD2913/29135 Naez",
+      "sku": "188728",
+      "cart_qty": 64,
+      "url": "https://bellacentral.com.ar/producto/pegamento-para-unas-con-pincel-dd2913-29135-naez/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=12(小包=6)",
+      "rec_qty": 72
+    },
+    {
+      "product_id": 46410,
+      "name": "PACK X25 LIMAS CITY GIRL 150/150 40148",
+      "sku": "7898",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/pack-x25-limas-city-girl-150-150-40148/",
+      "box_qty": 25,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 25件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=25",
+      "rec_qty": 25
+    },
+    {
+      "product_id": 42762,
+      "name": "Paleta De Sombras Stitch Con Espejo DH-JZD-EYE-4220/42209",
+      "sku": "169259",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-stitch-con-espejo-dh-jzd-eye-4220-42209/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 42752,
+      "name": "Paleta De Sombras Stitch Frutilla Con Espejo X42 Tonos DH-JZD-EYE-4206/42060",
+      "sku": "169350",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-stitch-frutilla-con-espejo-x42-tonos-dh-jzd-eye-4206-42060/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 42757,
+      "name": "Paleta De Sombras Hello Kitty Sanrio Libro Gigante DH-JZD-EYE-5438/54387",
+      "sku": "169331",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-hello-kitty-sanrio-libro-gigante-dh-jzd-eye-5438-54387/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 42753,
+      "name": "Paleta De Sombras Nude Eyeshadow Con Espejo X40 Tonos DH-JZD-IG3275/02754",
+      "sku": "169343",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-nude-eyeshadow-con-espejo-x40-tonos-dh-jzd-ig3275-02754/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42748,
+      "name": "Paleta De Sombras Stitch Aloha Con Espejo X42 Tonos DH-JZD-EYE-4218/42186",
+      "sku": "169360",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-stitch-aloha-con-espejo-x42-tonos-dh-jzd-eye-4218-42186/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 43375,
+      "name": "PACK*10 ACEITE CUTICULA  CML-598CX",
+      "sku": "155067",
+      "cart_qty": 1,
+      "url": "https://bellacentral.com.ar/producto/pack10-aceite-cuticula-naez-ht-826/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 10件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 10
+    },
+    {
+      "product_id": 42834,
+      "name": "Pack Cepillos de Pestañas NAEZ BC2822/28220",
+      "sku": "167279",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/pack-cepillos-de-pestanas-naez-bc2822-28220/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(6)倍数 (1包)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 44359,
+      "name": "PACK*12 DE REPUESTO DE ARQUEADOR CML-802D/88025",
+      "sku": "126636",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/pack12-de-repuesto-de-arqueador-cdcml-802d/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 12件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=12",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 42943,
+      "name": "PACK*12 Lapiz Labial Waterproof Lip Pencil TEI TEI8236",
+      "sku": "163418",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/pack12-lapiz-labial-waterproof-lip-pencil-tei-tei8236/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 12件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=12",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 40490,
+      "name": "TOALLITAS HUMEDAS MINI 8 PACK X 8 UNIDADES DD-RH-HSXM001/LZ-1540/LZ-1541/LZ-1834/LZ-896/LZ-9603-1/LZ-9603-2/LZ-9611/QH-0344/QH-0368",
+      "sku": "199844",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/toallitas-humedas-mini-8-pack-x-8-unidades-dd-rh-hsxm001-lz-1540-lz-1541-lz-1834-lz-896-lz-9603-1-lz-9603-2-lz-9611-qh-0344-qh-0368/",
+      "box_qty": 8,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 8件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=8",
+      "rec_qty": 8
+    },
+    {
+      "product_id": 41388,
+      "name": "Máscara De Pestañas Sky High Volume Up Waterproof Negro MISS BETTY DD-M3840/83840",
+      "sku": "189710",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-sky-high-volume-up-waterproof-negro-miss-betty-dd-m3840-83840/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 41157,
+      "name": "Pack 12pcs Esponja de Maquillaje Blender Difuminadora Gota y Reloj de Arena NAEZ DD3079/30797",
+      "sku": "192177",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/pack-12pcs-esponja-de-maquillaje-blender-difuminadora-gota-y-reloj-de-arena-naez-dd3079-30797/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 12件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=12",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 42177,
+      "name": "PACK DE 12PCS DELINEADOR DE LABIO PINK21 CS6441/88136",
+      "sku": "177741",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/pack-de-12pcs-delineador-de-labio-pink21-cs6441-88136/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 3-packs (1件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          1,
+          "3-packs"
+        ],
+        [
+          1,
+          "un-pack"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 2
+    },
+    {
+      "product_id": 40892,
+      "name": "MASCARA DE PESTAÑAS WATERPROOF NOLM DD-YDM-953/579530",
+      "sku": "195036",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-waterproof-nolm-dd-ydm-953-579530/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 42761,
+      "name": "Paleta De Sombras Angel Stitch Rosa Con Espejo X9 Tonos DH-JZD-EYE-0927/09274",
+      "sku": "169261",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-angel-stitch-rosa-con-espejo-x9-tonos-dh-jzd-eye-0927-09274/",
+      "box_qty": 3,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 3-unidad (3件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(3)的整数倍 (4盒)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 42758,
+      "name": "Paleta De Sombras Angel Stitch Summer Con Espejo X18 Tonos  DH-JZD-EYE-18025/80259",
+      "sku": "169299",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/paleta-de-sombras-angel-stitch-summer-con-espejo-x18-tonos-dh-jzd-eye-18025-80259/",
+      "box_qty": 3,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: 3-unidad (3件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(3)的整数倍 (2盒)",
+      "rec_qty": 6
+    },
+    {
+      "product_id": 41385,
+      "name": "Máscara De Pestañas Volum&#8217; Express The Colossal Cat Eyes Negro MISS BETTY DH-M6610/05331",
+      "sku": "189722",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/mascara-de-pestanas-volum-express-the-colossal-cat-eyes-negro-miss-betty-dh-m6610-05331/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (2盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 46016,
+      "name": "CAJA X29 ESMALTES SEMI CHARM LIMIT (INCLUYE 2 BASE Y 2 TOP) 30061",
+      "sku": "53315",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/caja-x29-esmaltes-semi-charm-limit-incluye-2-base-y-2-top-30061/",
+      "box_qty": 29,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 29件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=29",
+      "rec_qty": 29
+    },
+    {
+      "product_id": 46358,
+      "name": "REMOVEDOR DE CUTICULAS CHERIMOYA CH014",
+      "sku": "9851",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/removedor-de-cuticulas-cherimoya/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: X12 UNIDAD (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDAD"
+        ],
+        [
+          12,
+          "X12 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(3)倍数 (2包)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 45285,
+      "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MELY891020/10202",
+      "sku": "101513",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/toallita-desmaquillantes-con-agua-micelar-my891020-10202/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ],
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40268,
+      "name": "BASE DE MAQUILLAJE ALTA COBERTURA EXTREME PINK 21 CS4994/68152",
+      "sku": "202276",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/base-de-maquillaje-alta-cobertura-extreme-pink-21-cs4994-68152/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40554,
+      "name": "AGUA MICELAR – CITY GIRL F6658/F6659",
+      "sku": "199039",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/agua-micelar-city-girl-f6658-f6659/",
+      "box_qty": 8,
+      "sub_pack_qty": 4,
+      "raw_desc": "变体盒装: caja-8-unida (8件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          8,
+          "caja-8-unida"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          4,
+          "4-unida"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=8(小包=4)",
+      "rec_qty": 8
+    },
+    {
+      "product_id": 45392,
+      "name": "CAJA*12 DELINEADOR CON SELLO 89109",
+      "sku": "95747",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/caja12-delineador-con-sello-89109/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "标题标明包装: 12件/盒",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "❌ 不成倍数！装盒数=12",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 42236,
+      "name": "Delineador Líquido para Ojos Makeup New Eyeliner Miss Betty DD-MIB-E1381/513819",
+      "sku": "177069",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/delineador-liquido-para-ojos-makeup-new-eyeliner-miss-betty-dd-mib-e1381-513819/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: caja-24u (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "caja-24u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (1盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 44178,
+      "name": "PACK DE LIMA MINI cml-060c",
+      "sku": "130349",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/pack-de-lima-mini-cml-060c/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK 24U (24件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          24,
+          "PACK 24U"
+        ],
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(24)，但符合小包(6)倍数 (2包)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 41417,
+      "name": "Depilador De Cristal Removedor De Pelo Y Exfoliante Corporal NAEZ BC2236/32365",
+      "sku": "189496",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/depilador-de-cristal-removedor-de-pelo-y-exfoliante-corporal-naez-bc2236-32365/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          12,
+          "pack-12u"
+        ],
+        [
+          3,
+          "3-unidad"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(3)倍数 (2包)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 43288,
+      "name": "LFME REMOVEDOR PARA ESMALTE UÑA 100ml RA100",
+      "sku": "156150",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/lfme-removedor-para-esmalte-una-100ml-ra100/",
+      "box_qty": 20,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: 20 UNIDAD (20件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          20,
+          "20 UNIDAD"
+        ],
+        [
+          3,
+          "3 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(20)，但符合小包(3)倍数 (4包)",
+      "rec_qty": 20
+    },
+    {
+      "product_id": 45987,
+      "name": "RUBOR MULTIUSO GEGE BEAR GX1215",
+      "sku": "58306",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/rubor-multiuso-gege-bear-gx1210/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体盒装: CAJA DE 24 (1件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          1,
+          "CAJA DE 24"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDADES"
+        ]
+      ],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 44371,
+      "name": "RUBOR EN BARRA RIMERA QUINCE RQ15 APROBADO POR ANMAT",
+      "sku": "126234",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/rubor-en-barra-rimera-quince-rq15-aprobado-por-anmat/",
+      "box_qty": 24,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体盒装: CAJA 24U (24件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          24,
+          "CAJA 24U"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          6,
+          "6 UNIDAD"
+        ]
+      ],
+      "compliance": "是装盒数(24)的整数倍 (2盒)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 44981,
+      "name": "Strass Gemas Autoadhesivas SURTIDOS COLORES NAEZ BC2051/20517",
+      "sku": "111468",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/strass-gemas-autoadhesivas-surtidos-colores-naez-bc2051/",
+      "box_qty": 12,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: PACK 12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          12,
+          "PACK 12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40277,
+      "name": "CONTORNO EN BARRA COLOR CONTOUR PINK 21 CS6783/01965",
+      "sku": "202226",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/contorno-en-barra-color-contour-pink-21-cs6783-01965/",
+      "box_qty": 48,
+      "sub_pack_qty": 12,
+      "raw_desc": "变体盒装: caja-48u (48件/盒)",
+      "status": "ok",
+      "has_box_variation": true,
+      "has_pack_variation": true,
+      "all_box_options": [
+        [
+          48,
+          "caja-48u"
+        ]
+      ],
+      "all_pack_options": [
+        [
+          12,
+          "12-unidad"
+        ]
+      ],
+      "compliance": "非整盒(48)，但符合小包(12)倍数 (2包)",
+      "rec_qty": 48
+    },
+    {
+      "product_id": 40036,
+      "name": "KIT DE PERFUME + CREMA CORPORAL CD:YT2574/10494",
+      "sku": "204287",
+      "cart_qty": 2,
+      "url": "https://bellacentral.com.ar/producto/kit-de-perfume-crema-corporal-cdyt2574-10494/",
+      "box_qty": 1,
+      "sub_pack_qty": 1,
+      "raw_desc": "单件销售(无盒装变体)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": false,
+      "all_box_options": [],
+      "all_pack_options": [],
+      "compliance": "单件/无装盒限制",
+      "rec_qty": 2
+    },
+    {
+      "product_id": 42471,
+      "name": "Parches Para LABIOS Mascarilla TEI k3040/k3039/k3038/k3037",
+      "sku": "173994",
+      "cart_qty": 48,
+      "url": "https://bellacentral.com.ar/producto/parches-para-labios-mascarilla-tei-k3040-k3039-k3038-k3037/",
+      "box_qty": 10,
+      "sub_pack_qty": 1,
+      "raw_desc": "变体包装: pack-10u (10件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          10,
+          "pack-10u"
+        ]
+      ],
+      "compliance": "❌ 不成倍数！装盒数=10",
+      "rec_qty": 50
+    },
+    {
+      "product_id": 45811,
+      "name": "DEDO DE PRACTICA CON UÑA CD:DH70539/ZJJSZ",
+      "sku": "75037",
+      "cart_qty": 12,
+      "url": "https://bellacentral.com.ar/producto/dedo-de-practica-con-una-cddh70539-zjjsz/",
+      "box_qty": 50,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: PACK DE 50 UNIDAD (50件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "X6 UNIDAD"
+        ],
+        [
+          50,
+          "PACK DE 50 UNIDAD"
+        ]
+      ],
+      "compliance": "非整盒(50)，但符合小包(6)倍数 (2包)",
+      "rec_qty": 50
+    },
+    {
+      "product_id": 43347,
+      "name": "Set de Belleza 5 en 1 &#8211; Kit Completo de Limpieza Facial y Maquillaje NAEZ BC2306/23065",
+      "sku": "153659",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/set-de-belleza-5-en-1-kit-completo-de-limpieza-facial-y-maquillaje-naez-bc2306-23065/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "3-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(3)倍数 (2包)",
+      "rec_qty": 12
+    },
+    {
+      "product_id": 45177,
+      "name": "LIMPIADOR FACIAL SILICONA CD:HT-2301",
+      "sku": "105693",
+      "cart_qty": 24,
+      "url": "https://bellacentral.com.ar/producto/limpiador-facial-silicona-cdht-1119-56181/",
+      "box_qty": 12,
+      "sub_pack_qty": 3,
+      "raw_desc": "变体包装: PACK X12U (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          3,
+          "X3 UNIDAD"
+        ],
+        [
+          12,
+          "PACK X12U"
+        ]
+      ],
+      "compliance": "是装盒数(12)的整数倍 (2盒)",
+      "rec_qty": 24
+    },
+    {
+      "product_id": 40780,
+      "name": "CEPILLO LIMPIADOR Y EXFOLIANTE FACIAL DOBLE FAZ DE SILICONA NAEZ BC2587/325878",
+      "sku": "196225",
+      "cart_qty": 6,
+      "url": "https://bellacentral.com.ar/producto/cepillo-limpiador-y-exfoliante-facial-doble-faz-de-silicona-naez-bc2587-325878/",
+      "box_qty": 12,
+      "sub_pack_qty": 6,
+      "raw_desc": "变体包装: pack-12u (12件/包)",
+      "status": "ok",
+      "has_box_variation": false,
+      "has_pack_variation": true,
+      "all_box_options": [],
+      "all_pack_options": [
+        [
+          6,
+          "6-unidad"
+        ],
+        [
+          12,
+          "pack-12u"
+        ]
+      ],
+      "compliance": "非整盒(12)，但符合小包(6)倍数 (1包)",
+      "rec_qty": 12
+    }
+  ]
+}

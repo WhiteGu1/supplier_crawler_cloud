@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28006,
+    "name": "PANEL SOLAR F/IRREGULAR 150W CLR BLANCO VERDE CJA CL...",
+    "current_cat": "照明灯具"
+  },
+  {
+    "id": 28007,
+    "name": "Y PANEL SOLAR HY668 CLR NEGRO CAJA CLR",
+    "current_cat": "照明灯具"
+  },
+  {
+    "id": 28008,
+    "name": "MICROFONO INALAMBRICO DE MANO DOBLE 2X1 #TTD-M22",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28009,
+    "name": "MICROFONO INALAMBRICO DE MANO DOBLE 2X1 #TTD-M12",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28010,
+    "name": "MICROFONO STREAMER PROFESIONAL CON BASE Y BRAZO #BM-800",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28011,
+    "name": "MICROFONO STREAMER PROFESIONAL CON TRIPODE Y COVERTOR #...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28012,
+    "name": "MICROFONO INALAMBRICO DE MANO DOBLE 2X1 #TTD-669",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28013,
+    "name": "MICROFONO INALAMBRICO DE MANO #TTD-59A",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28014,
+    "name": "PARLANTE BT 2X 12\" C/RGB /2 MIC INAL 100W 38X37X113,5CM...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28015,
+    "name": "PARLANTE BT 2X12\" C/RGB /2 MIC INAL 80W 38X36X111,5CM W...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28016,
+    "name": "PARLANTE 8\"X2 C/LUZ RGB /MICROFONO X2 /CTRL REMOT #JBR-...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28017,
+    "name": "PARLANTENDR-810-6000W- 2MICROC/CONTROL-AUX-USB-F...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28018,
+    "name": "PARLANTETORREC/2MICROFONOSINALAMBRIC OCAJAREG #BK-...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28019,
+    "name": "PARLANTE",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28020,
+    "name": "PARLANTE",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28021,
+    "name": "PARLANTENDR-128A-1500W-BT-C/MIC-USB- SD-LUZLED-...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28022,
+    "name": "PARLANTE#LM-S375COLORFUL",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28023,
+    "name": "PARLANTE #DR-8831 8\"*2",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28024,
+    "name": "PARLANTE",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28025,
+    "name": "PARLANTE BS-150",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28026,
+    "name": "PARLANTE BS-149",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28027,
+    "name": "PARLANTE",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28028,
+    "name": "PARLANTE #CS-8810",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28029,
+    "name": "PARLANTE GY-8847",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28030,
+    "name": "PARLANTE CR-13 CILINDRICO",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28031,
+    "name": "PARLANTE BT INAL C/LUZ /TELA -CLR NEGRO - CJA CLR TG-4...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28032,
+    "name": "PARLANTE RETRO C/AGARRE BLANDO W8",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28033,
+    "name": "PARLANTE 4 PULGADAS CON DISEÑO TRANSPARENTE, MICROFONO ...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28034,
+    "name": "PARLANTE BT INAL TRANSP C/TELA -SURT CLR - CJA CLR TG-...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28035,
+    "name": "PARLANTEC/LUZRGBMS-1954BT",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28036,
+    "name": "PARLANTE HY-117 TIPO TORPEDO PARADO C/LUCES",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28037,
+    "name": "PARLANTE#HM-843",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28038,
+    "name": "PARLANTE DESPERTADOR CON CARGA INALAMBRICA",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28039,
+    "name": "PARLANTE BT INAL C/TELA /CORREA -CLR NEGRO -CJA CLR ...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28040,
+    "name": "PARLANTE BT INAL C/TELA -CLR GRIS -CJA CLR TG-464",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28041,
+    "name": "PARLANTE DESPERTADOR CON CARGA INALAMBRICA #S-300",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28042,
+    "name": "PARLANTE BT INAL C/FORMA BALA C/TELA /METAL/RGB -CLR N...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28043,
+    "name": "PARLANTE BT INAL C/TELA C/SOGA MANIJA -CLR NEGRO -CJA...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28044,
+    "name": "PARLANTE C/LUZ RGB 4\"X2 #CS-4427",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28045,
+    "name": "PARLANTE RETRO C/AGARRE BLANDO W2",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28046,
+    "name": "PARLANTE C/LUZ RGB CS-0513",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28047,
+    "name": "PARLANTESY-308",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28048,
+    "name": "PARLANTE 4 PULGADAS CON DISEÑO TRANSPARENTE Y MANIJA #...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28049,
+    "name": "PARLANTE PULSE PLUSE5 MEDIUM",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28050,
+    "name": "PARLANTE MS-3628BT",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28051,
+    "name": "PARLANTE C/LUZ RGB C/AGARRE RED MS-1951BT",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28052,
+    "name": "PARLANTE C/LUZ RGB C/AGARRE CUAD MS- 1950BT",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28053,
+    "name": "PARLANTE DOBLE 3 PULGADAS CON DISEÑO Y MANIJA #MA-C40",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28054,
+    "name": "PARLANTE RECTANGULAR CON DISEÑO DE COLORES Y MANIJA #C...",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 28055,
+    "name": "PARLANTE BT INAL MINI -CLR NEGRO -CJA CLR",
+    "current_cat": "电器电子"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

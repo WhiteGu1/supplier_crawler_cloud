@@ -1,0 +1,60 @@
+你是商品分类助手。请用 image 工具逐个分析以下商品图片，结合商品名称判断最合适的分类。
+注意：必须使用 image 工具查看图片，不要使用 read 工具。
+
+商品列表：
+1. ID:12047, 名称:Chopp Cordoba (1025/00), 图片:D:/projects/supplier_crawler/images/osa/0dcafdadcd4fa153acdf0de5b52affab.webp
+2. ID:12048, 名称:Hermético Rectangular PLÁSTICO, 图片:D:/projects/supplier_crawler/images/osa/438c8c05362868a3c76524bdf65486e2.webp
+3. ID:12049, 名称:Vaso Long Drinks Transparente DURAX (1301/00), 图片:D:/projects/supplier_crawler/images/osa/24ab035e6df66090ce49751ad75e16a3.webp
+4. ID:12050, 名称:Vaso Soda 148CC. (1309), 图片:D:/projects/supplier_crawler/images/osa/f104bbc59c9a2680f5b7dad014720999.webp
+5. ID:12051, 名称:Filtro para Cafe LOEKEMEYER (L031), 图片:D:/projects/supplier_crawler/images/osa/bed927c60a70405602cea6ff62853b84.webp
+6. ID:12052, 名称:Plato Melamina Blanca, 图片:D:/projects/supplier_crawler/images/osa/da49dfe037d775ab90043120d6bd7c0d.webp
+7. ID:12053, 名称:Platos CHUVISCO OXFORD, 图片:D:/projects/supplier_crawler/images/osa/722425f3245180453ccd4e609afc31ce.webp
+8. ID:12054, 名称:Pack x 6 vasos Irupe Alto (1305/06), 图片:D:/projects/supplier_crawler/images/osa/503c5096131e06a5f9eec085bcdcc1c0.webp
+9. ID:12055, 名称:Plato GEMA Durax, 图片:D:/projects/supplier_crawler/images/osa/758a528ffa707f66080d320ce1013d24.webp
+10. ID:12056, 名称:Vaso Facetado T/2511 350C (1303), 图片:D:/projects/supplier_crawler/images/osa/62af5731b7a906ee97aaa0c51b53bca8.webp
+11. ID:12057, 名称:Pack x 6 vasos Coraline Alto (1307/06), 图片:D:/projects/supplier_crawler/images/osa/fae99676924dc5ecdc953cc5ac0f5e41.webp
+12. ID:12058, 名称:Vaso Facetado T/2611 330CC. (1304/1), 图片:D:/projects/supplier_crawler/images/osa/aa859fb702f63336c68f60d491ddc86a.webp
+13. ID:12059, 名称:Copa de agua Brunello Nadir, 图片:D:/projects/supplier_crawler/images/osa/b52b94cc9986b42655f0063dc72a6b85.webp
+14. ID:12060, 名称:Cuchillo de mesa español polywood (21109/074), 图片:D:/projects/supplier_crawler/images/osa/6fcdbbd4bbd52dbb5926486b249fb79f.webp
+15. ID:12061, 名称:Jarrito Submarino 280 ML (PRECIO X UNIDAD) (RO1006), 图片:D:/projects/supplier_crawler/images/osa/f7d68c250435b4d38cf2cacf6b2a17de.webp
+16. ID:12062, 名称:Percha Plastica DESESPLAST (precio por unidad) (D08357), 图片:D:/projects/supplier_crawler/images/osa/c750f08779d70f3f323ef3c7bc109382.webp
+17. ID:12063, 名称:Sarten de teflón HUDSON linea DAYLI, 图片:D:/projects/supplier_crawler/images/osa/ca50fb397a1e1f1184dc078ed3b309c8.webp
+18. ID:12064, 名称:Filtro para Bombilla X 2, 图片:D:/projects/supplier_crawler/images/osa/31c422683f8de5e68e67c990492d2a19.webp
+19. ID:12065, 名称:Taza armonía DECORADA con caja de regalo (1850/DEC), 图片:D:/projects/supplier_crawler/images/osa/ee16eea96d12da22e97619613e3dbb7e.webp
+20. ID:12066, 名称:Cuchara de Mesa CAROL, 图片:D:/projects/supplier_crawler/images/osa/b8065e5b03cc046219764357e70ec785.webp
+21. ID:12067, 名称:Copa degustación 400ml (RO6338), 图片:D:/projects/supplier_crawler/images/osa/8ee9f30301095d7d622da8920f9c67ec.webp
+22. ID:12068, 名称:Tapón para Termo STANLEY (V021), 图片:D:/projects/supplier_crawler/images/osa/5a23eabeaaeb8f05d86cb06132eecae8.webp
+23. ID:12069, 名称:Rallador Cuadrado de Acero con Base de Goma (RA01), 图片:D:/projects/supplier_crawler/images/osa/704152f26c8f7283fee731076c590429.webp
+24. ID:12070, 名称:Plato linea Carine blanco, 图片:D:/projects/supplier_crawler/images/osa/563fcbbf055f603e5c8022517c3b52ce.webp
+25. ID:12071, 名称:Pack x 6 vaso facetado T/2711 400CC. (1308/06), 图片:D:/projects/supplier_crawler/images/osa/830088eddbcaaa9194ac936fb652b0eb.webp
+26. ID:12072, 名称:Asadera rectangular de vidrio MARINEX, 图片:D:/projects/supplier_crawler/images/osa/261eae7ef6ccb7044e00d27210d46ede.webp
+27. ID:12073, 名称:Plato porcelana blanca, 图片:D:/projects/supplier_crawler/images/osa/563848a9f6689edcc3174d6db3fe579b.webp
+28. ID:12074, 名称:Sarten de Teflon LORETO negra TRAMONTINA, 图片:D:/projects/supplier_crawler/images/osa/c73cc1eb4e9fde3dffdbf94bac71ce35.webp
+29. ID:12075, 名称:Hermético Redondo PLÁSTICO, 图片:D:/projects/supplier_crawler/images/osa/c64c79c1e06de8680b968327f204a9e3.webp
+30. ID:12076, 名称:CUCHILLO MESA NEW KOLOR NEGRO X3 (23160/304), 图片:D:/projects/supplier_crawler/images/osa/16e5301f4da118dbccbd798aad99bcae.webp
+31. ID:12077, 名称:Copa de vidrio COUNTRY, 图片:D:/projects/supplier_crawler/images/osa/b26f83f7c238d99052194c615ad42a5b.webp
+32. ID:12078, 名称:Copa Gin 600 ML 9,5 x 20 cm (7948/06), 图片:D:/projects/supplier_crawler/images/osa/812879501ba50494c4f8ad70589eacdf.webp
+33. ID:12079, 名称:Batidor para crema a pila (RO2388), 图片:D:/projects/supplier_crawler/images/osa/fe0a2e1ced6cab700c4260f0967249a3.webp
+34. ID:12080, 名称:Ensaladera Cristal MARINEX, 图片:D:/projects/supplier_crawler/images/osa/651cd123b56a7cf6720f2d3fa0595bfd.webp
+35. ID:12081, 名称:Tazon facetado 432cc DURAX (1851/00), 图片:D:/projects/supplier_crawler/images/osa/ded69855a229fa6c0369d46c15931648.webp
+36. ID:12082, 名称:Pack x 6 vaso Imperial Bajo (1098/06), 图片:D:/projects/supplier_crawler/images/osa/a404e1dbf278b8ceffa58cc7e2eece5e.webp
+37. ID:12083, 名称:Copa degustacion 435ML "DELI SOGA" (RO75749), 图片:D:/projects/supplier_crawler/images/osa/06fb7f2f77f57326fdbf308f8c469bb6.webp
+38. ID:12084, 名称:Vasos Pampa (1311/00), 图片:D:/projects/supplier_crawler/images/osa/a4fd9c9e9c8f98eb57f9cbc4f5a6e804.webp
+39. ID:12085, 名称:Ensaladera Firenze (1029/01), 图片:D:/projects/supplier_crawler/images/osa/fda42bde92622f1ec463e3ac0122beb4.webp
+40. ID:12086, 名称:Pack x 6 Nilda (1304/06), 图片:D:/projects/supplier_crawler/images/osa/8420f006da74042e2fe69ae2d0cf410a.webp
+41. ID:12087, 名称:Pack x 6 Diamante Bajo (1097/06), 图片:D:/projects/supplier_crawler/images/osa/41b9fd0a8241f4153f0f4c8821f38fd5.webp
+42. ID:12088, 名称:Pack x 6 Cobra Alto (1303/06), 图片:D:/projects/supplier_crawler/images/osa/bb4d5fd04430297bbe73758b19c21702.webp
+43. ID:12089, 名称:Tostador enlozado con difusor (G1709), 图片:D:/projects/supplier_crawler/images/osa/5dbb49654ed8eb47d75d9f5b2047fb01.webp
+44. ID:12090, 名称:Pack x 6 vasos Tango (1322/06), 图片:D:/projects/supplier_crawler/images/osa/6ccc7f1626fb4a15c1a256e11a246756.webp
+45. ID:12091, 名称:Spray rociador de aceite (16347), 图片:D:/projects/supplier_crawler/images/osa/58a2822e519ea194c2c57c824797eb2c.webp
+46. ID:12092, 名称:Pack x 6 vasos Coraline Bajo (1307/16), 图片:D:/projects/supplier_crawler/images/osa/16c066d11267aa61410d01f34cb3c488.webp
+47. ID:12093, 名称:Pack x 6 vasos Juliana (1094/06), 图片:D:/projects/supplier_crawler/images/osa/52a1025b40d29a3a5eeb4eb16f82606f.webp
+48. ID:12094, 名称:Antorchitas (V100) (Compra mínima 24), 图片:D:/projects/supplier_crawler/images/osa/e6d5d0053c3450df05da87745511dfe1.webp
+49. ID:12095, 名称:Ensaladera Roma 1.8 LT (2103/00), 图片:D:/projects/supplier_crawler/images/osa/97590daba6f55e78f3fb76f7cdd16864.webp
+50. ID:12096, 名称:Pelapapas plateado (T088), 图片:D:/projects/supplier_crawler/images/osa/5abf901e64ad4950ae91968ce5a82cf7.webp
+
+可选分类（选最匹配的）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+输出格式：JSON数组，每项 {"id": ID, "category": "分类名称", "desc": "简要描述商品"}
+只输出JSON，不要其他文字。

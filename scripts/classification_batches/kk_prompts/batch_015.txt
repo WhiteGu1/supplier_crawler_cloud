@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28606,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CUERDA D",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28607,
+    "name": "TAZA CERAMICA 85ML DSÑO ONDAS HORIZ SURT CLR BLCO/ GRIS/ NEOGRO MATE BULK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28608,
+    "name": "TAZA CERAMICA 85ML DSÑO RAYAS VERTICALES SURT CLR BLCO/ GRIS/ NEGRO MATE BULK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28609,
+    "name": "TAZA LISA 85ML P/CAFÉ SURTIDO 4 COLORES BLANCA/ROSA/GRIS/AZU VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28610,
+    "name": "TAZA CERAMICA 330ML EXT NEGRO INT SURT CLR RJO/CELESTE/VRDE/NJA BULK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28611,
+    "name": "TAZA CAFÉ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28612,
+    "name": "TAZA CAFÉ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28613,
+    "name": "SET TAZA FRANCESA 85ML P/CAFÉ LISAS X 4 PZS SURTIDO 3 COLORE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28614,
+    "name": "TAZA FRANCESA 85ML P/CAFÉ SURTIDO 3 COLORES ROJO/BLANCO/NEGR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28615,
+    "name": "TAZA CONICA C/SALPICRÉ 300ML SURTIDO CLRS MATE BLANCO/ROSA/GRIS/AZUL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28616,
+    "name": "4 SET TAZAS P/CAFÉ LISAS 85ML X4 SURT COLORES BLANCA/ROSA/GRIS/AZUL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28617,
+    "name": "SET X6 TAZA CERAMICA C/PLATITO 85ML DSÑO SALPICADO SURT CLR BLCO/ GRIS MATE CJA REGALO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28618,
+    "name": "SET X6 TAZA CERAMICA C/PLATITO 85ML DSÑO RAYADO SURT CLR BLCO/ GRIS/ NEGRO MATE CJA REGALO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28619,
+    "name": "SET TAZAS P/TE C/PLATOS 210ML X6 PZS 6 COLORES SURTIDOS VERDE/AZUL/LARANJA/AMARILLO/ROSA/ROJ O VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28620,
+    "name": "BOWL MELAMINA 140G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28621,
+    "name": "BOWL MELAMINA 85G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28622,
+    "name": "BOWL MELAMINA 50G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28623,
+    "name": "BOWL MELAMINA 80G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28624,
+    "name": "BOWL MELAMINA 260G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28625,
+    "name": "BOWL MELAMINA 95G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28626,
+    "name": "BOWL MELAMINA 160G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28627,
+    "name": "BOWL MELAMINA 200G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28628,
+    "name": "PLATO PLAYO MELAMINA 120G CUADRADO DSÑO MARMOL VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28629,
+    "name": "BOWL VIDRIO 25X7,5CM BORDE IRREGULAR CLR BLANCO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28630,
+    "name": "BOWL VIDRIO 20X9CM BORDE IRREGULAR CLR BLANCO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28631,
+    "name": "PLATO PLAYO VIDRIO 33X2CM BORDE IRREGULAR CLR BLANCO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28632,
+    "name": "PLATO PLAYO VIDRIO 27,5X2CM BORDE IRREGULAR CLR BLANCO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28633,
+    "name": "PLATO PLAYO VIDRIO 21,5X2CM BORDE IRREGULAR CLR BLANCO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28634,
+    "name": "BOWL 190G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28635,
+    "name": "BOWL SOPA 350G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28636,
+    "name": "BOWL CIRCULAR 380G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28637,
+    "name": "BOWL 180G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28638,
+    "name": "BOWL SOPA 170G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28639,
+    "name": "BOWL CIRCULAR 280G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28640,
+    "name": "BOWL CIRCULAR 150G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28641,
+    "name": "PLATO REDONDO 7,5\" MELAMINA BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28642,
+    "name": "PLATO REDONDO 14\" MELAMINA BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28643,
+    "name": "PLATO REDONDO 9\" MELAMINA BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28644,
+    "name": "PLATO REDONDO 12\" MELAMINA BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28645,
+    "name": "PLATO OVALADO MELAMINA 150G BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28646,
+    "name": "PLATO OVALADO MELAMINA 250G BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28647,
+    "name": "PLATO OVALADO MELAMINA 350G BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28648,
+    "name": "PLATO REDONDO 10\" MELAMINA BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28649,
+    "name": "ENSALADERA 165G CLR BLANCO BULK PACK VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28650,
+    "name": "PLATO OVAL MELAMINA 140G DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28651,
+    "name": "PLATO PLAYO MELAMINA 110G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28652,
+    "name": "PLATO HONDO MELAMINA 120G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28653,
+    "name": "PLATO PLAYO MELAMINA 120G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28654,
+    "name": "PLATO PLAYO MELAMINA 170G CUADRADO DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28655,
+    "name": "PLATO OVAL MELAMINA 185G DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

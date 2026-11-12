@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31106,
+    "name": "PAÑUELOS DESCARTABLES PAPEL 19X20CM 2 CAPAS OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31107,
+    "name": "PAÑUELOS DESCARTABLES PAPEL 19X20 3 CAPAS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31108,
+    "name": "OPP CUADROS 30X30 LIENZO P/PINTAR/DECORAR SURT DSÑO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31109,
+    "name": "3 CUADROS 20X20CM LIENZO P/PINTAR/DECORAR SURT 3 DSÑO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31110,
+    "name": "CUADROS 20X20CM LIENZO P/PINTAR/DECORAR SURT 3 DSÑO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31111,
+    "name": "CUADROS 30X30CM LIENZO P/PINTAR/DECORAR SURT 3 DSÑO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31112,
+    "name": "PORTA LLAVES 34X14,5CM MADERA C/3 GANCHOS \"COFFEE\"",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31113,
+    "name": "PISTOLA ROCIADORA 10X5X18,3CM 7 FUNCIONES 4PCS CLR VERDE Y NEGRA BLISTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31114,
+    "name": "PISTOLA ROCIADORA 11X5,8X18,5CM 8 FUNCIONES CLR NEGRA Y VERDE TIE CARD",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31115,
+    "name": "LINTERNA 10CM ALUMINIO LED C/ZOOM NGR A PILA AAAX3 DISP CART",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31116,
+    "name": "LINTERNA11CMPLASTLEDCLRARELOJDISPCARTX24",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31117,
+    "name": "BASTON 90CM CLR CEREZO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31118,
+    "name": "ABANICO MADERA 34X23CM GRABADO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31119,
+    "name": "SET DE COSTURA X 10PCS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31120,
+    "name": "PONCHOLLUVIAADULTOC/CAPUCHACLRSURTOPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31121,
+    "name": "CARRITO COMPRAS 45X39X85CM PLASTICO C/4 RUEDAS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31122,
+    "name": "CHANGO DE COMPRAS 88X29X31CM ALUMINIO DOBRAVEL C/CESTO CLRS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31123,
+    "name": "CHANGO DE COMPRAS 89X32X30CM ALUMINIO DOBRAVEL C/CESTO CLRS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31124,
+    "name": "SOPORTE MONITOR 37,2X27,2X7CM AJUSTABLE A 10,7/14,5CM C/CAJON CJA CLR",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31125,
+    "name": "ALMOHADILLA PROTECTORA PLANTILLA 32PCS BLISTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31126,
+    "name": "PORTA ANTEOJOS PARA AUTO OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31127,
+    "name": "CARRITO 87X32X28CM C/BOLSA POLIESTER 28X18X48CM CLR GRIS CUADRILLE HANGTAG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31128,
+    "name": "AUTO R/L A PILA P/MUÑECAS C/LUZ Y SONIDO CAJA ABIERTA 30X17",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31129,
+    "name": "BUSTO 19X15 C/ACCESORIOS PARA PEINAR CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31130,
+    "name": "BUSTO 19X16 RUBIA C/ACCESORIOS PARA PEINAR CJA VENT MALETIN",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31131,
+    "name": "CAMARA FOTOS 10X6X3 C/DIAPOSITIVA 2MOD SURT BLIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31132,
+    "name": "CARRUAJE 26X14CM C/CABALLO SURT 2 CLR CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31133,
+    "name": "CARRUAJE 31X14CM C/MUÑECA /ACC X2 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31134,
+    "name": "CARRUAJE 50X24CM C/2 CABALLOS DSÑO PRINCESA CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31135,
+    "name": "CARRUAJE 54X33CM C/CABALLO C/LUZ Y SONIDO A PILA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31136,
+    "name": "CARRUAJE 28X20CM C/PRINCESA /ACC X10 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31137,
+    "name": "CASTILLO 10X13CM C/MUÑECA Y ACCESORIOS BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31138,
+    "name": "CASTILLO 14X21CM C/PRINCESA /SET LIVING X13 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31139,
+    "name": "CASTILLO 39X36X7CM C/ PILA RELOJ LUZ SONIDO Y 2 MUÑECOS CARR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31140,
+    "name": "CASTILLO C/MUÑECA Y ACCESORIOS X5PCS BOLSA PVC 22X24CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31141,
+    "name": "CASTILLO C/MUÑECOS X2 Y ACCESORIOS X4PCS BOLSA PVC 23X22CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31142,
+    "name": "CASTILLO PRINCESA X19PCS SILLONES/MUÑECOS/HOGAR CAJA VENT 58",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31143,
+    "name": "COCHECITO 68CM P/MUÑECA BOLSA(PC041675)TRES COLORE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31144,
+    "name": "MOTORHOME P/MUÑECAS C/ACCESORIOS X4PCS CAJA VENT 32X23X22CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31145,
+    "name": "MUÑECA 11X5CM C/SET BELLEZA ACC X7 PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31146,
+    "name": "MUÑECA 14CM DSÑO HADA C/ACC X4 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31147,
+    "name": "MUÑECA 14CM MOTIVOS DEPORTIVOS C/ACCS X3PCS MONOPATIN/CEPILL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31148,
+    "name": "MUÑECA 16X30CM C/VESTIDO Y ACC. X5 Y VESTIDO X2 CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31149,
+    "name": "MUÑECA 16X4CM PLASTICO PRINCESS CJA DISPLAY VBOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31150,
+    "name": "MUÑECA 23CM PRINCESA E/CONO CART PLAST DISPLAY BOX X9PC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31151,
+    "name": "MUÑECA 24CM C/VESTIDO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31152,
+    "name": "MUÑECA 24CM SIRENA CAJA REDONDEADA DISPLAY",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31153,
+    "name": "MUÑECA 25CM C/VESTIDO PLAST CJA VENT DISPLAY BOX X20PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31154,
+    "name": "MUÑECA 26CM C/MOTO HELADERIA C/ACCESORIOS X6PCS CAJA VENT 36",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31155,
+    "name": "MUÑECA 26X3CM PLAST C/SET CASTILLO ACC X6 SURT BLISTER",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

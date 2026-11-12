@@ -1,0 +1,60 @@
+你是商品分类助手。请用 image 工具逐个分析以下商品图片，结合商品名称判断最合适的分类。
+注意：必须使用 image 工具查看图片，不要使用 read 工具。
+
+商品列表：
+1. ID:12097, 名称:Cuchillo Universal de Acero Mango Madera Blister TRAMONTINA, 图片:D:/projects/supplier_crawler/images/osa/12d2daad9817aa6fac8a892e47bc8d14.webp
+2. ID:12098, 名称:Centrifugador de Verdura (D02532), 图片:D:/projects/supplier_crawler/images/osa/ea473951e9fb5ecbc5626f61ad461f38.webp
+3. ID:12099, 名称:Corta queso (L546), 图片:D:/projects/supplier_crawler/images/osa/ab098f5b953a9866c41cdd19f2a4f5da.webp
+4. ID:12100, 名称:Rallador Pirámide de Acero Inox con Base de Goma (RA03), 图片:D:/projects/supplier_crawler/images/osa/6f4f0abcb936fc0dde162e1798503ea6.webp
+5. ID:12101, 名称:Tenedor de Mesa DYNAMIC x 3 (22302/930), 图片:D:/projects/supplier_crawler/images/osa/8af3d73cc804879613eed2222969ab23.webp
+6. ID:12102, 名称:Cubiertos de Mesa de Acero linea 5000, 图片:D:/projects/supplier_crawler/images/osa/d874757e6703c2460721af71074eae34.webp
+7. ID:12103, 名称:Copa degustacion 610ML "DELI SOGA" (RO75205), 图片:D:/projects/supplier_crawler/images/osa/588d3b1cffe84276196455b0b731a80d.webp
+8. ID:12104, 名称:Copa degustacion 465ML "DELI SOGA" (RO75202), 图片:D:/projects/supplier_crawler/images/osa/973d1528fad2379254bc02f23bae3f04.webp
+9. ID:12105, 名称:Cubiertos IPANEMA Azul, 图片:D:/projects/supplier_crawler/images/osa/acab18fca21c6acc9bfd71c358fa1a80.webp
+10. ID:12106, 名称:Pelapapas vertical (T087), 图片:D:/projects/supplier_crawler/images/osa/4f2bd4cede7ed19b44ae55cfb1c5ee3e.webp
+11. ID:12107, 名称:Cuchara de madera, 图片:D:/projects/supplier_crawler/images/osa/682a5529d7a44df2b8d5f4c79da0e094.webp
+12. ID:12108, 名称:TENEDOR MESA NEW KOLOR NEGRO X3 (23162/300), 图片:D:/projects/supplier_crawler/images/osa/da8cbfeb8eec6aa9880561d0786fc6dc.webp
+13. ID:12109, 名称:Taza de cafe tango sin plato DURAX (1091/00), 图片:D:/projects/supplier_crawler/images/osa/4e80fe7d7e073269283ba8c611e32353.webp
+14. ID:12110, 名称:Jarro de Teflon Hudson linea DAYLI, 图片:D:/projects/supplier_crawler/images/osa/de3ea2020e41c0bd856c30619e1406f1.webp
+15. ID:12111, 名称:Termo Clásico con asa 1LT. (T0047), 图片:D:/projects/supplier_crawler/images/osa/31685fc6a9ed7ad2fee2eb69dcdc0e53.webp
+16. ID:12112, 名称:Batidor Pera acero inoxidable, 图片:D:/projects/supplier_crawler/images/osa/05faff37dc72f1904d921797db03411c.webp
+17. ID:12113, 名称:Jarro Enlozado con Virola, 图片:D:/projects/supplier_crawler/images/osa/82d7c24c4c98786aa284036c515e5c1c.webp
+18. ID:12114, 名称:Sarten Teflón Con Espátula Paris TRAMONTINA, 图片:D:/projects/supplier_crawler/images/osa/6e49a5363a3a14ac122e95a5a903ad1d.webp
+19. ID:12115, 名称:Pela y pica ajos 5 usos KIN KIN (M8708), 图片:D:/projects/supplier_crawler/images/osa/75a84c3f5e120595152b37983ce9b4a5.webp
+20. ID:12116, 名称:Cornet de Plastico, 图片:D:/projects/supplier_crawler/images/osa/7c344a04b639f27d48c5a735bd33c3ba.webp
+21. ID:12117, 名称:Cuchillo Jumbo POLYWOOD (21116/075), 图片:D:/projects/supplier_crawler/images/osa/af3787a14fb387b825d5754325184196.webp
+22. ID:12118, 名称:Batidor Mini (L580), 图片:D:/projects/supplier_crawler/images/osa/568cd143b38280e8b3072e5ed70df596.webp
+23. ID:12119, 名称:Sacacorcho Doble Impulso (T04), 图片:D:/projects/supplier_crawler/images/osa/6a3e735271285ae5d25fd929393ec0aa.webp
+24. ID:12120, 名称:Pisa papas mango Plastico (M8728), 图片:D:/projects/supplier_crawler/images/osa/c6989387d8e1a99208484d6425cda933.webp
+25. ID:12121, 名称:Asadera oval de vidrio Marinex, 图片:D:/projects/supplier_crawler/images/osa/72ad1f167bb8d09058fd88d8559a534a.webp
+26. ID:12122, 名称:Molde de silicona para air fryer cuadrado (P3N2584), 图片:D:/projects/supplier_crawler/images/osa/6d6fdbbe7630bbfa669ec69cf70bcd53.webp
+27. ID:12123, 名称:Vaso degustacion bombe 550ml (RO7063), 图片:D:/projects/supplier_crawler/images/osa/c92c63110bdc565b09e8e22651984624.webp
+28. ID:12124, 名称:Jarro Enlozado "VITRO-CLEAN", 图片:D:/projects/supplier_crawler/images/osa/aa731d0501288179c1fe123d5e762f27.webp
+29. ID:12125, 名称:Conservadora 34 LT YESI (Y26600P), 图片:D:/projects/supplier_crawler/images/osa/9e30b0c4e4fe8d46f51999e60a389362.webp
+30. ID:12126, 名称:Cacerola de Teflón HUDSON linea DAYLI, 图片:D:/projects/supplier_crawler/images/osa/28ae18634c2608bb8a483572efb6439d.webp
+31. ID:12127, 名称:Pack x 6 vaso Tornado (1096/06), 图片:D:/projects/supplier_crawler/images/osa/62aa81d88882b04ffb62dbb386a47f00.webp
+32. ID:12128, 名称:20389/022 Panquequera 22cm LORETO, 图片:D:/projects/supplier_crawler/images/osa/893e621c57867e68f82c211159e7f5c3.webp
+33. ID:12129, 名称:Vaso Mikonos Alto 460cc (454AL), 图片:D:/projects/supplier_crawler/images/osa/6b4cf2a9f90705b8f04f5d286d40966b.webp
+34. ID:12130, 名称:Linea CHUVISCO Jarro y bowls OXFORD, 图片:D:/projects/supplier_crawler/images/osa/bb8fc736fed93a790d39d4bfe354a3e8.webp
+35. ID:12131, 名称:Linea FLAT PACIFICO OXFORD, 图片:D:/projects/supplier_crawler/images/osa/260d3fcd62e8f2e8bf837af360b7217c.webp
+36. ID:12132, 名称:Pelapapas plástico hoja de acero (T062), 图片:D:/projects/supplier_crawler/images/osa/92ba70222d298ec43885444508b0a4c7.webp
+37. ID:12133, 名称:Percha plástica económica X 4 UNIDAD (10120), 图片:D:/projects/supplier_crawler/images/osa/8f2803ad08072604b1576dd9c72cf27c.webp
+38. ID:12134, 名称:Cubiertos tipo Cosmos linea Carol 39000, 图片:D:/projects/supplier_crawler/images/osa/b5cb149001206a1ea392d960a9f83359.webp
+39. ID:12135, 名称:Set x 50 papel para freidora 20x19 (RO6878), 图片:D:/projects/supplier_crawler/images/osa/cb04e7e31015d583b5f1375983b01e92.webp
+40. ID:12136, 名称:Abrelata Mariposa (L502), 图片:D:/projects/supplier_crawler/images/osa/d7b2ddfbe1964bd30a7b4becf828a0a9.webp
+41. ID:12137, 名称:Colador Plastico DesesPlast, 图片:D:/projects/supplier_crawler/images/osa/e7ea994b4a504a11a125cd3a8a8e37a2.webp
+42. ID:12138, 名称:Jarro Mug 330 CC Cerámica Oxford, 图片:D:/projects/supplier_crawler/images/osa/cf7cad9c7189e2181d9ee4a0960334f2.webp
+43. ID:12139, 名称:Sacacorcho Doble Impulso Acero (L529), 图片:D:/projects/supplier_crawler/images/osa/8e9e5748325be26e5bc1c3bcebd15d76.webp
+44. ID:12140, 名称:Tapon para termo 1/2 Litro (2314), 图片:D:/projects/supplier_crawler/images/osa/de8152be4e52d94cb0d5389acdac6348.webp
+45. ID:12141, 名称:Cuchillos chef linea profesional inoxidable mango con remaches negro, 图片:D:/projects/supplier_crawler/images/osa/64fe66272d910d4c18b0b1fcd7bcc51a.webp
+46. ID:12142, 名称:Mate imperial con calabaza COLORES SURTIDOS (OSA1000), 图片:D:/projects/supplier_crawler/images/osa/b36920a9ef60f28cba432a565f130ef1.webp
+47. ID:12143, 名称:Tartera Fileteada MARINEX, 图片:D:/projects/supplier_crawler/images/osa/0cc48969b24184ba3da5bd9e568bc9b5.webp
+48. ID:12144, 名称:Copa Martini WINDSORD 250 ML 11 x 17,2 cm (7228/12), 图片:D:/projects/supplier_crawler/images/osa/68ec4ad38541410ca0dd07a26ce45320.webp
+49. ID:12145, 名称:Jarro teflon Paris negro, 图片:D:/projects/supplier_crawler/images/osa/d2ec090e3145ecd36458f562d45ea12b.webp
+50. ID:12146, 名称:Termo Terra Lumilagro, 图片:D:/projects/supplier_crawler/images/osa/21c4823c40c236cd9b3def588aeb9333.webp
+
+可选分类（选最匹配的）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+输出格式：JSON数组，每项 {"id": ID, "category": "分类名称", "desc": "简要描述商品"}
+只输出JSON，不要其他文字。

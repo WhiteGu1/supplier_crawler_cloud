@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32456,
+    "name": "PELUCHE 26CM MONSTRUITO C/PATAS Y BRAZOS LARGOS PELUDO SURT 3 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32457,
+    "name": "PELUCHE 20CM OSITO PELUDO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32458,
+    "name": "PELUCHE 21X16CM F/OSO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32459,
+    "name": "PELUCHE 20CM OVEJA C/PIJAMA OSITO SURT 2CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32460,
+    "name": "PELUCHE 18X11CM POLYESTER PATO AMARILLO Y OSO MARR C/ROJ/ MA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32461,
+    "name": "PELUCHE 15CM POLYESTER OSO CLRS BLANCO/MARR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32462,
+    "name": "PELUCHE 20CM OSITO C/VASITO SURT 2CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32463,
+    "name": "PELUCHE 29X13CM POLYESTER MONO CLRS MARR C/ROJO / MARR C/AMA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32464,
+    "name": "PELUCHE 20CM POLYESTER MONO C/MAMADERA SURT 2 CLRS MARR CLAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32465,
+    "name": "PELUCHE 25CM F/MONITO C/MAMADERA SURT 2 CLRS BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32466,
+    "name": "PELUCHE 20CM F/MONITO C/JARDINERO SURT 2 CLRS BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32467,
+    "name": "PELUCHE 19CM F/MONO C/CORONA SURT 3 CLRS BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32468,
+    "name": "PELUCHE 20CM SURT F/GATO SURT 5 CLRS BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32469,
+    "name": "PELIUCHE 27CM POLYESTER F/GATO SURT 2 CLRS ROSA/VIOLET",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32470,
+    "name": "PELUCHE 30CM F/GATO BOLA SURT 3 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32471,
+    "name": "PELUCHE 30CM GATO PELUDO SURT 3 CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32472,
+    "name": "PELUCHE 18X13CM POLYESTER PATO AMARILLO Y RANA VERDE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32473,
+    "name": "PELUCHE 21CM POLYESTER F/PATO C/CAPUCHA SURT 2 CLRS VERDE/RO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32474,
+    "name": "PELUCHE 23CM POLYESTER F/PATO C/CAPUCHA SURT 3CLS ROSA/VERDE/AMAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32475,
+    "name": "PELUCHE 33CM POLYESTER F/DINOSAURIO SURT 3 CLRS CELEST/VERDE AGUA/VIOL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32476,
+    "name": "PELUCHE 21CM POLYESTER F/DINOSAURIO SURT 2 CLRS VERDE/ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32477,
+    "name": "PELUCHE LLAVERO 11CM F/DINOSAURIO SURT 3 CLRS ROSA/CELEST/VE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32478,
+    "name": "PELUCHE 20CM POLYESTER PERRO SURT 2CLRS MARR/ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32479,
+    "name": "PELUCHE 25CM PERRITO C/BATA SURT 2 CLRS HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32480,
+    "name": "PELUCHE 24CM PERRITO C/REMERA HUESO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32481,
+    "name": "PELUCHE 18CM SURT ANIMALES C/CORAZON 5 DSÑ OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32482,
+    "name": "PELUCHE 18X16CM POTE PAPAFRITAS HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32483,
+    "name": "PELUCHE 28CM F/PELOTA 1 SOLO COLOR BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32484,
+    "name": "PELUCHE 22CM F/PELOTA 1 SOLO COLOR BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32485,
+    "name": "PELUCHE 30CM POLYESTER F/UNICORNIO DEGRADE SURT 3CLRS VERDE/",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32486,
+    "name": "PELUCHE 34X21X12CM POLYESTER UNICORNIO CLRS VERDE AGUA / ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32487,
+    "name": "PELUCHE 20CM POLYESTER KOALA SURT 2 CLRS CELES/SALMON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32488,
+    "name": "PELUCHE 37CM KOALA C/JARDINERO 1CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32489,
+    "name": "ALMOHADON 40X40 F/SMILE SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32490,
+    "name": "ALMOHADON 40X40 F/MACARON SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32491,
+    "name": "PELUCHE 25CM F/HIPOPOTAMO SURT 3 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32492,
+    "name": "PELUCHE 40CM POLYESTER HIPOPOTAMO SURT 2 CLRS CELES/ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32493,
+    "name": "PELUCHE 40CM NIÑO C/PIJAMA Y MAMADERA ROSA HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32494,
+    "name": "PELUCHE 40CM NIÑO C/PIJAMA Y MAMADERA CELESTE HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32495,
+    "name": "PELUCHE 20CM POLYESTER F/RANA C/MOÑO SURT 2 CLRS VERDE Y ROSA / VERDE Y CELES",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32496,
+    "name": "PELUCHE 21CM CABRITA ROSA HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32497,
+    "name": "PELUCHE 22CM HONGUITO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32498,
+    "name": "PELUCHE 30CM TIGRE C/PIJAMA 1CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32499,
+    "name": "PELCUHE 25CM F/PINGÜINO C/ABRIGO Y CAPUCHA SURT 3 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32500,
+    "name": "PELUCHE 21CM SAPITO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32501,
+    "name": "PELUCHE 29CM POLYESTER F/SIRENA C/COLA 3 CLRS ROSA/VIOL/ROSA CLARO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32502,
+    "name": "PELUCHE 20CM ABEJITA SURT 4 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32503,
+    "name": "PELUCHE 40CM F/BANANA HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32504,
+    "name": "PELUCHE 30X12CM POLYESTER GUSANO SURT 3 CLRS AMAR C/NAR / AM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32505,
+    "name": "PELUCHE 30CM POLYESTER OSO BEIGE C/CORAZULON CREMA \"TE AMO\"",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

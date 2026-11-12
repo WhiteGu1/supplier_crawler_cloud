@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33438,
+    "supplier_id": 11,
+    "sku": "24143JS",
+    "name": "TIBURON",
+    "image": "/images/panda_99/24143JS.jpg"
+  },
+  {
+    "id": 33439,
+    "supplier_id": 11,
+    "sku": "24030JSD",
+    "name": "DISPENSER OSITO",
+    "image": "/images/panda_99/24030JSD.jpg"
+  },
+  {
+    "id": 33440,
+    "supplier_id": 11,
+    "sku": "24029JS",
+    "name": "DISPENSER ELEFANTE",
+    "image": "/images/panda_99/24029JS.jpg"
+  },
+  {
+    "id": 33441,
+    "supplier_id": 11,
+    "sku": "24028JS",
+    "name": "DISPENSER RANA(96)",
+    "image": "/images/panda_99/24028JS.jpg"
+  },
+  {
+    "id": 33442,
+    "supplier_id": 11,
+    "sku": "24028AG",
+    "name": "DINOSAURIO PROTECTOR",
+    "image": "/images/panda_99/24028AG.jpg"
+  },
+  {
+    "id": 33443,
+    "supplier_id": 11,
+    "sku": "24006JSL",
+    "name": "LANZA BALAS AGUA AZUL",
+    "image": "/images/panda_99/24006JSL.jpg"
+  },
+  {
+    "id": 33444,
+    "supplier_id": 11,
+    "sku": "24103N",
+    "name": "OSO ROSADO AZUL Y BLANCO",
+    "image": "/images/panda_99/24103N.jpg"
+  },
+  {
+    "id": 33445,
+    "supplier_id": 11,
+    "sku": "24103NN",
+    "name": "MARIPOSA MIX COLORES",
+    "image": "/images/panda_99/24103NN.jpg"
+  },
+  {
+    "id": 33446,
+    "supplier_id": 11,
+    "sku": "24059N",
+    "name": "LABUBU LLAVERO MIX COLORES CON LUZ Y SONIDO",
+    "image": "/images/panda_99/24059N.jpg"
+  },
+  {
+    "id": 33447,
+    "supplier_id": 11,
+    "sku": "24005N",
+    "name": "GATITO MIX COLORES 12*5.5CM",
+    "image": "/images/panda_99/24005N.jpg"
+  }
+]

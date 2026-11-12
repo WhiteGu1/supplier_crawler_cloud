@@ -1,0 +1,85 @@
+{
+  "batch_id": 20,
+  "items": [
+    {
+      "id": 35998,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa negro HUDSON x 12 Linea Basic (BNT12)",
+      "sku": "BNT12",
+      "brand": "",
+      "image_local": "images/osa/98c719c1b44484a299b4ad84245e0b48.webp"
+    },
+    {
+      "id": 35999,
+      "supplier_id": 5,
+      "name": "Cuchara de te azul HUDSON x 3 Linea Basic (BAT3)",
+      "sku": "BAT3",
+      "brand": "",
+      "image_local": "images/osa/b90cb06f43e2f37b2b777e09d1be1666.webp"
+    },
+    {
+      "id": 36000,
+      "supplier_id": 5,
+      "name": "Cuchara de te negro HUDSON x 3 Linea Basic (BNT3)",
+      "sku": "BNT3",
+      "brand": "",
+      "image_local": "images/osa/bdfc326c8a1c9cc57af2745ec0356733.webp"
+    },
+    {
+      "id": 36001,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa azul HUDSON x 12 Linea Basic (BAS12)",
+      "sku": "BAS12",
+      "brand": "",
+      "image_local": "images/osa/96717f34858bdd73537b0a139553c4b5.webp"
+    },
+    {
+      "id": 36002,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa negro HUDSON x 12 Linea Basic (BNS12)",
+      "sku": "BNS12",
+      "brand": "",
+      "image_local": "images/osa/a87d81781633a6d4bb4485d6ef09c619.webp"
+    },
+    {
+      "id": 36003,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa azul HUDSON x 3 Linea Basic (BAS3)",
+      "sku": "BAS3",
+      "brand": "",
+      "image_local": "images/osa/1c3ef52a3578cbf65f55b7775e6a2759.webp"
+    },
+    {
+      "id": 36004,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa negro HUDSON x 3 Linea Basic (BNS3)",
+      "sku": "BNS3",
+      "brand": "",
+      "image_local": "images/osa/9123ff1ca54a682eb1911147872f8a94.webp"
+    },
+    {
+      "id": 36005,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa azul HUDSON x 12 Linea Basic (BAF12)",
+      "sku": "BAF12",
+      "brand": "",
+      "image_local": "images/osa/b02fd26f8e5c494b7cd12566be3d46c9.webp"
+    },
+    {
+      "id": 36006,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa negro HUDSON x 12 Linea Basic (BNF12)",
+      "sku": "BNF12",
+      "brand": "",
+      "image_local": "images/osa/86ee4f1fc36b7daa9fb77ead9002c249.webp"
+    },
+    {
+      "id": 36007,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa azul HUDSON x 3 Linea Basic (BAF3)",
+      "sku": "BAF3",
+      "brand": "",
+      "image_local": "images/osa/98765bf539b5ba5d5031e8f114580443.webp"
+    }
+  ]
+}

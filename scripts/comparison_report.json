@@ -1,0 +1,1702 @@
+[
+  {
+    "cart_id": 666,
+    "sku": "196225",
+    "name": "CEPILLO LIMPIADOR Y EXFOLIANTE FACIAL DOBLE FAZ DE SILICONA NAEZ BC2587/325878",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 669,
+    "sku": "105693",
+    "name": "LIMPIADOR FACIAL SILICONA CD:HT-2301",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1900.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "BASE DE MAQUILLAJE PINK 21",
+        "sku": "969955",
+        "barcode": "6952938501767",
+        "price": 1900.0,
+        "qty": 24,
+        "subtotal": 35112.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 672,
+    "sku": "75037",
+    "name": "DEDO DE PRACTICA CON UÑA CD:DH70539/ZJJSZ",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 400.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 673,
+    "sku": "111468",
+    "name": "Strass Gemas Autoadhesivas SURTIDOS COLORES NAEZ BC2051/20517",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 400.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 675,
+    "sku": "173994",
+    "name": "Parches Para LABIOS Mascarilla TEI k3040/k3039/k3038/k3037",
+    "db_qty": 50,
+    "inv_qty": 0,
+    "db_price": 300.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 676,
+    "sku": "173986",
+    "name": "Parches Para Ojos Mascarilla TEI K3031",
+    "db_qty": 50,
+    "inv_qty": 0,
+    "db_price": 300.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 686,
+    "sku": "71276",
+    "name": "MASCARA ALMENDRAS 270G FIDELITE 61213 ART/405",
+    "db_qty": 4,
+    "inv_qty": 4,
+    "db_price": 4350.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "MaSCARA CAPILAR ALMENDRAS 270G FIDELITE",
+        "sku": "ART/405",
+        "barcode": "7798135961213",
+        "price": 4350.0,
+        "qty": 4,
+        "subtotal": 13398.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 687,
+    "sku": "71269",
+    "name": "MASCARA KERATINA 270G FIDELITE 61190 ART/403",
+    "db_qty": 4,
+    "inv_qty": 4,
+    "db_price": 4400.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "MaSCARA CAPILAR KERATINA 270G FIDELITE",
+        "sku": "ART/403",
+        "barcode": "7798135961190",
+        "price": 4400.0,
+        "qty": 4,
+        "subtotal": 13552.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 689,
+    "sku": "153659",
+    "name": "Set de Belleza 5 en 1 &#8211; Kit Completo de Limpieza Facial y Maquillaje NAEZ BC2306/23065",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 5300.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 692,
+    "sku": "204287",
+    "name": "KIT DE PERFUME + CREMA CORPORAL CD:YT2574/10494",
+    "db_qty": 2,
+    "inv_qty": 2,
+    "db_price": 10000.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "KIT DE PERFUME+ CREMA CORRORAL",
+        "sku": "YT2574",
+        "barcode": "6930107010494",
+        "price": 10000.0,
+        "qty": 2,
+        "subtotal": 15400.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 696,
+    "sku": "156192",
+    "name": "MASCARA CAPILAR SKALA",
+    "db_qty": 8,
+    "inv_qty": 8,
+    "db_price": 4600.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "SKALA MAYONESA 1000GR",
+        "sku": "14625",
+        "barcode": "897042012329",
+        "price": 4600.0,
+        "qty": 8,
+        "subtotal": 28336.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 697,
+    "sku": "7078",
+    "name": "SEMI 10ML CITY GIRL #59",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 698,
+    "sku": "7101",
+    "name": "SEMI 10ML CITY GIRL #11",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 699,
+    "sku": "7308",
+    "name": "SEMI 10ML CITY GIRL #74",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 701,
+    "sku": "7366",
+    "name": "SEMI 10ML CITY GIRL #71",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 702,
+    "sku": "119019",
+    "name": "SERIE 12PCS ESMALTE SEMI OJO DE GATO CHARM LIMIT 08855",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1900.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 708,
+    "sku": "177002",
+    "name": "Labial en Barra Matte Miss Betty DD-MIB-K6120/561209",
+    "db_qty": 72,
+    "inv_qty": 72,
+    "db_price": 1250.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "C*24 LABIAL EN BARRA MISS BETTY",
+        "sku": "DD-MIB-K6120",
+        "barcode": "6985948561209",
+        "price": 1250.0,
+        "qty": 72,
+        "subtotal": 69300.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 709,
+    "sku": "199061",
+    "name": "POLVO TRASLUCIDO MINERAL– CITY GIRL F6608",
+    "db_qty": 48,
+    "inv_qty": 36,
+    "db_price": 3000.0,
+    "status": "数量差异 (系统:48, 发票:36)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "C*12 POLVO TRASLUCIDO MINERAL",
+        "sku": "RL-F6608",
+        "barcode": "6928609066088",
+        "price": 3000.0,
+        "qty": 36,
+        "subtotal": 83160.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 712,
+    "sku": "126234",
+    "name": "RUBOR EN BARRA RIMERA QUINCE RQ15 APROBADO POR ANMAT",
+    "db_qty": 48,
+    "inv_qty": 48,
+    "db_price": 2200.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "C*24 RUBOR EN BARRA RIMERA QUINCE",
+        "sku": "RQ15",
+        "barcode": "6930249995079",
+        "price": 2200.0,
+        "qty": 48,
+        "subtotal": 81312.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 715,
+    "sku": "130349",
+    "name": "PACK DE LIMA MINI cml-060c",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 716,
+    "sku": "120333",
+    "name": "MASCARA DE PESTAÑAS 4ANGELS AR1152",
+    "db_qty": 72,
+    "inv_qty": 72,
+    "db_price": 1450.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 MASCARA DE PESTANIA",
+        "sku": "AR1152",
+        "barcode": "6952938486569",
+        "price": 1450.0,
+        "qty": 72,
+        "subtotal": 80388.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 717,
+    "sku": "177069",
+    "name": "Delineador Líquido para Ojos Makeup New Eyeliner Miss Betty DD-MIB-E1381/513819",
+    "db_qty": 24,
+    "inv_qty": 48,
+    "db_price": 1500.0,
+    "status": "数量差异 (系统:24, 发票:48)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 LABIAL",
+        "sku": "TE18364",
+        "barcode": "6971968516763",
+        "price": 1500.0,
+        "qty": 24,
+        "subtotal": 27720.0,
+        "ticket": 1
+      },
+      {
+        "p": 1,
+        "name": "C*24 DELINEADOR LIQUIDO",
+        "sku": "DD-MIB-E1381",
+        "barcode": "6985948513819",
+        "price": 1500.0,
+        "qty": 24,
+        "subtotal": 27720.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 718,
+    "sku": "189496",
+    "name": "Depilador De Cristal Removedor De Pelo Y Exfoliante Corporal NAEZ BC2236/32365",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 2400.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 719,
+    "sku": "156150",
+    "name": "LFME REMOVEDOR PARA ESMALTE UÑA 100ml RA100",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 2600.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "REMOVEDOR PARA UNAS 100ML",
+        "sku": "FC-RA10075776",
+        "barcode": "656750775776",
+        "price": 2600.0,
+        "qty": 12,
+        "subtotal": 24024.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 720,
+    "sku": "204902",
+    "name": "Agua Micelar TEI con Aloe Vera54344",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 2800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 722,
+    "sku": "117755",
+    "name": "DELINEADOR LAPIZ LABIO KARITE 2690-47   54501",
+    "db_qty": 48,
+    "inv_qty": 0,
+    "db_price": 600.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 723,
+    "sku": "95747",
+    "name": "CAJA*12 DELINEADOR CON SELLO 89109",
+    "db_qty": 2,
+    "inv_qty": 0,
+    "db_price": 8500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 724,
+    "sku": "199039",
+    "name": "AGUA MICELAR – CITY GIRL F6658/F6659",
+    "db_qty": 8,
+    "inv_qty": 8,
+    "db_price": 3500.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "AGUA MICELAR CITY",
+        "sku": "RL-F6658",
+        "barcode": "6928609066583",
+        "price": 3500.0,
+        "qty": 8,
+        "subtotal": 21560.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 725,
+    "sku": "156209",
+    "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MY891005/10059",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1700.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 5,
+        "name": "TOALLA MELY",
+        "sku": "MY891005",
+        "barcode": "6974488910059",
+        "price": 1700.0,
+        "qty": 24,
+        "subtotal": 31416.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 726,
+    "sku": "101513",
+    "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MELY891020/10202",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1600.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 CORRECTOR LIQUIDO",
+        "sku": "DD-MIB-F6431",
+        "barcode": "6985948564316",
+        "price": 1600.0,
+        "qty": 24,
+        "subtotal": 29568.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 738,
+    "sku": "9893",
+    "name": "LAS VARANO REMOVEDOR 120ML R120",
+    "db_qty": 30,
+    "inv_qty": 0,
+    "db_price": 3450.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 739,
+    "sku": "9851",
+    "name": "REMOVEDOR DE CUTICULAS CHERIMOYA CH014",
+    "db_qty": 6,
+    "inv_qty": 6,
+    "db_price": 1900.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 7,
+        "name": "REMOVEDOR DE CUTICULA CHERIMOYA",
+        "sku": "CH014",
+        "barcode": "",
+        "price": 1900.0,
+        "qty": 6,
+        "subtotal": 8778.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 740,
+    "sku": "189722",
+    "name": "Máscara De Pestañas Volum&#8217; Express The Colossal Cat Eyes Negro MISS BETTY DH-M6610/05331",
+    "db_qty": 48,
+    "inv_qty": 48,
+    "db_price": 1400.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 MASCARA DE PESTANA MISS BETTY",
+        "sku": "DH-M6610",
+        "barcode": "6921582105331",
+        "price": 1400.0,
+        "qty": 48,
+        "subtotal": 51744.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 742,
+    "sku": "168288",
+    "name": "MASCARA DE PESTAÑAS TEI TEI8291",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1550.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 743,
+    "sku": "169261",
+    "name": "Paleta De Sombras Angel Stitch Rosa Con Espejo X9 Tonos DH-JZD-EYE-0927/09274",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 2900.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 1,
+        "name": "PALETA SOMBRA 9COLORES",
+        "sku": "DH-JZD-EYE-0927",
+        "barcode": "6920250809274",
+        "price": 2900.0,
+        "qty": 12,
+        "subtotal": 26796.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 744,
+    "sku": "169299",
+    "name": "Paleta De Sombras Angel Stitch Summer Con Espejo X18 Tonos  DH-JZD-EYE-18025/80259",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 3900.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 745,
+    "sku": "195036",
+    "name": "MASCARA DE PESTAÑAS WATERPROOF NOLM DD-YDM-953/579530",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 746,
+    "sku": "189710",
+    "name": "Máscara De Pestañas Sky High Volume Up Waterproof Negro MISS BETTY DD-M3840/83840",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1400.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 747,
+    "sku": "199844",
+    "name": "TOALLITAS HUMEDAS MINI 8 PACK X 8 UNIDADES DD-RH-HSXM001/LZ-1540/LZ-1541/LZ-1834/LZ-896/LZ-9603-1/LZ-9603-2/LZ-9611/QH-0344/QH-0368",
+    "db_qty": 8,
+    "inv_qty": 0,
+    "db_price": 5500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 748,
+    "sku": "192177",
+    "name": "Pack 12pcs Esponja de Maquillaje Blender Difuminadora Gota y Reloj de Arena NAEZ DD3079/30797",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 6600.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 752,
+    "sku": "167279",
+    "name": "Pack Cepillos de Pestañas NAEZ BC2822/28220",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 753,
+    "sku": "155067",
+    "name": "PACK*10 ACEITE CUTICULA  CML-598CX",
+    "db_qty": 1,
+    "inv_qty": 0,
+    "db_price": 8500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 754,
+    "sku": "126636",
+    "name": "PACK*12 DE REPUESTO DE ARQUEADOR CML-802D/88025",
+    "db_qty": 2,
+    "inv_qty": 24,
+    "db_price": 7200.0,
+    "status": "数量差异 (系统:2, 发票:24)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "REPUESTO DE AQRUEADOR CHARM LIMIT",
+        "sku": "CML-802D",
+        "barcode": "6959598488025",
+        "price": 600.0,
+        "qty": 24,
+        "subtotal": 11088.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 755,
+    "sku": "7898",
+    "name": "PACK X25 LIMAS CITY GIRL 150/150 40148",
+    "db_qty": 2,
+    "inv_qty": 0,
+    "db_price": 11250.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 756,
+    "sku": "180166",
+    "name": "PALETA DE SOMBRAS CITY GIRL RL-12270",
+    "db_qty": 21,
+    "inv_qty": 21,
+    "db_price": 4500.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "C*21 SWEETHEART Paleta de sombras City",
+        "sku": "RL-12270",
+        "barcode": "6930110405614",
+        "price": 4500.0,
+        "qty": 21,
+        "subtotal": 72765.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 757,
+    "sku": "169360",
+    "name": "Paleta De Sombras Stitch Aloha Con Espejo X42 Tonos DH-JZD-EYE-4218/42186",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 8500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 758,
+    "sku": "169343",
+    "name": "Paleta De Sombras Nude Eyeshadow Con Espejo X40 Tonos DH-JZD-IG3275/02754",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 9000.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 759,
+    "sku": "169331",
+    "name": "Paleta De Sombras Hello Kitty Sanrio Libro Gigante DH-JZD-EYE-5438/54387",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 9000.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 761,
+    "sku": "169259",
+    "name": "Paleta De Sombras Stitch Con Espejo DH-JZD-EYE-4220/42209",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 8500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 977,
+    "sku": "160023",
+    "name": "UÑAS PRESS ON COFFIN NAEZ BC1764/17606",
+    "db_qty": 36,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 978,
+    "sku": "170451",
+    "name": "Uñas Press On Con Diseños Surtidos Naez BC1795/17958",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1900.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 5,
+        "name": "U?as Postizas Press On Decoradas",
+        "sku": "BC1795",
+        "barcode": "6982604317958",
+        "price": 1900.0,
+        "qty": 24,
+        "subtotal": 35112.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 979,
+    "sku": "175573",
+    "name": "Uñas Press On Con Diseños Surtidos Naez 1820/18207",
+    "db_qty": 36,
+    "inv_qty": 0,
+    "db_price": 2000.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 980,
+    "sku": "187550",
+    "name": "Uñas Press On Con Diseños Surtidos Naez BC1824/18245",
+    "db_qty": 36,
+    "inv_qty": 0,
+    "db_price": 1900.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 981,
+    "sku": "188728",
+    "name": "Pegamento para Uñas con Pincel DD2913/29135 Naez",
+    "db_qty": 72,
+    "inv_qty": 72,
+    "db_price": 1050.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 5,
+        "name": "PEGAMENTO PARA UNAS NAEZ",
+        "sku": "DD2913",
+        "barcode": "6982604329135",
+        "price": 1050.0,
+        "qty": 36,
+        "subtotal": 29106.0,
+        "ticket": 2
+      },
+      {
+        "p": 7,
+        "name": "PEGAMENTO DE UNA NAEZ",
+        "sku": "DD2913",
+        "barcode": "6982604329135",
+        "price": 1050.0,
+        "qty": 36,
+        "subtotal": 29106.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 982,
+    "sku": "203361",
+    "name": "PEGAMENTO PARA UÑAS RÁPIDO Y FIRME X 5 UNIDADES NAEZ DD2977/329777",
+    "db_qty": 72,
+    "inv_qty": 72,
+    "db_price": 1600.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 1,
+        "name": "PEGAMENTO PARA TIPS SPCS NAEZ",
+        "sku": "DD2977",
+        "barcode": "6982604329777",
+        "price": 1600.0,
+        "qty": 60,
+        "subtotal": 73920.0,
+        "ticket": 1
+      },
+      {
+        "p": 7,
+        "name": "PEGAMENTO PARA TIPS SPCS NAEZ",
+        "sku": "DD2977",
+        "barcode": "6982604329777",
+        "price": 1600.0,
+        "qty": 12,
+        "subtotal": 14784.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 1009,
+    "sku": "19247",
+    "name": "*3 UNIDAD ESMALTE SEMI MELY COLOR 860000",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 2500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1010,
+    "sku": "93324",
+    "name": "#33 ESMALTE SEMI CITY GIRL",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1011,
+    "sku": "93383",
+    "name": "#49 ESMALTE SEMI CITY GIRL",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1012,
+    "sku": "109684",
+    "name": "#136 ESMALTE SEMI CITY GIRL",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1013,
+    "sku": "109262",
+    "name": "SERIE A+B 24UNIDAD ESMALTE SEMI ROJO CHARM LIMIT DH89013",
+    "db_qty": 1,
+    "inv_qty": 24,
+    "db_price": 40800.0,
+    "status": "数量差异 (系统:1, 发票:24)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "SEMI ROJO NAVINAD",
+        "sku": "DH89013",
+        "barcode": "7772686790133",
+        "price": 1700.0,
+        "qty": 24,
+        "subtotal": 31416.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1015,
+    "sku": "109639",
+    "name": "#149 ESMALTE SEMI CITY GIRL",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1016,
+    "sku": "109739",
+    "name": "#156 ESMALTE SEMI CITY GIRL",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 1800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1017,
+    "sku": "143788",
+    "name": "ESMALTE SEMI BLANCO NEGRO VIA LACTEA SAR-103  00781",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 1500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1018,
+    "sku": "84043",
+    "name": "ULTRABOND PRIMER 10ML CITY GIRL PX2438/13092",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 2800.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "ULTRABOND PRIMER 10ML",
+        "sku": "PX2438",
+        "barcode": "6931240613092",
+        "price": 2800.0,
+        "qty": 12,
+        "subtotal": 25872.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1019,
+    "sku": "159060",
+    "name": "Ultrabond 15 ML CHERIMOYA  CH045",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 6000.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "ULTRABOND CHERIMOYA",
+        "sku": "CH045",
+        "barcode": "7805250450017",
+        "price": 6000.0,
+        "qty": 24,
+        "subtotal": 110880.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1020,
+    "sku": "152090",
+    "name": "PRESS GEL CAPPING ELOISE 10 ML 10144",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 2500.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1026,
+    "sku": "173215",
+    "name": "Set De Polvos Aurora Sólido X6 Tonos Cromo Nail SP6245/016245",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 2200.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 5,
+        "name": "POLVO ESPEJO*6",
+        "sku": "SP6245",
+        "barcode": "6932024016245",
+        "price": 2200.0,
+        "qty": 12,
+        "subtotal": 20328.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 1027,
+    "sku": "197120",
+    "name": "Colección de 8 Colores Efecto Aurora / Unicornio RIMERA 15 ES01-08-09",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 2800.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "RQ-ES01-08-09",
+        "sku": "RQ-ES01-08-09",
+        "barcode": "6907654108097",
+        "price": 2800.0,
+        "qty": 24,
+        "subtotal": 51744.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1047,
+    "sku": "135823",
+    "name": "BASE DE MAQUILLAJE PINK21 CS3403/56029",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 2300.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 BASE DE MAQUILLAJE",
+        "sku": "CS3403",
+        "barcode": "6952938456029",
+        "price": 2300.0,
+        "qty": 24,
+        "subtotal": 42504.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1050,
+    "sku": "105340",
+    "name": "LABIAL EN BARRA EFECTO BRILLOSO 4ANGELS CD:AR1085/85197",
+    "db_qty": 48,
+    "inv_qty": 48,
+    "db_price": 1200.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 LABIAL BARRA 4ANGELS",
+        "sku": "AR1085",
+        "barcode": "6952938485197",
+        "price": 1200.0,
+        "qty": 48,
+        "subtotal": 44352.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1051,
+    "sku": "129676",
+    "name": "LABIAL EN BARRA MISS BETTY DH-K5927/59275",
+    "db_qty": 24,
+    "inv_qty": 48,
+    "db_price": 1100.0,
+    "status": "数量差异 (系统:24, 发票:48)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 ILUMILADOR MISSLARA",
+        "sku": "DH78564",
+        "barcode": "6971680902240",
+        "price": 1100.0,
+        "qty": 24,
+        "subtotal": 20328.0,
+        "ticket": 1
+      },
+      {
+        "p": 6,
+        "name": "C*24 LABIAL EN BARRA",
+        "sku": "DH-K5927",
+        "barcode": "6985948559275",
+        "price": 1100.0,
+        "qty": 24,
+        "subtotal": 20328.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1053,
+    "sku": "125519",
+    "name": "LABIAL EN BARRA MISS BETTY DH-K5930/59305",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1100.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 LABIAL EN BARRA MISS BETTY",
+        "sku": "DH-K5930",
+        "barcode": "6985948559305",
+        "price": 1100.0,
+        "qty": 24,
+        "subtotal": 20328.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1056,
+    "sku": "126784",
+    "name": "PALETA DE CORRECTOR DH-ME6014E/19115",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 3100.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1062,
+    "sku": "172857",
+    "name": "CORRECTOR EN BARRA MINI TANGO DH-L272/20724",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1400.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 CORRECTOR MINI TANGO",
+        "sku": "DH-L272",
+        "barcode": "6902721620724",
+        "price": 1400.0,
+        "qty": 24,
+        "subtotal": 25872.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1064,
+    "sku": "9901",
+    "name": "CHERIMOYA PRIMER CON ACIDO CH046",
+    "db_qty": 16,
+    "inv_qty": 16,
+    "db_price": 3300.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 3,
+        "name": "PRIMER CON ACIDO CHERIMOYA",
+        "sku": "CH046",
+        "barcode": "",
+        "price": 3300.0,
+        "qty": 16,
+        "subtotal": 40656.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1065,
+    "sku": "9879",
+    "name": "LAS VARANO PRIMER SIN ACIDO PSA11",
+    "db_qty": 10,
+    "inv_qty": 10,
+    "db_price": 2400.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "PRIMER S/ACIDO 11ML",
+        "sku": "PSA1",
+        "barcode": "",
+        "price": 2400.0,
+        "qty": 10,
+        "subtotal": 18480.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1068,
+    "sku": "14509",
+    "name": "LABIAL LIP GLOSS BARBY DH75043/23370",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1250.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "LABIAL KISS ME MISS BETTY",
+        "sku": "DH75043",
+        "barcode": "6980201723370",
+        "price": 1250.0,
+        "qty": 24,
+        "subtotal": 23100.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1069,
+    "sku": "21183",
+    "name": "GLOSS DE ALOE VERA QOIDEN ROSE 60105",
+    "db_qty": 36,
+    "inv_qty": 0,
+    "db_price": 1200.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1070,
+    "sku": "48064",
+    "name": "LIP GLOSS DOULEEC 81035/22513",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 500.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*12 LIP GLOSS",
+        "sku": "DH81035",
+        "barcode": "6960660622513",
+        "price": 500.0,
+        "qty": 24,
+        "subtotal": 9240.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1126,
+    "sku": "64748",
+    "name": "SET PERFILADORES CITY 15048/MD-003",
+    "db_qty": 60,
+    "inv_qty": 60,
+    "db_price": 800.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 5,
+        "name": "PERFILADOR*3 CITY GIRL",
+        "sku": "MD-003NUEVO",
+        "barcode": "6931240715048",
+        "price": 800.0,
+        "qty": 60,
+        "subtotal": 36960.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 1133,
+    "sku": "140938",
+    "name": "SET Blister de hebillas y colitas de pelo NAEZ BC2263/22631",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1400.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1134,
+    "sku": "120004",
+    "name": "VINCHAS+MUÑEQUERA NAEZ BC1115",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 3200.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1135,
+    "sku": "120022",
+    "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1121",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1700.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1136,
+    "sku": "120026",
+    "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1122",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1700.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1138,
+    "sku": "120130",
+    "name": "VINCHAS+MUÑEQUERA NAEZ BC2191",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 2700.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1139,
+    "sku": "85540",
+    "name": "CEPILLO PARA DUCHA MELY 63819",
+    "db_qty": 12,
+    "inv_qty": 0,
+    "db_price": 3000.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1140,
+    "sku": "158817",
+    "name": "Mascarilla Facial De Miel De Manuka Y Vitamina E BQY15921/715921 BIOAQUA",
+    "db_qty": 60,
+    "inv_qty": 0,
+    "db_price": 600.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1141,
+    "sku": "174000",
+    "name": "MASCARILLA FACIAL TEI SURTIDO",
+    "db_qty": 60,
+    "inv_qty": 0,
+    "db_price": 550.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1142,
+    "sku": "158840",
+    "name": "Mascarilla Facial Antioxidante De Flor De Loto De Nieve DH-BQY48035/748035 BIOAQUA",
+    "db_qty": 20,
+    "inv_qty": 0,
+    "db_price": 600.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1145,
+    "sku": "133757",
+    "name": "MASCARILLA FACIAL PERSONAJES 36 MODELO DH509-222/223/224/KTMM",
+    "db_qty": 60,
+    "inv_qty": 60,
+    "db_price": 500.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "MASCARILLA FACIAL KAKAZIYAN",
+        "sku": "DH509-222",
+        "barcode": "KTMMDH509-222",
+        "price": 500.0,
+        "qty": 60,
+        "subtotal": 23100.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1146,
+    "sku": "133761",
+    "name": "MASCARA DE PESTAÑAS ARABE DH509-232/22053",
+    "db_qty": 24,
+    "inv_qty": 48,
+    "db_price": 1300.0,
+    "status": "数量差异 (系统:24, 发票:48)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 ILUMINADOR EN PELOTA",
+        "sku": "DH80145",
+        "barcode": "6972545512963",
+        "price": 1300.0,
+        "qty": 24,
+        "subtotal": 24024.0,
+        "ticket": 1
+      },
+      {
+        "p": 6,
+        "name": "C*24 MASCARA DE PESTANA ARABE",
+        "sku": "DH509-232",
+        "barcode": "6976082022053",
+        "price": 1300.0,
+        "qty": 24,
+        "subtotal": 24024.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1148,
+    "sku": "164435",
+    "name": "MASCARA DE PESTAÑAS 2 EN 1  4ANGEL AR1174",
+    "db_qty": 6,
+    "inv_qty": 6,
+    "db_price": 1650.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*12 MASCARA RIMEL",
+        "sku": "AR1174",
+        "barcode": "6952938488372",
+        "price": 1650.0,
+        "qty": 6,
+        "subtotal": 7623.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1149,
+    "sku": "202259",
+    "name": "MASCARA DE PESTAÑAS VOLUMINIZADORA PINK SHOCK PINK 21 CS6754/01613",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 1900.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*12 MASCARA PARA PESTANL",
+        "sku": "CS6754",
+        "barcode": "6952938501613",
+        "price": 1900.0,
+        "qty": 24,
+        "subtotal": 35112.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1150,
+    "sku": "196870",
+    "name": "RUBOR  MAGICO DH80102/81290",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 700.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*12 RUBOR MAGICO",
+        "sku": "DH80102",
+        "barcode": "6971633381290",
+        "price": 700.0,
+        "qty": 24,
+        "subtotal": 12936.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1151,
+    "sku": "165872",
+    "name": "Rubor liquido PINK TOUCH  PINK 21 CS5580/484626",
+    "db_qty": 48,
+    "inv_qty": 48,
+    "db_price": 1200.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*24 Rubor liquido PINKTOUCH",
+        "sku": "CS5580",
+        "barcode": "6952938484626",
+        "price": 1200.0,
+        "qty": 48,
+        "subtotal": 44352.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1153,
+    "sku": "81820",
+    "name": "RUBOR LABIAL 2IN1 GEGEBEAR GX1236",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 1600.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "C*24 RUBOR LABIO 2IN1 GEGEBEAR",
+        "sku": "GGBE-550",
+        "barcode": "",
+        "price": 1600.0,
+        "qty": 12,
+        "subtotal": 14784.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1159,
+    "sku": "202175",
+    "name": "LABIAL LIQUIDO MATTE LARGA DURACION BEAUTY PINK 21 CS6696/01767",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1900.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1164,
+    "sku": "144541",
+    "name": "MASCARA DE PESTAÑAS MINII TANGO DH-MT-M342/13429",
+    "db_qty": 36,
+    "inv_qty": 0,
+    "db_price": 1900.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1215,
+    "sku": "13260",
+    "name": "LABIAL LIP STICK COLOR 2IN1 MISS BETTY 33386/83002",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 800.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1218,
+    "sku": "9891",
+    "name": "ACEITE DE CUTICULAS 15ML NAVI 91518",
+    "db_qty": 6,
+    "inv_qty": 6,
+    "db_price": 2050.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 7,
+        "name": "ACEITE CUTICULAR NAVI",
+        "sku": "91518",
+        "barcode": "",
+        "price": 2050.0,
+        "qty": 6,
+        "subtotal": 9471.0,
+        "ticket": 2
+      }
+    ]
+  },
+  {
+    "cart_id": 1245,
+    "sku": "176562",
+    "name": "CUARTETO DE SOMBRAS  TYL1407",
+    "db_qty": 40,
+    "inv_qty": 0,
+    "db_price": 1200.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1249,
+    "sku": "189754",
+    "name": "Paleta De Sombras 9 Tonos Smoked Eyeshadow Palette Tonos Oscuros K&#8217;APEINE DD-KPE-YY009028/740367",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 2800.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 4,
+        "name": "SOMBRA 9COLORES KAPEINE",
+        "sku": "DD-KPE-YY009028",
+        "barcode": "6979246740367",
+        "price": 2800.0,
+        "qty": 24,
+        "subtotal": 51744.0,
+        "ticket": 3
+      }
+    ]
+  },
+  {
+    "cart_id": 1250,
+    "sku": "189749",
+    "name": "Paleta De Sombras 9 Tonos Chocolate Eyeshadow Palette K&#8217;APEINE DD-KPE-YY009030/74051",
+    "db_qty": 24,
+    "inv_qty": 24,
+    "db_price": 2800.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 6,
+        "name": "SOMBRA KAPEINE 9COLORES",
+        "sku": "DD-KPE-YY009030",
+        "barcode": "6979246740510",
+        "price": 2800.0,
+        "qty": 24,
+        "subtotal": 51744.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1254,
+    "sku": "194272",
+    "name": "PALETA DE SOMBRAS 48 COLORES TEI TEI8383/16978",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 8300.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*6 sombra paleta",
+        "sku": "TE18383",
+        "barcode": "6971968516978",
+        "price": 8300.0,
+        "qty": 12,
+        "subtotal": 76692.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1255,
+    "sku": "204398",
+    "name": "SOMBRAS LÍQUIDAS PARA OJOS TEI TEI8555",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1850.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1256,
+    "sku": "133922",
+    "name": "RUBOR EN POLVO MISS LARA MS-503/31825",
+    "db_qty": 12,
+    "inv_qty": 12,
+    "db_price": 2500.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 2,
+        "name": "C*12 RUBOR EN POLVO MISSLARA",
+        "sku": "MS-503",
+        "barcode": "6973267331825",
+        "price": 2500.0,
+        "qty": 12,
+        "subtotal": 23100.0,
+        "ticket": 1
+      }
+    ]
+  },
+  {
+    "cart_id": 1302,
+    "sku": "192179",
+    "name": "Pack 12pcs Esponjas de Maquillaje Blender Difuminadoras en Tonos Rosa y Beige NAEZ DD3080/23038",
+    "db_qty": 6,
+    "inv_qty": 0,
+    "db_price": 6600.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1303,
+    "sku": "42108",
+    "name": "ILUMINADOR EN CREMA 80145/12963",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1300.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1304,
+    "sku": "59882",
+    "name": "ILUMINADOR LIQUIDO MISS LARA 03510/DH83524",
+    "db_qty": 24,
+    "inv_qty": 0,
+    "db_price": 1700.0,
+    "status": "未在发票中出现 (可能缺货/未发)",
+    "inv_matches": []
+  },
+  {
+    "cart_id": 1324,
+    "sku": "188726",
+    "name": "Pack 15pcs Aceite Revitalizante para Cutículas en Lápiz BC1322/13226  Naez",
+    "db_qty": 1,
+    "inv_qty": 1,
+    "db_price": 12750.0,
+    "status": "完全匹配 (数量&单价完全一致)",
+    "inv_matches": [
+      {
+        "p": 1,
+        "name": "PACK*15 ACEITE CUTICULA NAEZ",
+        "sku": "BC1322ACEITE",
+        "barcode": "6982604313226/ACEITE",
+        "price": 12750.0,
+        "qty": 1,
+        "subtotal": 9817.5,
+        "ticket": 1
+      }
+    ]
+  }
+]

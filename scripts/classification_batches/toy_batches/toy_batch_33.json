@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33585,
+    "supplier_id": 11,
+    "sku": "24129",
+    "name": "ORGANO INFANTIL(120)",
+    "image": "/images/panda_99/24129.jpg"
+  },
+  {
+    "id": 33586,
+    "supplier_id": 11,
+    "sku": "24130",
+    "name": "ROMPECABEZAS",
+    "image": "/images/panda_99/24130.jpg"
+  },
+  {
+    "id": 33587,
+    "supplier_id": 11,
+    "sku": "24131",
+    "name": "ROMPECABEZAS",
+    "image": "/images/panda_99/24131.jpg"
+  },
+  {
+    "id": 33591,
+    "supplier_id": 11,
+    "sku": "24134",
+    "name": "ORGANO INFANTIL(96)",
+    "image": "/images/panda_99/24134.jpg"
+  },
+  {
+    "id": 33595,
+    "supplier_id": 11,
+    "sku": "24142T",
+    "name": "TROMPO",
+    "image": "/images/panda_99/24142T.jpg"
+  },
+  {
+    "id": 33596,
+    "supplier_id": 11,
+    "sku": "24145",
+    "name": "SET MANICURA(36)",
+    "image": "/images/panda_99/24145.jpg"
+  },
+  {
+    "id": 33597,
+    "supplier_id": 11,
+    "sku": "24145B",
+    "name": "SET MANICURA LABIAL",
+    "image": "/images/panda_99/24145B.jpg"
+  },
+  {
+    "id": 33598,
+    "supplier_id": 11,
+    "sku": "24145D",
+    "name": "CAJA COSMETICO COMPLETA",
+    "image": "/images/panda_99/24145D.jpg"
+  },
+  {
+    "id": 33599,
+    "supplier_id": 11,
+    "sku": "24146",
+    "name": "SET MANICURA(72)",
+    "image": "/images/panda_99/24146.jpg"
+  },
+  {
+    "id": 33606,
+    "supplier_id": 11,
+    "sku": "2305-14",
+    "name": "JUEGO MADERA(72)",
+    "image": "/images/panda_99/2305-14.jpg"
+  }
+]

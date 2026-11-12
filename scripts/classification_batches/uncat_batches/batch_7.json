@@ -1,0 +1,76 @@
+{
+  "batch_id": 7,
+  "total": 10,
+  "products": [
+    {
+      "id": 35568,
+      "name": "ORGANIZADOR C/U",
+      "sku": "35180020",
+      "brand": "",
+      "image_local": "images/sfpanda/cf7ebe1e2cb047bc6b421d6da89e90c0.webp"
+    },
+    {
+      "id": 35569,
+      "name": "GOMA DE BORRAR SORPRESA UNICORNIO C/U",
+      "sku": "35179998",
+      "brand": "",
+      "image_local": "images/sfpanda/be1a24f962e32773df453e800dd2dfd6.webp"
+    },
+    {
+      "id": 35570,
+      "name": "CESTO C/U",
+      "sku": "35179943",
+      "brand": "",
+      "image_local": "images/sfpanda/7536b599c7dc9a11bbd5e1f2f4c44109.webp"
+    },
+    {
+      "id": 35571,
+      "name": "CRAYONES PCS*24",
+      "sku": "35179677",
+      "brand": "",
+      "image_local": "images/sfpanda/2a1e592eaf98b41030ef4dd90c60ab72.webp"
+    },
+    {
+      "id": 35572,
+      "name": "BOLIGRAFO C/U",
+      "sku": "35179638",
+      "brand": "",
+      "image_local": "images/sfpanda/aa46500a279e70b24d2d0dbbffb46ddc.webp"
+    },
+    {
+      "id": 35573,
+      "name": "SOMBRERO DE BRUJA C/U",
+      "sku": "35179618",
+      "brand": "",
+      "image_local": "images/sfpanda/70b6ea506cd9da8e03ea9b06a4c44143.webp"
+    },
+    {
+      "id": 35574,
+      "name": "BOLA DE CRISTAL C/U",
+      "sku": "35179581",
+      "brand": "",
+      "image_local": "images/sfpanda/f42e884655a5f03bd675eddb4c3cfe5d.webp"
+    },
+    {
+      "id": 35575,
+      "name": "ORGANIZADOR C/U",
+      "sku": "35179574",
+      "brand": "",
+      "image_local": "images/sfpanda/1a6a1968b987d697d2d21c1aafc9e996.webp"
+    },
+    {
+      "id": 35576,
+      "name": "TOALLA C/U",
+      "sku": "35179546",
+      "brand": "",
+      "image_local": "images/sfpanda/fa6699e571375c7b1694cf5bff8e5f92.webp"
+    },
+    {
+      "id": 35577,
+      "name": "CEPILLO DE PELO C/U",
+      "sku": "35179328",
+      "brand": "",
+      "image_local": "images/sfpanda/55d347133794502ddb07f0acbbd9ca3d.webp"
+    }
+  ]
+}

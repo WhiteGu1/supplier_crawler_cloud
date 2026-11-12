@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32306,
+    "name": "TOALLAS DE BAÑO 75X35CM BLANCAS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 32307,
+    "name": "TOALLA DE BAÑO 90X40CM SURT 4CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 32308,
+    "name": "SET TOALLONES DE BAÑO X3 140X70/35X75/30X30CM SURT 4 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 32309,
+    "name": "TOALLAS BAÑO 75X35CM SURT 4CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 32310,
+    "name": "BATA DE BAÑO SURT 3 CLRS BLANCA/ROSA/AZUL OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 32311,
+    "name": "PAÑO 35X75CM MICROFIBRA CART HEAD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 32312,
+    "name": "FELPUDO 38X58CM WELCOME MARRON SURT 2 DSÑ HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32313,
+    "name": "FELPUDO 38X58CM MARMOLADO MOZAICO SURT 3 DSÑO HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32314,
+    "name": "ALFOMBRA 80X60CM RECTANGULAR MIMBRE C/VOLADOS HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32315,
+    "name": "ALFOMBRA 85X58CM OVAL MIMBRE C/VOLADOS HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32316,
+    "name": "FELPUDO 38X58CM ANTIDESLIZANTE CART LISO SURT 3 CLRS.",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32317,
+    "name": "FELPUDO 38X58CM WELCOME SURT 3 CLRS HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32318,
+    "name": "FELPUDO 30X40CM DÑO COFFEE BAR SURT DSN 2 CLRS CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32319,
+    "name": "2 FELPUDO 38X58CM WELCOME TO HOME SURT 3 CLRS HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32320,
+    "name": "FELPUDO 38X58CM ANTIDESLIZANTE SURT 2 DÑO CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32321,
+    "name": "ALFOMBRA 100X58CM FORRO SIMPLE C/PLUSH SURT 3CRLS BLANCO/CAQUI/GRIS OPP VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32322,
+    "name": "ALFOMBRA PLUSH 1,2X2MTS CLR REVERSO GOMA CLR ROSA VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32323,
+    "name": "ALFOMBRA 180X300CM SURT 2 DSÑ LAJAS/HOJAS SURT 3 CLRS BLANCO/BEIGE/GRI CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32324,
+    "name": "ALFOMBRA PLUSH 2X3MTS REVERSO GOMA CLR GRIS VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32325,
+    "name": "ALFOMBRA 120X180CM DSÑO SURTIDOS CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32326,
+    "name": "ALFOMBRA PLUSH 2X3MTS CLR REVERSO GOMA CLR ROSA VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32327,
+    "name": "ALFOMBRA PLUSH 70X140CM CLR REVERSO GOMA CLR ROSA VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32328,
+    "name": "ALFOMBRA 180X280CM SURT 2 DSÑ RAYAS/ROMBOS SURT 3 CLRS BLANCO/BEIGE/GRI CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32329,
+    "name": "ALFOMBRA 160X230CM DSÑO SURTIDOS CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32330,
+    "name": "ALFOMBRA 200X300CM DSÑO SURTIDOS CART VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32331,
+    "name": "ALFOMBRA 180X280CM SURT 2 DSÑ LAJAS/HOJAS SURT 3 CLRS BLANCO/BEIGE/GRI CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32332,
+    "name": "ALFOMBRA PLUSH 60X180CM RECTANGULAR SURT 4 CLRS GRIS/BLANCO/BEIGE/CREMA CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32333,
+    "name": "ALFOMBRA 180X300CM SURT 2 DSÑ RAYAS/ROMBOS SURT 3 CLRS BLANCO/BEIGE/GRI CART VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32334,
+    "name": "ALFOMBRA 150X200CM DSÑO SURTIDOS CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32335,
+    "name": "ALFOMBRA PLUSH 1,2X2MTS REVERSO GOMA CLR GRIS VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32336,
+    "name": "ALFOMBRA PLUSH 60X180CM ONDULADA SURT 4 CLRS GRIS/BLANCO/BEIGE/CREMA CART VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32337,
+    "name": "ALFOMBRA PLUSH 60X180CM SURT 2 CLRS GRIS/BLANCO CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32338,
+    "name": "ALFOMBRA 120X180CM SURT 2 DSÑ RAYAS/ROMBOS SURT 3 CLRS BLANCO/BEIGE/GRI CART VENTA X BULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32339,
+    "name": "ALFOMBRA 120X180CM SURT 2 DSÑ LAJAS/HOJAS SURT 3 CLRS BLANCO/BEIGE/GRIS CART VENTAXBULTO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32340,
+    "name": "ALFOMBRA 40X60CM PLUSH SURT 3 CLRS HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32341,
+    "name": "FELPUDO 40X60CM GOMA C/AGUJEROS HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32342,
+    "name": "ALFOBRA 30X45CM GOMA ANTIDESLIZANTE SURT 3 CLRS CREMA/CELESTE/GRIS CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32343,
+    "name": "FELPUDO 30X40CM GOMA DÑO ENJOY LIFE SURT 2 DSN CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32344,
+    "name": "SET FELPUDO X2 40X60CM GOMA SWEET HOME HEAD CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32345,
+    "name": "SET FELPUDO X2 38X58CM / 38X118CM GOMA OVAL/RECTANGULAR KITCHEN",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32346,
+    "name": "SET FELPUDO X2 38X58/38X118CM ANTIDESLIZANTE SURT 2 DSÑO COCINA CART",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32347,
+    "name": "ALMOHADON 45X45CM FORRO SIMPLE C/PLUSH 1DSÑ SURT 3 CLRS CAFE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32348,
+    "name": "ALMOHADON 45X45CM TELA FORRO SIMPLE CLR CAQUI OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32349,
+    "name": "ALMOHADON 50X28CM FORRO SIMPLE 1 DSÑ CAQUI OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32350,
+    "name": "ALMOHADON 50X18CM CILINDRICO C/PLUSH SURT 3 CLRS BLANCO/BEIGE/GRIS OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32351,
+    "name": "ALMOHADON 50X50CM PLUSH FORRO DOBLE SURT 4 CLRS MARRON/BEIGE/CELESTE/GRIS OSCURO OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32352,
+    "name": "MANTEL 180X140CM TELA 1 SOLO CLR OPP",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32353,
+    "name": "MANTEL 137X137CM PLAST TRANSPARENTE OPP",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32354,
+    "name": "MANTEL 140X140CM TELA 1 SOLO CLR OPP",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32355,
+    "name": "MANTEL 180X140CM TELA 1 SOLO CLR OPP",
+    "current_cat": "家居纺织"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

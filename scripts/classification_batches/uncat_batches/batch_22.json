@@ -1,0 +1,76 @@
+{
+  "batch_id": 22,
+  "total": 10,
+  "products": [
+    {
+      "id": 35718,
+      "name": "Frutera Multifuncional Metal Negro   54253",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0c6a0fcb5de96fe47a436a5736052b7b.png"
+    },
+    {
+      "id": 35719,
+      "name": "Organizador 26*10Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a663eaaa6bd0899849e0e2b1029f6cce.png"
+    },
+    {
+      "id": 35720,
+      "name": "Estante Organizador De Cocina , 37.5X24Cm.",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/033430dd5301c78fc8806d7472b6949c.png"
+    },
+    {
+      "id": 35721,
+      "name": "Estante Organizador De Cocina,  27X20.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0b39fa1e1235d51435036fdebbbd0a60.png"
+    },
+    {
+      "id": 35722,
+      "name": "Estante Organizador de alacena 44x23x12",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/25dfb93b4260c020b9e049bbe8cbf0c0.jpg"
+    },
+    {
+      "id": 35723,
+      "name": "Organizador De Cubiertos, Bambu, 24,5 X 32,3 X 4 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e2833b355f314903e97555b98215c08d.jpg"
+    },
+    {
+      "id": 35724,
+      "name": "Porta cubiertos metal negro",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0611b61fd47b19b567d83ad00867baa2.png"
+    },
+    {
+      "id": 35725,
+      "name": "Organizador De Cubiertos, Bambu 30x35 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/ffd8652d021a7ec9f8e9e8e751a4837a.jpg"
+    },
+    {
+      "id": 35726,
+      "name": "Estante Organizador De Zapatos Negro 4 Pisos",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/145bc6a1d173a5074dcd9dce685051a3.png"
+    },
+    {
+      "id": 35727,
+      "name": "Estante Para Utensilios , Bambu 10X34X10Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9d05c6a02ff973d90ad635d30fd0bab9.jpg"
+    }
+  ]
+}

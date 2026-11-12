@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28306,
+    "name": "PAPEL AIRFRYER 19X19CM CUADRADO DESCART X100U SURT CLR BLC/MARRON CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28307,
+    "name": "TABLA P/PICAR 26X17,5X1,3CM F/QUESO MIX MARMOL BAMBOO BLB BA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28308,
+    "name": "TABLA P/PICAR 20X15X1,3CM RECT MIX MARMOL BAMBOO BLB BAG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28309,
+    "name": "TABLA CORTAR 30X40X0,4CM VIDRIO DSÑO LIMA SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28310,
+    "name": "TABLA CORTAR 28X18X1,5CM BAMBU C/MANIJA /BORDE CLR NEGRO SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28311,
+    "name": "TABLA CORTAR 40X30X1,5CM BAMBU C/BORDE CLR NEGRO SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28312,
+    "name": "TABLA CORTAR 40X30X1,5CM BAMBU C/BORDE CLR NEGRO SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28313,
+    "name": "TABLA CORTAR 35X25X1,5CM BAMBU C/MANIJA /BORDE CLR NEGRO SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28314,
+    "name": "TABLA 15CM CIRCULAR C/MARMOL TRIANG SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28315,
+    "name": "TABLA 38X18CM RECTANG C/MARMOL RECTANG SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28316,
+    "name": "TABLA 42X20CM RECTANG C/MARMOL RECTANG SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28317,
+    "name": "TABLA 24,5CM CIRCULAR C/MARMOL SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28318,
+    "name": "TABLA 30CM CIRCULAR C/MARMOL SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28319,
+    "name": "DESAYUNADOR BAMBU -50X30X21 -SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28320,
+    "name": "BANDEJA 44,4X16,5X2CM RECTANG BAMBU SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28321,
+    "name": "BANDEJA 34X14X2CM OVALADA BAMBU TARJETA CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28322,
+    "name": "BANDEJA 39,5X35X3,3CM C/ ASAS BAMBU CLR GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28323,
+    "name": "BANDEJA 24X12X4CM RECTANG BAMBU TARJETA CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28324,
+    "name": "BANDEJA 34X14X4CM RECTANG BAMBU SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28325,
+    "name": "BANDEJA 42X25X4CM RECTANG HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28326,
+    "name": "BANDEJA 30X5,8CM REDONDA HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28327,
+    "name": "BANDEJA 2 LVL 26X20X28CM /ALAMBRE HIERRO C/BASES BAMBU /MANIJA SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28328,
+    "name": "BANDEJA 34X14X2CM RECTANG SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28329,
+    "name": "BANDEJA PLEGABLE 68X35,5X26CM PP CLR GRIS CLARO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28330,
+    "name": "SET BANDEJA X2 43X26/35X23CM ACRILICO C/MANIJA PLAST SURT 2 CLRS BLANCA GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28331,
+    "name": "SET BANDEJA X2 43X26/35X23CM ACRILICO ESMERILADO C/MANIJA PLAST SURT 2 CLRS BLANCA GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28332,
+    "name": "SET BANDEJA X2 40X30/34X24CM ACRILICO C/BORDE CUERO SURT 2",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28333,
+    "name": "SET BANDEJA X3 20X30/25X35/30X40CM BAMBOO Y MADERA RECTANGULAR SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28334,
+    "name": "SET BANDEJA X3 25/30/35CM BAMBOO Y MADERA REDONDA SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28335,
+    "name": "SET BANDEJAS X3 20/25/30CM REDONDAS MADERA SHK PACK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28336,
+    "name": "SET BANDEJAS X3 49X30/45X27,5/39X24,5CM ACRILICO C/MANIJA CUERO SURT 2 CLRS MARRON NEGRO VENTA X BULTO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28337,
+    "name": "SET BANDEJA X2 34X24/40X30CM RECTANGULAR DÑO CAFÉ MADERA+VIDRIO CAJA MARRON",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28338,
+    "name": "SET BANDEJA X2 30X30/35X35CM REDONDA DSÑ CAFÉ MADERA+VIDRIO CAJA MARRON VENTA X BULTO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28339,
+    "name": "SET BANDEJA X2 30X30/35X35CM REDONDA DSÑ FLOR MADERA+VIDRIO CAJA MARRON",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28340,
+    "name": "SET BANDEJA X2 30X30/34X24CM MADERA+VIDRIO CAJA MARRON",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28341,
+    "name": "SET BANDEJA X2 33,6X23/39X29CM RECTANGULAR C/ASAS MADERA+PLASTICO CAJA MARRON VENTA X BULTO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28342,
+    "name": "SET BANDEJA X2 30X30/35X35CM REDONDA DSÑ FLOR MADERA+VIDRIO CAJA MARRON",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28343,
+    "name": "CUCHARON 33,5CM ACERO INOX HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28344,
+    "name": "CUCHARON 33,5CM ACERO INOXI HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28345,
+    "name": "CUCHARON 40,5CM ACERO INOX HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28346,
+    "name": "CUCHARON 28X6,5CM SILICONA CART",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28347,
+    "name": "CUCHARON PP -ETIQUETA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28348,
+    "name": "SET CUCHARA + TENEDOR PLAST Y METAL 17X8CM SURT 2 CLRS OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28349,
+    "name": "CUCHARA-TENEDOR 6,8X30CM MADERA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28350,
+    "name": "SET CUCHARA Y RODILLO MIEL PLAST TRANSP BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28351,
+    "name": "CUCHARA X3 34,5/29,5/25CM PLAST BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28352,
+    "name": "CUCHARA 29X5,5CM SILICONA CART",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28353,
+    "name": "ESPUMADERA PP -CLR GRIS -ETIQUETA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28354,
+    "name": "ESPATULA BAMBOO 30CM OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28355,
+    "name": "ESPATULA METALICA 23X5,5CM C/MANGO PLAST CART",
+    "current_cat": "厨房炊具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

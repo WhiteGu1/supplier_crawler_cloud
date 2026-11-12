@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33468,
+    "supplier_id": 11,
+    "sku": "XDZ-805",
+    "name": "MIX COLORS WITH LIGHT AND MUSIC",
+    "image": "/images/panda_99/XDZ-805.jpg"
+  },
+  {
+    "id": 33469,
+    "supplier_id": 11,
+    "sku": "ADB-206",
+    "name": "MIX COLORS WITH LIGHT AND MUSIC",
+    "image": "/images/panda_99/ADB-206.jpg"
+  },
+  {
+    "id": 33470,
+    "supplier_id": 11,
+    "sku": "ADB-306",
+    "name": "MIX COLORS WITH LIGHT AND MUSIC",
+    "image": "/images/panda_99/ADB-306.jpg"
+  },
+  {
+    "id": 33471,
+    "supplier_id": 11,
+    "sku": "701",
+    "name": "WITH LIGHT AND MUSIC BOTTOM:53CM HEAD:24CM",
+    "image": "/images/panda_99/701.jpg"
+  },
+  {
+    "id": 33472,
+    "supplier_id": 11,
+    "sku": "18005",
+    "name": "CASTILLO (96 )81",
+    "image": "/images/panda_99/18005.jpg"
+  },
+  {
+    "id": 33473,
+    "supplier_id": 11,
+    "sku": "996-5A",
+    "name": "TANQUE MILITAR(144)",
+    "image": "/images/panda_99/996-5A.jpg"
+  },
+  {
+    "id": 33474,
+    "supplier_id": 11,
+    "sku": "21276",
+    "name": "JUEGO HELADOS(120) 6655-A",
+    "image": "/images/panda_99/21276.jpg"
+  },
+  {
+    "id": 33475,
+    "supplier_id": 11,
+    "sku": "22199",
+    "name": "JUEGO PESCADITOS(144)1",
+    "image": "/images/panda_99/22199.jpg"
+  },
+  {
+    "id": 33476,
+    "supplier_id": 11,
+    "sku": "22142",
+    "name": "ESPADA CON SONIDO Y LUZ(144)1",
+    "image": "/images/panda_99/22142.jpg"
+  },
+  {
+    "id": 33477,
+    "supplier_id": 11,
+    "sku": "22139",
+    "name": "ESPADA(72)5",
+    "image": "/images/panda_99/22139.jpg"
+  }
+]

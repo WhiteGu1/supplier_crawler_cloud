@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29856,
+    "name": "SACAPUNTAS 5CM F/OSO SURT 4CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29857,
+    "name": "SACAPUNTAS 3,5CM F/HUELLA GATO SURT 4CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29858,
+    "name": "PINCEL X5 N1/3/5/7/9 MANGO PLAST CLR PUNTA REDONDA GRUESA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29859,
+    "name": "CALCULADORA 12,5X14CM SURT 4 CLRS CAJA VENT.",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29860,
+    "name": "CALCULADORA 18X11,5CM 1 COLOR CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29861,
+    "name": "CALCULADORA 10,5X15CM SURT 4 CLRS CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29862,
+    "name": "CALCULADORA 9,5X15CM SURT 4 CLRS CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29863,
+    "name": "CALCULADORA 11X15,5CM TRANSPARENTE SURT 4 CLRS CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29864,
+    "name": "CALCULADORA 9X15CM TRANSPARETE SURT CLRS CAJA REGALO",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29865,
+    "name": "4 MANITOS METALICAS X40PCS C/CARITAS CLR AMARILLO CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29866,
+    "name": "MANITOS METALICAS X48PCS 7X5,5CM NEGRAS CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29867,
+    "name": "MANITOS METALICAS X60PCS 10X6CM NEGRAS CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29868,
+    "name": "SET BROCHES Y CLIPS SURT 3 CLRS CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29869,
+    "name": "ABROCHADORA 12X3,5CM CLRS PASTEL SURT 3 CLRS CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29870,
+    "name": "ABROCHADORA 12X3,5X5CM NEGRA CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29871,
+    "name": "ABROCHADORA 12,5X3,5X5,5CM NEGRA CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29872,
+    "name": "BLOCK DE NOTAS C/PEGATINA DE CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29873,
+    "name": "BLOCK DE NOTAS C/PEGATINA DE CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29874,
+    "name": "BLOCK DE NOTAS C/PEGATINA DE CLRS X5PCS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29875,
+    "name": "BLOCK DE NOTAS C/PEGATINA DE CRL C/FORMAS 4 DSÑ OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29876,
+    "name": "BLOCK DE NOTAS C/PEGATINA DE CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29877,
+    "name": "BLOCK DE NOTAS C/PEGATINA X5 OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29878,
+    "name": "BLOCK DE NOTAS C/PEGATINA X5 OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29879,
+    "name": "BLOCK DE NOTAS 7,5X7,5CM DE CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29880,
+    "name": "GOMA 6X2X1CM X24 RECT BICOLOR",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29881,
+    "name": "GOMA DE BORRAR RETRACTIL 7,5CM C/ADORNO FRUTILLITA SURT 3 CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29882,
+    "name": "GOMA DE BORRAR RETRACTIL 7,5CM C/ADORNO PERRITO ARCOIRIS SURT 3 CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29883,
+    "name": "CUTTER 13CM 9MM PLASTICO TRANSP CLR POLYBAG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29884,
+    "name": "ORGANIZADOR DE OFICINA DE HIERRO 12X12X20,5CM OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29885,
+    "name": "ORGANIZADOR DE OFICINA PLASTICO 8,5X28,5X24CM OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29886,
+    "name": "LIQUIDO CORRECTOR 13CM BIROME CJA DISP X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29887,
+    "name": "JUEGO DOMINO 14,5X10CM C/ESTUCHE PVC SURT 3CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29888,
+    "name": "JUEGO DOMINO 18X6CM CJA RIGIDA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29889,
+    "name": "BOLSO 50X22X28CM JASPEADO CLR C/CIERRE X3 Y TIRAS X3 3 CLR S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29890,
+    "name": "BOLSO 60X24X32CM JASPEADO CLR C/CIERRE X3 Y TIRAS X3 3 CLR S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29891,
+    "name": "BOLSO 70X28X34CM JASPEADO CLR C/CIERRE X3 Y TIRAS X3 3 CLR S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29892,
+    "name": "BOLSO 49X27X24 SPORT 3 CLR SURT C/TIRA CIERRE X5 OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29893,
+    "name": "BOLSO 59X27X30 SPORT 3 CLR SURT C/TIRA CIERRE X5 OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29894,
+    "name": "BOLSO 69X32X27 SPORT 3 CLR SURT C/TIRA CIERRE X5 OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29895,
+    "name": "BOLSO DE VIAJE 48X25CM DSÑ DEPORTISTA CLR SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29896,
+    "name": "3 BOLSO DE VIAJE 54X36X24CM DSÑ SIMIL CUERO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29897,
+    "name": "BOLSO DE VIAJE 58X34X25CM DSÑ SIMIL CUERO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29898,
+    "name": "BOLSO DE VIAJE 47X26X24CM DSÑ LISTO 4CLR SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29899,
+    "name": "BOLSO DE VIAJE 50X32X20CM DSÑ DEPORTIVO PICOLOR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29900,
+    "name": "BOLSO DE VIAJE 53X28X27CM DSÑ TIPO VERDE C/TIRAS GRISES",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29901,
+    "name": "BOLSO DE VIAJE 53X23X22CM DSÑ TIPO VERDE C/TIRAS GRISES",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29902,
+    "name": "MOCHILA 40X30X14CM C/3 ZIPPERS 2 BOLSOS 3 CORES SORT (BG/SAL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29903,
+    "name": "BOLSO MORRAL 18X31X10CM POLYESTER C/4 CIERRES PLAST SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29904,
+    "name": "BOLSO CARTERA 21X26X8,5CM POLYESTER C/4 CIERRES PLAST SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29905,
+    "name": "BOLSO 40X25X15CM POLYESTER C/3 CIERRES PLAST SURT 3 CLRS VDE",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

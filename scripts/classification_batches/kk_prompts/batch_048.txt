@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30256,
+    "name": "AGENDA 20,5X15CM PLAST DSÑO HELADO O UNICORNIO BRILLANTE C/P",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30257,
+    "name": "AGENDA 18X13CM C/TAPA PLAST C/RELIEVE DSÑO OSITO SURT 3 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30258,
+    "name": "CUADERNO RAYADO 15,2X21 120PAG 80GRM SURT 4DSÑ UNICORNIO OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30259,
+    "name": "CUADERNO TAPA DURA PEGADO SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30260,
+    "name": "CUADERNO TAPA DURA PEGADO SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30261,
+    "name": "CUADERNO PLUSH SURT 4 DSÑ SURT 2 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30262,
+    "name": "CUADERNO 80 PAGINAS A5 14,8X21CM TAPA DURA 3D SURTIDO 8 DISE",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30263,
+    "name": "CUADERNO C/ANILLADO GRUESO PLAST 14,5X21CM T/DURA M/CARPINCHO SHK PACK",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30264,
+    "name": "CUADERNO SURT 4 DSÑO UNICORNIO OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30265,
+    "name": "CUADERNO SUERT 4DSÑO DRAGON OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30266,
+    "name": "CUADERNO CHICO SURT 4 DSÑO MUÑECA OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30267,
+    "name": "CUADERNO CHICO SURT 4 DSÑO TORTAS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30268,
+    "name": "CUADERNO PLUSH M/OSITOS SURT 4 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30269,
+    "name": "CUADERNO RAYADO 15,5X21CM 80PAG 80GRM PLUSH SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30270,
+    "name": "CUADERNO RAYADO 14X18CM 120PAG 80GRM MOSNTRUO PLUSH C/LABIOS SURT 4 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30271,
+    "name": "CUADERNO 14X14CM 100PAG 100GRM SURT DSÑ C/BRILLANTE REVERSIBLE OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30272,
+    "name": "4 CUADERNO 12X12CM 100PAG 80GRM SURT 4DSÑ C/RELIEVE 3D OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30273,
+    "name": "CUADERNO PLUSH M/CARPINCHO SURT 3 CRLS 11X15X2CM OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30274,
+    "name": "CUADERNO PLUSH M/OSO SURT 4 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30275,
+    "name": "CUADERNO PLUSH M/FLAMENCO C/LAPICERA CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30276,
+    "name": "CUADERNO 21X14CM TAPA PLAST C/DSÑO UNICORNIO",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30277,
+    "name": "CUADERNO RAYADO C/ANILLADO 21X14,5CM 98PAG SURT 4 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30278,
+    "name": "CUADERNO C/ANILLADO GRUESO PLAST 14,5X21CM T/DURA SHK PACK",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30279,
+    "name": "CUADERNO C/ANILLADO GRUESO PLAST 14,5X21CM T/DURA SHK PACK",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30280,
+    "name": "CUADERNO 13X13CM 100PAG 80GRM SURT 4DSÑ C/RELIEVE 3D OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30281,
+    "name": "CUADERNO 11,5X15,5CM 80PAG 70GRM PUSHPOP SURT 5 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30282,
+    "name": "MACETA F/BALDE 0,5L 10,6CM METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30283,
+    "name": "MACETA F/BALDE 1L 13CM METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30284,
+    "name": "MACETA F/BALDE 1,7L 15CM METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30285,
+    "name": "BALDE METALICO 2,5L 17X17CM CLR BLANCO \"HOME SWEET HOME\" STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30286,
+    "name": "MACETA 14X10,7CM CUADRADA METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30287,
+    "name": "MACETA 22,5X13X10,5CM METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30288,
+    "name": "MACETA 27,5X11,8X9,5 METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30289,
+    "name": "MACETA 14X20CM CONO METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30290,
+    "name": "MACETA 1,5L 12X20CM C/MANGO CUERDA CAÑAMO CLR CRUDO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30291,
+    "name": "MACETA 2,5L 15X24,5CM C/MANGO CUERDA CAÑAMO CLR CRUDO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30292,
+    "name": "MACETA 5L 18X30CM C/MANGO CUERDA CAÑAMO CLR CRUDO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30293,
+    "name": "MACETA PLAST 14X7CM C/FLORES Y PLANTAS DE CLRS SURT 4 DSÑO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30294,
+    "name": "MACETA C/ARBOL PLASTICO 90CM BOLSA BURBUJA DESARMADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30295,
+    "name": "REGADERA JARDIN 26X12CM METALICA CLR BLANCO STICKER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30296,
+    "name": "ROSA ROJA 55X5CM CERRADA 1 PCS",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30297,
+    "name": "ROSA 69CM CERRADA ROJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30298,
+    "name": "RAMO ROSAS 25CM X12PCS PLAST SURT 5 CLRS",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30299,
+    "name": "RAMO ROSAS 50CM X18PCS ABIERTAS SURT 4CLRS ROJ/BLANCO/VIOL/R",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30300,
+    "name": "RAMO FLORES TELA 44X7,5CM C/OSO TERCIOPELO CJA REG F/CONO C/",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30301,
+    "name": "FLOR PLAST 27X5CM ROSA C/LACO DBX FLAT PACK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30302,
+    "name": "FLOR PLAST 33X9CM C/URSO 2CLRES VM/BCO DBX FLAT PACK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30303,
+    "name": "FLOR PLAST 30X3,5CM VM DBX FLAT PACK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30304,
+    "name": "FLOR PLAST 25X10X4CM C/CORACAO PVC BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30305,
+    "name": "FLOR PLAST 30CM C/PAPEL DE SEDA ROSA 3 CORES SORT (VM/PK/RS)",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,85 @@
+{
+  "batch_id": 18,
+  "items": [
+    {
+      "id": 35978,
+      "supplier_id": 3,
+      "name": "CUCHILLO TAYOTO 12.5 CM ACERO INOXIDABLE TK (JJ01593N)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/2ab6c730b763868bf32249da88b1f656.jpg"
+    },
+    {
+      "id": 35979,
+      "supplier_id": 3,
+      "name": "CUCHILLO TAYOTO 12.5 CM MANGO PLASTICO TK (JJ01623N)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/8546b5ee6fc9c05713c7eeccef98b14c.jpg"
+    },
+    {
+      "id": 35980,
+      "supplier_id": 3,
+      "name": "CUCHILLO SANTOKU 18.5 CM ACERO INOXIDABLE TK (JJ01901)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/bb5630b9995fa97eb48a19440a97f8c7.jpg"
+    },
+    {
+      "id": 35981,
+      "supplier_id": 3,
+      "name": "HACHUELA NAKIRI 18.5 CM ACERO INOXIDABLE TK (JJ01900)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/d484a525bf2ee80bdabdd94f9629bd9d.jpg"
+    },
+    {
+      "id": 35982,
+      "supplier_id": 3,
+      "name": "SET ACEITE Y VINAGRE + 2 ESPECIEROS EN BASE MADERA (N11537)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/ea5f93e1816c5efd9750ddfebcc5264a.jpg"
+    },
+    {
+      "id": 35983,
+      "supplier_id": 3,
+      "name": "FLORERO 7.5 X 15 CM (CH25-5-0617-5)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/3752a50727d7cdcd70be873727f5ff3e.jpg"
+    },
+    {
+      "id": 35984,
+      "supplier_id": 3,
+      "name": "FLORERO 8.5 X 18 CM (CH25-5-0617-8)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/239fc4e6cb0a9c66219823610da3ba41.jpg"
+    },
+    {
+      "id": 35985,
+      "supplier_id": 3,
+      "name": "JARRA VIDRIO PUNTITOS 1 LT (WS035-1B)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/416cc6a82204e72337574e649c760d36.jpg"
+    },
+    {
+      "id": 35986,
+      "supplier_id": 3,
+      "name": "PAVA DE VIDRIO CON INFUSOR 800 ML TK (QXA123)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/db14098c4fb6901a13fc422b5bb6a6e9.jpg"
+    },
+    {
+      "id": 35987,
+      "supplier_id": 3,
+      "name": "ASADERA 37 CM TK (KR-2006S)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/dd633250146efa656371f28fca6e4423.jpg"
+    }
+  ]
+}

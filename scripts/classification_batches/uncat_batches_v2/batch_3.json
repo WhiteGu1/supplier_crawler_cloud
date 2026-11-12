@@ -1,0 +1,85 @@
+{
+  "batch_id": 3,
+  "items": [
+    {
+      "id": 35828,
+      "supplier_id": 1,
+      "name": "LAMPARA DE PAPEL HALLOWEEN C/U",
+      "sku": "36773260",
+      "brand": "",
+      "image_local": "images/sfpanda/bfa5f3a469cf240888f19ad10caabf21.webp"
+    },
+    {
+      "id": 35829,
+      "supplier_id": 1,
+      "name": "MASCARA CALABAZA C/U",
+      "sku": "36773258",
+      "brand": "",
+      "image_local": "images/sfpanda/160eb98818488a8b9ff3e239309ba66b.webp"
+    },
+    {
+      "id": 35830,
+      "supplier_id": 1,
+      "name": "MASCARA HALLOWEEN C/U",
+      "sku": "36773257",
+      "brand": "",
+      "image_local": "images/sfpanda/f7f46dcdeac494d0a45af2753e9666ac.webp"
+    },
+    {
+      "id": 35831,
+      "supplier_id": 1,
+      "name": "DECORACION DE HALLOWEEN C/U",
+      "sku": "36773254",
+      "brand": "",
+      "image_local": "images/sfpanda/71fbb471c4c52fa1da5453be4c656b46.webp"
+    },
+    {
+      "id": 35832,
+      "supplier_id": 1,
+      "name": "MASCARA HALLOWEEN C/U",
+      "sku": "36773252",
+      "brand": "",
+      "image_local": "images/sfpanda/96546e1e49a0d9549fc07cb6ae8dc330.webp"
+    },
+    {
+      "id": 35833,
+      "supplier_id": 1,
+      "name": "MASCARA MONJA C/U",
+      "sku": "36773250",
+      "brand": "",
+      "image_local": "images/sfpanda/f84816d21530f32c9df12b6a8881f4be.webp"
+    },
+    {
+      "id": 35834,
+      "supplier_id": 1,
+      "name": "MASCARA HALLOWEEN C/U",
+      "sku": "36773247",
+      "brand": "",
+      "image_local": "images/sfpanda/550e3e2d22c3b5e7915b42fac4f5db11.webp"
+    },
+    {
+      "id": 35835,
+      "supplier_id": 1,
+      "name": "MASCARA BRUJA C/U",
+      "sku": "36773244",
+      "brand": "",
+      "image_local": "images/sfpanda/7473279f71bc8af6fdbbb3a9daed201f.webp"
+    },
+    {
+      "id": 35836,
+      "supplier_id": 1,
+      "name": "MASCARA PAYASO C/U",
+      "sku": "36773241",
+      "brand": "",
+      "image_local": "images/sfpanda/1d1400521333321a622662e43e5be8a2.webp"
+    },
+    {
+      "id": 35837,
+      "supplier_id": 1,
+      "name": "ADORNO DE HALLOWEEN ARAÑA C/U",
+      "sku": "36773237",
+      "brand": "",
+      "image_local": "images/sfpanda/344ba740e84d04dde5044cf1d2a5e2d1.webp"
+    }
+  ]
+}

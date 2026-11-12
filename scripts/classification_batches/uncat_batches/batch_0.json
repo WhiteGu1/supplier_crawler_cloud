@@ -1,0 +1,76 @@
+{
+  "batch_id": 0,
+  "total": 10,
+  "products": [
+    {
+      "id": 35498,
+      "name": "LAMINA ADHESIVA DECORATIVA C/U",
+      "sku": "36650409",
+      "brand": "",
+      "image_local": "images/sfpanda/fe1aaf2ae460107eaa8946d10d46727c.webp"
+    },
+    {
+      "id": 35499,
+      "name": "ORGANIZADOR ACRILICO C/U",
+      "sku": "36650406",
+      "brand": "",
+      "image_local": "images/sfpanda/25b661732faf3afacd139c1d5754e707.webp"
+    },
+    {
+      "id": 35500,
+      "name": "ANTIFAZ DE UNICORNIO C/U",
+      "sku": "36650404",
+      "brand": "",
+      "image_local": "images/sfpanda/dd534f1f1c9785e0ebb6c0a563b64b10.webp"
+    },
+    {
+      "id": 35501,
+      "name": "NECESER CON MANIJA C/U",
+      "sku": "36650403",
+      "brand": "",
+      "image_local": "images/sfpanda/95e3aa705fe5bc886d0db52e5477e9a5.webp"
+    },
+    {
+      "id": 35502,
+      "name": "BOLSO DE LONA C/U",
+      "sku": "36650402",
+      "brand": "",
+      "image_local": "images/sfpanda/899aee5be3e84ac1a53b1201f1a06e89.webp"
+    },
+    {
+      "id": 35503,
+      "name": "BOLSO DE POLIESTER C/U",
+      "sku": "36650401",
+      "brand": "",
+      "image_local": "images/sfpanda/86c2ecf0c69ff7c8dfbcd606f9de2f1b.webp"
+    },
+    {
+      "id": 35504,
+      "name": "NECESER DE VIAJE C/U",
+      "sku": "36650400",
+      "brand": "",
+      "image_local": "images/sfpanda/6eb3ae7b06d52a0d5f80c0cd87e3c369.webp"
+    },
+    {
+      "id": 35505,
+      "name": "BANDOLERA DE POLIESTER C/U",
+      "sku": "36650398",
+      "brand": "",
+      "image_local": "images/sfpanda/a1466880014b766767ff021a783d6d2a.webp"
+    },
+    {
+      "id": 35506,
+      "name": "BOLSO DE VIAJE C/U",
+      "sku": "36650392",
+      "brand": "",
+      "image_local": "images/sfpanda/4ca72f498fdd6035ef9f12911a7348d6.webp"
+    },
+    {
+      "id": 35507,
+      "name": "CUADERNO CON ELASTICO A5 C/U",
+      "sku": "36650390",
+      "brand": "",
+      "image_local": "images/sfpanda/1e47c6961983ae6a60de409f9d62712f.webp"
+    }
+  ]
+}

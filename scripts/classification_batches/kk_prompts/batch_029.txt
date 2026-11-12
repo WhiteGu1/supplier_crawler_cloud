@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29306,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29307,
+    "name": "SORBETE PAPEL X10U 20CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29308,
+    "name": "SERVILLETA PAPEL X20U 16,5CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29309,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29310,
+    "name": "VASOS CUMPLEAÑOS PAPEL X10U 250ML 13,5X7,5CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29311,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29312,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 18CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29313,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 21CM DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29314,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29315,
+    "name": "SORBETE PAPEL X10U 20CM DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29316,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29317,
+    "name": "SERVILLETA PAPEL X20U 16,5CM DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29318,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM DSÑ DEPORTES VIDEOJUEGOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29319,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 21CM DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29320,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. DSÑ DEPORTES VIDEOJUEGOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29321,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29322,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM SURT 3 DSÑ PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29323,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29324,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29325,
+    "name": "SERVILLETA PAPEL X20U 16,5CM SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29326,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 18CM SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29327,
+    "name": "SORBETE PAPEL X10U 20CM SURT 3 DSÑO PANDA DINO ANIMALES HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29328,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM SURT 3 DSÑ UNICORNIO ROSA/UNICORNIO BLANCO/CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29329,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29330,
+    "name": "SERVILLETA PAPEL X20U 16,5CM SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29331,
+    "name": "SORBETE PAPEL X10U 20CM SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29332,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 21CM SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29333,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29334,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. SURT 3 DSÑ UNICORNIO ROSA / UNICORNIO BLANCO / CASTILLO HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29335,
+    "name": "SORBETE PAPEL X10U 20CM DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29336,
+    "name": "SERVILLETA PAPEL X20U 16,5CM DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29337,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29338,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29339,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29340,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29341,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 21CM DSÑ PRINCESAS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29342,
+    "name": "SORBETE PAPEL X10U 20CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29343,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29344,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29345,
+    "name": "SERVILLETA PAPEL X20U 16,5CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29346,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 18CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29347,
+    "name": "PLATO CUMPLEAÑOS PAPEL X10U 21CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29348,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29349,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. DSÑ RATON HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29350,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS DSÑ LISO CLRS SURTIDOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29351,
+    "name": "CANASTA P/POCHOCLOS PAPEL X10U 18X13CM DSÑ LISO CLRS SURTIDOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29352,
+    "name": "SERVILLETA PAPEL X20U 16,5CM DSÑ LISO CLRS SURTIDOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29353,
+    "name": "CORNETA P/CUMPLEAÑOS PAPEL X10U 13CM BOQUILLA PLAST. DSÑ LISO CLRS SURTIDOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29354,
+    "name": "GORRO CUMPLEAÑOS PAPEL X10U 21X16CM DSÑ LISO CLRS SURTIDOS HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29355,
+    "name": "GLOBO TRANSPARENTE 20CM C/PLUMAS DENTRO C/VARILLA C/LUZ 80M OPP A PILA RELOJ",
+    "current_cat": "派对用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

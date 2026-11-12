@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33680,
+    "supplier_id": 11,
+    "sku": "22277",
+    "name": "MUÑECAS CM",
+    "image": "/images/panda_99/22277.jpg"
+  },
+  {
+    "id": 33681,
+    "supplier_id": 11,
+    "sku": "22299",
+    "name": "MPISTOLA LANZA DARDOS(120)2",
+    "image": "/images/panda_99/22299.jpg"
+  },
+  {
+    "id": 33682,
+    "supplier_id": 11,
+    "sku": "24022",
+    "name": "JUEGO MADERA",
+    "image": "/images/panda_99/24022.jpg"
+  },
+  {
+    "id": 33684,
+    "supplier_id": 11,
+    "sku": "24106",
+    "name": "GOLPEA AL TOPO",
+    "image": "/images/panda_99/24106.jpg"
+  },
+  {
+    "id": 33685,
+    "supplier_id": 11,
+    "sku": "24005t",
+    "name": "LA BUBU MULTICOLOR(240)",
+    "image": "/images/panda_99/24005t.jpg"
+  },
+  {
+    "id": 33686,
+    "supplier_id": 11,
+    "sku": "24084T",
+    "name": "JUEGO STICH",
+    "image": "/images/panda_99/24084T.jpg"
+  },
+  {
+    "id": 33687,
+    "supplier_id": 11,
+    "sku": "24002TC",
+    "name": "LABUBU STICH",
+    "image": "/images/panda_99/24002TC.jpg"
+  },
+  {
+    "id": 33688,
+    "supplier_id": 11,
+    "sku": "24040AG",
+    "name": "ARMA JOYAS EMOTICON",
+    "image": "/images/panda_99/24040AG.jpg"
+  },
+  {
+    "id": 33689,
+    "supplier_id": 11,
+    "sku": "24106JS",
+    "name": "TOCA LA CAJA",
+    "image": "/images/panda_99/24106JS.jpg"
+  },
+  {
+    "id": 33693,
+    "supplier_id": 11,
+    "sku": "24173",
+    "name": "MEGAFONO(72)",
+    "image": "/images/panda_99/24173.jpg"
+  }
+]

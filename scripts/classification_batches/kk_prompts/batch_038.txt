@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29756,
+    "name": "BIROME 9,5CM PLAST 4 EN 1 DSÑO DONAS CLRS SURT CAJA DISPLAY",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29757,
+    "name": "BIROME 10CM PLAST 4 EN 1 DSÑO UNICORNIOS CLRS SURTIDOS CAJA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29758,
+    "name": "BIROME 14,5CM PLAST 10 EN 1 DSÑO ARCOIRIS CLRS SURTIDOS CAJA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29759,
+    "name": "BIROME 14,5CM PLAST 10 EN 1 DSÑO COMIDA RAPIDA HAMBURG/PAPAS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29760,
+    "name": "BIROME 14,5CM PLAST 10 EN 1 DSÑO UNICORNIOS CLRS SURT CAJA D",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29761,
+    "name": "BIROME 18,5CM PLAST LETRAS INTERCAMBIABLES C/DSÑO CONEJO CLR",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29762,
+    "name": "BIROME 17CM PLAST C/DSÑO UNICORNIO CLRS SURT CAJA DISPLAY",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29763,
+    "name": "BIROME 17CM PLAST C/DSÑO PANDA CLRS SURT CAJA DISPLAY",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29764,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/PALTA CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29765,
+    "name": "SET BIROMES RETRACTILES M/CARPINCHO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29766,
+    "name": "SET BIROMES RETRACTILES M/PANDA DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29767,
+    "name": "SET BIROMES RETRACTILES M/UNICORNIO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29768,
+    "name": "SET BIROMES RETRACTILES M/MIX ARCOIRIS MUÑEQUITA DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29769,
+    "name": "Y SET BIROMES RETRACTILES M/CABEZA PELUDA SURT 4 CLRS DISPLAY BOX X12",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29770,
+    "name": "BIROME MULTICOLOR 17CM C/PLUSH Y OVEJAS 6CLS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29771,
+    "name": "BIROME 17CM C/ARCOIRIS COLGANTE DISPLAY BOX X30",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29772,
+    "name": "BIROEM 21CM M/GORILAS SURT 3 CLRS ISPLAY BOX X48",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29773,
+    "name": "SET BIROMES MULTICOLOR M/UNICORNIO SURT 3 CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29774,
+    "name": "SET BIROMES MULTICOLOR M/HUELLITA SURT CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29775,
+    "name": "3 SET BIROMES MULTICOLOR M/OSITO SURT 3 CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29776,
+    "name": "SET BIROMES MULTICOLOR M/COLA DE SIRENA SURT 3 CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29777,
+    "name": "BIROME 16,5CM C/LUZ RGB F/CORAZÓN SURT 3 CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29778,
+    "name": "RESALTADOR 12CM M/OSOS 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29779,
+    "name": "BIROME 17CM C/SIRENA COLGANTE 6 DSÑ DISPLAY BOX X30",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29780,
+    "name": "BIROME 17CM C/MUÑECA COLGANTE 6 DSÑ DISPLAY BOX X30",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29781,
+    "name": "BIROME 18CM C/POMPOM MONSTRUO SURT 6 CLRS DISPLAY BOX X16",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29782,
+    "name": "BIROME 18CM C/POMPOM BOQUITA OJOS SALTONES SURT 6 CLRS DISPLAY BOX X16",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29783,
+    "name": "BIROME 17CM M/OSOS CON TRAJE SURT 2 DSÑO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29784,
+    "name": "BIROME 16CM MULTICOLOR M/OSITOS SURT 2 DSÑ DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29785,
+    "name": "BIROME 16CM MULTICOLOR M/DINOS SURT 3CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29786,
+    "name": "BIROME 16CM MULTICOLOR M/DINOS SURT 3CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29787,
+    "name": "MARCADOR 14CM X24 COLOR PVC CARTON",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29788,
+    "name": "RESALTADOR 12CM X2 RECT CLR SURT OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29789,
+    "name": "RESALTADORES 11,5X2,5CM PLAST CLRS SURTIDOS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29790,
+    "name": "MARCADORES 14CM PLAST X6 CLRS SURTIDOS BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29791,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/ASTRONAUTA CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29792,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/SAPITO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29793,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/UNICORNIO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29794,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/DINOSAURIO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29795,
+    "name": "MARCADOR PLAST 12CM CAPUCHON GOMA F/PATITA GATO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29796,
+    "name": "MARCADOR PLAST 12CM CAPUCHON MIX OSO/CONEJO/PATO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29797,
+    "name": "MARCADORES PLAST 11CM F/BOLITAS CAPUCHON UNICORNIO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29798,
+    "name": "MARCADORES PLAST 11CM F/BOLITAS CAPUCHON PALTA CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29799,
+    "name": "MARCADORES PLAST 11CM F/BOLITAS CAPUCHON FLOR CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29800,
+    "name": "MARCADORES PLAST 11CM F/BOLITAS CAPUCHON CHANCHITO CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29801,
+    "name": "MARCADORES PLAST 10CM CAPUCHON PATITO X6PCS CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29802,
+    "name": "MARCADORES PLAST 10CM CAPUCHON ASTRONAUTA X6PCS CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29803,
+    "name": "MARCADORES PLAST 11CM F/BOLITAS CAPUCHON FLOR CAJA DISPLAY X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29804,
+    "name": "MARCADORES PLAST 5CM CAPUCHON OSITO X6 CLRS PASTEL CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29805,
+    "name": "MARCADORES PLAST 5CM CAPUCHON OSITO X6 CLRS BRILLANTES CAJA PVC",
+    "current_cat": "文具办公"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

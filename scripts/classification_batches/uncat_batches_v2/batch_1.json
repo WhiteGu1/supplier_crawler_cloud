@@ -1,0 +1,85 @@
+{
+  "batch_id": 1,
+  "items": [
+    {
+      "id": 35808,
+      "supplier_id": 1,
+      "name": "HEBILLA PARA PELO DE ESQUELETO C/U",
+      "sku": "36773316",
+      "brand": "",
+      "image_local": "images/sfpanda/dda018c06654beab407857bb8f6e7701.webp"
+    },
+    {
+      "id": 35809,
+      "supplier_id": 1,
+      "name": "HEBILLA PARA PELO DE ESQUELETO C/U",
+      "sku": "36773313",
+      "brand": "",
+      "image_local": "images/sfpanda/437c726edc57335e9840344c0ee700b0.webp"
+    },
+    {
+      "id": 35810,
+      "supplier_id": 1,
+      "name": "ADORNO DE HALLOWEEN C/U",
+      "sku": "36773310",
+      "brand": "",
+      "image_local": "images/sfpanda/212e97f2a210a81f3cf0a1d9dfb206e5.webp"
+    },
+    {
+      "id": 35811,
+      "supplier_id": 1,
+      "name": "ADORNO DE HALLOWEEN PAYASO C/U",
+      "sku": "36773308",
+      "brand": "",
+      "image_local": "images/sfpanda/446865bbc7b6c3ddbf769b2202a68f5b.webp"
+    },
+    {
+      "id": 35812,
+      "supplier_id": 1,
+      "name": "BOLSA MANO CARAMELERA C/U",
+      "sku": "36773305",
+      "brand": "",
+      "image_local": "images/sfpanda/ad10c7d475e8c581197db7d04d351e24.webp"
+    },
+    {
+      "id": 35813,
+      "supplier_id": 1,
+      "name": "BOLSA DE CARAMELOS C/U",
+      "sku": "36773304",
+      "brand": "",
+      "image_local": "images/sfpanda/136ed5b7a4b355e3a1e840ecbc0b5871.webp"
+    },
+    {
+      "id": 35814,
+      "supplier_id": 1,
+      "name": "MASCARA HALLOWEEN C/U",
+      "sku": "36773303",
+      "brand": "",
+      "image_local": "images/sfpanda/da8ee7e885102f336521d893a5bedfd2.webp"
+    },
+    {
+      "id": 35815,
+      "supplier_id": 1,
+      "name": "VINCHA HALLOWEEN C/U",
+      "sku": "36773300",
+      "brand": "",
+      "image_local": "images/sfpanda/3e4b138b1ef2ef7aa6526fb837c14267.webp"
+    },
+    {
+      "id": 35816,
+      "supplier_id": 1,
+      "name": "ANTEOJOS HALLOWEEN C/U",
+      "sku": "36773299",
+      "brand": "",
+      "image_local": "images/sfpanda/d227994ebb46c8bcb683b8a7b01af12f.webp"
+    },
+    {
+      "id": 35817,
+      "supplier_id": 1,
+      "name": "ANTEOJOS HALLOWEEN C/U",
+      "sku": "36773296",
+      "brand": "",
+      "image_local": "images/sfpanda/2b869453633d4769a1ce4a12229d6fa7.webp"
+    }
+  ]
+}

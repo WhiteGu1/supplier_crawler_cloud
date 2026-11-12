@@ -1,0 +1,85 @@
+{
+  "batch_id": 12,
+  "items": [
+    {
+      "id": 35918,
+      "supplier_id": 2,
+      "name": "Pinza XZN x12 plateada",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/b1c28aee8533f36f8cdb2718b5f31199.jpg"
+    },
+    {
+      "id": 35919,
+      "supplier_id": 2,
+      "name": "Calculadora Kenko 837b mediana",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/c384c52b3801adc9affc708f88057901.jpg"
+    },
+    {
+      "id": 35920,
+      "supplier_id": 2,
+      "name": "Pomada liquida Makao BLANCA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/04d02b283e1d0e8979545e779c525f55.jpg"
+    },
+    {
+      "id": 35921,
+      "supplier_id": 2,
+      "name": "Cinta de papel 24mm x50mts Candela - Cablefix",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/4ea9b185b5c1125c2c65bbd2fb2925b7.jpg"
+    },
+    {
+      "id": 35922,
+      "supplier_id": 2,
+      "name": "Cinta de papel 48mm x50mts Candela - Cablefix",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/e894dadd380bfddfd3a9b4090c7a979b.jpg"
+    },
+    {
+      "id": 35923,
+      "supplier_id": 2,
+      "name": "Cinta Confitera Candela- Together x24mm x40mts",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/c3a1227c287cee8d5c86d264ec260a6f.jpg"
+    },
+    {
+      "id": 35924,
+      "supplier_id": 2,
+      "name": "Cinta embalar x90mts Skycolor transparente",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/eab011ff06c67c2a84e2fa9247f7b979.jpg"
+    },
+    {
+      "id": 35925,
+      "supplier_id": 2,
+      "name": "Almohadilla termica HP301 CORONET",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/3bba54bb3d44d2be1cc813bf0412dd1f.jpg"
+    },
+    {
+      "id": 35926,
+      "supplier_id": 2,
+      "name": "Calentador de pies electrico CORONET",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/69d2bd577cfc1d76852d37ef4d9f42cc.jpg"
+    },
+    {
+      "id": 35927,
+      "supplier_id": 2,
+      "name": "Manta electrica 160cm x120cm CORONET",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/4800d289e661794783dc77c097d53742.jpg"
+    }
+  ]
+}

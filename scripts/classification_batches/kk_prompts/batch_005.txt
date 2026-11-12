@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28106,
+    "name": "CAR HOLDER #PH-14",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28107,
+    "name": "CAR HOLDER #XPL369",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28108,
+    "name": "CAR HOLDER #CT032",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28109,
+    "name": "CAR HOLDER #YC-11",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28110,
+    "name": "CAR HOLDER #PH-08",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28111,
+    "name": "CAR HOLDER #CT060+CF025",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28112,
+    "name": "CAR HOLDER #CT125",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28113,
+    "name": "CAR HOLDER #PH-06",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28114,
+    "name": "CAR HOLDER MAGNET",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28115,
+    "name": "CAR HOLDER #BY-551C",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28116,
+    "name": "CAR HOLDER #K531",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28117,
+    "name": "CAR WIRELESS CHARGE HOLDER #Q001",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28118,
+    "name": "HOLDER AGARRE LATERAL E INFERIRO MECANISMO AUTOMATICO V...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28119,
+    "name": "HOLDER AGARRE LATERAL E INFERIRO MECANISMO AUTOMATICO S...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28120,
+    "name": "HOLDER BICI IMPERMEABLE FLEXIBLE CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28121,
+    "name": "HOLDER BICI IMPERMEABLE RIGIDO CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28122,
+    "name": "HOLDER BICI AGARRE LATERAL Y INFERIOR CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28123,
+    "name": "HOLDER BICI AGARRE INFERIOR Y LATERAL CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28124,
+    "name": "HOLDER C/SOPORTE REBATIBLE METALICO CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28125,
+    "name": "HOLDER MAGNETICO C/SOPAPA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28126,
+    "name": "HOLDER MAGNETICO P/AUTO VENTILA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28127,
+    "name": "HOLDER MAGNETICO P/AUTO VENTILA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28128,
+    "name": "HOLDER MAGNETICO P/AUTO VENTILA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28129,
+    "name": "HOLDER MAGNETICO C/APOYO SOPAPA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28130,
+    "name": "HOLDER MAGNETICO VENTILA CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28131,
+    "name": "DESK HOLDER #S345",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28132,
+    "name": "DESK HOLDER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28133,
+    "name": "DESK HOLDER #L305",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28134,
+    "name": "DESK HOLDER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28135,
+    "name": "DESK HOLDER #STENTS",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28136,
+    "name": "HOLDER DE MESA REBATIBLE DISPLAY X24PCS CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28137,
+    "name": "HOLDER MESA REBATIBLE CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28138,
+    "name": "HOLDER MESA MAGNETICO CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28139,
+    "name": "HOLDER VENTILA AGARRE LATERAL Y INFERIOR CAJA REG",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28140,
+    "name": "PALO SELFIE ALTO C/TRIPODE P/2 CELUS -CLR NRGRO -COLO...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28141,
+    "name": "SOPORTEDEAUTOCONCARGADORINALAMBRIC O",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28142,
+    "name": "SOPORTECELULARAUTO P/REGILLACONIMAN",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28143,
+    "name": "ESTUCHE /BILLETERA PARA CELU C/SOPORTE PARA MOTO -IMPER...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28144,
+    "name": "SOPORTE PARA CELULAR BICICLETA -ALUMINIO",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28145,
+    "name": "FUNDA IMPERMEABLE PARA CELU C/SOPORTE PARA BICICLETA",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28146,
+    "name": "SOPORTE PARA CELULAR ESPEJO RETROVISOR AJUSTABLE -PLEG...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28147,
+    "name": "SOPORTECELULARAUTO P/REGILLACONIMAN",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28148,
+    "name": "FUNDA IMPERMEABLE UNIVERSAL PARA CELU C/ SOPORTE MULT...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28149,
+    "name": "SOPORTE ADHESIVO P/CELULAR -UNIVERSAL",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28150,
+    "name": "SOPORTE REJILLA CON IMAN",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28151,
+    "name": "SOPORTE AUTO SOPAPA BRAZO CON ROTACION -SOPORTE GIRA 36...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28152,
+    "name": "SOPORTE AUTO GIRA 360 PARA SALIDA VENTILACION",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28153,
+    "name": "SOPORTE AUTO SOPAPA MAGNETICO MAGSAFE",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28154,
+    "name": "SOPORTE CELULAR AUTO ESPEJO RETROVISOR POSICIONES RO...",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 28155,
+    "name": "3 SOPORTE CELULAR UNIVERSAL AUTO PARA ESPEJO RETROVISO...",
+    "current_cat": "日用百货"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

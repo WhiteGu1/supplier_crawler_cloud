@@ -1,0 +1,85 @@
+{
+  "batch_id": 19,
+  "items": [
+    {
+      "id": 35988,
+      "supplier_id": 3,
+      "name": "PACK X3 VASO ROCK (112YL/WH3)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/e75f9e8190fa0f7aa6c2b12eacb15a44.jpg"
+    },
+    {
+      "id": 35989,
+      "supplier_id": 3,
+      "name": "PACK X3 VASO BALI (112YC/WH3)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/17f7c554208bd097dcdc5fb0dbb0be5f.jpg"
+    },
+    {
+      "id": 35990,
+      "supplier_id": 3,
+      "name": "PACK X3 VASO CIRCLES (112YY/WH3)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/62c52c3ce56d456475ea4c6313ac030f.jpg"
+    },
+    {
+      "id": 35991,
+      "supplier_id": 3,
+      "name": "PACK X6 VASO ROCK (112YL/WH6)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/d5584d2be89402f373a5552020715de9.jpg"
+    },
+    {
+      "id": 35992,
+      "supplier_id": 3,
+      "name": "BANDEJA VIDRIO CON PIE (CH25-5-0667-2)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/fdf5e457fada581d9ccc6309e4023668.jpg"
+    },
+    {
+      "id": 35993,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Basic 24 piezas NEGRO (BNSET24)",
+      "sku": "BNSET24",
+      "brand": "",
+      "image_local": "images/osa/945c1840d1146335b4684b466f77abcd.webp"
+    },
+    {
+      "id": 35994,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Basic 16 piezas NEGRO (BNSET16)",
+      "sku": "BNSET16",
+      "brand": "",
+      "image_local": "images/osa/326963dd557a06e1cbc717a252095011.webp"
+    },
+    {
+      "id": 35995,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Basic 24 piezas AZUL (BASET24)",
+      "sku": "BASET24",
+      "brand": "",
+      "image_local": "images/osa/005c9c8de89408467c1ed259a18ea593.webp"
+    },
+    {
+      "id": 35996,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Basic 16 piezas AZUL (BASET16)",
+      "sku": "BASET16",
+      "brand": "",
+      "image_local": "images/osa/b913e1835e9a695f536e8ea4842f35e0.webp"
+    },
+    {
+      "id": 35997,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa azul HUDSON x 12 Linea Basic (BAT12)",
+      "sku": "BAT12",
+      "brand": "",
+      "image_local": "images/osa/dde175f39de5e67264a7de9cf2014926.webp"
+    }
+  ]
+}

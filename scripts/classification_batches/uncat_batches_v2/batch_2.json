@@ -1,0 +1,85 @@
+{
+  "batch_id": 2,
+  "items": [
+    {
+      "id": 35818,
+      "supplier_id": 1,
+      "name": "CARAMELERA HALLOWEEN C/U",
+      "sku": "36773294",
+      "brand": "",
+      "image_local": "images/sfpanda/20c9b5dde4f5847d1b9d570bac9f24d5.webp"
+    },
+    {
+      "id": 35819,
+      "supplier_id": 1,
+      "name": "MASCARA HALLOWEEN C/U",
+      "sku": "36773292",
+      "brand": "",
+      "image_local": "images/sfpanda/e0956f1e7f892f0ef725d264ed158e22.webp"
+    },
+    {
+      "id": 35820,
+      "supplier_id": 1,
+      "name": "ADORNO DE HALLOWEEN ESQUELETO C/U",
+      "sku": "36773290",
+      "brand": "",
+      "image_local": "images/sfpanda/b774997cea6d269a7825b691fea089f7.webp"
+    },
+    {
+      "id": 35821,
+      "supplier_id": 1,
+      "name": "DISFRAZ DE BRUJA PARA NIÑOS C/U",
+      "sku": "36773289",
+      "brand": "",
+      "image_local": "images/sfpanda/39f10e135fb7d20bd13683ed00fbbb1b.webp"
+    },
+    {
+      "id": 35822,
+      "supplier_id": 1,
+      "name": "DISFRAZ DE ESQUELETO PARA NIÑOS C/U",
+      "sku": "36773287",
+      "brand": "",
+      "image_local": "images/sfpanda/4a7933a0efb099412166311901e12d60.webp"
+    },
+    {
+      "id": 35823,
+      "supplier_id": 1,
+      "name": "DISFRAZ DE ESQUELETO PARA NIÑOS C/U",
+      "sku": "36773280",
+      "brand": "",
+      "image_local": "images/sfpanda/ffc8ee76132e1ce81d60ee7bc61dadea.webp"
+    },
+    {
+      "id": 35824,
+      "supplier_id": 1,
+      "name": "DISFRAZ DE GHOST FACE C/U",
+      "sku": "36773278",
+      "brand": "",
+      "image_local": "images/sfpanda/a2a55083992b2bf2f36cbdca9382f33f.webp"
+    },
+    {
+      "id": 35825,
+      "supplier_id": 1,
+      "name": "ADORNO DE HALLOWEEN C/U",
+      "sku": "36773274",
+      "brand": "",
+      "image_local": "images/sfpanda/22443f4ed42ddc3304d19af86e4f1471.webp"
+    },
+    {
+      "id": 35826,
+      "supplier_id": 1,
+      "name": "MASCARA PANDA C/U",
+      "sku": "36773267",
+      "brand": "",
+      "image_local": "images/sfpanda/35316766f67d76b54f79f10008673ec9.webp"
+    },
+    {
+      "id": 35827,
+      "supplier_id": 1,
+      "name": "MASCARA CALAVERA C/U",
+      "sku": "36773261",
+      "brand": "",
+      "image_local": "images/sfpanda/626946e42122e3feac68df063195eab1.webp"
+    }
+  ]
+}

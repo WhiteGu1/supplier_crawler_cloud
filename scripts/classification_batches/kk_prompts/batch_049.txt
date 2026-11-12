@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30306,
+    "name": "FLOR PLAST 31CM C/PAPEL SEDA SURT 3 CLRS DSÑO ROSA CAJA DISPLAY X10",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30307,
+    "name": "RAMOX1243CM6HOJASPETALO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30308,
+    "name": "RAMO HOJAS PLASTICAS 20CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30309,
+    "name": "RAMO HOJAS PLASTICAS 20CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30310,
+    "name": "RAMO HOJAS PLASTICAS 20CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30311,
+    "name": "RAMO HOJAS PLASTICAS 20CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30312,
+    "name": "RAMO HOJAS PLASTICAS 15CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30313,
+    "name": "RAMO HOJAS PLASTICAS 190CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30314,
+    "name": "RAMO HOJAS PLASTICAS 190CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30315,
+    "name": "RAMO HOJAS CEREZO PLASTICO 50CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30316,
+    "name": "RAMO HOJAS CEREZO PLASTCIO 1MTS OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30317,
+    "name": "RAMO PLANTA PLASTICA 6CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30318,
+    "name": "RAMO PLANTA PLASTICA 30CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30319,
+    "name": "RAMO PLANTA PLASTICA FLORES AMARILLAS 41CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30320,
+    "name": "RAMA PLANTA PLASTICA 50CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30321,
+    "name": "RAMO PLANTA PLASTICA 40CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30322,
+    "name": "RAMO PLANTA PLASTICA 60CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30323,
+    "name": "RAMA PLANTA PLASTICA 60CM BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30324,
+    "name": "RAMA PLANTA PLASTICA 90CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30325,
+    "name": "RAMA PLANTA PLASTICA 90CM OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30326,
+    "name": "RAMA ENREDADERA PLASTICA 2,3MTS OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30327,
+    "name": "TRONCO C/ARBOL CEREZO PLASTICO ROSA FUERTE 1,1MTS OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30328,
+    "name": "TRONCO C/ARBOL CEREZO PLASTICO BLANCO OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30329,
+    "name": "1,8MTS ESPEJO PARED 39CM REDONDO F/OSO CLR BLCO/ROSA OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30330,
+    "name": "ESPEJO PARED 39CM REDONDO F/CORAZON CLR BLCO/ROSA OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30331,
+    "name": "ESPEJO 26X26CM REDONDO DSÑ \"HOME\" CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30332,
+    "name": "ESPEJO 15,5X17,5CM BD PLAST C/PIE OJOS 3 COLORES SURT WHITE BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30333,
+    "name": "ESPEJO 18X18CM BD PLAST C/PIE OREJAS LOVE COLORES SURT WHITE BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30334,
+    "name": "3 ESPEJO 22X14CM BD PLAST RATON WHITE BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30335,
+    "name": "ESPEJO 18X16CM BD PLAST PANDA 3 COLORES SURT WHITE BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30336,
+    "name": "ESPEJO 16X11,5CM BD PLAST RED C/FUNDA C/LED CARGADOR 3 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30337,
+    "name": "USB ESPEJO 19X14,5CM BD PLAST RECTANG C/LED USB CARGADOR 2 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30338,
+    "name": "ESPEJO 17X11,5CM BD PLAST OVALADO C/LED USB CARGADOR 2 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30339,
+    "name": "ESPEJO 20,5X15,5CM BD PLAST RED C/FUNDA C/LED USB CARGADOR 3 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30340,
+    "name": "ESPEJO 22X18CM BD PLAST ONDAS C/LED USB CARGADOR 2 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30341,
+    "name": "ESPEJO 23,5X16,5CM BD PLAST RECTANG C/LED USB CARGADOR 2 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30342,
+    "name": "ESPEJO 34X17CM BD PLAST RED C/SOPORTE MAKEUP C/LED USB CARGADOR COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30343,
+    "name": "ESPEJO 32X20CM BD PLAST RED C/SOPORTE C/LED USB CARGADOR 2 COLORES SURT COLOR BOX",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30344,
+    "name": "ESPEJO 30,5X26,5X10CMKITTY BASE MADERA C/LED USB CARGADOR 2 COLORES SURT CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30345,
+    "name": "ESPEJO 39X35,5CM CORAZON DERRETIDO C/LED CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30346,
+    "name": "USB ESPEJO 40X38CM RED BEAUTY C/LED USB CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30347,
+    "name": "ESPEJO 40X38CM RED QUEEN C/LED USB CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30348,
+    "name": "ESPEJO 40X31CM RED CONEJO C/LED USB CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30349,
+    "name": "ESPEJO 42X32CM F/NUVEM ARCO IRIS C/LED USB CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30350,
+    "name": "ESPEJO 40X34CM RED SELFIE C/LED USB CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30351,
+    "name": "ADORNO POLIRESINA 13X12CM PAREJA SENTADA BANCO C/GORRA \"LOVE YOU\" CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30352,
+    "name": "EN ADORNO POLIRESINA 13X12CM PAREJA SENTADA BANCO SONRIENDO C/CARTEL LOVE YOU CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30353,
+    "name": "EN ADORNO POLIRESINA 13X12CM PAREJA SENATADA EN BANCO C/GOERRO SONRIENDO LETRERO I LOVE YOU CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30354,
+    "name": "ADORNO POLIRESINA 13X12CM PAREJA SENTADA BANCO SONROJADA C/CARTEL LOVE YOU CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30355,
+    "name": "EN ADORNO POLIRESINA 11CM PAREJA SENTADA EN TRONCO SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

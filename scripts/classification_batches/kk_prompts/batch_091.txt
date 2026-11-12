@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32406,
+    "name": "MAQUINA AFEITAR NS-312 RECTA CLR PLATEADA Y VERDE CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32407,
+    "name": "MAQUINA AFEITAR NS-309 RECTA CLR DORADO CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32408,
+    "name": "AFEITADORA MINI 3,9X4,6X4CM C/BATERIA 1 CABEZAL CLR AZUL CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32409,
+    "name": "AFEITADORA 3 CABEZALES C/BATERIA CLR NEGRO CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32410,
+    "name": "CALENTADOR P/CERA 220V CLR ROSA CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32411,
+    "name": "RODILLO FACIAL 2 PUNTAS CLR VERDE BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32412,
+    "name": "CEPILLO ESPONJA C/4 PUNTAS INTERCAMBIABLES USB CAJA REGALO",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 32413,
+    "name": "LICUADORA PORTATIL F/BOTELLA CLR BLANCO CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 32414,
+    "name": "BATIDORA COCINA 220V DH-133-1 260W CLR BLANCA CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 32415,
+    "name": "ROLLO LUCES LED FLEXIBLE 3MTS TRANSPARENTES RGB CAJA REG",
+    "current_cat": "照明灯具"
+  },
+  {
+    "id": 32416,
+    "name": "ROLLO LUCES LED FLEXIBLE 5MTS TRANSPARENTES RGB CAJA REG",
+    "current_cat": "照明灯具"
+  },
+  {
+    "id": 32417,
+    "name": "PELUCHE 35CM CONEJO C/PIJAMA 2 DSÑ HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32418,
+    "name": "PELUCHE 27CM POLYESTER F/CONEJO SURT CLRS BLANCO C/VIOLETA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32419,
+    "name": "2 PELUCHE 35CM CONEJO C/PIJAMA 2DSÑ HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32420,
+    "name": "PELUCHE 30CM NENA C/TRAJE CONEJO SURT 3 CLRS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32421,
+    "name": "PELUCHE 20CM CONEJO 3CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32422,
+    "name": "PELUCHE 23CM CONEJO 1 CLR CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32423,
+    "name": "PELUCHE 15CM SURT 3 DSÑ OSO/CONEJO/PANDA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32424,
+    "name": "PELUCHE 20CM CONEJO C/PIJAMA SURT 2 DSÑ HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32425,
+    "name": "PELUCHE 30CM CONEJO PELUDO SURT 3CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32426,
+    "name": "PELUCHE 35CM CONEJO GORDO SURT 2 CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32427,
+    "name": "PELUCHE 30CM NIÑA C/TRAJE CONEJO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32428,
+    "name": "PELUCHE 20CM CONEJO C/PIJAMA SURT 2 CLRS HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32429,
+    "name": "PELUCHE 20CM OVEJA C/PIJAMA CONEJO SURT 2 CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32430,
+    "name": "PELUCHE 20CM CONEJO C/PIJAMA SURT 2 DSÑ HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32431,
+    "name": "PELUCHE 23X12CM POLYESTER ELEFANTE CLRS CELES/ROS/GRS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32432,
+    "name": "PELUCHE 27CM POLYESTER F/ELEFANTE SURT CLRS ROSA/CELEST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32433,
+    "name": "2 PELUCHE LLAVERO 11CM F/ELEFANTE SURT 3 CLRS CELES/GRIS/MARR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32434,
+    "name": "PELUCHE 15CM F/ELEFANTE SURT 3 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32435,
+    "name": "PELUCHE 27CM POLYESTER ELEFANTE SURT 3 CLRS GRIS/CELES/ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32436,
+    "name": "PELUCHE 20CM POLYESTER F/ELEFANTE C/FLOR Y PERLA EN CABEZA S",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32437,
+    "name": "PELUCHE 20CM ELEFANTE CELESTE HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32438,
+    "name": "PELUCHE 20CM SURT 2 DSÑ CERDITO/ELEFANTE 2CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32439,
+    "name": "PELUCHE 38CM ELEFANTE C/JARDINERO 1 CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32440,
+    "name": "PELUCHE 20CM POLYESTER ELEFANTE C/CORONA PLAST SURT 3 CLRS ROS/VERDE/CELEST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32441,
+    "name": "PELUCHE 21CM SURT 3 DSÑ PATO/ELEFANTE/CERDITO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32442,
+    "name": "PELUCHE 21CM ELEFANTE SURT 2 CLRS HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32443,
+    "name": "PELUCHE 37CM POLYESTER ELEFANTE SURT 3 CLRS GRIS/CELES/ROS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32444,
+    "name": "PELUCHE 15CM SURT 3 DSÑ CERDITO/PATITO/FOCA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32445,
+    "name": "PELUCHE 40CM CERDITO ROSA HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32446,
+    "name": "PELUCHE 20CM CERDITO C/PIJAMA TIBURON SURT 2 CLRS HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32447,
+    "name": "PELUCHE 20CM CERDITO C/PIJAMA ANIMALES Y FRUTAS SURT 3 DSÑ HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32448,
+    "name": "PELUCHE 20CM CERDITO SURT 2 CLRS HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32449,
+    "name": "PELUCHE 23CM F/CERDITO C/MAMADERA BAIL BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32450,
+    "name": "PELUCHE 28CM CERDITO C/MAMADERA 1CLR HANTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32451,
+    "name": "PELUCHE 17X15CM MONSTRUITO CUADRADO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32452,
+    "name": "PELUCHE 25X23CM MONSTRUO BOXEADOR HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32453,
+    "name": "PELUCHE 20CM MONSTRUITO PELUDO SURT CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32454,
+    "name": "3 PELUCHE 18X14CM MONSTRUITO CELESTE HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32455,
+    "name": "PELUCHE 15CM MONSTRUITO ROSA HEADCART",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

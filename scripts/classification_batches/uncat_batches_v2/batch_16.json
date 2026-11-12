@@ -1,0 +1,85 @@
+{
+  "batch_id": 16,
+  "items": [
+    {
+      "id": 35958,
+      "supplier_id": 3,
+      "name": "CENICERO VIDRIO EN CAJITA DELI GLASS (RJ4433)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/2051b8b368faf837c3248516579a97d6.jpg"
+    },
+    {
+      "id": 35959,
+      "supplier_id": 3,
+      "name": "MANOPLA OFERTA MICROFIBRA CRYSTAL (57913763)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/77e62fd72a4a4a6492fed8919cc35900.jpg"
+    },
+    {
+      "id": 35960,
+      "supplier_id": 3,
+      "name": "ESCURRIDOR CROMADO (57911408)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/2494cd310209dc0c4b4c942c63c5e0de.jpg"
+    },
+    {
+      "id": 35961,
+      "supplier_id": 3,
+      "name": "PANERA ALAMBRE REDONDA (57912387)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/31067761b5426c2c36e65a6302bddcc3.jpg"
+    },
+    {
+      "id": 35962,
+      "supplier_id": 3,
+      "name": "PACK X6 VASO BOMBE 400 ML (6677029)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/3cd363553abdc360d8abe0c37f63da64.jpg"
+    },
+    {
+      "id": 35963,
+      "supplier_id": 3,
+      "name": "PLACA ANTIADHERENTE 47.5 X 31 CM TK (KR-2002L)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/4daf7f652ee8483bd5e5af054aba2d61.jpg"
+    },
+    {
+      "id": 35964,
+      "supplier_id": 3,
+      "name": "MOLDE ANTIADHERENTE PARA TARTA 20 CM TK (KR-WO001-20CM)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/444b3ff9d9616277f4270c8be4f8ec65.jpg"
+    },
+    {
+      "id": 35965,
+      "supplier_id": 3,
+      "name": "MOLDE ANTIADHERENTE PARA TARTA 24 CM TK (KR-WO001-24CM)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/a6f4cea700fd4c6a9376fac7e4d5b486.jpg"
+    },
+    {
+      "id": 35966,
+      "supplier_id": 3,
+      "name": "MOLDE ANTIADHERENTE PARA TARTA 26 CM TK (KR-WO001-26CM)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/2a91dd7180943396531fded4c3ea8106.jpg"
+    },
+    {
+      "id": 35967,
+      "supplier_id": 3,
+      "name": "RALLADOR PLANO 3 USOS 15 CM TK (S01035B1-AA)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/f03128fb158439a30d6495092523cd18.jpg"
+    }
+  ]
+}

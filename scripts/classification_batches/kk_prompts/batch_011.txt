@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28406,
+    "name": "SERVILLETERO 13X7CM METAL OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28407,
+    "name": "SERVILLETERO 19X19X7CM HIERRO REJA C/APOYO /BASE MADERA HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28408,
+    "name": "SERVILLETERO 18X18,5X7CM \"CUISINE\" HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28409,
+    "name": "SERVILLETERO 20X20X7CM C/APOYO HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28410,
+    "name": "SERVILLETERO 14,5X7X12,2CM HIERRO REJA F/ \"U\" HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28411,
+    "name": "SERVILLETERO 17,5X17,5X6CM HIERRO C/APOYO CLR NEGRO/BLANCO CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28412,
+    "name": "SERVILLETERO 19,8X19,8X6CM HIERRO C/BASE RATAN HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28413,
+    "name": "SERVILLETERO 23,5X12,5X10CM RELIEVE CUADROS TRANSP OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28414,
+    "name": "SERVILLETERO 24X12X9CM RELIEVE RAYAS TRANSP OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28415,
+    "name": "SERVILLETERO 17X12,5CM F/OSO CLR MARRON SHRINK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28416,
+    "name": "SOPORTE P/CONDIMENTOS Y PORTAROLLO 34X13X28CM \"CUISINE\" ALAMBRE ACERO C/BASE BAMBU HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28417,
+    "name": "APOYA PAVAS 17,5X17,5X1CM CUADRADO BAMBU C/CENTRO TIRAS HIERRO CLR BLANCO HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28418,
+    "name": "APOYA PAVAS 17X17X1CM CUADRADO BAMBU C/CENTRO TIRAS HIERRO CLR NEGRO HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28419,
+    "name": "APOYA PAVAS 18X18X1,5CM CUADRADO HIERRO C/CENTRO MADERA HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28420,
+    "name": "AGARRADERA HORNO 20X20CM TELA CUADRADA SURT 2 DSÑO OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28421,
+    "name": "AGARRADERA HORNO 30CM TELA REDONDA SURT 3 DSÑ OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28422,
+    "name": "AGARRADERA HORNO 30CM TELA REDONDA SURT 4 DSÑ OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28423,
+    "name": "AGARRADERA SILICONA+ALGODÓN 17,5X17,5 -SURT CLRS ROSA/AZUL/AMARILLO - ETIQUETA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28424,
+    "name": "GUANTE COCINA C/POSAPAVA ESTAMP UTENSILIOS OPP HEAD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28425,
+    "name": "GUANTE SILICONA -30X19 -3CLRS GRIS/ROSA/BLANCO - ETIQUETA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28426,
+    "name": "GUANTE SILICONA 35X18CM CLR CELESTE HANGTANG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28427,
+    "name": "GUANTE COCINA 15X30 GRIS OPP HEAD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28428,
+    "name": "REPASADOR MICROFIBRA 38X61 ESTAM SURT HEADCARD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28429,
+    "name": "REPASADOR GRANDE CUADRILLE CLR SURT CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28430,
+    "name": "REPASADORES X3 30X30/40X48/38X51 CUADRICULADO CLR SURT CARTO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28431,
+    "name": "PAÑO X5 MICROFIBRA CLR SURT CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28432,
+    "name": "PAÑO X3 30X30X3CM MICROFIBRA CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28433,
+    "name": "PAÑO X3 30CM MICROFIBRA BORDE COSTURA LISO CLR SURT. HEADER BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28434,
+    "name": "REPASADOR 40X60 COSTURA COCINERO 3 MOD SURT. CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28435,
+    "name": "REPASADOR X5 30CM CUAD. CUADRILLE CLR SURT CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28436,
+    "name": "PAÑO X2 40CM MICROFIBRA COCINA CUADRILA CLR SURT HEADER BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28437,
+    "name": "PAÑO 40CM MICROFIBRA PELUDO LISO CLR SURT HEADER BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28438,
+    "name": "PAÑO X5 30CM CUAD CLR SURT PVC BAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28439,
+    "name": "INDIVIDUAL 30X45CM PLAST RECTANGULAR SURT 4 CLRS HEAD CART",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28440,
+    "name": "SECAPLATOSDEPLASTICO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28441,
+    "name": "MANTA SECAPLATOS 34X26,5X0,4CM SILICONA CLR NEGRO/GRIS POLYBAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28442,
+    "name": "MANTA SECAPLATOS 23,3X9,3X1,3CM SILICONA CLR GRIS TJTA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28443,
+    "name": "SECAPLATOS 44,5X22,5X12CM PP C/ALAMBRE CLR NEGRO SHRINK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28444,
+    "name": "ORGANIZADOR FREGADERO 16,5X11,5X12CM ACERO INOX TARJETA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28445,
+    "name": "ORGANIZADOR FREGADERO 23X13CM PP+ACERO INOX CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28446,
+    "name": "ORGANIZADOR FREGADERO 10,1X8X8,2CM METALICO \"SPONGE\" CLR BLANCO/NEGRO EGG CRATE",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28447,
+    "name": "ESCURRIDOR CUBIERTOS 37,5X10X5,5CM PP+TPR CLR GRIS TARJETA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28448,
+    "name": "SECA PLATOS 37,5X36X25CM HIERRO TARJETA COLGANTE",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28449,
+    "name": "SECAPLATOS 44X29,5X18CM HIERRO C/ASAS MADERA CLR NEGRO HANGTAG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28450,
+    "name": "SECAPLATOS METALICO C/PLASTICO 43X31,5X12CM OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28451,
+    "name": "DIVISOR PLAST 39X11 P/CUBIERTOS 2 CLR SURT CART",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28452,
+    "name": "PORTA ROLLO 30X30X8CM MADERA REDONDO C/ESTANTE \"HOME\" SURT 3 CLRS",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28453,
+    "name": "BALDE POCHOCLOS 14X12CM BULK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28454,
+    "name": "ESCARBADIENTESX100C/ENVASEPLASTICOF /FILOSASHRINKPACKX1",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28455,
+    "name": "BALANZA COCINA 21X15X3CM A PILAS CJA CLR",
+    "current_cat": "厨房炊具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

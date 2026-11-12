@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30556,
+    "name": "SURT FLORERO 34X7CM CERAMICO F/JARRA C/PICO SURT 3 CLRS BLANCO/NEGRO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30557,
+    "name": "FLORERO 20X3,5CM CERAMICO SURT 3CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30558,
+    "name": "FLORERO 28X3,5CM CERAMICO SURT 3CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30559,
+    "name": "FLORERO 15X3,5CM CERAMICO TRIANGULAR SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30560,
+    "name": "FLORERO 17X7CM CERAMICO RAYAS RETORCIDO SURT 3 CLRS VERDE/ROSA/VIOLETA PASTEL CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30561,
+    "name": "FLORERO 23X8CM CERAMICO RAYAS RETORCIDO SURT 3 CLRS VERDE/ROSA/VIOLETA PASTEL CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30562,
+    "name": "FLORERO 29X10X8CM CERAMICO RETORSIDO SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30563,
+    "name": "FLORERO 18X7,5X5CM CERAMICO RETORSIDO SURT CLRS VERDE/ROSA/VIOLETA CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30564,
+    "name": "3 FLORERO 24X9X6CM CERAMICO RETORSIDO SURT CLRS VERDE/ROSA/VIOLETA CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30565,
+    "name": "3 FLORERO F/ANILLOS -CERAMICO -15*28*6 -SURT CLRS NEGRO/BLA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30566,
+    "name": "FLORERO C/RELIEVE ONDAS VERTICALES -CERAMICO -13,5*13,5*25",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30567,
+    "name": "FLORERO F/ESFERA APLANADA -CERAMICO - 20*6,5*20 -CLR BLANC",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30568,
+    "name": "FLORERO F/VASIJA MINIMALISTA -CERAMICO -4*20 -CLR NEGRO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30569,
+    "name": "FLORERO NEGRO 12,5X15CM MDF C/RELIEVE SURT DSÑ",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30570,
+    "name": "2 FLORERO 24X32X11CM METALICO C/ADORNOS ORBITAS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30571,
+    "name": "FLORERO 24X11X22CM METALICO C/ADORNOS ORBITAS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30572,
+    "name": "FLORERO 25X12X12CM METALICO 3 CUADRADOS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30573,
+    "name": "FLORERO 35X12X12CM METALICO 3 CUADRADOS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30574,
+    "name": "PORTAVELA VIDRIO 6X6CM CAJA REGALO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30575,
+    "name": "PORTAVELA VIDRIO 8,5X6,5CM F/CUADRADA LABRADA CJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30576,
+    "name": "PORTA VELA CERAMICO 7CM C/VELA DISPLAY BOX X12",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30577,
+    "name": "PORTAVELA VIDRIO 14,5X15,8M C/BASE ACACIA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30578,
+    "name": "PORTAVELA VIDRIO 16,5X18CM C/BASE ACACIA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30579,
+    "name": "PORTAVELA VIDRIO 28X16,3M C/BASE PINO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30580,
+    "name": "PORTAVELA VIDRIO 34X18,3M C/BASE PINO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30581,
+    "name": "PORTA VELA 15X8,9CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30582,
+    "name": "PORTA VELA 24X11CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30583,
+    "name": "PORTA VELA 15X11,5CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30584,
+    "name": "PORTA VELA C/VASO DE VIDRIO 21X14X38CM METAL CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30585,
+    "name": "- PORTAVELA F/ANILLOS APILADOS NEGROS -VIDRIO, HIERRO Y CERAM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30586,
+    "name": "VELA RUSTICA 6,3X7CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30587,
+    "name": "VELA RUSTICA PILAR 6,3X12,5CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30588,
+    "name": "VELA RUSTICA PILAR 6,3X15CM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30589,
+    "name": "VELAS LED X3 12/9/7CM PLAST DSÑO LISO BLANCA CAJA VENT A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30590,
+    "name": "VELAS LED X3 7/9/12CM PLAST DSÑO LISO BEIGE VENT A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30591,
+    "name": "CAJA SET 3 VELAS CON BASE BLANCA -VIDRIO Y HIERRO - 7X16,5/7X21,",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30592,
+    "name": "PORTA VELAS METALICA 22X15X15CM C/MADERA REDONDA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30593,
+    "name": "PORTA VELAS METALICA 18X10X10CM C/MADERA REDONDA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30594,
+    "name": "PORTA VELAS MADERA 30X18X18CM SOLAR CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30595,
+    "name": "PORTA VELAS MADERA 37X18X18CM SOLAR CAJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30596,
+    "name": "REG PORTA VELAS MADERA 44X18X18CM SOLAR CAJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30597,
+    "name": "REG PORTA VELAS MADERA X2 34,5X15X15/25,5X12X12CM CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30598,
+    "name": "PORTA VELAS METALICO 51X15,8X15,5CM C/VELA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30599,
+    "name": "PORTA VELAS METALICO 43X15,8X15,5CM C/VELA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30600,
+    "name": "PORTA VELAS METALICA X2 MED/GRANDE 40X20X20/31X16X16CM NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30601,
+    "name": "PORTA VELAS METALICA X3 50X23X23/40X18X18/30X15X15CM NEGRA CAJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30602,
+    "name": "PORTA VELAS COLGANTE METALICA X3 REG 48X20X20/37X15X15/25X11X11CM NEGRA CAJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30603,
+    "name": "PORTA VELAS METALICA X2 REG 34,5X12X12/25,5X12X12CM C/MADERA CUADRADA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30604,
+    "name": "PORTA VELAS METALICO X3 33,5X16X16/27,5X16X16/18,5X16X16CM CUADRADO CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30605,
+    "name": "PORTA VELAS METALICO X3 33X21,5X14/26X21,5X14/18,5X17X12,5CM CUADRADO CAJA REG",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

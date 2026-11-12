@@ -1,0 +1,85 @@
+{
+  "batch_id": 6,
+  "items": [
+    {
+      "id": 35858,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDEÑO DE VIDRIO C/U",
+      "sku": "36773186",
+      "brand": "",
+      "image_local": "images/sfpanda/58026c9e1acfc3b8b171047270f2a9d6.webp"
+    },
+    {
+      "id": 35859,
+      "supplier_id": 1,
+      "name": "ADORNO DE GLOBO AEROSTÁTICO C/U",
+      "sku": "36773185",
+      "brand": "",
+      "image_local": "images/sfpanda/6543c304e9b54472c01dbca023545ee8.webp"
+    },
+    {
+      "id": 35860,
+      "supplier_id": 1,
+      "name": "ALHAJERO C/U",
+      "sku": "36773184",
+      "brand": "",
+      "image_local": "images/sfpanda/a2544bee71cd25074803c16efaa57a8a.webp"
+    },
+    {
+      "id": 35861,
+      "supplier_id": 1,
+      "name": "TAZA DOBLE VIDRIO C/U",
+      "sku": "36773183",
+      "brand": "",
+      "image_local": "images/sfpanda/91ebeaa83fb7b007e62cd6516dfed346.webp"
+    },
+    {
+      "id": 35862,
+      "supplier_id": 1,
+      "name": "TAZA DOBLE VIDRIO 300 ML C/U",
+      "sku": "36773181",
+      "brand": "",
+      "image_local": "images/sfpanda/a7c3e698e59ffeeea3496d66b0381682.webp"
+    },
+    {
+      "id": 35863,
+      "supplier_id": 1,
+      "name": "TAZA DOBLE VIDRIO 300 ML C/U",
+      "sku": "36773180",
+      "brand": "",
+      "image_local": "images/sfpanda/4efb0b7bcd3c14b57f37903112ccd9e5.webp"
+    },
+    {
+      "id": 35864,
+      "supplier_id": 1,
+      "name": "SOMBRERO DE LENTEJUELAS C/U",
+      "sku": "36773178",
+      "brand": "",
+      "image_local": "images/sfpanda/63ee45e1b32d986b8634268ceb0ab1c5.webp"
+    },
+    {
+      "id": 35865,
+      "supplier_id": 1,
+      "name": "SOMBRERO PARA DISFRAZ C/U",
+      "sku": "36773176",
+      "brand": "",
+      "image_local": "images/sfpanda/303189ac207769ec009cdb6870e49aa9.webp"
+    },
+    {
+      "id": 35866,
+      "supplier_id": 1,
+      "name": "SET DE BELLEZA C/U",
+      "sku": "36773172",
+      "brand": "",
+      "image_local": "images/sfpanda/f15875f342cf1f6709a8612e924a12b0.webp"
+    },
+    {
+      "id": 35867,
+      "supplier_id": 1,
+      "name": "CEPILLO DE PELO C/U",
+      "sku": "36773168",
+      "brand": "",
+      "image_local": "images/sfpanda/e275fbb504d7a94fb05ce3adf161f06f.webp"
+    }
+  ]
+}

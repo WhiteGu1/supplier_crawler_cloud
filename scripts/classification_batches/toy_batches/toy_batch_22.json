@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33448,
+    "supplier_id": 11,
+    "sku": "24035N",
+    "name": "MIX COLORES 120G",
+    "image": "/images/panda_99/24035N.jpg"
+  },
+  {
+    "id": 33449,
+    "supplier_id": 11,
+    "sku": "24060N",
+    "name": "MIX COLORES KUROMI 120G",
+    "image": "/images/panda_99/24060N.jpg"
+  },
+  {
+    "id": 33450,
+    "supplier_id": 11,
+    "sku": "24061N",
+    "name": "MIX COLORES CABIPARA 120G",
+    "image": "/images/panda_99/24061N.jpg"
+  },
+  {
+    "id": 33451,
+    "supplier_id": 11,
+    "sku": "24104N",
+    "name": "MIX COLORES 120G",
+    "image": "/images/panda_99/24104N.jpg"
+  },
+  {
+    "id": 33452,
+    "supplier_id": 11,
+    "sku": "24108N",
+    "name": "CAMARA NO PAPER",
+    "image": "/images/panda_99/24108N.jpg"
+  },
+  {
+    "id": 33453,
+    "supplier_id": 11,
+    "sku": "W-21-1",
+    "name": "SINGLE ROW",
+    "image": "/images/panda_99/W-21-1.jpg"
+  },
+  {
+    "id": 33454,
+    "supplier_id": 11,
+    "sku": "9092S",
+    "name": "DOUBLE ROW",
+    "image": "/images/panda_99/9092S.jpg"
+  },
+  {
+    "id": 33455,
+    "supplier_id": 11,
+    "sku": "9092D",
+    "name": "SINGLE ROW",
+    "image": "/images/panda_99/9092D.jpg"
+  },
+  {
+    "id": 33456,
+    "supplier_id": 11,
+    "sku": "806-4",
+    "name": "DOUBLE ROW",
+    "image": "/images/panda_99/806-4.jpg"
+  },
+  {
+    "id": 33457,
+    "supplier_id": 11,
+    "sku": "139-2",
+    "name": "DOUBLE ROW PU LIGHT",
+    "image": "/images/panda_99/139-2.jpg"
+  }
+]

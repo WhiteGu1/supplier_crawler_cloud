@@ -1,0 +1,72 @@
+[
+  {
+    "id": 18621,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "SET JUEGO AROS APILABLES (SB57046)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\11c6d88848b221f9bde4c3970bffe652.jpg"
+  },
+  {
+    "id": 18622,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "TORRE APILABLE MADERA (SB55812)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\8b39843afb26ca6089e4d01e3a9ccca5.jpg"
+  },
+  {
+    "id": 18629,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "SET ARCO Y FLECHA SPIDERMAN (SB55726)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\8a6ba4bdfb4bf09a7fb8f76393e7bf8d.jpg"
+  },
+  {
+    "id": 18630,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "SET ARCO Y FLECHA BATMAN (SB52852)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\7b08a2ca78f1edeb44a57141ec26478f.jpg"
+  },
+  {
+    "id": 18631,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "SUPER ARCO Y FLECHA (SB54545)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\5d0cc35878253e680c5875b2ed97a8fc.jpg"
+  },
+  {
+    "id": 18632,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "ARCO DE FUTBOL EN CAJA (SB54349)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\2c6dda26b5a1dd7449ab0f951202cc46.jpg"
+  },
+  {
+    "id": 18636,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "BARRILETE STITCH (SB56763)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\af1a2b4882cde8430a18b897e7b399f5.jpg"
+  },
+  {
+    "id": 33395,
+    "supplier_id": 11,
+    "sku": "24159SL",
+    "name": ". LABUBU COLECCIÓN",
+    "image": "/images/panda_99/24159SL.jpg"
+  },
+  {
+    "id": 33396,
+    "supplier_id": 11,
+    "sku": "24030AG",
+    "name": "DINOSAURIO PROTECTOR",
+    "image": "/images/panda_99/24030AG.jpg"
+  },
+  {
+    "id": 33397,
+    "supplier_id": 11,
+    "sku": "24174AG",
+    "name": "BURBUJERO TRANSPARENTE",
+    "image": "/images/panda_99/24174AG.jpg"
+  }
+]

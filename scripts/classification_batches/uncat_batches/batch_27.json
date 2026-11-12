@@ -1,0 +1,76 @@
+{
+  "batch_id": 27,
+  "total": 10,
+  "products": [
+    {
+      "id": 35768,
+      "name": "Dispenser De Jabon De Vidrio, 400Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0c19bb2d2cd465ab647050a0ceaef84a.jpg"
+    },
+    {
+      "id": 35769,
+      "name": "Dispenser De Jabon De Vidrio, 500Ml.",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9ee4b8f5d8589edac490c796e91e3fd1.jpg"
+    },
+    {
+      "id": 35770,
+      "name": "Escobilla De Baño Plateada Con Base 38 cm22063",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/4c45ddf3888dc812dfab8e7f068519d6.png"
+    },
+    {
+      "id": 35771,
+      "name": "Escobilla De Baño C/ Detalles En Bambú",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/66d63f4df4e77f1c2aada68ebb42ff4f.jpg"
+    },
+    {
+      "id": 35772,
+      "name": "Espejo Con Borde Cromado",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7903d7960baeadbc7e189647e843eefa.jpg"
+    },
+    {
+      "id": 35773,
+      "name": "Espejo Con Borde Cromado 58436",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0c077c3d099f84722da338b1bca3e5c9.jpg"
+    },
+    {
+      "id": 35774,
+      "name": "Espejo Con Borde Cromado 58440",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b5aecd85e40f4ea56f564f0b082a75f5.jpg"
+    },
+    {
+      "id": 35775,
+      "name": "Espejo Con Soporte De Hierro",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/020f04b8f53c74a1efaa69493f2fddb5.jpg"
+    },
+    {
+      "id": 35776,
+      "name": "Espejo Con Soporte De Hierro 58442",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/3571ee9b3f09a88178216d15956fc971.jpg"
+    },
+    {
+      "id": 35777,
+      "name": "Esponja De Baño 50G",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7816924825b1036032978b7f332bb61f.jpg"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "batch_id": 28,
+  "total": 10,
+  "products": [
+    {
+      "id": 35778,
+      "name": "Juego De Baño 26,5X16,5Cm, 4 Piezas",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9789b566645610c52f3e92178f0dd618.jpg"
+    },
+    {
+      "id": 35779,
+      "name": "Dispenser De Jabon De Vidrio 500ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/65c676ab19f356df79bb35c7368b88e8.jpg"
+    },
+    {
+      "id": 35780,
+      "name": "Gorro De Baño, 28Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c37068984bbb41bada3ab3e82e650d65.jpg"
+    },
+    {
+      "id": 35781,
+      "name": "BARRA DE PEGAMENTO C/U",
+      "sku": "35200485",
+      "brand": "",
+      "image_local": "images/sfpanda/69335714845d242429186ce0865a31ab.webp"
+    },
+    {
+      "id": 35782,
+      "name": "Bowl Acero Inoxidable con Manijas, Dorado, 17X6Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/cf265f2331b4788403552e0d093d31a7.jpg"
+    },
+    {
+      "id": 35783,
+      "name": "Bowl De Acero Inoxidable con Manijas Dorado, 24X5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9e4198d97348ead641416cf350c14183.jpg"
+    },
+    {
+      "id": 35784,
+      "name": "Bowl De Acero Inoxidable con Manijas, Dorado, 12X4.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a71637ed622c8a81956ad64f29fe0eec.jpg"
+    },
+    {
+      "id": 35785,
+      "name": "Colador De Acero Inoxidable, Dorado, 25.5X8.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a4a2af8f1ae028f20e177cb40101356b.png"
+    },
+    {
+      "id": 35786,
+      "name": "Plato/Bandeja, Acero Inoxidable, Dorado, 30Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/3e4839dc7059a72496f6ddb952e78363.png"
+    },
+    {
+      "id": 35787,
+      "name": "Cepillo De Limpieza De Parrilla De Mano 15Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/05d586be63b060a84194f05da69846d0.jpg"
+    }
+  ]
+}

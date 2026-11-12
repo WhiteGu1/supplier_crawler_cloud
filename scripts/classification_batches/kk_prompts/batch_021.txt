@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28906,
+    "name": "TAZA PLASTICA 11X8,5CM/300ML C/ESTAMPADO COMA LETRAS 6 MOD S",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28907,
+    "name": "CUCHARA PLAST C/SILICONA 8X35CM OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28908,
+    "name": "CUBIERTOS BEBE 7,5X15CM PLAST TENEDOR/CUCHARA SURT 2 CLRS CELESTE/ROSA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28909,
+    "name": "CUCHARA PLAST C/SILICONA 8X35CM OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28910,
+    "name": "SET BEBE X 3 PCS 22CM, 13CM, 9,5CMS SURTIDO 3-4 COLORES",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28911,
+    "name": "SET BEBE FIBRA DE BAMBOO CJA VENT F/ANIMAL PANDA PLATO 18,5C",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28912,
+    "name": "VASO PLASTICO 13CM 250ML TRANS COBERTOR PLAST CALADA 4 CLRS VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28913,
+    "name": "TAZA PLAST C/ASAS 6,5X13CM SURT 3 CLRS OPP VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28914,
+    "name": "TAZA 8X9,5CM DISEÑO OSO OPP VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28915,
+    "name": "TAZA METAL 10,X8 300ML CUNICORNIO 6MOD SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28916,
+    "name": "PLATO P/BEBE PLASTICO 34X32X10CM F/MONSTRUITO OJITOS SHK VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28917,
+    "name": "SET TAPPER PLAST 16X8CM X6 CAPIVARA DOBLE BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28918,
+    "name": "SET PLATOS PLAST 28,5X24X3CM X7 F/CAPIVARA DOBLE BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28919,
+    "name": "SET TAPPER PLAST 16X8CM X8 CAPIVARA DOBLE BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28920,
+    "name": "SET PLATOS PLAST 24,5X20X4,5CM X7 F/OSO 3 COLORE SURT DOBLE BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28921,
+    "name": "SET PLATOS PLAST 28,5X24X3CM X7 F/OSO COLORES SURT DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28922,
+    "name": "3 SET PLATOS PLAST 26X19,5X4CM X8 CAPIVARA DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28923,
+    "name": "LUNCHERA ACERO INOX + PLASTICO 700ML 150ML 3 COMPARTIMENTO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28924,
+    "name": "+ LUNCHERA 22X12X5CM 850ML C/ TENEDOR TAPA CON ALAS Y BOTON AN",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28925,
+    "name": "LUNCHERA 22X10X8CM 1200ML C/ TENEDOR TAPA CON ALAS Y BOTON A",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28926,
+    "name": "LUNCHERA 18,5X13,5X18,5CM PLAST SURT CLRS CELEST/ROSA/VERDE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28927,
+    "name": "LUNCHERA 19X19CM PLAST C/CUCHARA- TENEDOR CUADRADA SURT 4 CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28928,
+    "name": "LUNCHERA PLASTICO 201X12X8,5CM RECTANGULAR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28929,
+    "name": "LUNCHERA PLAST 22,5X16,5X6,5CM INTERIOR ACERO C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28930,
+    "name": "LUNCHERA PLAST 24X14X7CM INTERIOR ACERO C/CUCHARA Y TENEODR C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28931,
+    "name": "LUNCHERA PLAST 18X17X7,5CM INTERIOR ACERO C/VISOR F/MANZANA OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28932,
+    "name": "LUNCHERA PLASTICA 22X16,5X7,5CM RECTANGULAR SURT 2 CLRS SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28933,
+    "name": "LUNCHERA PLASTICA 16X16X8,5 1100ML F/FRUTILLITA SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28934,
+    "name": "LUNCHERA PLAST 16X7,5CM CUAD C/CUCHARA Y TENEDOR C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28935,
+    "name": "LUNCHERA PLAST 17,5X17CM C/CUCHARA CHOP STICK X2 OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28936,
+    "name": "LUNCHERA PLAST 20X14,5X8,5CM INTERIOR ACERO C/CUCHARA C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28937,
+    "name": "LUNCHERA PLAST 26X19X7,5CM INTERIOR ACERO C/VISOR F/PERA OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28938,
+    "name": "LUNCHERA PLAST 24X17X6,5CM INTERIOR ACERO C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28939,
+    "name": "LUNCHERA PLAST 22X16,5X7,5CM INTERIOR ACERO C/VISOR F/PATO OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28940,
+    "name": "LUNCHERA PLASTICA 14X21X7,3CM 1100ML F/ANANA SURT 2 CLRS SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28941,
+    "name": "LUNCHERA PLAST 20X14,5X8,5CM INTERIOR ACERO C/CUCHARA C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28942,
+    "name": "LUNCHERA PLASTICA 22X16,5X7,5CM F/CARAMELO SURT 2 CLRS SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28943,
+    "name": "LUNCHERA PLAST 26,5X19X8,5CM INTERIOR ACERO C/CUCHARA C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28944,
+    "name": "LUNCHERA PLAST 22X15,5X7CM INTERIOR ACERO C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28945,
+    "name": "LUNCHERA PLASTICA 17X15,5X8CM 1100ML F/SANDIA SURT 3 CLRS SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28946,
+    "name": "LUNCHERA PLAST 22,5X16,5X6,5CM INTERIOR ACERO C/VISOR OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28947,
+    "name": "LUNCHERA 22,5X16X18CM ACERO INOX ESTAMP ELEFANTE SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28948,
+    "name": "LUNCHERA 22X16,5X7,5CM F/NUBE SHRINK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28949,
+    "name": "SET LONCHERA PLASTICA 20 X 19 CM SURTIDO 3-4 COLORES",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28950,
+    "name": "LUCHERA PLASTICA 20X15,5X7,5CM 1000ML F/MOSTRUO SHK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28951,
+    "name": "HUEVERA 29X11X8CM PLAST X12 ESPACIOS C/TAPA DESMONTABLE SHK PACK",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28952,
+    "name": "TUPPER X3 13X10X8CM RECTANGULAR C/ TAPA HERMETICA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28953,
+    "name": "TUPPER PLASTICO 11,5X17CM C/TAPA HERMETICO OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28954,
+    "name": "TUPPER 30X16X7,5CM RAYADO OVALADO C/TAPA OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28955,
+    "name": "TUPPER 13,5X17X7,5CM PLAST DSÑO CAPIBARA CLR SURT OPP",
+    "current_cat": "厨房储物"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

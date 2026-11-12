@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29106,
+    "name": "COPA VINO X 6 DORADA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29107,
+    "name": "COPA VINO X6 DORADA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29108,
+    "name": "COPA VINO X6 NEGRA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29109,
+    "name": "COPA VINO X 6 DORADA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29110,
+    "name": "COPA X6 TRANSPARENTE C/RELIEVE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29111,
+    "name": "COPA VINO X 6 DORADA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29112,
+    "name": "SET COPA VINO X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29113,
+    "name": "COPA VINO VIDRIO (X6) 24,2X7,1CM 510ML 205G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29114,
+    "name": "VASO COPA X6 TRANSPARENTE GRIS CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29115,
+    "name": "VASO COPA X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29116,
+    "name": "VASO VIDRIO 9X7CM F/AMPOLLA X6U 350ML C/BORDE DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29117,
+    "name": "VASO VIDRIO 13X7CM F/AMPOLLA X6U 530ML C/BORDE DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29118,
+    "name": "VASO VIDRIO 12X7CM F/AMPOLLA X6U C/BORDE DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29119,
+    "name": "VASO VIDRIO 8X9CM F/AMPOLLA X6U. C/BORDE DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29120,
+    "name": "VASO VIDRIO SETX6 8,5X7,5CM P/WHISKY CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29121,
+    "name": "VASO VIDRIO 8,7CM 270ML SET X6 BASE ANCHA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29122,
+    "name": "VASO VIDRIO 11,5CM 390ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29123,
+    "name": "SET X4 VASO VIDRIO 8X5X11,5CM DOBLE FONDO F/CORAZON ROSA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29124,
+    "name": "VASO VIDRIO 12CM 550ML SET X6 F/OVAL CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29125,
+    "name": "VASO VIDRIO 13,3CM 360ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29126,
+    "name": "VASO VIDRIO 14CM 365ML SET X6 BASE GRUESA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29127,
+    "name": "VASO X6 TRANSPARENTE GRIS BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29128,
+    "name": "VASO X6 TRANSPARENTE GRIS C/RELIEVE DOBLE DIAMETRO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29129,
+    "name": "VASO ALTO C/BASE X6 TRANSPARENTE GRIS CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29130,
+    "name": "VASO X6 TRANSPARENTE C/RELIEVE DOBLE DIAMETRO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29131,
+    "name": "VASO ALTO C/BASE X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29132,
+    "name": "VASO VIDRIO (X6) 11,5X6,6CM 215G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29133,
+    "name": "CHOPP VIDRIO (X6) 13,7X7,3CM 335ML CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29134,
+    "name": "CHOPP VIDRIO (X6) 14X9,6CM 660ML 680G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29135,
+    "name": "CHOPP VIDRIO 13CM 320ML SET X6 C/MANIJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29136,
+    "name": "CHOPP VIDRIO 20CM 415ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29137,
+    "name": "TAZA CAFÉ VIDRIO 8X8 RED BASE PESADA FINA ESANCHADA CLR BX X",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29138,
+    "name": "TAZA CAFÉ VIDRIO 8,4CM 250ML SET X6 DSÑO BASE C/ROMBOS CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29139,
+    "name": "TAZA CAFÉ VIDRIO 8,8CM 210ML SET X6 C/MANIJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29140,
+    "name": "TAZA CAFÉ VIDRIO 8,8CM SET X6 DSÑO PATRONES LINEAS C/MANIJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29141,
+    "name": "TAZA CAFÉ VIDRIO 13,7CM 250ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29142,
+    "name": "POCILLO CAFÉ VIDRIO (X6) 10,1X8,1CM 290 ML 305G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29143,
+    "name": "TAZA TE VIDRIO X6PCS 7,5CM C/BANDEJA 37X6CM",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29144,
+    "name": "TAZA VIDRIO REDONDA 13,5CM C/PLATO FORMA CORAZON 6C9,5CM X3P",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29145,
+    "name": "TAZA TE VIDRIO X6PCS 8X7CM / 14CM C/BORDE DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29146,
+    "name": "TAZA DOBLE CAPA 6,5X7CM 90ML TRANSP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29147,
+    "name": "TAZA CAFÉ 7X7CM 70ML C/MANGO MADERA TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29148,
+    "name": "TAZA CAFÉ 6X7CM 70ML C/MANGO MADERA TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29149,
+    "name": "SET COPON VIDRIO X6 102,5X110CM 300ML CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29150,
+    "name": "POCILLO CAFÉ 8X6CM VIDRIO TRANSP CJA BLNCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29151,
+    "name": "SET TAZAS X2 17,5X9,5CM VIDRIO C/BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29152,
+    "name": "VASO 8X7,5CM C/MANIJA MADERA CLR TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29153,
+    "name": "VASO 8X6,5CM C/MANIJA MADERA CLR TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29154,
+    "name": "VASO 9,5X7,5CM RAYADO C/BASE MADERA CLR TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29155,
+    "name": "SET APERITIVO X4 33X9,5CM VIDRIO C/BASE MADERA",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

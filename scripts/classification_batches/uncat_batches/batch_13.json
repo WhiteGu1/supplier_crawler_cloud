@@ -1,0 +1,76 @@
+{
+  "batch_id": 13,
+  "total": 10,
+  "products": [
+    {
+      "id": 35628,
+      "name": "Set X2 Espatulas De Bambu 30x6 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b27e614c7a5e08b1ceeb3f8a46575a89.jpg"
+    },
+    {
+      "id": 35629,
+      "name": "Pinza De Bambu De 30Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/15d255170e86d994e534d30b2fb42904.jpg"
+    },
+    {
+      "id": 35630,
+      "name": "Cucharas De Bambu 6 Piezas, 12Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/291012cf6bb6b8d55516911b94786dbc.jpg"
+    },
+    {
+      "id": 35631,
+      "name": "Set X6 Cucharas De Bambu , 13.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/afab6164ad3c406f0d55a5b5795490df.jpg"
+    },
+    {
+      "id": 35632,
+      "name": "Prensaajos Negro",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/8aca1ec2500c444c8c90f19161e85a2c.jpg"
+    },
+    {
+      "id": 35633,
+      "name": "Molinillo Pimentero Madera, Centro De Ceramica 4,6 X 20,8 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/3ca4f83a99a3c4bd93cd1c2b0356e76a.jpg"
+    },
+    {
+      "id": 35634,
+      "name": "Molinillo Pimentero Madera, Centro De Ceramica 4,6 X 15,2 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/208f48ea3b7c7b8695023529d837da55.jpg"
+    },
+    {
+      "id": 35635,
+      "name": "Aceitero/Vinagrero Spray 100ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0a95628af778da3c86fe0d6cea53e124.png"
+    },
+    {
+      "id": 35636,
+      "name": "Set X12 Frascos De Vidrio + Estante",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/4ba46d7e33bc1684139d839f7bb219ef.jpg"
+    },
+    {
+      "id": 35637,
+      "name": "Especiero Giratorio  +  12 Frascos",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c800b5adaebffaae15caef512c70e6cc.jpg"
+    }
+  ]
+}

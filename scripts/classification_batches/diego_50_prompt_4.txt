@@ -1,0 +1,60 @@
+你是商品分类助手。请用 image 工具逐个分析以下商品图片，结合商品名称判断最合适的分类。
+注意：必须使用 image 工具查看图片，不要使用 read 工具。
+
+商品列表：
+1. ID:12197, 名称:Aceitera / Vinagrera de vidrio, 图片:D:/projects/supplier_crawler/images/osa/d2f3854659eb4e5cdc159ce11e181c7c.webp
+2. ID:12198, 名称:Bombilla Malon (1020), 图片:D:/projects/supplier_crawler/images/osa/94e75cfb36cde219b140357605eb5478.webp
+3. ID:12199, 名称:Compotera Melamina, 图片:D:/projects/supplier_crawler/images/osa/63af6e568121073c77f9e1b7984aeb0b.webp
+4. ID:12200, 名称:Encendedor MAGICLICK Plegable (1241769), 图片:D:/projects/supplier_crawler/images/osa/36ce0bf80fbbdcb151d44f294f44a8ea.webp
+5. ID:12201, 名称:Copa de Cerveza FLORIDA 300 ML 7,6 x 13 cm (7702/12), 图片:D:/projects/supplier_crawler/images/osa/84e4f8b4d799b76cbd7a9a5f3076cfb5.webp
+6. ID:12202, 名称:Plato ONIX Oxford, 图片:D:/projects/supplier_crawler/images/osa/22a0ff768a8825451a8b01e0604cd0d0.webp
+7. ID:12203, 名称:Especiero giratorio de acero inoxidable 12 jarros (ESP007), 图片:D:/projects/supplier_crawler/images/osa/d787512ac1ee12579b8aa57a8f5153d3.webp
+8. ID:12204, 名称:Molde budin ingles 26x11.5 (RO4444), 图片:D:/projects/supplier_crawler/images/osa/e4003a457ee17988012e8d0982a34c32.webp
+9. ID:12205, 名称:Bombilla Coco Espiral Color (314), 图片:D:/projects/supplier_crawler/images/osa/dbbd5a70b1c34c6535c14b21643ec748.webp
+10. ID:12206, 名称:Vaso de acero inoxidable carol (97601), 图片:D:/projects/supplier_crawler/images/osa/c5baa804475f81ee8803634e7bb1e86f.webp
+11. ID:12207, 名称:Rallador pirámide NEGRO con base de goma (RA09), 图片:D:/projects/supplier_crawler/images/osa/13aa7476d5edfc24229fc2df1d286fbe.webp
+12. ID:12208, 名称:CUCHARA MESA NEW KOLOR NEGRO X3 (23163/930), 图片:D:/projects/supplier_crawler/images/osa/7fc2955c051dd989c3e4e72a462d6901.webp
+13. ID:12209, 名称:Jarro Enlozado Rojo, 图片:D:/projects/supplier_crawler/images/osa/4f77a86c8f960507abfd05c5874e3155.webp
+14. ID:12210, 名称:Set de silicona 24cm (P3N2605), 图片:D:/projects/supplier_crawler/images/osa/acfea5eede8560015afc007f706a72ad.webp
+15. ID:12211, 名称:Ñoquera madera (MAD007), 图片:D:/projects/supplier_crawler/images/osa/22bb1405da3bcf02086278b7d75d2754.webp
+16. ID:12212, 名称:Piedra de afilar Importada, 图片:D:/projects/supplier_crawler/images/osa/8b68adc9c4df93f4fd2512460763fffc.webp
+17. ID:12213, 名称:Asadera cuadrada de vidrio Marinex, 图片:D:/projects/supplier_crawler/images/osa/5cff5b88f19158232cc1d38fcd391c43.webp
+18. ID:12214, 名称:Bolsa para lavar ropa (RO3771), 图片:D:/projects/supplier_crawler/images/osa/2e6605b7e6e85a6da013cf79d75abf8f.webp
+19. ID:12215, 名称:Cucharita de Te DYNAMIC x 3 (22307/930), 图片:D:/projects/supplier_crawler/images/osa/af5c6f912afd287243de1f788b735204.webp
+20. ID:12216, 名称:Mostacero Gastronómico (D119), 图片:D:/projects/supplier_crawler/images/osa/8e871b94188d8c483f9dc0a41e06901d.webp
+21. ID:12217, 名称:Exprimidor de Limón a Presión (RO6788), 图片:D:/projects/supplier_crawler/images/osa/7bb335f12f7e135ddc55029ffb36802b.webp
+22. ID:12218, 名称:Plato linea Carine negro, 图片:D:/projects/supplier_crawler/images/osa/75d6170a8cf0c0f10388cae6b75bca49.webp
+23. ID:12219, 名称:Molde Budín Ingles hojalata, 图片:D:/projects/supplier_crawler/images/osa/cb859b8fc36289bca6741499f0449f65.webp
+24. ID:12220, 名称:Jarro Enlozado con Flores, 图片:D:/projects/supplier_crawler/images/osa/0c388368d792f7a7c4b65606824e3f2c.webp
+25. ID:12221, 名称:Molde Muffin x 12 antiadherente (RO4437), 图片:D:/projects/supplier_crawler/images/osa/67c706f11b500c57b1b2039a15735367.webp
+26. ID:12222, 名称:Picos para Decorar de Acero (MO009), 图片:D:/projects/supplier_crawler/images/osa/328ae63810421d66259a91d09409ff89.webp
+27. ID:12223, 名称:Cascanuez plateado (T091), 图片:D:/projects/supplier_crawler/images/osa/2fd6602780991358cb406230792bfaf8.webp
+28. ID:12224, 名称:Encendedor MAGICLIK Pocket (1241766), 图片:D:/projects/supplier_crawler/images/osa/438f3bf4c0706dde010e3eb4ca2137cb.webp
+29. ID:12225, 名称:Cafetera con Embolo 600ML con Acero (RO1329), 图片:D:/projects/supplier_crawler/images/osa/a369ae8a0f49ceea6c8b44fedc3c0241.webp
+30. ID:12226, 名称:Tapón para Termo STANLEY (2315/4), 图片:D:/projects/supplier_crawler/images/osa/99268f09e0c85b3e8cc6d5393f166301.webp
+31. ID:12227, 名称:Latas decorativas Carol, 图片:D:/projects/supplier_crawler/images/osa/3363fbc9037d4bfa95e2dd499d550388.webp
+32. ID:12228, 名称:Sarten Doble de Teflon HUDSON linea DAYLI, 图片:D:/projects/supplier_crawler/images/osa/e8250f515981b5b17f2a225fe90b0872.webp
+33. ID:12229, 名称:Juego de Cuchillos x 3 New Kolor AZUL (23160/314), 图片:D:/projects/supplier_crawler/images/osa/5025c7f35864bbbcf8b6cdac3dd62235.webp
+34. ID:12230, 名称:Bowls cerealero vidrio opalina, 图片:D:/projects/supplier_crawler/images/osa/3996dddb87578548235f6b09e4faa35a.webp
+35. ID:12231, 名称:Cubiertos Carol blister x 3 GRIS, 图片:D:/projects/supplier_crawler/images/osa/7e13303298e06611b309e5fc8630e4c3.webp
+36. ID:12232, 名称:Tapón cebador termo 1 Lt (RO5479), 图片:D:/projects/supplier_crawler/images/osa/c4ff34b7217aa970e74342126cfb5b42.webp
+37. ID:12233, 名称:Molde Circular con Mango, 图片:D:/projects/supplier_crawler/images/osa/c971565a80880c78afe17cc3904e3ccc.webp
+38. ID:12234, 名称:Afila Cuchillos (L504), 图片:D:/projects/supplier_crawler/images/osa/5dcba0d160874472bb82b990a46cd0ce.webp
+39. ID:12235, 名称:Utensilios de nylon con mango de acero Hudson, 图片:D:/projects/supplier_crawler/images/osa/0aed149cf7d19a707fd87231b4a017ea.webp
+40. ID:12236, 名称:Pisa Papas Aluminio con Mango Madera (M8729), 图片:D:/projects/supplier_crawler/images/osa/cb28740030f80e9208d5682616158f80.webp
+41. ID:12237, 名称:Individuales mas posa vasos 28x43 x6 (401705) MODELOS SURTIDOS, 图片:D:/projects/supplier_crawler/images/osa/d3c080820bc661c7853f44c3dd9fd74e.webp
+42. ID:12238, 名称:Hermético de vidrio tapa CAROL, 图片:D:/projects/supplier_crawler/images/osa/ae43842f01104af2103f1570d2028e21.webp
+43. ID:12239, 名称:Corta pizza (L562), 图片:D:/projects/supplier_crawler/images/osa/bded4eb1b17618e22442afded3bd6c96.webp
+44. ID:12240, 名称:Bate bife (MAD006), 图片:D:/projects/supplier_crawler/images/osa/d1d8c9ccb79c4c5606cf9607934274e1.webp
+45. ID:12241, 名称:Cacerola Charolada Fiamaj, 图片:D:/projects/supplier_crawler/images/osa/40e08077197eeb6b1cf032f2106fbe25.webp
+46. ID:12242, 名称:Balde de hielo Acero Importado, 图片:D:/projects/supplier_crawler/images/osa/d6bdaacf723f5f918821be150d2adc59.webp
+47. ID:12243, 名称:Jarra Bar, 图片:D:/projects/supplier_crawler/images/osa/ca1a5d9c2b5c433b6b7fb753fbcc8d50.webp
+48. ID:12244, 名称:Tortera de aluminio alta, 图片:D:/projects/supplier_crawler/images/osa/fb1621c66bf499a4fd0a06463f5b0b61.webp
+49. ID:12245, 名称:Frasco hermético de vidrio tapa bamboo, 图片:D:/projects/supplier_crawler/images/osa/37a94112b90f7385980cf6b980f869cc.webp
+50. ID:12246, 名称:Descarozador de Manzanas (L395), 图片:D:/projects/supplier_crawler/images/osa/9008d8b84cf9ff7cc21106c7e8e62f8f.webp
+
+可选分类（选最匹配的）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+输出格式：JSON数组，每项 {"id": ID, "category": "分类名称", "desc": "简要描述商品"}
+只输出JSON，不要其他文字。

@@ -1,0 +1,76 @@
+{
+  "batch_id": 26,
+  "total": 10,
+  "products": [
+    {
+      "id": 35758,
+      "name": "Cepillo De Pelo 58461",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/49274227987816f1db05c5b6a0982e3a.jpg"
+    },
+    {
+      "id": 35759,
+      "name": "Cepillo De Pelo 58465",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1eb37ee9341bce3ba9e0ed74d2a20c9a.jpg"
+    },
+    {
+      "id": 35760,
+      "name": "Cepillo De Pelo 58466",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/830f8901f9ca99de5df6905198da2f8e.jpg"
+    },
+    {
+      "id": 35761,
+      "name": "Cortina De Baño De Silicona, Juego De 2 Piezas 180X180 + 40X60",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/4760d03499074e1bbe4cdd10e0f6ffff.jpg"
+    },
+    {
+      "id": 35762,
+      "name": "Dispenser Jabón De Vidrio 400ml  29774",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/47e61cdfdc0b0e82ec609d751a3ed910.png"
+    },
+    {
+      "id": 35763,
+      "name": "Dispenser Jabón Blanco 450ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/bbef3e2c85109d006b4b02a7ca7b20e5.jpg"
+    },
+    {
+      "id": 35764,
+      "name": "Dispenser Jabón Negro 450 ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/222348d3a7a29ceccae60047f8239651.jpg"
+    },
+    {
+      "id": 35765,
+      "name": "Dispenser Jabón De Vidrio 400ml 29787",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a33ad1f615bbbce1f4e5910a118d082e.png"
+    },
+    {
+      "id": 35766,
+      "name": "Dispenser Jabón De Vidrio 330 Ml   43000",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1ce8f9b06f8e06bef587c1b9de4e941f.png"
+    },
+    {
+      "id": 35767,
+      "name": "Dispenser De Vidrio Color  500ml  50278",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c4d2749474b8687456885299eb85e2a0.jpg"
+    }
+  ]
+}

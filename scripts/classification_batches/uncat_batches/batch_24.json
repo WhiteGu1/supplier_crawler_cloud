@@ -1,0 +1,76 @@
+{
+  "batch_id": 24,
+  "total": 10,
+  "products": [
+    {
+      "id": 35738,
+      "name": "Perchero Alambre 8 Espacios 50g 52141",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/d8103adfeba2fac62b656ca18d9b02ce.png"
+    },
+    {
+      "id": 35739,
+      "name": "Perchero Alambre 10 Espacios 62g  52142",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/50ac7a7524ccf39e3caf3289517f6d7d.png"
+    },
+    {
+      "id": 35740,
+      "name": "Difusor De Ambiente Botella Vidrio + Tapa Madera",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/af1b67fa82a0ef83571ec5f32561a425.png"
+    },
+    {
+      "id": 35741,
+      "name": "Difusor De Ambiente Botella Vidrio + Tapa Madera 60421",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c82afd3afbf6e6b88f8fd953f84a2866.png"
+    },
+    {
+      "id": 35742,
+      "name": "Alfombra De Baño De Pvc, Ovalada",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/d1864c610a07f5c80c94eeb7ab8d13cf.jpg"
+    },
+    {
+      "id": 35743,
+      "name": "Alfombra De Baño De Pvc, Ovalada 60093",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0b2fded709bf056673298da4e7ba303a.jpg"
+    },
+    {
+      "id": 35744,
+      "name": "Alfombra De Baño De Pvc, Ovalada 60094",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0e3cdbd7263a226c4fff5dbb4f227dcc.jpg"
+    },
+    {
+      "id": 35745,
+      "name": "Alfombra De Baño De Pvc, Rectangular",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/cdfe46bdcc5778741eeaa6c6bb6b3f78.jpg"
+    },
+    {
+      "id": 35746,
+      "name": "Alfombra De Baño De Pvc, Rectangular 60096",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7a66cb037223838353924ee118f388c0.jpg"
+    },
+    {
+      "id": 35747,
+      "name": "Alfombra De Baño De Goma Y Poliester",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/fbf45bb4a1d732ab356f06b8d8fcfbe3.jpg"
+    }
+  ]
+}

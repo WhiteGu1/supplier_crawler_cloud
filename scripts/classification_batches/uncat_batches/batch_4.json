@@ -1,0 +1,76 @@
+{
+  "batch_id": 4,
+  "total": 10,
+  "products": [
+    {
+      "id": 35538,
+      "name": "VELADOR LED HONGO C/U",
+      "sku": "36650094",
+      "brand": "",
+      "image_local": "images/sfpanda/6b2f5a6aa495f562ed19b1a662eb86ea.webp"
+    },
+    {
+      "id": 35539,
+      "name": "PANQUEQUERA GRANITO 22 CM (6002-22)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/efe884420fb2c3da77258dcd5fc04349.jpg"
+    },
+    {
+      "id": 35540,
+      "name": "AJEDREZ JUEGO DE MESA (112Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/7ca1db7e24e41d0fe0fdb619893dbd53.jpg"
+    },
+    {
+      "id": 35541,
+      "name": "DAMAS JUEGO DE MESA (113Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/76468eda14993f65f34494f4abfcc093.jpg"
+    },
+    {
+      "id": 35542,
+      "name": "GENERALA (122Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/b3c6f9f0c24bc2cca427775a11e7ec0d.jpg"
+    },
+    {
+      "id": 35543,
+      "name": "EL JUEGO DE LA OCA (143Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/048d68a616e08cc1fc2c994708c1f415.jpg"
+    },
+    {
+      "id": 35544,
+      "name": "BATALLA NAVAL JUEGO DE MESA (610)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/fd8f130be26e4f2e5a4b5c69611cd38b.jpg"
+    },
+    {
+      "id": 35545,
+      "name": "MEMOTEST FUTBOL (836)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/3056415f0819e960daf17f125a12a00a.jpg"
+    },
+    {
+      "id": 35546,
+      "name": "MINI RULETA (6081)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/9f2d68e322ba336e4960af54a13a032e.jpg"
+    },
+    {
+      "id": 35547,
+      "name": "PALITOS CHINOS (399Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/83e760e75a07aad5c9550cb33a939043.jpg"
+    }
+  ]
+}

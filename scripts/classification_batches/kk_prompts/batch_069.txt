@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31306,
+    "name": "SET PARA ARMAR COLLARES X12 CAJA VALIJA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31307,
+    "name": "SET PARA ARMAR COLLARES X2 19X7CM CAJA PLASTICA F/GATITO DISPLAY X16",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31308,
+    "name": "SET PARA ARMAR COLLARES X7 16X7,5CM CAJA PLAST F/VARITA DISPLAY X18",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31309,
+    "name": "SET DE DOCTOR 34X26X2 X8 PCS SURT 2 MOD ESTETOS/JERING/TIJE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31310,
+    "name": "SET DE DOCTOR 37X21X2X8 PCS SURT 2 MOD ESTETO/TIJER/MART BL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31311,
+    "name": "SET DOCTOR 24X46CM VALIJA C/BEBE DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31312,
+    "name": "SET DOCTOR 26X24CM ESTETOSCOPIO/MARTILLO VALIJA RUEDAS TRANSP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31313,
+    "name": "SET DOCTOR 28X25CM ESTETOSCOPIO/LENTES VALIJA TRANSP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31314,
+    "name": "SET DOCTOR C/ACCESORIOS X8PCS ESTETOSCOPIO/JERINGA C/LUZ Y S",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31315,
+    "name": "SET DOCTOR C/BEBE INSTRUMENTOS MEDICINA CJA VENT MALETIN",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31316,
+    "name": "SET DOCTOR X4 ESTETOSCOPEO/TIJERA/MARTILLO BLIST 28,5X21,5",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31317,
+    "name": "SET DOCTOR X6 18,5X17CM ESTETOSCOPIO/JERINGA/CUTTER SURT 2 CLRS CAJA VALIJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31318,
+    "name": "SET DOCTOR X8 20X19CM ESTETOSCOPIO/JERINGA/PASTILLA CAJA VALIJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31319,
+    "name": "SET DOCTOR X8 22X19,5CM ESTETOSCOPIO/JERINGA/ACC CAJA VALIJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31320,
+    "name": "ARROCERA 9X10CM C/PERROS X3 /ACC X6 PVC HEADER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31321,
+    "name": "CAJA REGISTRADO 25X35CM CARRITO/MAQUINA/FRUTAS PVC HEADCARD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31322,
+    "name": "CAJA REGISTRADORA 11,5X11,5CM C/ACC X4 HELADOS/PAPAS FRITAS/ADHERESOS BOLSA PVC HEADER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31323,
+    "name": "CAJA REGISTRADORA 15,5X11CM C/ACCS X12 SURT 3 DSÑO CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31324,
+    "name": "CAJA REGISTRADORA 18,5X12CM C/SONIDO PILA BOLSA PVC",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31325,
+    "name": "A CAJA REGISTRADORA 20X17CM C/ACCS X10 C/SONIDO A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31326,
+    "name": "CAJA REGISTRADORA 21X18CM C/SONIDO A PILA SURT 2 CLRS CAJA ABIERTA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31327,
+    "name": "CAJA REGISTRADORA 21X38X16CM C/SOONIDO A PILA /MERCADERIA CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31328,
+    "name": "CAJA REGISTRADORA 23X25CM C/ACCS X 9 EXHIBIDORA C/SONIDO A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31329,
+    "name": "CAJA REGISTRADORA 24X25CM C/ACCS X13 C/SON A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31330,
+    "name": "CAJA REGISTRADORA 26X15CM C/SONIDO PILA CLR ROSA CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31331,
+    "name": "A CAJA REGISTRADORA 26X19CM C/ACCS X 13 C/SONIDO A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31332,
+    "name": "CAJA REGISTRADORA 27X23X3CM PLAST ACC X6 SURT C/SONIDO A PIL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31333,
+    "name": "CAJA REGISTRADORA 30X14CM M/DRAGON C/ACCS C/SONIDO A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31334,
+    "name": "CAJA REGISTRADORA 30X4X14CM C/ACCS X3 C/SONIDO A PILA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31335,
+    "name": "CAJA REGISTRADORA 32X26X22CM DSÑO CONEJO CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31336,
+    "name": "CAJA REGISTRADORA 34X18CM C/ACCS 8 C/SONIDO A PILA CAJA ABIERTA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31337,
+    "name": "CAJA REGISTRADORA 47X25X17CM C/SONIDO A PILA C/MASCOTAS X4 Y ACCS X11 CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31338,
+    "name": "CAJA REGISTRADORA A PILA 20X15 F/RANA LUZ/SONIDO CJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31339,
+    "name": "CAJA REGISTRADORA A PILA CAJA ABIERTA 24,5X20X14,5CM",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31340,
+    "name": "CAJA REGISTRADORA C/CARRITO HELADOS /ACC CJA EXHIBIDORA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31341,
+    "name": "CAJA REGISTRADORA PLAST 119X17X10CM A PILA 2XAA 2 MOD SURT CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31342,
+    "name": "CAJA REGISTRADORA PLAST 18X10X10CM ACC X3 SURT A PILA 2XAA CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31343,
+    "name": "CARRITO 21X20 HELADO DOB BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31344,
+    "name": "CARRITO 36X23 DULCES CJA EXHIB",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31345,
+    "name": "CARRITO 36X23 HAMBURGUESAS CJA EXHIB",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31346,
+    "name": "CARRITO COMIDA RAPIDA 36X23CM C/ACC CAJA ABIERTA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31347,
+    "name": "CARRITO COMPRAS 20X21CM BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31348,
+    "name": "CARRITO COMPRAS 20X22CM C/MERCADERIA PVC HEADER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31349,
+    "name": "CARRITO DULCES 23X19CM C/ACCS X 13 C/SONIDO A PILA MESA/SILLAS/DULCES CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31350,
+    "name": "CARRITO DULCES 30X37CM C/ACCS X 7 CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31351,
+    "name": "CARRITO DULCES C/ACCESORIOS X6PCS DOBLE BLISTER 18X20CM",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31352,
+    "name": "CARRITO HELADOS 27X19CM C/VIBORA X3 CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31353,
+    "name": "COCINA 15X13CM C/SET COCINA X10 BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31354,
+    "name": "COCINA C/LUZ Y SONID A PILA PLAST CJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31355,
+    "name": "DISPENSER F/SAPO 7,5X18CM C/ACC X9 PVC HEADER",
+    "current_cat": "厨房炊具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

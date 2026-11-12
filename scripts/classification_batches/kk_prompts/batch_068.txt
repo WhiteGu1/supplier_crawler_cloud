@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31256,
+    "name": "BEBOTE 10X20X14CM PLAST CJA ABRTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31257,
+    "name": "BEBOTE 18X9CM PLAST C/ROPA CONEJO CJA AB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31258,
+    "name": "BEBOTE 22CM C/BIBERON Y PIJAMA ENTERIZO 17X27X13CM A PILA RE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31259,
+    "name": "BEBOTE C/PIJAMA C/ASIENTO BEBE BOLSA PVC 16X25CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31260,
+    "name": "SET BELLEZA 13X12CM X8 SECADOR/CEPILLO/ESPEJO BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31261,
+    "name": "SET BELLEZA 34X8X4CM PLAST ACC X2 VARITA/CORONA BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31262,
+    "name": "SET BELLEZA X 17 12X16,5CM CAJA VALIJA SURT 2 CLRS DISPLAY X8",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31263,
+    "name": "SET PELUQUERIA 20X12CM CARTUCHERA/ ACC X5 CJA DISPLAY X16",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31264,
+    "name": "SET BELLEZA X2 VARITA 34 /CORONA C/PELO CART 23X15",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31265,
+    "name": "SET BELLEZA 13X12CM X8 SECADOR/CEPILLO/ESPEJO BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31266,
+    "name": "SET BELLEZA X17 SANDALIAS/PEINE/TIJERA BLIS 42X29X5",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31267,
+    "name": "SET BELLEZA X12 42X34CM SECADOR/ESPEJO/PEINES BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31268,
+    "name": "SET BELLEZA X7 15,5X16CM CARTERA/PEINE/PERFUME BOLSA PVC HEADER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31269,
+    "name": "SET BELLEZA X11 28,5X43CM ESPEJO/SANDALIAS/SECADOR BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31270,
+    "name": "SET BELLEZA X9 25X34CM VARITA/MUÑECA/UÑAS BOLSA PVC HEADER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31271,
+    "name": "SET BELLEZA 11X10CM MUÑECA /VALIJA RUEDAS TRANSP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31272,
+    "name": "SET BELLEZA X5 SECADOR/ESPEJO/PEINE BLIST 28X19",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31273,
+    "name": "SET BELLEZA X7 33X21CM ESPEJO/SECADOR/CEPILLO BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31274,
+    "name": "SET BELLEZA X6 14X7CM PLANCHITA/ESPEJO/CORONA BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31275,
+    "name": "SET BELLEZA X8 23X13CM CARTERA/ESPEJO/ANTEOJOS BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31276,
+    "name": "SET BELLEZA X9PCS ESPEJO/CEPILLO/MOÑO BLISTER 10X6CM",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31277,
+    "name": "SET BELLEZA X7 37X27CM SECADOR/RULEROS/CEPILLO BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31278,
+    "name": "SET BELLEZA C/MUÑECA 14CM X10PCS BUCLERA/RELOJ/RULERO BOLSA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31279,
+    "name": "SET BELLEZA X9 SANDALIAS/TIARA/AROS/COLLAR/BARA CJA VENT 38X",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31280,
+    "name": "SET PELUQUERIA SECADOR DYSON 20X8 TIJERA/PEINE BLISTER BURB",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31281,
+    "name": "SET PELUQUERIA PLANCHA PELO/TELEFONO/PEINE/CEPILLO BLISTER B",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31282,
+    "name": "SET BELLEZA X9 25X34CM VARITA/MUÑECA/PEINE SURT 2 DSÑ BOLSA PVC HEADER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31283,
+    "name": "SET BELLEZA X7 16X15,5CM CARTERA/PEINE/GORRO BOLSA PVC HEADER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31284,
+    "name": "SET BELLEZA X10 25X34CM VARITA/MUÑECA/AROS BOLSA PVC HEADER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31285,
+    "name": "SET BELLEZA 38,5X24,5X4CM X11PCS PLAST SECDR/TIJERA/CEPILLO",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31286,
+    "name": "SET BELLEZA X10 28X20CM ANTEOJOS/PEINE/ESPEJO CAJA VALIJA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31287,
+    "name": "VALIJA SET BELLEZA 20X24CM CJA VENTANA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31288,
+    "name": "SECADOR PELO 16X9CM C/ACCESORIOS C/SONIDO A PILA BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31289,
+    "name": "SET ARMAR COLLARES X6 17X12CM FORMA PRINCESA CAJA PLAST CAJA DISPLAY X12",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31290,
+    "name": "SET P/ARMAR COLLARES 23X14CM DSÑO SIRENA BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31291,
+    "name": "SET P/ARMAR COLLARES 31,5X23X3CM X17PCS CUERDA/MOSTACILLAS",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31292,
+    "name": "SET P/ARMAR COLLARES BOTELLA DISPLAY BOX X6",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31293,
+    "name": "SET P/ARMAR COLLARES BOTELLA DISPLAY BOX X6",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31294,
+    "name": "SET P/ARMAR COLLARES C/TIJERA CJA PLAST RED 19CM",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31295,
+    "name": "SET P/ARMAR COLLARES CJA EXHIB F/PERRO 25X20X4",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31296,
+    "name": "SET P/ARMAR COLLARES CJA VENT F/GATO 14X19X3",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31297,
+    "name": "SET P/ARMAR COLLARES CJA VENT MALETIN 37X28X3",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31298,
+    "name": "SET P/ARMAR COLLARES DSÑO PONY BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31299,
+    "name": "SET P/ARMAR COLLARES RECT CJA VENT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31300,
+    "name": "SET P/ARMAR COLLARES X11PCS REDONDO MOSTACILLAS/ADORNOS CAJA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31301,
+    "name": "SET P/ARMAR COLLARES X3PCS 16X7X2CM CAJITA F/VIOLONCHELO SUR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31302,
+    "name": "SET P/ARMAS COLLARES 18X7CM DSÑO VARITA F/OSO DISPLAY X16",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31303,
+    "name": "SET P/ARMAS COLLARES 21X21CM DSÑO ARCOIRIS BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31304,
+    "name": "SET P/ARMAS COLLARES 22X31CM DSÑO CACHORRO BLISTER",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 31305,
+    "name": "SET P/ARMAS COLLARES 25X21 DSÑO COLA SIRENA DOBLE BLISTER",
+    "current_cat": "美妆个护"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

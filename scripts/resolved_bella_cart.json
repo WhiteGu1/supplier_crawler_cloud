@@ -1,0 +1,1327 @@
+{
+  "resolved": [
+    {
+      "status": "ok",
+      "parent_id": 75037,
+      "id": 75042,
+      "qty": 2,
+      "name": "DEDO DE PRACTICA CON UÑA CD:DH70539/ZJJSZ",
+      "type": "variable",
+      "var_label": "x6 unidad",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 111468,
+      "id": 111479,
+      "qty": 2,
+      "name": "Strass Gemas Autoadhesivas SURTIDOS COLORES NAEZ BC2051/20517",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 173994,
+      "id": 173995,
+      "qty": 5,
+      "name": "Parches Para LABIOS Mascarilla TEI k3040/k3039/k3038/k3037",
+      "type": "variable",
+      "var_label": "pack-10u",
+      "pack_size": 10,
+      "orig_qty": 50
+    },
+    {
+      "status": "ok",
+      "parent_id": 105693,
+      "id": 105697,
+      "qty": 2,
+      "name": "LIMPIADOR FACIAL SILICONA CD:HT-2301",
+      "type": "variable",
+      "var_label": "pack x12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 173986,
+      "id": 173991,
+      "qty": 5,
+      "name": "Parches Para Ojos Mascarilla TEI K3031",
+      "type": "variable",
+      "var_label": "pack-10u",
+      "pack_size": 10,
+      "orig_qty": 50
+    },
+    {
+      "status": "ok",
+      "id": 71269,
+      "qty": 4,
+      "name": "MASCARA KERATINA 270G FIDELITE 61190 ART/403",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 71276,
+      "qty": 4,
+      "name": "MASCARA ALMENDRAS 270G FIDELITE 61213 ART/405",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 153659,
+      "id": 153660,
+      "qty": 2,
+      "name": "Set de Belleza 5 en 1 &#8211; Kit Completo de Limpieza Facial y Maquillaje NAEZ BC2306/23065",
+      "type": "variable",
+      "var_label": "3-unidad",
+      "pack_size": 3,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "id": 204287,
+      "qty": 2,
+      "name": "KIT DE PERFUME + CREMA CORPORAL CD:YT2574/10494",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 196225,
+      "id": 196226,
+      "qty": 1,
+      "name": "CEPILLO LIMPIADOR Y EXFOLIANTE FACIAL DOBLE FAZ DE SILICONA NAEZ BC2587/325878",
+      "type": "variable",
+      "var_label": "6-unidad",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "id": 156192,
+      "qty": 8,
+      "name": "MASCARA CAPILAR SKALA",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 7308,
+      "id": 102669,
+      "qty": 1,
+      "name": "SEMI 10ML CITY GIRL #74",
+      "type": "variable",
+      "var_label": "caja 6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "id": 7101,
+      "qty": 6,
+      "name": "SEMI 10ML CITY GIRL #11",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 7366,
+      "id": 102686,
+      "qty": 1,
+      "name": "SEMI 10ML CITY GIRL #71",
+      "type": "variable",
+      "var_label": "caja 6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "id": 7078,
+      "qty": 6,
+      "name": "SEMI 10ML CITY GIRL #59",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 126234,
+      "id": 126237,
+      "qty": 2,
+      "name": "RUBOR EN BARRA RIMERA QUINCE RQ15 APROBADO POR ANMAT",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 177002,
+      "id": 177004,
+      "qty": 3,
+      "name": "Labial en Barra Matte Miss Betty DD-MIB-K6120/561209",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 72
+    },
+    {
+      "status": "ok",
+      "parent_id": 119019,
+      "id": 119021,
+      "qty": 2,
+      "name": "SERIE 12PCS ESMALTE SEMI OJO DE GATO CHARM LIMIT 08855",
+      "type": "variable",
+      "var_label": "caja 12colores",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 199061,
+      "id": 199067,
+      "qty": 4,
+      "name": "POLVO TRASLUCIDO MINERAL– CITY GIRL F6608",
+      "type": "variable",
+      "var_label": "caja-12u",
+      "pack_size": 12,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 156150,
+      "id": 156152,
+      "qty": 4,
+      "name": "LFME REMOVEDOR PARA ESMALTE UÑA 100ml RA100",
+      "type": "variable",
+      "var_label": "3 unidad",
+      "pack_size": 3,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 177069,
+      "id": 177071,
+      "qty": 1,
+      "name": "Delineador Líquido para Ojos Makeup New Eyeliner Miss Betty DD-MIB-E1381/513819",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 189496,
+      "id": 189499,
+      "qty": 2,
+      "name": "Depilador De Cristal Removedor De Pelo Y Exfoliante Corporal NAEZ BC2236/32365",
+      "type": "variable",
+      "var_label": "3-unidad",
+      "pack_size": 3,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 130349,
+      "id": 130351,
+      "qty": 2,
+      "name": "PACK DE LIMA MINI cml-060c",
+      "type": "variable",
+      "var_label": "6 unidad",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 120333,
+      "id": 120343,
+      "qty": 3,
+      "name": "MASCARA DE PESTAÑAS 4ANGELS AR1152",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 72
+    },
+    {
+      "status": "ok",
+      "id": 95747,
+      "qty": 2,
+      "name": "CAJA*12 DELINEADOR CON SELLO 89109",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 199039,
+      "id": 199044,
+      "qty": 1,
+      "name": "AGUA MICELAR – CITY GIRL F6658/F6659",
+      "type": "variable",
+      "var_label": "caja-8-unida",
+      "pack_size": 8,
+      "orig_qty": 8
+    },
+    {
+      "status": "ok",
+      "parent_id": 204902,
+      "id": 204905,
+      "qty": 2,
+      "name": "Agua Micelar TEI con Aloe Vera54344",
+      "type": "variable",
+      "var_label": "x3 unidad",
+      "pack_size": 3,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 117755,
+      "id": 117757,
+      "qty": 4,
+      "name": "DELINEADOR LAPIZ LABIO KARITE 2690-47   54501",
+      "type": "variable",
+      "var_label": "12 unidad",
+      "pack_size": 12,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 156209,
+      "id": 156212,
+      "qty": 2,
+      "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MY891005/10059",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 101513,
+      "id": 101517,
+      "qty": 2,
+      "name": "TOALLITA DESMAQUILLANTES CON AGUA MICELAR MELY891020/10202",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 9893,
+      "id": 159775,
+      "qty": 3,
+      "name": "LAS VARANO REMOVEDOR 120ML R120",
+      "type": "variable",
+      "var_label": "10-unidad",
+      "pack_size": 10,
+      "orig_qty": 30
+    },
+    {
+      "status": "ok",
+      "parent_id": 189722,
+      "id": 189724,
+      "qty": 2,
+      "name": "Máscara De Pestañas Volum&#8217; Express The Colossal Cat Eyes Negro MISS BETTY DH-M6610/05331",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 9851,
+      "id": 118524,
+      "qty": 2,
+      "name": "REMOVEDOR DE CUTICULAS CHERIMOYA CH014",
+      "type": "variable",
+      "var_label": "x3 unidad",
+      "pack_size": 3,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 169299,
+      "id": 169300,
+      "qty": 2,
+      "name": "Paleta De Sombras Angel Stitch Summer Con Espejo X18 Tonos  DH-JZD-EYE-18025/80259",
+      "type": "variable",
+      "var_label": "3-unidad",
+      "pack_size": 3,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 168288,
+      "id": 168291,
+      "qty": 1,
+      "name": "MASCARA DE PESTAÑAS TEI TEI8291",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 169261,
+      "id": 169264,
+      "qty": 4,
+      "name": "Paleta De Sombras Angel Stitch Rosa Con Espejo X9 Tonos DH-JZD-EYE-0927/09274",
+      "type": "variable",
+      "var_label": "3-unidad",
+      "pack_size": 3,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 195036,
+      "id": 195038,
+      "qty": 1,
+      "name": "MASCARA DE PESTAÑAS WATERPROOF NOLM DD-YDM-953/579530",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 189710,
+      "id": 189712,
+      "qty": 1,
+      "name": "Máscara De Pestañas Sky High Volume Up Waterproof Negro MISS BETTY DD-M3840/83840",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "id": 192177,
+      "qty": 6,
+      "name": "Pack 12pcs Esponja de Maquillaje Blender Difuminadora Gota y Reloj de Arena NAEZ DD3079/30797",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 155067,
+      "qty": 1,
+      "name": "PACK*10 ACEITE CUTICULA  CML-598CX",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 126636,
+      "qty": 2,
+      "name": "PACK*12 DE REPUESTO DE ARQUEADOR CML-802D/88025",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 7898,
+      "qty": 2,
+      "name": "PACK X25 LIMAS CITY GIRL 150/150 40148",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 199844,
+      "qty": 8,
+      "name": "TOALLITAS HUMEDAS MINI 8 PACK X 8 UNIDADES DD-RH-HSXM001/LZ-1540/LZ-1541/LZ-1834/LZ-896/LZ-9603-1/LZ-9603-2/LZ-9611/QH-0344/QH-0368",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 167279,
+      "id": 167281,
+      "qty": 1,
+      "name": "Pack Cepillos de Pestañas NAEZ BC2822/28220",
+      "type": "variable",
+      "var_label": "6-unidad",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 180166,
+      "id": 180169,
+      "qty": 1,
+      "name": "PALETA DE SOMBRAS CITY GIRL RL-12270",
+      "type": "variable",
+      "var_label": "caja-21unida",
+      "pack_size": 21,
+      "orig_qty": 21
+    },
+    {
+      "status": "ok",
+      "id": 169360,
+      "qty": 6,
+      "name": "Paleta De Sombras Stitch Aloha Con Espejo X42 Tonos DH-JZD-EYE-4218/42186",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 169343,
+      "qty": 24,
+      "name": "Paleta De Sombras Nude Eyeshadow Con Espejo X40 Tonos DH-JZD-IG3275/02754",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 169331,
+      "qty": 6,
+      "name": "Paleta De Sombras Hello Kitty Sanrio Libro Gigante DH-JZD-EYE-5438/54387",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "id": 169259,
+      "qty": 6,
+      "name": "Paleta De Sombras Stitch Con Espejo DH-JZD-EYE-4220/42209",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 170451,
+      "id": 170453,
+      "qty": 2,
+      "name": "Uñas Press On Con Diseños Surtidos Naez BC1795/17958",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 175573,
+      "id": 175575,
+      "qty": 3,
+      "name": "Uñas Press On Con Diseños Surtidos Naez 1820/18207",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 160023,
+      "id": 160025,
+      "qty": 3,
+      "name": "UÑAS PRESS ON COFFIN NAEZ BC1764/17606",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 187550,
+      "id": 187552,
+      "qty": 3,
+      "name": "Uñas Press On Con Diseños Surtidos Naez BC1824/18245",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 188728,
+      "id": 188731,
+      "qty": 6,
+      "name": "Pegamento para Uñas con Pincel DD2913/29135 Naez",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 72
+    },
+    {
+      "status": "ok",
+      "parent_id": 203361,
+      "id": 203364,
+      "qty": 6,
+      "name": "PEGAMENTO PARA UÑAS RÁPIDO Y FIRME X 5 UNIDADES NAEZ DD2977/329777",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 72
+    },
+    {
+      "status": "ok",
+      "parent_id": 19247,
+      "id": 100752,
+      "qty": 12,
+      "name": "*3 UNIDAD ESMALTE SEMI MELY COLOR 860000",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 159060,
+      "id": 159062,
+      "qty": 4,
+      "name": "Ultrabond 15 ML CHERIMOYA  CH045",
+      "type": "variable",
+      "var_label": "caja-6u",
+      "pack_size": 6,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 93383,
+      "id": 93394,
+      "qty": 1,
+      "name": "#49 ESMALTE SEMI CITY GIRL",
+      "type": "variable",
+      "var_label": "caja 6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 93324,
+      "id": 93346,
+      "qty": 2,
+      "name": "#33 ESMALTE SEMI CITY GIRL",
+      "type": "variable",
+      "var_label": "caja 6u",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 109684,
+      "id": 109687,
+      "qty": 1,
+      "name": "#136 ESMALTE SEMI CITY GIRL",
+      "type": "variable",
+      "var_label": "caja x6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "id": 109262,
+      "qty": 1,
+      "name": "SERIE A+B 24UNIDAD ESMALTE SEMI ROJO CHARM LIMIT DH89013",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 109739,
+      "id": 109742,
+      "qty": 1,
+      "name": "#156 ESMALTE SEMI CITY GIRL",
+      "type": "variable",
+      "var_label": "caja x6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 143788,
+      "id": 184416,
+      "qty": 1,
+      "name": "ESMALTE SEMI BLANCO NEGRO VIA LACTEA SAR-103  00781",
+      "type": "variable",
+      "var_label": "caja-12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 152090,
+      "id": 152092,
+      "qty": 2,
+      "name": "PRESS GEL CAPPING ELOISE 10 ML 10144",
+      "type": "variable",
+      "var_label": "caja-12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 84043,
+      "id": 84062,
+      "qty": 2,
+      "name": "ULTRABOND PRIMER 10ML CITY GIRL PX2438/13092",
+      "type": "variable",
+      "var_label": "caja 6u",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 173215,
+      "id": 173217,
+      "qty": 1,
+      "name": "Set De Polvos Aurora Sólido X6 Tonos Cromo Nail SP6245/016245",
+      "type": "variable",
+      "var_label": "pack-12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 109639,
+      "id": 109642,
+      "qty": 1,
+      "name": "#149 ESMALTE SEMI CITY GIRL",
+      "type": "variable",
+      "var_label": "caja x6u",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 197120,
+      "id": 197121,
+      "qty": 3,
+      "name": "Colección de 8 Colores Efecto Aurora / Unicornio RIMERA 15 ES01-08-09",
+      "type": "variable",
+      "var_label": "caja-8u-1-8",
+      "pack_size": 8,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 135823,
+      "id": 135826,
+      "qty": 1,
+      "name": "BASE DE MAQUILLAJE PINK21 CS3403/56029",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 105340,
+      "id": 105345,
+      "qty": 2,
+      "name": "LABIAL EN BARRA EFECTO BRILLOSO 4ANGELS CD:AR1085/85197",
+      "type": "variable",
+      "var_label": "caja x24u",
+      "pack_size": 24,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 129676,
+      "id": 129679,
+      "qty": 1,
+      "name": "LABIAL EN BARRA MISS BETTY DH-K5927/59275",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 125519,
+      "id": 125522,
+      "qty": 1,
+      "name": "LABIAL EN BARRA MISS BETTY DH-K5930/59305",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 126784,
+      "id": 126787,
+      "qty": 2,
+      "name": "PALETA DE CORRECTOR DH-ME6014E/19115",
+      "type": "variable",
+      "var_label": "caja 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 172857,
+      "id": 172860,
+      "qty": 1,
+      "name": "CORRECTOR EN BARRA MINI TANGO DH-L272/20724",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 9901,
+      "id": 126651,
+      "qty": 1,
+      "name": "CHERIMOYA PRIMER CON ACIDO CH046",
+      "type": "variable",
+      "var_label": "x16 unidad",
+      "pack_size": 16,
+      "orig_qty": 16
+    },
+    {
+      "status": "ok",
+      "parent_id": 9879,
+      "id": 107250,
+      "qty": 1,
+      "name": "LAS VARANO PRIMER SIN ACIDO PSA11",
+      "type": "variable",
+      "var_label": "x10 unidad",
+      "pack_size": 10,
+      "orig_qty": 10
+    },
+    {
+      "status": "ok",
+      "parent_id": 14509,
+      "id": 14565,
+      "qty": 24,
+      "name": "LABIAL LIP GLOSS BARBY DH75043/23370",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 21183,
+      "id": 21234,
+      "qty": 36,
+      "name": "GLOSS DE ALOE VERA QOIDEN ROSE 60105",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 48064,
+      "id": 48066,
+      "qty": 2,
+      "name": "LIP GLOSS DOULEEC 81035/22513",
+      "type": "variable",
+      "var_label": "caja 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 64748,
+      "id": 77924,
+      "qty": 3,
+      "name": "SET PERFILADORES CITY 15048/MD-003",
+      "type": "variable",
+      "var_label": "caja 20u",
+      "pack_size": 20,
+      "orig_qty": 60
+    },
+    {
+      "status": "ok",
+      "parent_id": 120022,
+      "id": 120079,
+      "qty": 2,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1121",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 140938,
+      "id": 140941,
+      "qty": 2,
+      "name": "SET Blister de hebillas y colitas de pelo NAEZ BC2263/22631",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 120004,
+      "id": 120007,
+      "qty": 1,
+      "name": "VINCHAS+MUÑEQUERA NAEZ BC1115",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 85540,
+      "id": 85549,
+      "qty": 1,
+      "name": "CEPILLO PARA DUCHA MELY 63819",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 120130,
+      "id": 120132,
+      "qty": 1,
+      "name": "VINCHAS+MUÑEQUERA NAEZ BC2191",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 120026,
+      "id": 120029,
+      "qty": 2,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1122",
+      "type": "variable",
+      "var_label": "pack 12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 174000,
+      "id": 174001,
+      "qty": 6,
+      "name": "MASCARILLA FACIAL TEI SURTIDO",
+      "type": "variable",
+      "var_label": "pack-10u",
+      "pack_size": 10,
+      "orig_qty": 60
+    },
+    {
+      "status": "ok",
+      "parent_id": 158817,
+      "id": 158819,
+      "qty": 3,
+      "name": "Mascarilla Facial De Miel De Manuka Y Vitamina E BQY15921/715921 BIOAQUA",
+      "type": "variable",
+      "var_label": "20 unidad surtidos",
+      "pack_size": 20,
+      "orig_qty": 60
+    },
+    {
+      "status": "ok",
+      "parent_id": 158840,
+      "id": 158842,
+      "qty": 1,
+      "name": "Mascarilla Facial Antioxidante De Flor De Loto De Nieve DH-BQY48035/748035 BIOAQUA",
+      "type": "variable",
+      "var_label": "20 unidad surtidos",
+      "pack_size": 20,
+      "orig_qty": 20
+    },
+    {
+      "status": "ok",
+      "parent_id": 164435,
+      "id": 164436,
+      "qty": 36,
+      "name": "MASCARA DE PESTAÑAS 2 EN 1  4ANGEL AR1174",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 133757,
+      "id": 133759,
+      "qty": 6,
+      "name": "MASCARILLA FACIAL PERSONAJES 36 MODELO DH509-222/223/224/KTMM",
+      "type": "variable",
+      "var_label": "pack 10u",
+      "pack_size": 10,
+      "orig_qty": 60
+    },
+    {
+      "status": "ok",
+      "parent_id": 133761,
+      "id": 133764,
+      "qty": 1,
+      "name": "MASCARA DE PESTAÑAS ARABE DH509-232/22053",
+      "type": "variable",
+      "var_label": "caja 24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 165872,
+      "id": 165874,
+      "qty": 2,
+      "name": "Rubor liquido PINK TOUCH  PINK 21 CS5580/484626",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 48
+    },
+    {
+      "status": "ok",
+      "parent_id": 196870,
+      "id": 196876,
+      "qty": 2,
+      "name": "RUBOR  MAGICO DH80102/81290",
+      "type": "variable",
+      "var_label": "caja-12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 202259,
+      "id": 202261,
+      "qty": 2,
+      "name": "MASCARA DE PESTAÑAS VOLUMINIZADORA PINK SHOCK PINK 21 CS6754/01613",
+      "type": "variable",
+      "var_label": "caja-12u",
+      "pack_size": 12,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 81820,
+      "id": 81822,
+      "qty": 2,
+      "name": "RUBOR LABIAL 2IN1 GEGEBEAR GX1236",
+      "type": "variable",
+      "var_label": "6 unidad",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 202175,
+      "id": 202177,
+      "qty": 1,
+      "name": "LABIAL LIQUIDO MATTE LARGA DURACION BEAUTY PINK 21 CS6696/01767",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 144541,
+      "id": 144544,
+      "qty": 1,
+      "name": "MASCARA DE PESTAÑAS MINII TANGO DH-MT-M342/13429",
+      "type": "variable",
+      "var_label": "caja 36u",
+      "pack_size": 36,
+      "orig_qty": 36
+    },
+    {
+      "status": "ok",
+      "parent_id": 9891,
+      "id": 99009,
+      "qty": 1,
+      "name": "ACEITE DE CUTICULAS 15ML NAVI 91518",
+      "type": "variable",
+      "var_label": "x6 unidad",
+      "pack_size": 6,
+      "orig_qty": 6
+    },
+    {
+      "status": "ok",
+      "parent_id": 13260,
+      "id": 55340,
+      "qty": 28,
+      "name": "LABIAL LIP STICK COLOR 2IN1 MISS BETTY 33386/83002",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 28
+    },
+    {
+      "status": "ok",
+      "parent_id": 176562,
+      "id": 176563,
+      "qty": 4,
+      "name": "CUARTETO DE SOMBRAS  TYL1407",
+      "type": "variable",
+      "var_label": "10-unidad",
+      "pack_size": 10,
+      "orig_qty": 40
+    },
+    {
+      "status": "ok",
+      "parent_id": 189754,
+      "id": 189755,
+      "qty": 4,
+      "name": "Paleta De Sombras 9 Tonos Smoked Eyeshadow Palette Tonos Oscuros K&#8217;APEINE DD-KPE-YY009028/740367",
+      "type": "variable",
+      "var_label": "6-unidad",
+      "pack_size": 6,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 189749,
+      "id": 189750,
+      "qty": 4,
+      "name": "Paleta De Sombras 9 Tonos Chocolate Eyeshadow Palette K&#8217;APEINE DD-KPE-YY009030/74051",
+      "type": "variable",
+      "var_label": "6-unidad",
+      "pack_size": 6,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 194272,
+      "id": 194276,
+      "qty": 2,
+      "name": "PALETA DE SOMBRAS 48 COLORES TEI TEI8383/16978",
+      "type": "variable",
+      "var_label": "caja-6-unidad",
+      "pack_size": 6,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 204398,
+      "id": 204402,
+      "qty": 1,
+      "name": "SOMBRAS LÍQUIDAS PARA OJOS TEI TEI8555",
+      "type": "variable",
+      "var_label": "caja-24u",
+      "pack_size": 24,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "id": 192179,
+      "qty": 6,
+      "name": "Pack 12pcs Esponjas de Maquillaje Blender Difuminadoras en Tonos Rosa y Beige NAEZ DD3080/23038",
+      "type": "simple"
+    },
+    {
+      "status": "ok",
+      "parent_id": 133922,
+      "id": 133925,
+      "qty": 1,
+      "name": "RUBOR EN POLVO MISS LARA MS-503/31825",
+      "type": "variable",
+      "var_label": "caja 12u",
+      "pack_size": 12,
+      "orig_qty": 12
+    },
+    {
+      "status": "ok",
+      "parent_id": 42108,
+      "id": 42110,
+      "qty": 24,
+      "name": "ILUMINADOR EN CREMA 80145/12963",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "parent_id": 59882,
+      "id": 59884,
+      "qty": 24,
+      "name": "ILUMINADOR LIQUIDO MISS LARA 03510/DH83524",
+      "type": "variable",
+      "var_label": "unidad",
+      "pack_size": 1,
+      "orig_qty": 24
+    },
+    {
+      "status": "ok",
+      "id": 188726,
+      "qty": 1,
+      "name": "Pack 15pcs Aceite Revitalizante para Cutículas en Lápiz BC1322/13226  Naez",
+      "type": "simple"
+    }
+  ],
+  "out_of_stock": [
+    {
+      "status": "out_of_stock",
+      "id": 202226,
+      "qty": 24,
+      "name": "CONTORNO EN BARRA COLOR CONTOUR PINK 21 CS6783/01965"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 58306,
+      "qty": 12,
+      "name": "RUBOR MULTIUSO GEGE BEAR GX1215"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 202276,
+      "qty": 24,
+      "name": "BASE DE MAQUILLAJE ALTA COBERTURA EXTREME PINK 21 CS4994/68152"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 108441,
+      "qty": 96,
+      "name": "BASE DE MAQUILLAJES LIQUIDO 4ANGELS AR1120/AR1121"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 53315,
+      "qty": 2,
+      "name": "CAJA X29 ESMALTES SEMI CHARM LIMIT (INCLUYE 2 BASE Y 2 TOP) 30061"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 177741,
+      "qty": 2,
+      "name": "PACK DE 12PCS DELINEADOR DE LABIO PINK21 CS6441/88136"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 163418,
+      "qty": 2,
+      "name": "PACK*12 Lapiz Labial Waterproof Lip Pencil TEI TEI8236"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 169350,
+      "qty": 6,
+      "name": "Paleta De Sombras Stitch Frutilla Con Espejo X42 Tonos DH-JZD-EYE-4206/42060"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 170840,
+      "qty": 50,
+      "name": "Tips Soft  Gel 50PCS  Almendra Medio Charm Limit  CML-02A"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 98441,
+      "qty": 24,
+      "name": "BASE DE MAQUILLAJES 4ANGELS AR1092"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 175394,
+      "qty": 72,
+      "name": "Base de maquillaje líquida HUDA MATTE ME DD-HM-58753/87532"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 198202,
+      "qty": 24,
+      "name": "BASE DE MAQUILLAJE PINK 21 CS6636/88990"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 128142,
+      "qty": 24,
+      "name": "LAPIZ CORRECTOR BARRA DH509-086/21880"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 151640,
+      "qty": 72,
+      "name": "Corrector Líquido Matte Meike Glamour &#8211; Full Cover de Alta Cobertura DH-MK0274/02740"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 158685,
+      "qty": 192,
+      "name": "Corrector Líquido Sparkling Girls Instant Age Rewind Eraser DH-SP-1013/678902 SPARKLING GIRLS"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 158660,
+      "qty": 48,
+      "name": "Corrector Líquido Sparkling Girls HD High Definition DH-SP-3018/190395 SPARKLING GIRLS"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 36199,
+      "qty": 24,
+      "name": "PRIMER PARA SOMBRAS SHEGLAM 00017/79057"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 129527,
+      "qty": 24,
+      "name": "PRIMER DE MAQUILLAJE MISS FON DH-ZF06/26331"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 193945,
+      "qty": 48,
+      "name": "Broches para Pelo  MYE1-0006/00063"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 175404,
+      "qty": 48,
+      "name": "Primer facial gel HUDA MATTE ME DD-HM-58756/87568"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 201490,
+      "qty": 36,
+      "name": "VINCHAS PARA MAQUILLAJES NAEZ BC1124 /11247"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 130055,
+      "qty": 120,
+      "name": "MASCARILLA PARA PUNTO NEGRO ARABE 5 MODELO DH509-231/27133"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 169116,
+      "qty": 72,
+      "name": "Rubor En Polvo Para Mejillas Matte Finish Miss Glisten DD-HR-PD-25/00259"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 204291,
+      "qty": 48,
+      "name": "LABIAL LIQUIDO  4 Angels AR1233/02894"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 120435,
+      "qty": 48,
+      "name": "LABIAL LIQUIDO VINTY TEI8026"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 209214,
+      "qty": 72,
+      "name": "DELINEADOR DE LABIOS 4 ANGELS AR1238/03006"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 6680,
+      "qty": 24,
+      "name": "DOTTIN PARA DECORAR UÑA 00173/JQ-017"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 28123,
+      "qty": 24,
+      "name": "PALETA DE SOMBRAS X4 MISS LARA 02233"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 190095,
+      "qty": 24,
+      "name": "Paleta De Sombras E Yez + Glitter 4 Angels 4 Colores AR1203/98340"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 192692,
+      "qty": 24,
+      "name": "Paleta de Sombras para Ojos Magic Sevencool DD-SC-9336/01094"
+    },
+    {
+      "status": "out_of_stock",
+      "id": 164466,
+      "qty": 36,
+      "name": "DELINEADOR DE CEJAS EN LAPIZ AR1176"
+    }
+  ],
+  "errors": []
+}

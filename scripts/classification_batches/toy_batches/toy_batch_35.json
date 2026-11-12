@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33646,
+    "supplier_id": 11,
+    "sku": "24131",
+    "name": "TORNADO",
+    "image": "/images/panda_99/24131.jpg"
+  },
+  {
+    "id": 33648,
+    "supplier_id": 11,
+    "sku": "22207",
+    "name": "JUEGO DEL CAMELLO(36)",
+    "image": "/images/panda_99/22207.jpg"
+  },
+  {
+    "id": 33649,
+    "supplier_id": 11,
+    "sku": "24144T",
+    "name": "JUEGO TWISTER",
+    "image": "/images/panda_99/24144T.jpg"
+  },
+  {
+    "id": 33650,
+    "supplier_id": 11,
+    "sku": "24107",
+    "name": "AJEDREZ",
+    "image": "/images/panda_99/24107.jpg"
+  },
+  {
+    "id": 33651,
+    "supplier_id": 11,
+    "sku": "24085",
+    "name": "HOCKEY MESA",
+    "image": "/images/panda_99/24085.jpg"
+  },
+  {
+    "id": 33652,
+    "supplier_id": 11,
+    "sku": "24126",
+    "name": "BINGO LOTTO",
+    "image": "/images/panda_99/24126.jpg"
+  },
+  {
+    "id": 33653,
+    "supplier_id": 11,
+    "sku": "24125",
+    "name": "JUEGO LOTERIA",
+    "image": "/images/panda_99/24125.jpg"
+  },
+  {
+    "id": 33654,
+    "supplier_id": 11,
+    "sku": "24032",
+    "name": "SLIME MONSTER LAB",
+    "image": "/images/panda_99/24032.jpg"
+  },
+  {
+    "id": 33655,
+    "supplier_id": 11,
+    "sku": "24106",
+    "name": "ASTRONAUTA",
+    "image": "/images/panda_99/24106.jpg"
+  },
+  {
+    "id": 33656,
+    "supplier_id": 11,
+    "sku": "24107",
+    "name": "PAPAS FRITAS",
+    "image": "/images/panda_99/24107.jpg"
+  }
+]

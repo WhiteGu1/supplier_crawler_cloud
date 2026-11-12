@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31756,
+    "name": "PISTOLA 19X11CM TRANSPARENTE C/ENGRANAJES PVC BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31757,
+    "name": "PISTOLAS X2 20X10 DARDOS SOPAPA DOB BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31758,
+    "name": "RELOJ LANZA TAZOS 5X5CM PLAST PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31759,
+    "name": "RIFLE 47X8 3 DARDOS 3 PATOS BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31760,
+    "name": "RIFLE LANZA DARDOS 67X32,5X6,5CM AUTOMAT A PILA CJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31761,
+    "name": "SET CONO LANZA DISCOS DOBLE BLISTER CAJA DISPLAY X12 24X12CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31762,
+    "name": "SET HERRAMIENTAS 32,5X23X4CM PLASTICO X9ACC SURT BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31763,
+    "name": "SET PISTOLA LANZAPELOTAS X2 12X8,5CM C/DIANA 30CM C/PELOTAS CON ABROJO X3 OPP HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31764,
+    "name": "SET PISTOLAS LANZA BOLAS X2 27X27CM C/DIANA PELOTAS ABROJO X6 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31765,
+    "name": "SET PISTOLAS LANZA DARDO 13X12CM CJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31766,
+    "name": "SET PISTOLAS LANZA DARDO 22X16CM DSÑO GRAFITTI CJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31767,
+    "name": "SET PISTOLAS LANZA PELOTAS 13X12CM C/DIANA 30CM BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31768,
+    "name": "SET POLICIA PISTOLA 12X5X2 C/PLACA/DARDOS/BLANCO BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31769,
+    "name": "SET POLICIA PISTOLA 14X6X4 C/WALKIE/ESPOSAS/PITO DOB BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31770,
+    "name": "SET TIRO AL BLANCO 28CM C/PISTOLA /ABROJO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31771,
+    "name": "TIRO AL BLANCO 27X3 C/4 DARDOS BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31772,
+    "name": "TROMPO 29X20X3CM 4 TIPOS PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31773,
+    "name": "TROMPO C/LANZADOR 13X8X8 BLISTER SURT 2 MOD BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31774,
+    "name": "TROMPO PLAST 11X10CM COM LUCES A PILA RELOJ OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31775,
+    "name": "TROMPO X5PCS C/LANZADOR DOBLE BLISTER 7X10CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31776,
+    "name": "TROMPO X5PCS C/LANZADOR DOBLE BLISTER 8X17CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31777,
+    "name": "ARO BASQUET 17X201CM C/2 PELOTAS C/RED BLISTER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31778,
+    "name": "BOLSA BOXEO C/GUANTES RED",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31779,
+    "name": "PALO HOCKEY 58X13X2CM PLAST X2 PELOTA HOCKEY X2 BOLSA PVC",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31780,
+    "name": "PALOS BOWLING X10 15X5 BOLAS X2 DBL BLIS",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31781,
+    "name": "PELOTA 13CM SOFT OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31782,
+    "name": "PELOTA FUTBOL 18CMS GAJOS SUELTA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31783,
+    "name": "PELOTA9CMSOFTDISPLAYBOXX12",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31784,
+    "name": "SET PALETA PING PONG 24X15 3 PELOTAS DOB BLIST",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31785,
+    "name": "2 SOGA 34X18 MANGO PLAST ROSADO DOBLE BLISTER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31786,
+    "name": "SOGA 42X9X3CM PLAST CLR SURT HEACART",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31787,
+    "name": "SOGA DE SALTAR 27X25X4CM C/MANGO PLAST F/MARIPOSA BLISTER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31788,
+    "name": "SOGA DE SALTAR C/MANGO PLAST OPP CART.",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31789,
+    "name": "SOGA DE SALTAR MANGO CON FORMA ANIMAL PVC HEAD",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31790,
+    "name": "SOGA DE SALTAR VERDE MANGO PLAST CART 19X20CM",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31791,
+    "name": "SOGA PLAST 23X14CM MANGO PLAST 2 MOD SURT PVC HEADER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31792,
+    "name": "MONOPATIN 75X58X22CM PLAST C/METAL RUEDAS PVC C/LUZ A PILA R",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31793,
+    "name": "MONOPATIN 77X62X32CM PLAST C/METAL RUEDAS PVC C/LUZ Y SONID",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31794,
+    "name": "MONOPATIN PLEGABLE 80X56X25CM PLAST C/METAL RUEDAS PVC C/LUZ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31795,
+    "name": "ANIMAL C/ RUEDA LIBRE Y PALO PARA CARREAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31796,
+    "name": "ANIMALES R/L X4PCS DOBLE BLISTER 35X11CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31797,
+    "name": "BOXING MACHINE 38X27X5CM F/CONEJO C/LUZ Y SONIDO CARGA USB CJA REGALO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31798,
+    "name": "CABALLO 15X12 PULLSTRING OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31799,
+    "name": "CABALLO PRINCESA C/ACC X4 CLR SURT X2 CJA VENTANA 39X12X21 (EX SD18426)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31800,
+    "name": "CANGREJO A PILA C/LUZ Y SONIDO SURT 2 CLRS OPP 19X13CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31801,
+    "name": "CANGREJO P/B 9X7,5CM SURT 3 CLRS CAJA DISPLAY X9PC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31802,
+    "name": "CARACOL ARRASTRE 22X9CM CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31803,
+    "name": "CARPINCHO 13X9 A CUERDA ALETEA PELUCHE DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31804,
+    "name": "CARPINCHO A PILA 17X16X12 LUZ SONIDO CAMINA CJA REG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31805,
+    "name": "CARROZA 20X21CM C/GATO /ACC X7 CAJA VENTANA",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

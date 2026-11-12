@@ -1,0 +1,76 @@
+{
+  "batch_id": 3,
+  "total": 10,
+  "products": [
+    {
+      "id": 35528,
+      "name": "CUADERNO EJECUTIVO A5 C/U",
+      "sku": "36650112",
+      "brand": "",
+      "image_local": "images/sfpanda/c59f081d448665f08f19ebda00a0d396.webp"
+    },
+    {
+      "id": 35529,
+      "name": "CUADERNO CON ELASTICO B5 C/U",
+      "sku": "36650109",
+      "brand": "",
+      "image_local": "images/sfpanda/604200eed29ac2b73d35ef3022762c30.webp"
+    },
+    {
+      "id": 35530,
+      "name": "CUADERNO CON ELASTICO A5 C/U",
+      "sku": "36650108",
+      "brand": "",
+      "image_local": "images/sfpanda/f3998d53e09cbc3f54260712e3403adc.webp"
+    },
+    {
+      "id": 35531,
+      "name": "CUADERNO EJECUTIVO C/U",
+      "sku": "36650105",
+      "brand": "",
+      "image_local": "images/sfpanda/0c08fa8f3645914dec750d30e85d5d5e.webp"
+    },
+    {
+      "id": 35532,
+      "name": "CUADERNO EJECUTIVO A5 C/U",
+      "sku": "36650104",
+      "brand": "",
+      "image_local": "images/sfpanda/3661b25323277555942cdbb300c52b2a.webp"
+    },
+    {
+      "id": 35533,
+      "name": "CUADERNO EJECUTIVO A5 C/U",
+      "sku": "36650102",
+      "brand": "",
+      "image_local": "images/sfpanda/71648a8ba1237ef06555b1d34d47686d.webp"
+    },
+    {
+      "id": 35534,
+      "name": "CUADERNO ANILLADO A5 C/U",
+      "sku": "36650100",
+      "brand": "",
+      "image_local": "images/sfpanda/6980395b783ca199712d32c38d891a6f.webp"
+    },
+    {
+      "id": 35535,
+      "name": "CUADERNO CUADRICULADO PCS*2",
+      "sku": "36650099",
+      "brand": "",
+      "image_local": "images/sfpanda/a2ef9de27fdbc585f94fae14ba0ca80f.webp"
+    },
+    {
+      "id": 35536,
+      "name": "CUADERNO CON CIERRE MAGNÉTICO A5 C/U",
+      "sku": "36650098",
+      "brand": "",
+      "image_local": "images/sfpanda/810d2af19ac8e81d7273b7278a6e3dd7.webp"
+    },
+    {
+      "id": 35537,
+      "name": "PLANIFICADOR SEMANAL + BLOC DE NOTAS C/U",
+      "sku": "36650096",
+      "brand": "",
+      "image_local": "images/sfpanda/89969b33a3865b8589efae03bca7d050.webp"
+    }
+  ]
+}

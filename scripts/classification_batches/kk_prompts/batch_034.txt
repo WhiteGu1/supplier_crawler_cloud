@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29556,
+    "name": "CEPILLO PLASTICO 22CM SURT 4 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29557,
+    "name": "CEPILLO PLASTICO 22CM SURT 4 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29558,
+    "name": "CEPILLO PLASTICO 22CM SURT 4 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29559,
+    "name": "CEPILLO PLASTICO 24CM SURT 2 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29560,
+    "name": "CEPILLO PLASTICO 24CM SURT 2 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29561,
+    "name": "SET CABALLERO X4 TIJERA X2/PEINE X2 NGR BLIST 27X14",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29562,
+    "name": "ESPEJO DE BOLSILLO 7CM PLASTICO SURT 4 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29563,
+    "name": "ESPEJO DE BOLSILLO 6,5CM PLASTICO SURT 4CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29564,
+    "name": "SET DISPENSER X5 PLAST 12X2,5CM SURT 2 CLRS BOLSA PVC",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29565,
+    "name": "FRASCO DESMONTABLE PLAST 6,5CM TAPA AZUL OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29566,
+    "name": "DEPILADORA PORTATIL 220VC/BATERIA CLR BLANCO CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29567,
+    "name": "BOLSA DE AGUA PU 32X20CM 2L FUNDA PLUSH 4 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29568,
+    "name": "BOLSA DE AGUA PU 25X17CM 1L FUNDA PLUSH ANIMALES 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29569,
+    "name": "BOLSA DE AGUA PU 27X18CM 1L FUNDA PLUSH ANIMALES 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29570,
+    "name": "BOLSA DE AGUA PU 32X20CM 2L FUNDA PLUSH 4 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29571,
+    "name": "BOLSA DE AGUA PU 26X17CM 1L FUNDA PLUSH PANDA 2 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29572,
+    "name": "BOLSA DE AGUA PU 31X20CM 2L FUNDA PLUSH ANIMALES 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29573,
+    "name": "BOLSA DE AGUA PU 26X21CM 2L FUNDA PLUSH ANIMALES 6 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29574,
+    "name": "BOLSA DE AGUA PU 20X15CM 500ML FUNDA PLUSH ANIMALES 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29575,
+    "name": "BOLSA DE AGUA PU 29X19CM 2L FUNDA PLUSH CONEJO 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29576,
+    "name": "BOLSA DE AGUA PU 22X15CM 500ML FUNDA PLUSH ANIMALES 5 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29577,
+    "name": "BOLSA DE AGUA PU 25,5X17CM 1L FUNDA PLUSH OSO 4 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29578,
+    "name": "BOLSA DE AGUA PU 31X20CM 2L FUNDA TELA ANIMALES 3 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29579,
+    "name": "BOLSA DE AGUA PU 28X20CM 2L FUNDA TELA 4 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29580,
+    "name": "BOLSA DE AGUA PU 28X20CM 2L FUNDA TELA COCODRILO 4 COLORES SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29581,
+    "name": "BALANZA 28X28CM CUADRADA VIDRIO TEMPLADO 5MM TRANSPARENTE CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29582,
+    "name": "BALANZA 30X3CM REDONDA VIDRIO TEMPLADO 5MM CJA CLR",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29583,
+    "name": "BOLSO BEBE 49X30X17CM SET X2 +3ACC DSÑO OSOS CLR CREMA Y AZUL/ROSA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29584,
+    "name": "BOLSO BEBE 40X30X20CM EXTEN/ A CUNA CLR GRIS/ ROSA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29585,
+    "name": "BOLSO BEBE 40X27X20CM SET X2 +3ACC DSÑO OSO CLR CREMA Y AZUL/ ROSA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29586,
+    "name": "BOLSO BEBE 40X30X20CM/ 32X30X15CM/ 20X11CM/ 49X29CM SET X3 +2ACC",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29587,
+    "name": "MANTA BEBE 110X140CM DSÑO SURT CLR GRIS/ROSA/AZUL CJA CLR",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29588,
+    "name": "SET ROPA BEBE X3 37X15CM GORRO/CHALECO/ESCARPINES SURT 2 CLRS 2 DSÑO CART OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29589,
+    "name": "GORRO BEBE 18X16CM SURT 2 CLRS CELESTE/BEIGE OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29590,
+    "name": "SET ROPA BEBE GORRO + MEDIAS 17X22CM F/OSO SURT 2 CLRS ROSA / CELESTE OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29591,
+    "name": "SET ROPA BEBE 18X26CM GORRO + ESCARPINES X2 SURT CLRS CART OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29592,
+    "name": "BABERO C/RECIPIENTE GOMA 22X23CM CLR SOLIDO OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29593,
+    "name": "BABERO 20X28CM SURT 3 DSÑO 3 CLRS OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29594,
+    "name": "BABERO C/RECIPIENTE GOMA PLAST 23X31CM DÑO LEON OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29595,
+    "name": "SET BABERO X3 PLAST 22X34CM SURT 3DSÑ OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29596,
+    "name": "TOALLA X6 25CM P/BEBE ZIGZAG CLR SURT BOLSA AJUSTABLE",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29597,
+    "name": "SET TOALLAS BEBE X6 25X25CM SURT 2 CLRS ROSA/CELESTE CART OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29598,
+    "name": "SET BEBE X 3 PCS 21CM, 13,5CM, 9,5CMS SURTIDO 3-4 COLORES",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29599,
+    "name": "COCHE BEBE 93X59CM PLAST ALUMINIO ESPUMA NEGRO PLEGABLE BOX",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29600,
+    "name": "SET MEDIAS BEBE X3 13X24CM CLR BLANCO OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29601,
+    "name": "PELUCHE C/MUSICAL 19X32CM PULLSTRING PLUSH OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29602,
+    "name": "BOLSO TELA 24X35CM 2 CIERRES SURT 2 DSÑO OSO/AVES CREMA OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29603,
+    "name": "LIMPIA MAMADERAS 20X28CM PLAST SURT 3 CLRS ROJO/CELESTE/VERDE OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29604,
+    "name": "BOLSO TELA 24X45CM 2 CIERRES SURT 4 DSÑO OSOS/AVES/CHERRY/CONEJOS CREMA OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 29605,
+    "name": "ESTANTERIA PLEGABLE 30X31CM BAMBOO Y MADERA 2 ESTANTES CJA MARRON",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,76 @@
+{
+  "batch_id": 6,
+  "total": 10,
+  "products": [
+    {
+      "id": 35558,
+      "name": "ETIQUETAS TERMICAS 5*1,5 CM PCS*5",
+      "sku": "35182580",
+      "brand": "",
+      "image_local": "images/sfpanda/945f5e7cee39b17b2a8393ba928e6117.webp"
+    },
+    {
+      "id": 35559,
+      "name": "BOLIGRAFO DE METAL C/U",
+      "sku": "35182579",
+      "brand": "",
+      "image_local": "images/sfpanda/d4a0c3cfc3a598e159280e9806075ad2.webp"
+    },
+    {
+      "id": 35560,
+      "name": "GUIRNALDA LED 2M C/U",
+      "sku": "35182577",
+      "brand": "",
+      "image_local": "images/sfpanda/bd9a61b6637ca111be923526917a2df5.webp"
+    },
+    {
+      "id": 35561,
+      "name": "PAPEL TERMICO 5,7CM*5M PCS*5",
+      "sku": "35182573",
+      "brand": "",
+      "image_local": "images/sfpanda/6929ace7c0b56cb1eab7585277a738d3.webp"
+    },
+    {
+      "id": 35562,
+      "name": "CUADERNO PARA COLOREAR C/U",
+      "sku": "35182572",
+      "brand": "",
+      "image_local": "images/sfpanda/250163165f7e8a9a5725f677961e0ccf.webp"
+    },
+    {
+      "id": 35563,
+      "name": "BOLIGRAFO ANIMALES C/U",
+      "sku": "35182565",
+      "brand": "",
+      "image_local": "images/sfpanda/c08cece9931bddc20995af908cc90a8a.webp"
+    },
+    {
+      "id": 35564,
+      "name": "GUIRNALDA LED DE HOJAS C/U",
+      "sku": "35182564",
+      "brand": "",
+      "image_local": "images/sfpanda/24210d7217db48d3ad1b2bf6c19fa6c1.webp"
+    },
+    {
+      "id": 35565,
+      "name": "CESTO DE ROPA C/U",
+      "sku": "35182123",
+      "brand": "",
+      "image_local": "images/sfpanda/a333682a1e3b3963be0ba581cdb7402d.webp"
+    },
+    {
+      "id": 35566,
+      "name": "TRAPO PCS*3",
+      "sku": "35182004",
+      "brand": "",
+      "image_local": "images/sfpanda/ca257b7853de51d54ccc5a9e0d753c8d.webp"
+    },
+    {
+      "id": 35567,
+      "name": "SET DE BELLEZA C/U",
+      "sku": "35180084",
+      "brand": "",
+      "image_local": "images/sfpanda/b03102064d3846275654d7aff050118d.webp"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "batch_id": 1,
+  "total": 10,
+  "products": [
+    {
+      "id": 35508,
+      "name": "CUADERNO EJECUTIVO C/U",
+      "sku": "36650388",
+      "brand": "",
+      "image_local": "images/sfpanda/3712426d8679f3d24a0f3060e5e8dd94.webp"
+    },
+    {
+      "id": 35509,
+      "name": "ANOTADOR CON ELASTICO C/U",
+      "sku": "36650380",
+      "brand": "",
+      "image_local": "images/sfpanda/b37f2fa822892df2fa5331b14a3d2f1e.webp"
+    },
+    {
+      "id": 35510,
+      "name": "PLATO PLEGABLE PARA MASCOTAS C/U",
+      "sku": "36650141",
+      "brand": "",
+      "image_local": "images/sfpanda/78f736860ca056cb4a8de684b313bb2e.webp"
+    },
+    {
+      "id": 35511,
+      "name": "SET PARA BACHA DE COCINA C/U",
+      "sku": "36650137",
+      "brand": "",
+      "image_local": "images/sfpanda/d164d8f485981727572248f4f45f656d.webp"
+    },
+    {
+      "id": 35512,
+      "name": "BOLSA DE RED C/U",
+      "sku": "36650136",
+      "brand": "",
+      "image_local": "images/sfpanda/42cdfcdf85dfdc838bd52cf0cc57c0ab.webp"
+    },
+    {
+      "id": 35513,
+      "name": "BOLSA DE RED C/U",
+      "sku": "36650135",
+      "brand": "",
+      "image_local": "images/sfpanda/b97a45e8c23698032bd7e825b3f464e0.webp"
+    },
+    {
+      "id": 35514,
+      "name": "BOLSA DE COMPRAS PLEGABLE C/U",
+      "sku": "36650133",
+      "brand": "",
+      "image_local": "images/sfpanda/b5321ea0bd6bb21b97a92ad326ee1589.webp"
+    },
+    {
+      "id": 35515,
+      "name": "BOLSA DE COMPRAS PLEGABLE C/U",
+      "sku": "36650132",
+      "brand": "",
+      "image_local": "images/sfpanda/152b93f3a9bebccda4e08090d6cc5b65.webp"
+    },
+    {
+      "id": 35516,
+      "name": "NECESER DE TELA OXFORD C/U",
+      "sku": "36650130",
+      "brand": "",
+      "image_local": "images/sfpanda/b7dfcbfdf39b9165593b653b9408a0b1.webp"
+    },
+    {
+      "id": 35517,
+      "name": "NECESER CON MANIJA C/U",
+      "sku": "36650129",
+      "brand": "",
+      "image_local": "images/sfpanda/25b7a7606cea225447d058c1c7808db5.webp"
+    }
+  ]
+}

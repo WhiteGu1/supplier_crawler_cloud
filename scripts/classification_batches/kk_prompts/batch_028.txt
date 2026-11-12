@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29256,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO PUNTOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29257,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO RAYAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29258,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO LUNARES/RAYAS 18X23X10CM TEXTURADO C/MANIJA PLASTICO RETORCIDO CLR NEGRA DORADA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29259,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO LUNARES/RAYAS 26X32X12CM TEXTURADO C/MANIJA PLASTICO RETORCIDO CLR NEGRA DORADA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29260,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO RAYAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29261,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO RAYAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29262,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO LUNARES/RAYAS 31X42X12CM TEXTURADO C/MANIJA PLASTICO RETORCIDO CLR NEGRA DORADA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29263,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO ANIMALES",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29264,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO ANIMALES 18X23X10CM C/M",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29265,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO ANIMALES",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29266,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO ANIMALES 26X32X12CM C/",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29267,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO ANIMALES",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29268,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO ANIMALES 31X42X12CM C/M",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29269,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO ARTE ABSTRACTO DORADO&BNCO&NGRO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29270,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO ARTE ABSTRACTO DORADO&BNCO&NGRO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29271,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO ARTE ABSTRACTO DORADO&BNCO&NGRO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29272,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO MARMOL 18X23X10CM C/MAN",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29273,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO MARMOL 26X32X12CM C/MAN",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29274,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO MARMOL 31X42X12CM C/MAN",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29275,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO PONY",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29276,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO PONY",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29277,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO PONY",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29278,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO BEBE CLR ROSA/AZUL",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29279,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO BEBE CLR ROSA/AZUL",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29280,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO BEBE CLR ROSA/AZUL",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29281,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO CUMPLEAÑOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29282,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO CUMPLEAÑOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29283,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO CUMPLEAÑOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29284,
+    "name": "BOLSA REGALO PAPEL LAMINADO 12X36X9CM C/MANIJA PLASTICO RETORCIDO SURT 4 CLRS BLANCA/MARRON/GRIS/NEGRA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29285,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM C/MANIJA PLASTICO RETORCIDO SURT 4 CLRS BLANCA/MARRON/GRIS/NEGRA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29286,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO \"NEW BABY\" 26X32X12CM C/MANIJA CINTA SURT 2 CLR AZUL/ROSA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29287,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM C/MANIJA PLASTICO RETORCIDO SURT 4 CLRS BLANCA/MARRON/GRIS/NEGRA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29288,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM C/MANIJA PLASTICO RETORCIDO SURT 4 CLRS ROSA/CELESTE/VERDE/MARRON OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29289,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO \"NEW BABY\" 31X42X12CM C/MANIJA CINTA SURT 2 CLR AZUL/ROSA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29290,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM C/MANIJA PLASTICO RETORCIDO SURT 4 CLRS BLANCA/MARRON/GRIS/NEGRA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29291,
+    "name": "DESCARTABLE BOWL PLASTICO 15X9CM NEGRO C/TAPA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29292,
+    "name": "DESCARTABLE BANDEJA RECTANGULAR PAPEL ALUMINIO 5X31X20CM OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29293,
+    "name": "DESCARTABLE BANDEJA PLASTICO 20X23X3,5CM NEGRO C/TAPA C/DIVI",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29294,
+    "name": "DESCARTABLE BANDEJA ALUMINO 20,5X4,2CM OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29295,
+    "name": "DESCARTABLE BANDEJA CUADRADO PAPEL ALUMINIO C/TAPA 18X5X13CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29296,
+    "name": "DESCARTABLE BANDEJA RECTANGULAR PAPEL ALUMINIO C/TAPA 17X4,5",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29297,
+    "name": "SET PLATOS DESCARTABLES X10 7\" CLR NEGRO SHK PACK",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29298,
+    "name": "CUCHILLOS Y TENEDORES 16CM DESCARTABLES SURT 2 CLRS DORADO/PLATEADO OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29299,
+    "name": "MANTEL DESCARTABLE 1,37X1,83MTS SURT 6CLRS DORADO/ROSA/PLATEADO/NEGRO/AZUL/ROJ O OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29300,
+    "name": "MANTEL DESCARTABLE 1,37X1,83MTS M/FELIZ CUMPLEAÑOS SURT 4CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29301,
+    "name": "MANTEL DESCARTABLE 1,37X1,83MTS M/FELIZ CUMPLEAÑOS SURT 3CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29302,
+    "name": "SET PLATOS DESCARTABLES X10 7\" M/FELIZ CUMPLEAÑOS SHK PACK",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29303,
+    "name": "SET PLATOS DESCARTABLES X10 7\" M/FELIZ CUMPLEAÑOS PLATEADO SHK PACK",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29304,
+    "name": "SET PLATOS DESCARTABLES X10 7\" M/FELIZ CUMPLEAÑOS SHK PACK",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29305,
+    "name": "CARTEL COLGANTE PAPEL X12U 15X16CM- 3MTS DSÑ SIRENA HEADCART",
+    "current_cat": "派对用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

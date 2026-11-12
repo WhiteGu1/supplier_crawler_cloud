@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33428,
+    "supplier_id": 11,
+    "sku": "24114JSCA",
+    "name": "CAMION POLICIA",
+    "image": "/images/panda_99/24114JSCA.jpg"
+  },
+  {
+    "id": 33429,
+    "supplier_id": 11,
+    "sku": "24113JS",
+    "name": "GUERRERO TRANSFORMER",
+    "image": "/images/panda_99/24113JS.jpg"
+  },
+  {
+    "id": 33430,
+    "supplier_id": 11,
+    "sku": "24114JS",
+    "name": "GUERRERO VOLADOR",
+    "image": "/images/panda_99/24114JS.jpg"
+  },
+  {
+    "id": 33431,
+    "supplier_id": 11,
+    "sku": "24116JS",
+    "name": "GUERRERO TANQUE",
+    "image": "/images/panda_99/24116JS.jpg"
+  },
+  {
+    "id": 33432,
+    "supplier_id": 11,
+    "sku": "24113JSGP",
+    "name": "GUERRERO JEEP",
+    "image": "/images/panda_99/24113JSGP.jpg"
+  },
+  {
+    "id": 33433,
+    "supplier_id": 11,
+    "sku": "24142JSL",
+    "name": "LANZA GIROSCOPIO",
+    "image": "/images/panda_99/24142JSL.jpg"
+  },
+  {
+    "id": 33434,
+    "supplier_id": 11,
+    "sku": "24142JS",
+    "name": "GIROSCOPIO DINOSAURIO",
+    "image": "/images/panda_99/24142JS.jpg"
+  },
+  {
+    "id": 33435,
+    "supplier_id": 11,
+    "sku": "24148JS",
+    "name": "GIROSCOPIO",
+    "image": "/images/panda_99/24148JS.jpg"
+  },
+  {
+    "id": 33436,
+    "supplier_id": 11,
+    "sku": "24108JS",
+    "name": "KARAOKE",
+    "image": "/images/panda_99/24108JS.jpg"
+  },
+  {
+    "id": 33437,
+    "supplier_id": 11,
+    "sku": "24059NN",
+    "name": "MIX DISEÑOS COLORFUL PEN 26*14.5CM",
+    "image": "/images/panda_99/24059NN.jpg"
+  }
+]

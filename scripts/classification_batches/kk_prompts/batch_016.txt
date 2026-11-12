@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28656,
+    "name": "ENSALADERA MELAMINA 150G DSÑO MARMOL DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28657,
+    "name": "ENSALADERA MELAMINA 100G CIRCULAR DSÑO MARMOL DORADO VENTA X BULTO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28658,
+    "name": "PLATO HONDO MELAMINA 100G CIRCULAR DSÑO MARMOL DORADO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28659,
+    "name": "PLATO MARTILLADO 210G CLR AZUL -BULK PACK",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28660,
+    "name": "PLATO MARTILLADO 150G CLR AZUL -BULK PACK",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28661,
+    "name": "PLATO MARTILLADO 110G CLR AZUL -BULK PACK",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28662,
+    "name": "BOWL CERAMICO 450ML DSÑO SALPICADO SURT CLR BLCO/ GRIS MATE BULK",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28663,
+    "name": "BOWL CERAMICO 450ML DSÑO C/LINEAS SURT CLR BLCO/ GRIS/ NEGRO MATE BULK",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28664,
+    "name": "CUENCO SOPERO 180ML MOTIVO RAYAS VERT. SURTIDO 2 COLORES BLANCO Y NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28665,
+    "name": "CUENCO SOPERO 100ML MOTIVO RAYAS VERT. SURTIDO 2 COLORES BLANCO Y NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28666,
+    "name": "BOWL 450ML MOTIVO DIAMANTES SURT 2 COLORES GRIS Y ROSA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28667,
+    "name": "BOWL 450 ML SALPICRÉ COLOR ROJO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28668,
+    "name": "COPETINERO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28669,
+    "name": "BOTELLA TERMICO 7X24CM 500ML IN304 OUT201 \"SPORTS\" CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28670,
+    "name": "JARRO TERMICO ACERO 17X9 PLATEADO LISO P/AUTO 12V CLR BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28671,
+    "name": "TAZA 11,5X8,5CM 360ML T/PLASTICA SURT 4 CLRS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28672,
+    "name": "VASO 17X8CM 320ML C/MANIJA SUPERIOR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28673,
+    "name": "VASO 15,5X8 320ML METALIZADO T/PLASTICA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28674,
+    "name": "VASO TERMICO 7X26CM 1200ML IN304 OUT201 C/TAPA TRANSP DSÑO CALLE CLR NEGRO CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28675,
+    "name": "VASO ACERO INOX 450ML 15,5CM LISO \"MY COFFEE\" CLR GRIS CJA CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28676,
+    "name": "BOTELLA TERMICA 800ML 24CM DSÑO HELADO CLR CREMA Y MARRON CJA CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28677,
+    "name": "VASO DE ACERO 304/ACERO 201 480ML C/SORBETE PLAST SURT",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28678,
+    "name": "JARRA C/TAPA PLASTICA 20.5 X 10 CM 1L SURTIDO 2-3 CO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28679,
+    "name": "VASO 1200ML AI204 C/SORBETE Y TAPA PLAST SURT 3 CLRS NEGRO/BEIGE/ROSA CAJA REG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28680,
+    "name": "JARRA 750ML AI204 C/TAPA PLAST CAJA REG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28681,
+    "name": "VASO 17X8,5CM T/PLASTICA C/AGARRE 500ML SURT 4CLRS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28682,
+    "name": "VASO 18,4X7,5CM 400ML C/AGARRE GOMA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28683,
+    "name": "VASO TERMICO 21CM 1000ML C/SORBETE Y TAPA PLASTICA SURT 4 CLRS CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28684,
+    "name": "VASO TERMICO 19,5X8CM 450ML C/AGARRE CUERO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28685,
+    "name": "VASO TERMICO 7X26CM 1200ML IN304 OUT201 C/TAPA LISA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28686,
+    "name": "VASO TERMICO 7X26CM 1200ML IN304 OUT201 C/TAPA TRANS DSÑO CALLE SURT CLR EGG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28687,
+    "name": "VASO DE ACERO 16,5X8,5CM 500ML T/PLASTICA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28688,
+    "name": "BOTELLA DE ACERO INOX 30 CMS 500 ML SURTIDO 3-4 COLO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28689,
+    "name": "BOTELLA TERMICO 7,5X30,5CM 750ML IN304 OUT201 \"NY\" CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28690,
+    "name": "VASO 1200ML AI204 C/SORBETE Y TAPA PLAST SURT 3 CLRS NEGRO/BEIGE/ROSA CAJA REG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28691,
+    "name": "VASO TERMICO 1200ML 28CM C/PAJITA CLR SURT CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28692,
+    "name": "BOTELLA VIDRIO 500ML 19CM CONO HELADO CLR ROSA Y CREMA -CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28693,
+    "name": "BOTELLA VIDRIO 800ML 21,5CM C/SORBETE CUADRADOS AZUL CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28694,
+    "name": "BOTELLA VIDRIO 750ML 29CM C/TAPA SORBETE CLR VERDE CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28695,
+    "name": "BOTELLA VIDRIO 300ML DSÑO CUADRILLE C/TAPA METAL SURT CLR NGRO/MARR/ROSA/AZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28696,
+    "name": "BOTELLA VIDRIO 410ML 19,5CM C/SORBET OSO CLR ROSA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28697,
+    "name": "BOTELLA VIDRIO CHICA CLR C/TAPA METALICA SURT 4 CLRS 300ML CAJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28698,
+    "name": "BOTELLA VIDRIO 6X15CM 300ML T/METALICA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28699,
+    "name": "BOTELLA VIDRIO 980ML 27CM C/SORBETE MZANA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28700,
+    "name": "BOTELLA ACERO INOX 600ML 24CM LISA CLR NEGRO CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28701,
+    "name": "BOTELLA ACERO INOX 201 7,2X24CM 750ML C/TAPA TRANSP SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28702,
+    "name": "BOTELLA ACERO INOX 23.5 X 6 CM 500 ML SURTIDO 2 COL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28703,
+    "name": "BOTELLA TERMICA ACERO INOX 26 X 7.5 CM 750 ML SURTIDO 3-4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28704,
+    "name": "BOTELLA ACERO INOX 201 9X21CM 900ML DSÑO SIGNO PREGUNTA SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28705,
+    "name": "BOTELLA ACERO INOX 201 6,8X23,5CM 750ML DSÑO HAPPY SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28806,
+    "name": "BOTELLA VIDRIO 480ML 6,7X23CM C/TAPA Y PAJITA BAMBU /FUNDA SILICONA CLR CELESTE /ROSA PASTEL EGG CRATE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28807,
+    "name": "BOTELLA VIDRIO 500ML 6,8X23,3CM C/TAPA PP /FUNDA SILICONA CL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28808,
+    "name": "BOTELLA VIDRIO 500ML 6,6X23,5CM C/TAPA BAMBU /FUNDA SILICONA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28809,
+    "name": "BOTELLA VIDRIO 1L C/TAPA BAMBU /FUNDA SILICONA CLR BLANCO/NEGRO EGG CRATE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28810,
+    "name": "BOTELLA PLASTICO 7,5X16CM SURT 4 CLRS PICO SILICONA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28811,
+    "name": "BOTELLA PLAST 750ML SORBETE SILICONA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28812,
+    "name": "BOTELLA PLASTICA 7,5X24,5CM PICO SILICONA SURT 3 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28813,
+    "name": "BOTELLA PLAST 750ML CUADRADA SORBETE SILICONA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28814,
+    "name": "BOTELLA PLASTICO 7X14X28CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28815,
+    "name": "BOTELLA PLASTICA 7,5X20,8CM PICO SILICONA SURT 3 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28816,
+    "name": "BOTELLA PLASTICO 13X17CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28817,
+    "name": "BOTELLA PLASTICO 8X18,5CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28818,
+    "name": "BOTELLA PLASTICO 13,5X18CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28819,
+    "name": "BOTELLA PLASTICO 6,5X19,5CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28820,
+    "name": "BOTELLA PLASTICA 7,5X16,5CM PICO SILICONA SURT 3 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28821,
+    "name": "BOTELLA PLASTICO 8,5X17CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28822,
+    "name": "BOTELLA PLASTICO 9X19,5CM PICO SILICONA SURT 4 CLRS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28823,
+    "name": "VASO DE VIDRIO 430ML 8,9X8,9X15,3CM C/PAJITA SILICONA /FILTRO PP CLR CELESTE/ROSA PASTEL STICKER",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28824,
+    "name": "VASO DE VIDRIO 440ML 8,7X8,7X14CM C/PAJITA SILICONA PP CLR NARANJA/ROSA PASTEL STICKER",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28825,
+    "name": "VASO VIDRIO 15X10CM 900ML C/SORBETE Y TAPA PLAST SURT 3 CLRS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28826,
+    "name": "VASO VIDRIO 450ML 11X8,5CM C/TAPA PLASTICA C/SORBETE SURT 2C",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28827,
+    "name": "VASO 12,5X7CM VIDRIO RELIEVE/ONDAS C/SORBETE T/BAMBU CAJA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28828,
+    "name": "VASO 14,5X7CM VIDRIO RELIEVE/ONDAS C/SORBETE T/BAMBU CAJA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28829,
+    "name": "VASO 11,5X7CM VIDRIO RELIEVE/ONDAS C/SORBETE T/BAMBU CAJA BL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28830,
+    "name": "VASO 10,5X7CM VIDRIO LISO C/SORBETE T/BAMBU CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28831,
+    "name": "VASO 15X7CM VIDRIO RELIEVE/ONDAS C/SORBETE T/BAMBU CAJA BLAN",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28832,
+    "name": "VASO 12X7CM VIDRIO RELIEVE/ONDAS C/SORBETE DE CLR SURT Y T/B",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28833,
+    "name": "VASO 11X8CM VIDRIO C/MANIJA /SORBETE T/BAMBU CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28834,
+    "name": "VASO 13X8CM VIDRIO C/MANIJA /SORBETE T/BAMBU CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28835,
+    "name": "VASO 13X6,5CM VIDRIO C/MANIJA /SORBETE T/BAMBU CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28836,
+    "name": "VASO VIDRIO 7X12CM C/TAPA BAMBOO C/SORBETE VIDRIO CJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28837,
+    "name": "VASO VIDRIO 7X13CM C/TAPA BAMBOO C/SORBETE VIDRIO CJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28838,
+    "name": "VASO QUENCHER 13,2X9,1X19CM 800ML VIDRIO C/PAJITA /TAPA BAMBOO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28839,
+    "name": "VASO 6X17,5X10CM DSÑO TRIANGULOS C/RELIEVE CLR AZUL CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28840,
+    "name": "VASO PLASTICO M/SIRENA REDONDO 20X10CM 450ML SURT 4 CLRS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28841,
+    "name": "VASO PLASTICO M/HELADO C/OREJAS REDONDO 23X10CM 450ML SURT 4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28842,
+    "name": "VASO 6,5X15X11CM 350ML PLAST TAPA F/DONA CLR ROSA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28843,
+    "name": "VASO PLAST 16CM 450ML C/SOROBET Y TAPA PLAST SURT 6 CLRS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28844,
+    "name": "VASO 17,5CM 400ML F/TRIANGULO DSÑO LIMON C/MUÑECO CLR SURT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28845,
+    "name": "VASO 18,5CM 600ML F/TRIANGULO DSÑO DINO C/MUÑECO CLR SURT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28846,
+    "name": "VASO PLASTICO 16CM C/ TAPA 400ML C/ SORBETE DECORADO FRUTAS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28847,
+    "name": "VASO PLAST 16,5CM 600ML C/SORBETE Y TAPA PLAST DSÑO DINOSAURIO CLR VERDE CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28848,
+    "name": "VASO 23X9CM PLAST C/TAPA C/SORBETE VERDE OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28849,
+    "name": "VASO PLAST 21CM 450ML C/SORBETE Y TAPA PLAST DSÑO ARCOIRIS C/ CUERPO PLATEADO SURT 4 CLRS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28850,
+    "name": "VASO PLAST 20CM 450ML C/SORBETE Y TAPA PLAST DSÑO PANDA CLR VERDE CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28851,
+    "name": "VASO 6,5X16X10CM 450ML PLAST DSÑO HAMBURG C/PAJITA /TAPA MUÑECO CLR ROSA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28852,
+    "name": "VASO 6,5X17X10CM 450ML PLAST DSÑO ASTRONAUTA C/TAPA MUÑECO CLR ROSA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28853,
+    "name": "VASO 6,5X18X11CM 450ML PLAST DSÑO TORTA C/PAJITA /TAPA CLR ROSA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28854,
+    "name": "VASO PLAST 23CM 750ML C/SORBETE Y TAPA PLAST DSÑO DIAMANTE CLR ROSA CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28855,
+    "name": "VASO PLASTICO 25 TRANSP CLR C/TAPA F/ELEFANTE C/SORBETE 2 CL",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

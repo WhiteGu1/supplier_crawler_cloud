@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32556,
+    "name": "PELUCHE 25CM OSO CELESTE Y CONEJO ROSA C/MANTITA BEBE OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32557,
+    "name": "PELUCHE 27CM SONAJERO OSO C/VESTIDO SURT 2 CLRS CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32558,
+    "name": "PELUCHE 17CM SONAJERO OSO C/GANCHO PLASTICO SURT 2 CLRS CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32559,
+    "name": "PELUCHE 23CM C/CUNERO MUSICAL PULLSTRING OSO CELESTE CONEJO ROSA C/SUBMARINO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32560,
+    "name": "PELUCHE 22CM C/CUNERO MUSICAL PULLSTRING OSOS CELESTE CONEJO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32561,
+    "name": "PELUCHE 18CM C/CHIFLE Y BROCHE PLAST. SURT 2 CLRS CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32562,
+    "name": "PELUCHE 19CM SURT 4 DSÑ OSO/PERRO/CONEJO/ELEFANTE SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32563,
+    "name": "CARTERA 23X20X7CM PELUCHE M/CONEJO 1 CIERRE SURT 2 CLRS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32564,
+    "name": "MOCHILA PELUCHE 28CM OSOS PANDA FUTBOL AMERICANO HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32565,
+    "name": "CARTERA PELUCHE 16X11CM CERDITO HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32566,
+    "name": "MOCHLA PELUCHE 23CM OSOS PANDA HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32567,
+    "name": "PELUCHE 20CM POLYESTER F/CARTERA C/TIRA 2 SURT PATO AMARILLO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32568,
+    "name": "CARTERA 21CM PELUCHE M/PANDA 1 CIERRE SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32569,
+    "name": "CARTERA PELUCHE 25X14CM GALLETA C/PATAS HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32570,
+    "name": "MOCHILA PELUCHE 35CM CONEJO CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32571,
+    "name": "MOCHILA PELUCHE 28CM OSOS PANDA BASKET}",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32572,
+    "name": "CARTERA PELUCHE 22X16CM OSITO MARRON HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32573,
+    "name": "CARTERA 20X7CM PELUCHE M/CARA CON LABIOS 1 CIERRE SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32574,
+    "name": "CARTERA 22X14X6CM PELUCHE SURT ANIMALES 1 CIERRE 3 DSÑ OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32575,
+    "name": "CARTERA 21CM PELUCHE M/UNICORNIO 1 CIERRE SURT 2 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32576,
+    "name": "PELUCHE 20CM POLYESTER F/CARTERA OSO C/TIRA SURT 3 CLRS ROS/",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32577,
+    "name": "CARTERA PELUCHE 23CM CERDITO HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32578,
+    "name": "MOCHILA PELUCHE 23CM OSO PELUDO HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32579,
+    "name": "PELUCHE 17X20X15CM POLYESTER CARTERA F/ANIMAL C/OREJAS SURT 3CL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32580,
+    "name": "MOCHILA PELUCHE 40CM OSO PELUDO HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32581,
+    "name": "MOCHILA PELUCHE 35CM CARPINCHO CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32582,
+    "name": "MOCHILA PELUCHE 30CM CONEJO CLR HANGTAG OPP BULK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32583,
+    "name": "LLAVERO PELUCHE F/CONEJO SURT 3CLRS ROS/CELES/VIOL",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32584,
+    "name": "PELUCHE LLAVERO 9CM F/CONEJO C/MOÑO SURT 4 CLRS MARR/BEIGE/M",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32585,
+    "name": "PELUCHE LLAVERO 10CM F/PALTA C/PATAS VERDE",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32586,
+    "name": "LLAVERO PELUCHE F/OSO SURT 2CLRS VIOL/MARR",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32587,
+    "name": "PELUCHE LLAVERO 21CM F/PATO AMARILLO C/PICO DE PLASTICO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32588,
+    "name": "LLAVERO POMPOM 6CM SURT 3 DSÑOS DISPLAY BOX X24",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32589,
+    "name": "LLAVERO PELUCHE F/CONEJO C/CAPUCHA SURT 4 CLRS ROSA/SALMON/C",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32590,
+    "name": "LLAVERO PELUCHE F/CONEJO SURT 4CLRS ROSA C/ROPOA VIOLETA / R",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32591,
+    "name": "PELUCHE LLAVERO 10CM F/CONEJOR C/MOÑO SURT 4 CLRS CREMA/MARR",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32592,
+    "name": "PELUCHE LLAVERO 12CM F/CONEJO SUT 4CLRS ROSA/VERDE AGUA/VIOL",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32593,
+    "name": "LLAVERO PELUCHE F/CONEJO SURT 2CLRS ROSA/VERDE",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32594,
+    "name": "PELUCHE LLAVERO 11CM F/CONEJO SURT 4CLRS VIOL/ROSA/MARR OSCU",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32595,
+    "name": "PELUCHE LLAVERO 21CM F/OSO SURT 4 CLRS ROSA/MARR/GRIS/VERDE",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32596,
+    "name": "PELUCHE LLAVERO 11CM F/OSO \"LOVE\" SURT CLRS BLANCO/GRIS/MA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32597,
+    "name": "4 PELUCHE LLAVERO 8CM F/OSO C/MOÑO SURT 4 CLRS ROSA/CREMA/MARR",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32598,
+    "name": "PELUCHE LLAVERO 12CM F/PANDA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32599,
+    "name": "PELUCHE LLAVERO 11CM F/ABEJAS AMARILLO NGRO C/CAPUCHA SURT",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32600,
+    "name": "PELUCHE FORMA FLOR C/CARA C/MACETA BATERUA SURT 3 CLRS NAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32601,
+    "name": "A PELUCHE F/FLOR C/SONIDO A BATERIA SURT CLRS NARANJA Y BCO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32602,
+    "name": "2 PELUCHE FORMA ANIMAL TREPANDO RAMA A BATERIA SURT 4 CLRS NAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32603,
+    "name": "MESA DE ARRIME 37X27X59CM METAL Y MDF CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32604,
+    "name": "- MESA DE ARRIME 28X40X80CM RECTANG 2 NIVELES CJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32605,
+    "name": "MESA AUXILIAR 24X24X81CM METAL -CAJA MARRON",
+    "current_cat": "家居家具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31406,
+    "name": "SET DULCES 12X5 CARRITO HELADO BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31407,
+    "name": "SET DULCES 21X28,5CM C/ACCESORIOS X13PCS HELADOS/GALLETAS/MA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31408,
+    "name": "SET DULCES 24X30 CARRY-ON HELADO PALETA BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31409,
+    "name": "SET DULCES 29X21,5CM X9PCS PLAST BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31410,
+    "name": "SET DULCES 31X21CM PLAST X12PCS HELADOS/PALETAS/CARAMELOS BL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31411,
+    "name": "SET DULCES 35X26 CARAMELOS/HELADO/ CJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31412,
+    "name": "SET DULCES X10PCS BIBERON/HELADO/GALLETAS BOLSA PVC 9,5X2CM",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31413,
+    "name": "SET DULCES X12 10X25CM VARITA C/SONIDO MUÑECA/HELADOS BLISTER A PILA RELOJ",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31414,
+    "name": "SET DULCES X13 13,5X13,5CM TORTA/GALLETAS/UTENSILLOS BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31415,
+    "name": "SET DULCES X17PCS BIBERON/HELADOS/REFRESCOS BOLSA PVC 22X22C",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31416,
+    "name": "SET DULCES X19 14X18CM HELADOS/PALETAS/CARRITO BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31417,
+    "name": "SET DULCES X9PCS BIBERON/HELADO/GALLETAS BOLSA PVC 22X23CM",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31418,
+    "name": "SET HAMBURGUESA PLAST 27X20X8CM X3 PAPAS DOBLE BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31419,
+    "name": "SET HELADO X12 21X32CM BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31420,
+    "name": "SET HELADOS X15 36X26CM MOTO/HELADOS BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31421,
+    "name": "SET HORNO X8 18X12CM /CACEROLAS /UTENSILLO PVC HEADER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31422,
+    "name": "SET TE 24X20 TETERA/TAZAS MALETIN PVC",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31423,
+    "name": "SET TE 43X29CM HORNALLA/ TAZAS/PLATOS DOBLE BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31424,
+    "name": "SET TE 44X32,5X7,5CM TETERA C/MOÑO /ACC CJA CLR (EX SD30825)",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31425,
+    "name": "SET TE X11 20,5X42CM OLLAS/UTENSILLOS BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31426,
+    "name": "SET TE X13 28X43CM HELADOS/ANTEOJOS/TORTA BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31427,
+    "name": "SET TE X14 25X34CM TETERAS/CUBIERTOS/GALLETAS CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31428,
+    "name": "SET TE 38,5X28,5X5,2CM TETERA C/ACC CJA CLR (EX SD30824)",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31429,
+    "name": "SET TE X28 51X37,5X6CM TETERA/CUBIERTOS/TAZAS CAJA VENT",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31430,
+    "name": "SET TE X7 24X15CM TETERA/TAZAS/DONAS BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31431,
+    "name": "SET TE X9 13X8CM PVC HEADER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31432,
+    "name": "SETCOCINAX12PLATOS/TAZAS/TETERABLIST 46X25",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31433,
+    "name": "SET COCINA X16 PIZZA/UTENSILLOS BLIS 39X41X6",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31434,
+    "name": "SET COCINA 24X32 DSÑO SAPO CJA VALIJA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31435,
+    "name": "SET COCINA 28X12CM C/VALIJA PVC",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31436,
+    "name": "SET COCINA 37X25 VERDURAS/TABLA CORTAR CJA VENT MALETIN",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31437,
+    "name": "SET DE COCINA 25X30CM X11PCS DULCES/HELADERA/GALLETAS PLAST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31438,
+    "name": "SET COCINA 30X22 VERDURAS/TABLA/CUCHILLO CJA VENT MALETIN",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31439,
+    "name": "SET COCINA 20X28CM BANDEJA C/POSTRES Y ACC BLISTER",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31440,
+    "name": "STAND 14X13 DULCES C/ACCESORIOS BLIST",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 31441,
+    "name": "SET LAVADERO C/ACCESORIOS X10 CAJA VENT 34X13CM",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31442,
+    "name": "SET LIMPIEZA 28X19CM X9ACC SURT BLISTER",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31443,
+    "name": "SET LIMPIEZA 28X20CM X6PCS BALDE/TRAPEADOR/CARTELES PLAST B",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31444,
+    "name": "SET LIMPIEZA 41X18CM PLASTICO ACC SURT PVC HEADER",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31445,
+    "name": "SET LIMPIEZA 44X26X9CM PLAST ACC X4 SURT PVC HEADER",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31446,
+    "name": "SET LIMPIEZA 45X30CM X10PCS ASPIRADORA/CARTELES/CANASTO PLAS",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31447,
+    "name": "SET LIMPIEZA 45X30CM X11PCS ASPIRADORA/BALDE/CARTELES PLAST",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 31448,
+    "name": "SET INSTRUMENTOS 32X19CM X8PCS VIOLIN/TOCADISCOS/GUITARRA P",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31449,
+    "name": "SET LIVING 29X23CM PLASTICO ACC X7 SURT 3 MOD SURT BLISTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31450,
+    "name": "SET LIVING 29X23CM PLASTICO ACC X8 SURT 3 MOD SURT BLISTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31451,
+    "name": "SET LIVING 37X27CM C/CARRUAJE /ACC X12 CJA VENTANA",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31452,
+    "name": "SET LIVING X10 39X26X4CM 3 PONY SILLONES VUELTA AL MUNDO BLI",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31453,
+    "name": "SET LIVING X12PCS HELADERA/MESA/GALLETAS BOLSA PVC 29X30CM (",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31454,
+    "name": "SET LIVING X13 CARRUAJE 19X8/SILLONES/MUEBLES/CAMA BLIST SUR",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31455,
+    "name": "SET LIVING X6 COLUMPIO/PIANO/MESA/ARMARIO BLISTER 31X25",
+    "current_cat": "日用百货"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

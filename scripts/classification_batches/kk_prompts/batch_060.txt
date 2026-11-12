@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30856,
+    "name": "LAMPARA 57X25X10CM F/HOGAR C/LEÑOS USB NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30857,
+    "name": "CLR LAMPARA 61X37X11CM F/HOGAR C/LEÑOS USB NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30858,
+    "name": "CLR LAMPARA 101X28X14CM F/HOGAR C/LEÑOS USB CLR NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30859,
+    "name": "LAMPARA 56X45X18CM F/HOGAR C/LEÑOS USB NEGRA C/PATAS CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30860,
+    "name": "CLR LAMPARA CANDELABRO METALICO X1 40X11X11/30X11X11CM C/LUCES TUBO VIDRIO A PILA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30861,
+    "name": "LAMPARA CANDELABRO METALICO 31,5X12X12CM C/LUCES TUBO VIDRIO A PILA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30862,
+    "name": "LAMPARA CANDELABRO METALICO 41,5X12X12CM C/LUCES TUBO VIDRIO A PILA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30863,
+    "name": "LAMPARA CANDELABRO METALICO 51,5X12X12CM C/LUCES TUBO VIDRIO A PILA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30864,
+    "name": "VELADOR 50CM C/PANTALLA PAPEL SURT NEGRO/BLANCO OPP C/ENCHUFE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30865,
+    "name": "VELADOR 55CM C/BOLAS CERAMICAS PANTALLA PAPEL REDONDA CLR NEGRO CAJA MARRON C/ENCHUFE CABLE NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30866,
+    "name": "VELADOR 55CM C/BOLAS CERAMICAS PANTALLA PAPEL CUADRADA CLR NEGRO CAJA MARRON C/ENCHUFE CABLE NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30867,
+    "name": "VELADOR 53CM MADERA C/PANTALLA PAPEL 1 CLRS CAJA MARRON C/ENCHUFE CABLE NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30868,
+    "name": "LAMPARA DE PIE 8X31CM ALTA MINIMALISTA 3 CLRS PLATEADO/DORADO/NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30869,
+    "name": "LAMPARA DE PIE 11X35,5CM DSÑO MINIMALISTA CLRS NEGRO Y BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30870,
+    "name": "2 LAMPARA DE PIE 10X38CM PANTALLA ONDULADA SURT BASE CUADRADA Y REDONDA 2 CLRS NEGRO/BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30871,
+    "name": "LAMPARA DE PIE 12,5X19CM F/HONGO PLANO METALIZADO 2 CLRS BLANCO/NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30872,
+    "name": "LAMPARA DE PIE 12,5X19CM F/HONGO PLANO METALIZADO 3 CLRS PLATEADO/DORADO/COBRE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30873,
+    "name": "LAMPARA DE PIE 9X23CM METALIZADA 2 CLRS BLANCO/NEGRO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30874,
+    "name": "LAMPARA DE PIE 9X23CM METALIZADA 3 CLRS PLATEADO/DORADO/COBRE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30875,
+    "name": "LAMPARA DE MESA F/HONGO 9X20,5CM 2 CLRS NEGRO/BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30876,
+    "name": "LAMPARA DE MESA F/HONGO 9X20,5CM 2 CLRS DORADO/PLATEADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30877,
+    "name": "LAMPARA DE MESA 10X32CM CABEZAL MEDIA ESFERA 2 CLRS NEGRO/BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30878,
+    "name": "LAMPARA 9X21,5CM F/VIDRIO ESMERILADO TAMAÑO GRANDE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30879,
+    "name": "LAMPARA DE MESA 8,5X24,5CM F/VIDRIADO RAYAS VERTICAL CON BAS",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30880,
+    "name": "LAMPARA 9X13CM F/VIDRIADO DIAMANTE TAMAÑO MEDIANO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30881,
+    "name": "LAMPARA 8,5X18CM F/VIDRIADO ZIRCON TAMAÑO CHICO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30882,
+    "name": "LAMPARA PANTALLA 13X30CM TRANSPARENTE C/BASE DORADA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30883,
+    "name": "LAMPARA COLGANTE 9X23CM F/FAROL CRISTAL",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30884,
+    "name": "LAMPARA 16X19CM F/ANILLO C/BASE Y CONTORNO INTERIOR DORADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30885,
+    "name": "LAMPARA DE MESA 12X13CM F/CUBO ESMERILADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30886,
+    "name": "LAMPARA A BATERIA 14X16,5CM F/HONGO 2 CLRS NEGRO Y BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30887,
+    "name": "LAMPARA 42X15CM LED USB REGULABLE CLR BLANCO CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30888,
+    "name": "SOMBRERO CABALLERO 14X30X32CM 5 CLRS SURT",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30889,
+    "name": "SOMBREROTELA29X24X12HOMBRETIPOGAUCHO3 CLRSURT",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30890,
+    "name": "SOMBRERO DAMA PLAST 13X36CM 4CLRS BI SURT C/CINTA FLOR/MOÑO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30891,
+    "name": "VINCHA 15X2CM PLAST RECUBIERTO EN POLYESTER FINITA DSÑO \"H\"",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30892,
+    "name": "VINCHA 16X2CM PLAST RECUBIERTA EN POLYESTER FINITA DSÑO ENTR",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30893,
+    "name": "VINCHA 16X3CM PLAST GRUESA TRENZADA SURT 3 CLRS CREMA/NGRO/M",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30894,
+    "name": "VINCHA 16X3CM PLAST RECUBIERTA EN POLYESTER GRUESA CON LINEA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30895,
+    "name": "SET VINCHAS 16CM FORRADA TRENZA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30896,
+    "name": "SET VINCHAS 16CM TRENZA SURT 2 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30897,
+    "name": "SET VINCHAS X12PCS 2,8CM LISOS SURT 3 CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30898,
+    "name": "OPP SET COLITAS 4CM X200PCS 12PCS X CART SURT CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30899,
+    "name": "4 SET COLITAS 5CM C/FORRO X200PCS 3PCS X CART SURT 3 CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30900,
+    "name": "SET COLITAS C/FORMITAS X10 SURT 9DSÑ 3CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30901,
+    "name": "OPP SET HEBILLAS DE METAL 8CM 3 PCS SURT 2 DSÑO CRUZADO/OVAL SUR VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30902,
+    "name": "SET HEBILLAS X12 PCS 7CM SURT 2 CLRS PAQUETE NEGRO + PAQUETE 6 CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30903,
+    "name": "SET HEBILLAS X12PCS 5CM CUADRADAS SURT 4 TRASNPARENTES OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30904,
+    "name": "CLRS SET HEBILLAS X60PCS SURT 9CLRS F/PEZ CAJA VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30905,
+    "name": "PVC SET COLITAS X12PCS SURT CLRS CAJA REG",
+    "current_cat": "派对用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

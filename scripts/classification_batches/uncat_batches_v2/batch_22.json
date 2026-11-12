@@ -1,0 +1,45 @@
+{
+  "batch_id": 22,
+  "items": [
+    {
+      "id": 36018,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa negro HUDSON x12 Linea Daily (DNK12)",
+      "sku": "DNK12",
+      "brand": "",
+      "image_local": "images/osa/28e1222658c20635753ddf40e5cbf825.webp"
+    },
+    {
+      "id": 36019,
+      "supplier_id": 5,
+      "name": "Cuchara de te negro HUDSON x 3 linea DAILY (DNT3)",
+      "sku": "DNT3",
+      "brand": "",
+      "image_local": "images/osa/08f0ca631311c5a96fe8dfd65b72ea35.webp"
+    },
+    {
+      "id": 36020,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa negro HUDSON x 3 linea DAILY (DNS3)",
+      "sku": "DNS3",
+      "brand": "",
+      "image_local": "images/osa/2bca8efa957eb5e398d990f2ed698f48.webp"
+    },
+    {
+      "id": 36021,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa negro HUDSON x 3 Linea Daily (DNF3)",
+      "sku": "DNF3",
+      "brand": "",
+      "image_local": "images/osa/9bbd57a62d488d57d20815646b7eaff2.webp"
+    },
+    {
+      "id": 36022,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa negro HUDSON x 3 Linea Daily (DNK3)",
+      "sku": "DNK3",
+      "brand": "",
+      "image_local": "images/osa/e4baa51aa8d9babc844b086bf913a6d4.webp"
+    }
+  ]
+}

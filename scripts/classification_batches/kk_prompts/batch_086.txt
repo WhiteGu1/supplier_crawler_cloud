@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32156,
+    "name": "JUEGO DE BOLOS 43X29CM C/PALO GOLF Y PELOTAS SURT 2 DSÑ PL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32157,
+    "name": "2 JUEGO DE ENCASTRE 17X15CM F/CASTILLO PLAST BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32158,
+    "name": "JUEGO DE LABERINTO 20,5X15X1CM PLAST C/BOLIAS MET CJA DISPLA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32159,
+    "name": "JUEGO DE LUCES 23X3 EJERCITA LA MEMORIA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32160,
+    "name": "JUEGO DE VASOS APILABLES 13X6CM 9 PISOS C/PATITO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32161,
+    "name": "JUEGO ENCASTRE 27X16CM F/OSO BOLSA RED",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32162,
+    "name": "JUEGO LABERINTO SURT 4CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32163,
+    "name": "JUEGO MAQUINITA 13,5X10,5CM DISPLAY X9",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32164,
+    "name": "JUEGO PINBALL 21X13CM PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32165,
+    "name": "JUEGO PINBALL 23X13,5X1,5CM PLAST CJA ABRTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32166,
+    "name": "JUEGO PINBALL 23X17X3CM PLAST CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32167,
+    "name": "JUEGO PINBALL SURT 2 CLRS CAAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32168,
+    "name": "PINBALL 11X7X1 OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32169,
+    "name": "PINBALL 16X9X1 2 MOD OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32170,
+    "name": "PINBALL 26X18 SAPO CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32171,
+    "name": "PINBALL 29X17CM DSÑO DINO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32172,
+    "name": "PISTOLA BURBUJERO A PILA BLISTER 21X28,5CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32173,
+    "name": "VOLANTE 20CM C/SONIDO A PILA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32174,
+    "name": "VOLANTE A PILA C/SOPORTE BOLSA PVC CART 20X19CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32175,
+    "name": "VOLANTE PILA 14X14 C/LUZ/SONIDO 3 CLRS SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32176,
+    "name": "ANIMAL X4 10CM A CUERDA PARA BAÑO BEBE 2 MOD SURT PVC HEAD",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32177,
+    "name": "CHIFLE 16X10X7 F/COCODRILO C/CRIAS X3 RED",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32178,
+    "name": "CHIFLE 20X11X2CM PLAST 2 MOD SURT MOÑO/OSO PVC HEADER",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32179,
+    "name": "CHIFLE 20X12 RANA GRD RANA CHIC X3 CLR RED CART",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32180,
+    "name": "CHIFLE 21X15 UNICORNIO GRD UNICORNIOS CHIC X3 CLR RED CART",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32181,
+    "name": "CHIFLE GOMA 4,5X10CM SURT 2 DISEÑOS DRAGON/SAPO 2 CLRS CAJA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32182,
+    "name": "CHIFLE GOMA 8X8CM F/SLIME SURT 4 CLRS CAJA DISPLAY X12PC",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32183,
+    "name": "CHIFLE16X10X7F/TORTUGAC/CRIASX3RED",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32184,
+    "name": "GIMNASIO P/BEBE 46X31X11CM C/SONIDOS A PILA PLAST Y TELA CLR",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32185,
+    "name": "GIMNASIO P/BEBE 50X43X10CM C/SONIDO PILA ACOLCHADO C/4 SONAJEROS + ESPEJO CAJA REG",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32186,
+    "name": "A LIBRO ALFOMBRA BEBE 13X16CM C/LUZ Y SONIDO A PILA CAJA VENT",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32187,
+    "name": "PATO BOMBEA AGUA C/ACCESORIOS GOMA P/BAÑERA CAJA VENT 39X42X",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32188,
+    "name": "SAPITOSX314X6DIFERENTESMEDIDASINFANT ILSONIDOREDCART",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32189,
+    "name": "SET CHIFLE X3 8X6CM F/DINO PVC HEADER",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32190,
+    "name": "SET GRUA X2 17X15CM P/BEBE C/SONAJERO CJA VENTANA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32191,
+    "name": "SET UTENSILLOS P/BEBE X8PCS PAÑAL/BIBERON/INODORO BOLSA PVC",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32192,
+    "name": "TELEFONO 15X19CM F/PERRO C/SONIDO A PILA CJA VENTANA",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32193,
+    "name": "VOLANTE 19CM C/SONIDO A PILA SURT 2 CLRS OPP",
+    "current_cat": "婴幼儿用品"
+  },
+  {
+    "id": 32194,
+    "name": "BEBE 7X8X9 A CUERDA GATEA DINO DISPLAY BOX X12",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 32195,
+    "name": "CARRITOS X12PCS PIÑATA OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 32196,
+    "name": "MUÑECO 10CM JUGADOR FUTBOL 14X13X3CM C/ACCS X4PCS PLAST CJA",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 32197,
+    "name": "PELOTAS SALTARINAS 17X12CM GOMA X6PCS BLISTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 32198,
+    "name": "PINBALL ARGENTINA X12PCS PIÑATA OPP",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 32199,
+    "name": "GUANTES INVIERNO 20,5X12CM MIX CLRS ROSA/GRIS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32200,
+    "name": "GUANTES INVIERNO 22X12CM SURT 2 CLRS NEGRO/GRIS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32201,
+    "name": "GUANTES NIEVE DE MUJER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32202,
+    "name": "GUANTES INVIERNO 21X12CM MIX CLRS NEGRO/GRIS/AZUL OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32203,
+    "name": "GUANTES INVIERNO 22X10CM SURT CLRS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32204,
+    "name": "GUANTE INVIERNO 29X14CM SURT 3 CLRS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32205,
+    "name": "GUANTE INVIERNO 29X14CM SURT 3 CLRS OPP",
+    "current_cat": "五金工具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

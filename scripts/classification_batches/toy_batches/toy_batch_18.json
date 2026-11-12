@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33408,
+    "supplier_id": 11,
+    "sku": "24146JS",
+    "name": "KIT BELLEZA",
+    "image": "/images/panda_99/24146JS.jpg"
+  },
+  {
+    "id": 33409,
+    "supplier_id": 11,
+    "sku": "24041JS",
+    "name": "MALETA MAQUILLAJE",
+    "image": "/images/panda_99/24041JS.jpg"
+  },
+  {
+    "id": 33410,
+    "supplier_id": 11,
+    "sku": "24042JS",
+    "name": "MALETA",
+    "image": "/images/panda_99/24042JS.jpg"
+  },
+  {
+    "id": 33411,
+    "supplier_id": 11,
+    "sku": "24040JS",
+    "name": "MAQUILLAJE FLOR",
+    "image": "/images/panda_99/24040JS.jpg"
+  },
+  {
+    "id": 33412,
+    "supplier_id": 11,
+    "sku": "24043JS",
+    "name": "BOLSO MAQUILLAJE",
+    "image": "/images/panda_99/24043JS.jpg"
+  },
+  {
+    "id": 33413,
+    "supplier_id": 11,
+    "sku": "24002JS",
+    "name": "TOYS MIX FORMAS",
+    "image": "/images/panda_99/24002JS.jpg"
+  },
+  {
+    "id": 33414,
+    "supplier_id": 11,
+    "sku": "24167JS",
+    "name": "ARMA JOYAS ARCOIRIS",
+    "image": "/images/panda_99/24167JS.jpg"
+  },
+  {
+    "id": 33415,
+    "supplier_id": 11,
+    "sku": "24003JS",
+    "name": "TOYS MIX FORMAS",
+    "image": "/images/panda_99/24003JS.jpg"
+  },
+  {
+    "id": 33416,
+    "supplier_id": 11,
+    "sku": "24157JS",
+    "name": "AUTO CON CONTROL",
+    "image": "/images/panda_99/24157JS.jpg"
+  },
+  {
+    "id": 33417,
+    "supplier_id": 11,
+    "sku": "24056JS",
+    "name": "AUTO CARRERA",
+    "image": "/images/panda_99/24056JS.jpg"
+  }
+]

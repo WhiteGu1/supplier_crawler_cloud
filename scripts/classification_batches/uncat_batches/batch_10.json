@@ -1,0 +1,76 @@
+{
+  "batch_id": 10,
+  "total": 10,
+  "products": [
+    {
+      "id": 35598,
+      "name": "TAPAS DESECHABLES PCS*70",
+      "sku": "35177616",
+      "brand": "",
+      "image_local": ""
+    },
+    {
+      "id": 35599,
+      "name": "CRAYONES PCS*12",
+      "sku": "35177603",
+      "brand": "",
+      "image_local": "images/sfpanda/ee2fc0025d5e56f30e817d41498b40b9.webp"
+    },
+    {
+      "id": 35600,
+      "name": "ALMOHADA DE VIAJE C/U",
+      "sku": "35177526",
+      "brand": "",
+      "image_local": "images/sfpanda/cbc40eeca849ca4380389028da361ca7.webp"
+    },
+    {
+      "id": 35601,
+      "name": "CESTO C/U",
+      "sku": "35177504",
+      "brand": "",
+      "image_local": "images/sfpanda/248d13792f0e8dd853266bc44c936234.webp"
+    },
+    {
+      "id": 35602,
+      "name": "CRAYONES PCS*24",
+      "sku": "35177462",
+      "brand": "",
+      "image_local": "images/sfpanda/eb846ecb9261d4130535e72ea36c3c2e.webp"
+    },
+    {
+      "id": 35603,
+      "name": "TOALLA PARA BEBE C/U",
+      "sku": "35177453",
+      "brand": "",
+      "image_local": "images/sfpanda/e3ce7c856eb3531cb2048c1fe6b1d4a2.webp"
+    },
+    {
+      "id": 35604,
+      "name": "MANTA C/U",
+      "sku": "35177417",
+      "brand": "",
+      "image_local": "images/sfpanda/a93930edba504dc94ad14e48fc414c26.webp"
+    },
+    {
+      "id": 35605,
+      "name": "MANTA PCS*2",
+      "sku": "35177414",
+      "brand": "",
+      "image_local": "images/sfpanda/dc107b32b75222920c375ef551540ff9.webp"
+    },
+    {
+      "id": 35606,
+      "name": "MANTA C/U",
+      "sku": "35177410",
+      "brand": "",
+      "image_local": "images/sfpanda/8ab6f352d0460f2f8364e9232a6afcd8.webp"
+    },
+    {
+      "id": 35607,
+      "name": "ALMOHADA DE VIAJE C/U",
+      "sku": "35177381",
+      "brand": "",
+      "image_local": "images/sfpanda/7aee0deb3ddf1bd0630c2829ad97f36e.webp"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32806,
+    "name": "JUEGO SOFÁS + MESA RATONA ALUMINIO + PLASTICO SIMIL RATAN 120X42X60/64X74,5X77/152,5X74,5X77CM GRIS CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32807,
+    "name": "JUEGO DE SOFÁS CON ALMOHADONES DE POLIÉSTER Y MESA RATONA DI",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32808,
+    "name": "JUEGO DE SOFÁS CON ALMOHADONES DE POLIÉSTER Y MESA RATONA DI",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32809,
+    "name": "JUEGO MESA COMEDOR P/EXTERIOR RECTANGULAR X 7 PCS 6SILLAS 57X5",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32810,
+    "name": "JUEGO DE SOFÁS CON ALMOHADONES DE POLIÉSTER Y MESA RATONA DISEÑO RATÁN PARA EXTERIOR SOFÁ DE 3 CUERPOS CON BASE DE HIERR",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32811,
+    "name": "JUEGO MESA + SILLAS PARQUE ACERO + PLASTICO SIMIL RATAN 70X70X72/45X45X82CM CUADRADA CLR MADERA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32812,
+    "name": "JUEGO DE MESA COMEDOR PARA EXTERIOR MESA CUADRADA DE VIDRIO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32813,
+    "name": "JUEGO SOFÁ + MESA RATONA 4PC 188X83X77/68X83X70/120X65X50CM ALUMINIO C/ALMOHADONES POLIESTER CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32814,
+    "name": "JUEGO DE SOFÁ ALUMINIO CON ALMOHADONES DE POLIÉSTER Y MESA RATONA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32815,
+    "name": "JUEGO MESA + SILLAS ACERO + PLASTICO SIMIL RATAN BLANCO 155X",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32816,
+    "name": "JUEGO SOFAS + MESA ALUMINIO + ALMOHADONES 140X70X66/140X76X45/204X76X45/80X76X4 5CM CHAMPAGNE CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32817,
+    "name": "JUEGO REPOSERAS + MESA RATONA HIERRO PLASTICO SIMIL RATAN 40X40X45/49X80X74CM BEIGE CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32818,
+    "name": "+ IGUAL YRGW001 REDONDO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32819,
+    "name": "SILLÓN X2 C/MESA RATAN NO MUESTRA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32820,
+    "name": "JUEGO MESA + SILLAS ALUMINIO + PLAST SIMIL RATAN 85X75/56X60X80CM REDONDA BLANCA GRIS CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32821,
+    "name": "JUEGO MESA + SILLAS ALUMINIO + PLAST SIMIL RATAN 85X85X75/56X60X80CM CUADRADA BLANCA GRIS CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32822,
+    "name": "JUEGO SILLAS + MESA ALUMINIO + SOGA ALGODÓN 75X75X73/61X67X73CM CUADRADA BLANCA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32823,
+    "name": "SET MESA 70X74CM + SILLAS X4 27X33CM C/MIMBRE CUADRADA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32824,
+    "name": "SET MESA 70X74CM + SILLAS 27X33CM X4 MDF+HIERRO C/MIMBRE REDONDAS CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32825,
+    "name": "SET MESA 70X74CM + SILLAS 27X33CM X4 MDF+HIERRO C/MIMBRE REDONDAS CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32826,
+    "name": "SET MESA 70X74CM + SILLAS X4 27X33CM C/MIMBRE CUADRADA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32827,
+    "name": "SET MESA + ASIENTOS X2 MDF + HIERRO + PAPEL 55X55X48/43X40X40/34X29X29CM DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32828,
+    "name": "SET MESAS X3 MDF 66X66X34/59X59X32/53X53X29CM REDONDA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32829,
+    "name": "SILLA 40X37X47 C/APOYABRAZO SURT CLR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32830,
+    "name": "SILLA 24X30X43CM PLAST CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32831,
+    "name": "SILLA 26X33X50CM PLAST CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32832,
+    "name": "SILLA 53X33X33CM LISA CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32833,
+    "name": "SILLA COMEDOR P/BEBE 35X57X84CM PLAST C/CINTURON CLR VERDE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32834,
+    "name": "SILLA COMEDOR P/BEBE 36X37X49CM C/CINTURON /RUEDITAS CLR NRJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32835,
+    "name": "SILLA COMEDOR P/BEBE 47X49X94CM PLAST C/CINTURON /RUEDITAS CLR GRIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32836,
+    "name": "SILLA P/NIÑO 29X29X46CM PLAST F/OSO CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32837,
+    "name": "SILLA P/NIÑO 29X45CM PLAST F/CONEJO CLR BLANCO Y ROSA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32838,
+    "name": "SILLA P/NIÑO 25X32X56CM C/SMILE CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32839,
+    "name": "SILLA P/NIÑO 29X29X43CM PLAST F/OSO RESPALDO HUECO CLR SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32840,
+    "name": "SILLA P/NIÑO 40X32X25CM DSÑO CONEJO CLR AZUL Y BLANCO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32841,
+    "name": "BANQUITO P/NIÑOS 23X23X21CM PLASTICO DESARMABLE F/RANA VERDE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32842,
+    "name": "BANQUETA PLAST 32X25X26CM TRANSP 2 CORES SORT AZUL/GRIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32843,
+    "name": "BANQUETA PLAST 25X26,5CM AMARILLO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32844,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 29X24CM HIERRO+PAPEL SEMICIRCULO BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32845,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 31X30CM HIERRO+PAPEL SEMICIRCULO BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32846,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 23X21CM HIERRO +PAPEL ESFERA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32847,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 34X21CM HIERRO+SAUCE REDONDA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32848,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 29X25CM HIERRO + PAPEL ESFERA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32849,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 40X30CM BAMBOO CAMPANA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32850,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 30X26CM HIERRO + PAPEL 3 PISOS ESCALONADA CILINDRICA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32851,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 35X20,5CM HIERRO + PAPEL CAMPANA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32852,
+    "name": "PANTALLA DE LUZ C/PORTA LAMPARA 40X11CM TULIPA BULK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32853,
+    "name": "ALMOHADON 45X45CM FORRO DOBLE C/PLUSH SURT 3 CLRS BLANCO/GRIS/BEIGE OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32854,
+    "name": "ESPEJO 30X19,5CM PLASTICO+VIDRIO F/CUADRADA C/CORREA BOLSA BURBUJA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 32855,
+    "name": "ESPEJO 28X19,5CM PLASTICO+VIDRIO F/HUEVO C/CORREA BOLSA BURBUJA",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

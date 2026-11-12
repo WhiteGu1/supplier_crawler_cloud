@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28556,
+    "name": "SET JARRA DE VIDRIO C/FILTRO PARA TÉ 1800 ML C/ 4 TAZAS 24",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28557,
+    "name": "JARRA C/ SET X4 VASOS 13X23CM 2,5L PLAST TRANSP REDONDA OPP 9706-4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28558,
+    "name": "JARRA C/ SET X4 VASOS 24X10CM TRANSP C/LINEAS RELIEVE CUADRADA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28559,
+    "name": "SET JARRA C/4 VASOS 13X24,5 / 7,5X10CM CILINDRO TRANSP OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28560,
+    "name": "JARRA C/ SET X4 VASOS 15X10X19,5CM 2L TRANSP RECTANG OPP 9711-4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28561,
+    "name": "JARRA C/ SET X4 VASOS 15X10X24CM 2,5L TRANSP RECTANG OPP 9712-4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28562,
+    "name": "JARRA C/ SET X4 VASOS 13X19,5CM 2L TRANSP REDONDA OPP 9707-4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28563,
+    "name": "JARRA C/ SET X4 VASOS 24X10CM TRANSP C/LINEAS RELIEVE CUADRADA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28564,
+    "name": "JARRA PLASTICO 21X13 1,5L TRANSPARENTE BBLANCO VASOS X4 TAPA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28565,
+    "name": "JARRA C/VASOS (X6) F/ROMBOS 26X10CM/1,8L 15X10CM/235ML CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28566,
+    "name": "JARRA VIDRIO C/TAPA PLASTICA 1800ML 26X10,4CM DSÑO RAYADO CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28567,
+    "name": "JARRA VIDRIO 21,8X11,4CM 1620ML C/TAPA PLASTICA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28568,
+    "name": "JARRA VIDRIO C/TAPA PLASTICA 1700ML 26X10,2CM DSÑO CRUCES CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28569,
+    "name": "JARRA VIDRIO C/TAPA PLASTICA 1700ML 26X10,2CM DSÑO BURBUJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28570,
+    "name": "JARRA VIDRIO C/TAPA PLASTICA 1800ML 26X10,4CM DSÑO ROMBOS CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28571,
+    "name": "CANASTA BAMBOO 20X8CM ROUND SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28572,
+    "name": "CANASTA BAMBOO 22X17X8CM OVAL SURT CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28573,
+    "name": "2 CANASTA BAMBOO 20X8CM CUAD SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28574,
+    "name": "CANASTA BAMBOO 20X17X7CM RECT SURT CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28575,
+    "name": "2 CANASTA BAMBOO 23X10CM RED B/VARILLA SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28576,
+    "name": "CANASTA BAMBOO 28X20X10CM OVAL B/VARILLA SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28577,
+    "name": "CANASTA BAMBOO 22X9CM CUAD B/VARILLA SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28578,
+    "name": "CANASTA BAMBOO 25X18X9CM RECT B/VARILLA SURT 2 CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28579,
+    "name": "CANASTA BAMBOO 28X20X10CM OVAL C/COBERTOR TELA SURT 2CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28580,
+    "name": "CANASTA BAMBOO 22X9CM CUAD C/COBERTOR TELA SURT 2CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28581,
+    "name": "CANASTA BAMBOO 25X18X9CM RECT C/COBERTOR TELA SURT 2CLRS OSCURO Y CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28582,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28583,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 23X23X7CM C/ ASAS CERAMICA CLR BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28584,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28585,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CERAMICA CLR BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28586,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO C/ BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28587,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO / BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28588,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 22X22X7CM C/ ASAS CERAMICA CLR BLANCO C/ BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28589,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CERAMICA CLR BLANCO C/BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28590,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CERAMICA CLR B",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28591,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 22X22X7CM C/ ASAS CERAMICA CL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28592,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO DSÑO FLORAL C/ BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28593,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR BLANCO DSÑO FLORAL C/ BORDE SURT ROJO/AZUL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28594,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR AZUL/BLANCO DSÑO RAYADO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28595,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR AZUL/BLANCO DSÑO RAYADO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28596,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CERAMICA CLR AZUL/BLANCO DSÑO RAYADO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28597,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 22X22X7CM C/ ASAS CERAMICA CLR AZUL/BLANCO DSÑO RAYADO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28598,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CERAMICA CLR MARRON DSÑO TAZA CAFÉ -CLR BLANCO/MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28599,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 22X22X7CM C/ ASAS CERAMICA CLR MARRON DSÑO TAZA CAFÉ -CLR BLANCO/MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28600,
+    "name": "CANASTA RECTANGULAR HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR MARRON DSÑO TAZA CAFÉ -CLR BLANCO/MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28601,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CERAMICA CLR MARRON DSÑO TAZA CAFÉ -CLR BLANCO/MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28602,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CUERDA DSÑO PUNTA DE LANZA -SURT CLR AZUL/ROJO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28603,
+    "name": "CANASTA OVALADA HOJA DE PALMA 25X18X7CM C/ ASAS CUERDA CLR AZUL DSÑO SLOGAN \"BREAD\" -SURT CLR AZUL/ROJO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28604,
+    "name": "CANASTA CIRCULAR HOJA DE PALMA 23X7CM C/ ASAS CUERDA DSÑO PUNTA DE LANZA - SURT CLR AZUL/ROJO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 28605,
+    "name": "CANASTA CUADRADA HOJA DE PALMA 22X22X7CM C/ ASAS CUERDA DSÑO",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 33693,
+    "name": "MEGAFONO(72)",
+    "supplier_id": 11,
+    "image": "D:\\projects\\supplier_crawler\\images\\panda_99\\24173.jpg"
+  },
+  {
+    "id": 34185,
+    "name": "CARPA C/U",
+    "supplier_id": 1,
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\1997595d040262fe21059b62c26dbc58.webp"
+  },
+  {
+    "id": 35481,
+    "name": "JUGUETE PARA MASCOTA C/U",
+    "supplier_id": 1,
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\d71d63fb92d09f4b5e9c8715a5274294.webp"
+  },
+  {
+    "id": 35483,
+    "name": "JUGUETE PARA MASCOTAS PCS*2",
+    "supplier_id": 1,
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\daba0a99cc5b470cf5480ea0faf30c89.webp"
+  },
+  {
+    "id": 35486,
+    "name": "GLOBO METALIZADO UNICORNIO PCS*10",
+    "supplier_id": 1,
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\baba22796229c3adf276a6397a17f55c.webp"
+  }
+]

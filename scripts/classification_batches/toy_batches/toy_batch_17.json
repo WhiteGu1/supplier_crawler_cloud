@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33398,
+    "supplier_id": 11,
+    "sku": "24041AG",
+    "name": "ARMA JOYAS PULPO(120)",
+    "image": "/images/panda_99/24041AG.jpg"
+  },
+  {
+    "id": 33399,
+    "supplier_id": 11,
+    "sku": "24150AG",
+    "name": "JUEGO MAGNETICO",
+    "image": "/images/panda_99/24150AG.jpg"
+  },
+  {
+    "id": 33400,
+    "supplier_id": 11,
+    "sku": "24042AG",
+    "name": "ARMA JOYAS ABEJA",
+    "image": "/images/panda_99/24042AG.jpg"
+  },
+  {
+    "id": 33401,
+    "supplier_id": 11,
+    "sku": "24009",
+    "name": "JUEGO MADERA(180)",
+    "image": "/images/panda_99/24009.jpg"
+  },
+  {
+    "id": 33402,
+    "supplier_id": 11,
+    "sku": "24030AG",
+    "name": "DINOSAURIO PROTECTOR",
+    "image": "/images/panda_99/24030AG.jpg"
+  },
+  {
+    "id": 33403,
+    "supplier_id": 11,
+    "sku": "24112JS",
+    "name": "CAMION BOMBEROS",
+    "image": "/images/panda_99/24112JS.jpg"
+  },
+  {
+    "id": 33404,
+    "supplier_id": 11,
+    "sku": "24114AG",
+    "name": "SET AUTOS",
+    "image": "/images/panda_99/24114AG.jpg"
+  },
+  {
+    "id": 33405,
+    "supplier_id": 11,
+    "sku": "22143",
+    "name": "ESPADA CON SONIDO Y LUZ(144)1",
+    "image": "/images/panda_99/22143.jpg"
+  },
+  {
+    "id": 33406,
+    "supplier_id": 11,
+    "sku": "24152",
+    "name": "AUTO CON CONTROL",
+    "image": "/images/panda_99/24152.jpg"
+  },
+  {
+    "id": 33407,
+    "supplier_id": 11,
+    "sku": "24145JS",
+    "name": "BOX MAQUILLAJE",
+    "image": "/images/panda_99/24145JS.jpg"
+  }
+]

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31156,
+    "name": "MUÑECA 26X5CM C/VESTIDOS CAJA VENT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31157,
+    "name": "MUÑECA 26X7CM C/VESTIDO CAJA VENT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31158,
+    "name": "MUÑECA 27CM C/NIÑA /ACC X6 DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31159,
+    "name": "MUÑECA 27CM POLLERA/TOP CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31160,
+    "name": "MUÑECA 27CM VESTIDA FIESTA 2 MOD CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31161,
+    "name": "MUÑECA 27CM VESTIDO TOP POLLLERA LARGA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31162,
+    "name": "MUÑECA 28CM C/ ACC BAÑO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31163,
+    "name": "MUÑECA 28CM C/ACCESORIOS X7 CARROZA/UNICORNIO/ESPEJO DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31164,
+    "name": "MUÑECA 28CM C/ACCS X5PCS MUÑECA/CARRITO/PEINE PLAST DBL BLIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31165,
+    "name": "MUÑECA 28CM C/PONY /NENA /ACC X5 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31166,
+    "name": "MUÑECA 28CM DSÑO ROCKSTAR /ACC CJA VENTANA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31167,
+    "name": "MUÑECA 28CM HADA C/VARITA 2 MOD SURT CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31168,
+    "name": "MUÑECA 28CM PELO LARGO BICOLOR CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31169,
+    "name": "MUÑECA 28CM VESTIDO LARGO Y CORTO X2 CARTERA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31170,
+    "name": "MUÑECA 28X4CM PLAST VEST LENTEJUELA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31171,
+    "name": "MUÑECA 28X6,5CM C/ACCESORIOS SKATE/PERRO/PROTECCIONES CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31172,
+    "name": "MUÑECA 28X9CM C/VANITORY Y ACC. X 18 CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31173,
+    "name": "MUÑECA 29CM GUITARRISTA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31174,
+    "name": "MUÑECA 29CM SIRENA BLIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31175,
+    "name": "MUÑECA 29CM VESTIDO 2PCS C/PEINE 2MOD CJA PVC C/CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31176,
+    "name": "MUÑECA 29CM VESTIDO BLISTER CJA DISPLAY X9PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31177,
+    "name": "MUÑECA 29X4CM PLAST C/BACHA Y HELADOS CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31178,
+    "name": "MUÑECA 29X4CM PLAST VESTIDO LARGO SAPATOS X16 ACC BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31179,
+    "name": "MUÑECA 29X5CM PLASTICO C/VIOLINO TRENSAS CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31180,
+    "name": "MUÑECA 29X6CM PLASTICO MEDICA ACC X10 SURT CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31181,
+    "name": "MUÑECA 30 DSÑ POLICIA MONTADA C/ CABALLO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31182,
+    "name": "MUÑECA 30CM C/ TAPADO PELO LARGO 3 CLR SURT CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31183,
+    "name": "MUÑECA 30CM C/MOTO NINJA 15X35CM CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31184,
+    "name": "MUÑECA 30CM C/TAPADO Y VALIJA PLAST SURT 3 DSÑ CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31185,
+    "name": "MUÑECA 30CM C/VESTIDO CORTO SURT 2 DSÑ PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31186,
+    "name": "MUÑECA 30CM DENTISTA C/ACCS X4PCS SILLON/LAMPARA 32X25X7CM P",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31187,
+    "name": "MUÑECA 30CM DSÑ BUCEO C/ BOLSO Y DELFIN BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31188,
+    "name": "MUÑECA 30CM ESQUIADORA X8ACCS SKIES/TABLA/CASCO SURT 2 DSÑ P",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31189,
+    "name": "MUÑECA 30CM M/PLAYA C/ACCS X8PCS SILLA/SNORKEL/PATAS PLAST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31190,
+    "name": "MUÑECA 30CM PLAST M/MAESTRA C/ACC X3PCS MESA/PIZARRON/MOCHIL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31191,
+    "name": "MUÑECA 30X4CM PLAST C/SNOWCICLE C/NENA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31192,
+    "name": "MUÑECA 30X4CM PLAST GYNASIO C/NENA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31193,
+    "name": "MUÑECA 30X4CM PLAST PRINCES C/MALETIN COLLAR X3 SOMBRERO LANTEJUELAS CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31194,
+    "name": "MUÑECA 30X4CM PLAST VESTIDO CORTO C/TRENSA CLR SURT PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31195,
+    "name": "MUÑECA 30X4CM PLASTICO MERCADO ACC SURT CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31196,
+    "name": "MUÑECA 30X5CM PLASTICO VETERINARIA C/PERROS Y ACC SURT CJA V",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31197,
+    "name": "MUÑECA 30X6CM PLAST C/11 ACC SURT BELLEZA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31198,
+    "name": "MUÑECA 31CM VESTIDO VERANO C/PEINE Y VINCHA 2 MOD SURT CAJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31199,
+    "name": "MUÑECA 32CM DSÑ COCINERA Y ACC 2 MOD SURT CAJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31200,
+    "name": "MUÑECA 34CM C/ LONGBOARD Y MUÑECA 15CM C/ MONOPATIN 2 MOD SU",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31201,
+    "name": "MUÑECA 34CM NENA 18CM DSÑ ROLLERS CAJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31202,
+    "name": "MUÑECA 34CM VESTIDO GALA C/ BOA BLANCA EN CUELLO 3 MOD SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31203,
+    "name": "MUÑECA 34X10CM PLASTICA C/SACO PIEL C/MALETIN ACC CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31204,
+    "name": "MUÑECA 4X9CM C/ACCS X14PCS SURT 2 DSÑ DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31205,
+    "name": "MUÑECA 5X12CM C/VULTA AL MUNDO Y PERRO CAJA VENT",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

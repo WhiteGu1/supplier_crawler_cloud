@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30506,
+    "name": "FLORERO VIDRIO 28X17CM F/BOLSA RAYAS VERTICALES SURT 3-4CLR CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30507,
+    "name": "FLORERO VIDRIO 28X20CM F/BOLSA LISA SURT 4CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30508,
+    "name": "3- FLORERO VIDRIO 25X16CM F/HOJA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30509,
+    "name": "FLORERO VIDRIO 27X11CM 1 CLR CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30510,
+    "name": "FLORERO VIDRIO 18X16CM CAJA BLANCA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30511,
+    "name": "FLORERO VIDRIO 22X21CM CAJA BLANCA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30512,
+    "name": "FLORERO 10X20CM C/RELIEVE ESPIRAL VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30513,
+    "name": "FLORERO 11X20CM C/RELIEVE ESPIRAL VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30514,
+    "name": "FLORERO 12X30CM C/RELIEVE ONDAS VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30515,
+    "name": "FLORERO 10X25CM C/RELIEVE ONDAS VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30516,
+    "name": "FLORERO 11X22CM F/VASIJA VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30517,
+    "name": "FLORERO 9X20CM F/VASIJA VIDRIO TRANSP CJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30518,
+    "name": "FLORERO 18X13CM ESFERA BOCA ANCHA BOX",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30519,
+    "name": "FLORERO 16X26CM CILINDRO OVAL BOCA ANCHA BOX",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30520,
+    "name": "FLORERO 15X21CM CILINDRO OVAL BOCA ANCHA BOX",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30521,
+    "name": "FLORERO 8,5X26CM CILINDRO OVAL BOCA ANCHA BOX",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30522,
+    "name": "FLORERO 10X16CM VIDRIO GRIS OVAL LINEA DECO BROWN BOX",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30523,
+    "name": "FLORERO 15X9X17CM VIDRIO CLR NGO C/FORMA CARTERA C/TIRA DE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30524,
+    "name": "FLORERO 18X14CM CERAMICA C/DSÑO SURT 2 BLANCO/NGRO LINE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30525,
+    "name": "CLRS FLORERO 20X18CM CERAMICA C/DSÑO SURT 2 BLANCO/NGRO LINE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30526,
+    "name": "CLRS FLORERO 40X11CM CERAMICA C/DSÑO SURT 2 CLRS BLANCO/NGRO LINE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30527,
+    "name": "FLORERO 29X20CM CERAMICA C/DSÑO SURT 2 BLANCO/NGRO LINE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30528,
+    "name": "CLRS FLORERO 8X20CM CERAMICA C/DSÑO SURT 3 LILA/VERDE/CREMA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30529,
+    "name": "CLRS FLORERO 10,5X25CM CERAMICA C/DSÑO SURT 3 CLRS LILA/VERDE/CRE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30530,
+    "name": "FLORERO 10X20CM CERAMICA C/DSÑO SURT 3 ROS/CORAL/CELEST",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30531,
+    "name": "CLRS FLORERO 11X28CM CERAMICA C/DSÑO SURT 3 ROS/CORAL/CELEST",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30532,
+    "name": "CLRS FLORERO 10X8X29CM CERAMICA C/DSÑO SURT 3 CLRS ROS/VIOL/VERDE",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30533,
+    "name": "FLORERO 9X15CM CERAMICA C/DSÑO BRILLOSO 2 CLRS DOR/PLAT",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30534,
+    "name": "SURT FLORERO 14X23CM CERAMICA C/DSÑO C/LAZULO SURT 3 CLRS BLANCO/",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30535,
+    "name": "FLORERO 4X20CM CERAMICA C/DSÑO BRILLOSO SURT 5 CLRS LILA/ROS",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30536,
+    "name": "FLORERO 24X6,5CM C/DSÑO A RAYAS MARR/NGRO LINEA DECO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30537,
+    "name": "FLORERO 29X7,5CM C/DSÑO A RAYAS MARR/NGRO LINEA DECO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30538,
+    "name": "FLORERO 31,5X8CM BOCA ANCHA CERAMICA 1 CLR CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30539,
+    "name": "FLORERO 40,5X8,5CM BOCA ANCHA CERAMICA CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30540,
+    "name": "1 CLR JARRON 14,5X15CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30541,
+    "name": "JARRON 18,8X17,5CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30542,
+    "name": "JARRON 23,2X20,3CM CERAMICA SURT 2 CLRS MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30543,
+    "name": "CAJA JARRON 24X22,5CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30544,
+    "name": "JARRON 30X19,5X15,5CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30545,
+    "name": "JARRON 35,5X16,5X12CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30546,
+    "name": "JARRON 45,8X17,5X14,5CM CERAMICA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30547,
+    "name": "FLOREROS 28X15CM CERAMICO SURT 3 CLRS BLANCO/NEGRO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30548,
+    "name": "FLORERO 20X8CM CERAMICO RAYAS HORIZONTALES ONDULADAS SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30549,
+    "name": "FLORERO 25X10,5CM CERAMICO RAYAS HORIZONTALES ONDULADAS SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30550,
+    "name": "FLORERO 45X9CM CERAMICO C/DIBUJOS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30551,
+    "name": "FLORERO 24X8CM CERAMICO C/DIBUJO RAYAS ONDULADAS SURT 3 CLRS GRIS/BLANCO/NEGRO CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30552,
+    "name": "FLORERO 58X14CM CERAMICO C/DIBUJO ASIMETRICO ONDULADO SURT 3 CLRS GRIS/BLANCO/NEGRO CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30553,
+    "name": "FLORERO 28X11CM CERAMICO REDONDO C/BOTONES SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30554,
+    "name": "FLORERO 20X10,5CM CERAMICO REDONDO C/BOTONES SURT 3 CLRS NEGRO/BLANCO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30555,
+    "name": "FLORERO 25X5CM CERAMICO F/JARRA C/PICO 3 CLRS BLANCO/NEGRO/GRIS CAJA MARRON",
+    "current_cat": "园艺户外"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

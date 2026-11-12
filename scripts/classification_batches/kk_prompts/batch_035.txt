@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29606,
+    "name": "ESTANTERÍA 3 CUERPOS PLASTICOS ARMAZON HIERRO 37X43X82CM C/RUEDAS PLASTICAS CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29607,
+    "name": "ESTANTERÍA DESMONTABLE HIERRO 51X35X66,5CM 2 PISOS ESTANTE MDF NEGRO CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29608,
+    "name": "ESTANTERÍA 3 CUERPOS HIERRO F/RED 63X44X25CM C/RUEDAS PLASTICAS CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29609,
+    "name": "ESTANTERÍA 4 CUERPOS IMANTADA 29X29X74CM CUADRADA 3 CAJONES CORREDIZOS C/RUEDAS PLASTICAS CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29610,
+    "name": "ESTANTERÍA 4 CUERPOS HIERRO F/RED 42X27X84CM C/RUEDAS PLASTICAS CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29611,
+    "name": "ESTANTERÍA 4 CUERPOS HIERRO F/RED 42X27X84CM C/RUEDAS PLASTICAS CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29612,
+    "name": "ESTANTERÍA DESMONTABLE HIERRO 54X36X34CM ESTANTE MDF F/\"Z\" CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29613,
+    "name": "ESTANTERÍA DESMONTABLE HIERRO 54X36X34CM ESTANTE MDF F/\"Z\" CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29614,
+    "name": "ESTANTERÍA DESMONTABLE HIERRO 51X35X66,5CM 2 PISOS ESTANTE MDF BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29615,
+    "name": "ESTANTERÍA REBATIBLE 3 CUERPOS HIERRO 46X31X77CM C/RUEDAS PLASTICAS CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29616,
+    "name": "ESTANTERÍA REBATIBLE 3 CUERPOS HIERRO 46X31X77CM C/RUEDAS PLASTICAS CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29617,
+    "name": "ESTANTERÍA DESMONTABLE Y PLEGABLE HIERRO 71X34X78CM C/RUEDAS PLASTICAS PISOS M/\"DIAMANTE\" CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29618,
+    "name": "ESTANTERÍA DESMONTABLE Y PLEGABLE 3 HIERRO 71X34X78CM C/RUEDAS PLASTICAS PISOS M/\"DIAMANTE\" CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29619,
+    "name": "ESTANTERÍA P/COCINA 4 ESTANTES MDF Y 3 3 CAJONES HIERRO 80X30X103CM C/RUEDAS PLASTICAS CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29620,
+    "name": "ESTANTERIA DEMONTABLE Y PLEGABLE HIERRO 71X34X117CM C/RUEDAS PLASTICAS 4 PISOS M/\"DIAMANTE\" CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29621,
+    "name": "ESTANTERIA DEMONTABLE Y PLEGABLE HIERRO 71X34X117CM C/RUEDAS PLASTICAS 4 PISOS M/\"DIAMANTE\" CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29622,
+    "name": "ESTANTERÍA P/COCINA 4 ESTANTES MDF 4 CAJONES HIERRO 80X30X130CM C/RUEDAS PLASTICAS CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29623,
+    "name": "ESTANTERIA DEMONTABLE Y PLEGABLE HIERRO 71X35X152CM C/RUEDAS PLASTICAS 5 PISOS M/\"DIAMANTE\" CLR NEGRA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29624,
+    "name": "ESTANTERIA DEMONTABLE Y PLEGABLE HIERRO 71X35X152CM C/RUEDAS PLASTICAS 5 PISOS M/\"DIAMANTE\" CLR BLANCA CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29625,
+    "name": "ESTANTE ESPECIAS 24,5X10,5X21,5CM C/MANIJA Y BASE BAMBU HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29626,
+    "name": "ESTANTE 29X22X29CM MADERA 2 PISOS C/BARRA MANIJA CLR CUADRADO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29627,
+    "name": "ESTANTE 51,5X17,5X37CM 3 PISOS C/BARRA MANIJA",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29628,
+    "name": "CAJA ZAPATOS 33X27X21CM PLASTICO POLYBAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29629,
+    "name": "CAJA ZAPATOS 40X30X15CM TELA PVC C/CIERRE /BASE MDF /PLEGABLE POLYBAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29630,
+    "name": "CANASTO 30X23X12CM C/TAPA PLAST SURT CLRS AZ/ROSA/VDE OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29631,
+    "name": "3 CANASTO 85X56CM SET X3 3 NIVELES CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29632,
+    "name": "ALHAJEROS 7,2X6,5X6,2CMCM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29633,
+    "name": "ALHAJEROS 7,2X6,5X6,2CMCM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO UNICORNIO CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29634,
+    "name": "ALHAJEROS 7,2X6,5X6,2CMCM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29635,
+    "name": "ALHAJEROS 7,2X6,5X6,2CMCM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO PANDA CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29636,
+    "name": "ALHAJEROS 7,2X6,8X9CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29637,
+    "name": "ALHAJEROS 7,2X6,8X9CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO PANDA CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29638,
+    "name": "ALHAJEROS 7,2X6,8X9CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO UNICORNIO CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29639,
+    "name": "ALHAJEROS 7,2X6,8X9CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29640,
+    "name": "ALHAJEROS 11X11,6X10,8CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29641,
+    "name": "ALHAJEROS 11X11,6X10,8CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO PANDA CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29642,
+    "name": "ALHAJEROS 11X11,6X10,8CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO ANIMALITOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29643,
+    "name": "ALHAJEROS 11X11,6X10,8CM PLAST C/CAJONCITO Y ESPEJO SURT 4 CLRS DSÑO UNICORNIO CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29644,
+    "name": "ALHAJEROS 8,5X7,5X12,5CM PLAST SURT 4 CLRS DSÑO PERRITO CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29645,
+    "name": "ALHAJEROS 8,5X7,5X12,5CM PLAST SURT 4 CLRS DSÑO DINOS CAJA PVC",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29646,
+    "name": "ORGANIZADOR COSMETICO 15,2X12,6X11,3CM BAMBU C/3 CAJONES PLAST BLANCO SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29647,
+    "name": "ORGANIZADOR COSMETICO 2 LVL 19,1X9,5X10CM PLAST TRANSP C/TAPA BAMBU SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29648,
+    "name": "ORGANIZADOR COSMETICO 9X6,5CM 9 DIV PLAST TRANSP C/BASE ACRILICA GLITTER SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29649,
+    "name": "ORGANIZADOR COSMETICO 23X9,4X8,8CM PLAST TRANSP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29650,
+    "name": "ORGANIZADOR COSMETICO 2LVL 9,5X9,5X16CM C/TAPA POMO PLAST TRANSP SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29651,
+    "name": "ORGANIZADOR COSMETICO 2LVL 7X7X19,3CM C/TAPA POMO PLAST TRANSP SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29652,
+    "name": "CAJA JOYERIA 16X11X5CM TERCIOPELO C/CIERRE BOTON SURT CLR ROSA/ BLANCO/ NEGRO OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29653,
+    "name": "ORGANIZADOR COSMETICO 10,5X8,5CM CIRCULAR 9 DIV 1 CAJON CLR ROSA TJTA CLR",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29654,
+    "name": "ORGANIZADOR COSMETICO 16,8X8,5X4,5CM DIV SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29655,
+    "name": "7 CESTA P/FRUTAS 3 LVL 33,5X17,5X46,5CM F/TRIANGULO /ALAMBRE HIERRO /MANGO MADERA CLR NEGRO CJA CLR",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

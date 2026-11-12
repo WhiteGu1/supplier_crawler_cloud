@@ -1,0 +1,41 @@
+Total in DB: 141
+In Website Cart: 104
+Missing Count: 37
+
+1. SKU: 202226 | Qty: 24 | CONTORNO EN BARRA COLOR CONTOUR PINK 21 CS6783/01965 | URL: https://bellacentral.com.ar/producto/contorno-en-barra-color-contour-pink-21-cs6783-01965/
+2. SKU: 58306 | Qty: 12 | RUBOR MULTIUSO GEGE BEAR GX1215 | URL: https://bellacentral.com.ar/producto/rubor-multiuso-gege-bear-gx1210/
+3. SKU: 202276 | Qty: 24 | BASE DE MAQUILLAJE ALTA COBERTURA EXTREME PINK 21 CS4994/68152 | URL: https://bellacentral.com.ar/producto/base-de-maquillaje-alta-cobertura-extreme-pink-21-cs4994-68152/
+4. SKU: 108441 | Qty: 96 | BASE DE MAQUILLAJES LIQUIDO 4ANGELS AR1120/AR1121 | URL: https://bellacentral.com.ar/producto/base-de-maquillajes-liquido-ar1120/
+5. SKU: 53315 | Qty: 2 | CAJA X29 ESMALTES SEMI CHARM LIMIT (INCLUYE 2 BASE Y 2 TOP) 30061 | URL: https://bellacentral.com.ar/producto/caja-x29-esmaltes-semi-charm-limit-incluye-2-base-y-2-top-30061/
+6. SKU: 177741 | Qty: 2 | PACK DE 12PCS DELINEADOR DE LABIO PINK21 CS6441/88136 | URL: https://bellacentral.com.ar/producto/pack-de-12pcs-delineador-de-labio-pink21-cs6441-88136/
+7. SKU: 163418 | Qty: 2 | PACK*12 Lapiz Labial Waterproof Lip Pencil TEI TEI8236 | URL: https://bellacentral.com.ar/producto/pack12-lapiz-labial-waterproof-lip-pencil-tei-tei8236/
+8. SKU: 169350 | Qty: 6 | Paleta De Sombras Stitch Frutilla Con Espejo X42 Tonos DH-JZD-EYE-4206/42060 | URL: https://bellacentral.com.ar/producto/paleta-de-sombras-stitch-frutilla-con-espejo-x42-tonos-dh-jzd-eye-4206-42060/
+9. SKU: 170840 | Qty: 50 | Tips Soft  Gel 50PCS  Almendra Medio Charm Limit  CML-02A | URL: https://bellacentral.com.ar/producto/tips-soft-gel-50pcs-almendra-medio-charm-limit-cml-02a/
+10. SKU: 98441 | Qty: 24 | BASE DE MAQUILLAJES 4ANGELS AR1092 | URL: https://bellacentral.com.ar/producto/base-de-maquillajes-4angels-ar1092/
+11. SKU: 175394 | Qty: 72 | Base de maquillaje líquida HUDA MATTE ME DD-HM-58753/87532 | URL: https://bellacentral.com.ar/producto/base-de-maquillaje-liquida-huda-matte-me-dd-hm-58753-87532/
+12. SKU: 198202 | Qty: 24 | BASE DE MAQUILLAJE PINK 21 CS6636/88990 | URL: https://bellacentral.com.ar/producto/base-de-maquillaje-pink-21-cs6636-88990/
+13. SKU: 128142 | Qty: 24 | LAPIZ CORRECTOR BARRA DH509-086/21880 | URL: https://bellacentral.com.ar/producto/lapiz-corrector-barra-dh509-086-21880/
+14. SKU: 151640 | Qty: 72 | Corrector Líquido Matte Meike Glamour &#8211; Full Cover de Alta Cobertura DH-MK0274/02740 | URL: https://bellacentral.com.ar/producto/corrector-liquido-matte-meike-glamour-full-cover-de-alta-cobertura-dh-mk0274-02740/
+15. SKU: 158685 | Qty: 192 | Corrector Líquido Sparkling Girls Instant Age Rewind Eraser DH-SP-1013/678902 SPARKLING GIRLS | URL: https://bellacentral.com.ar/producto/corrector-liquido-sparkling-girls-instant-age-rewind-eraser-dh-sp-1013-678902-sparkling-girls/
+16. SKU: 158660 | Qty: 48 | Corrector Líquido Sparkling Girls HD High Definition DH-SP-3018/190395 SPARKLING GIRLS | URL: https://bellacentral.com.ar/producto/corrector-liquido-sparkling-girls-hd-high-definition-dh-sp-3018-190395-sparkling-girls/
+17. SKU: 36199 | Qty: 24 | PRIMER PARA SOMBRAS SHEGLAM 00017/79057 | URL: https://bellacentral.com.ar/producto/primer-parasombras-sheglam-00017-79057/
+18. SKU: 129527 | Qty: 24 | PRIMER DE MAQUILLAJE MISS FON DH-ZF06/26331 | URL: https://bellacentral.com.ar/producto/primer-de-maquillaje-miss-fon-dh-zf06-26331/
+19. SKU: 14509 | Qty: 24 | LABIAL LIP GLOSS BARBY DH75043/23370 | URL: https://bellacentral.com.ar/producto/labial-lip-gloss-barby-dh75043-23370/
+20. SKU: 21183 | Qty: 36 | GLOSS DE ALOE VERA QOIDEN ROSE 60105 | URL: https://bellacentral.com.ar/producto/gloss-de-aloe-vera-qoiden-rose/
+21. SKU: 175404 | Qty: 48 | Primer facial gel HUDA MATTE ME DD-HM-58756/87568 | URL: https://bellacentral.com.ar/producto/primer-facial-gel-huda-matte-me-dd-hm-58756-87568/
+22. SKU: 193945 | Qty: 48 | Broches para Pelo  MYE1-0006/00063 | URL: https://bellacentral.com.ar/producto/broches-para-pelo-mye1-0006-00063/
+23. SKU: 201490 | Qty: 36 | VINCHAS PARA MAQUILLAJES NAEZ BC1124 /11247 | URL: https://bellacentral.com.ar/producto/vinchas-para-maquillajes-naez-bc1124-11247/
+24. SKU: 130055 | Qty: 120 | MASCARILLA PARA PUNTO NEGRO ARABE 5 MODELO DH509-231/27133 | URL: https://bellacentral.com.ar/producto/mascarilla-para-punto-negro-arabe-5-modelo-dh509-231-27133/
+25. SKU: 164435 | Qty: 36 | MASCARA DE PESTAÑAS 2 EN 1  4ANGEL AR1174 | URL: https://bellacentral.com.ar/producto/mascara-de-pestanas-2-en-1-4angel-ar1174/
+26. SKU: 169116 | Qty: 72 | Rubor En Polvo Para Mejillas Matte Finish Miss Glisten DD-HR-PD-25/00259 | URL: https://bellacentral.com.ar/producto/rubor-en-polvo-para-mejillas-matte-finish-miss-glisten-dd-hr-pd-25-00259/
+27. SKU: 204291 | Qty: 48 | LABIAL LIQUIDO  4 Angels AR1233/02894 | URL: https://bellacentral.com.ar/producto/labial-liquido-4-angels-ar1233-02894/
+28. SKU: 120435 | Qty: 48 | LABIAL LIQUIDO VINTY TEI8026 | URL: https://bellacentral.com.ar/producto/labial-liquido-vinty-tei8026/
+29. SKU: 209214 | Qty: 72 | DELINEADOR DE LABIOS 4 ANGELS AR1238/03006 | URL: https://bellacentral.com.ar/producto/delineador-de-labios-4-angels-ar1238-03006/
+30. SKU: 6680 | Qty: 24 | DOTTIN PARA DECORAR UÑA 00173/JQ-017 | URL: https://bellacentral.com.ar/producto/dottin-para-decorar-una-02521/
+31. SKU: 13260 | Qty: 28 | LABIAL LIP STICK COLOR 2IN1 MISS BETTY 33386/83002 | URL: https://bellacentral.com.ar/producto/labial-lip-stick-color-2in1-miss-betty-6923958583002/
+32. SKU: 28123 | Qty: 24 | PALETA DE SOMBRAS X4 MISS LARA 02233 | URL: https://bellacentral.com.ar/producto/paleta-de-sombras-x4-miss-lara/
+33. SKU: 190095 | Qty: 24 | Paleta De Sombras E Yez + Glitter 4 Angels 4 Colores AR1203/98340 | URL: https://bellacentral.com.ar/producto/paleta-de-sombras-e-yez-glitter-4-angels-4-colores-ar1180-98340/
+34. SKU: 192692 | Qty: 24 | Paleta de Sombras para Ojos Magic Sevencool DD-SC-9336/01094 | URL: https://bellacentral.com.ar/producto/paleta-de-sombras-para-ojos-magic-sevencool-dd-sc-9336-01094/
+35. SKU: 42108 | Qty: 24 | ILUMINADOR EN CREMA 80145/12963 | URL: https://bellacentral.com.ar/producto/iluminador-en-crema-80145/
+36. SKU: 59882 | Qty: 24 | ILUMINADOR LIQUIDO MISS LARA 03510/DH83524 | URL: https://bellacentral.com.ar/producto/iluminador-liquido-miss-lara-03510-dh83524/
+37. SKU: 164466 | Qty: 36 | DELINEADOR DE CEJAS EN LAPIZ AR1176 | URL: https://bellacentral.com.ar/producto/delineador-de-cejas-en-lapiz-ar1176/

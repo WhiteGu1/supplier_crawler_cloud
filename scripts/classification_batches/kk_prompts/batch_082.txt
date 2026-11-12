@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31956,
+    "name": "SET PESCA 11X7CM C/4 PECES CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31957,
+    "name": "SET PESCA 14X28CM C/3 PECES SURT 2 DÑS BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31958,
+    "name": "SET PESCA 15X43,5CM C/3 PECES SURT 2 DSÑ BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31959,
+    "name": "SET PESCA 17X46CM C/CAÑA C/PECES X3 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31960,
+    "name": "SET PESCA 19X52CM CAÑA C/PECES X5 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31961,
+    "name": "SET PESCA MADERA 30X22,5CM X12 PESES CAÑA IMAN SHK PACK",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31962,
+    "name": "SET PESCA X10PCS F/PPATITO BOLSA PVC 20X25CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31963,
+    "name": "SET PESCA X11 25,5X44CM 2 CAÑAS BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31964,
+    "name": "SET PESCA X11 28,5X44,5CM 1 CAÑA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31965,
+    "name": "SET PESCA X11PCS F/CARACOL SURT 2 CLRS BOLSA PVC CART 20X24CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31966,
+    "name": "SET PESCA X8 28,5X45CM 1 CAÑA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31967,
+    "name": "SET PESCA X8PCS CAÑA/PECES/RED BOLSA PVC 19X25CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31968,
+    "name": "ANIMAL 8X8 A CUERDA S/SCOOTER CLR SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31969,
+    "name": "ANIMAL PULLSTRING 21X10X5CM F/COCODRILO C/LUZ A PILA RELOJ O",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31970,
+    "name": "ANIMALES 6X10 P/B SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31971,
+    "name": "ANIMALES PULLSTRING 9X13CM SURT 2DÑS COCOD/PATITO A PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31972,
+    "name": "ARRASTRE 12X16X8 DESARMABLE C/DESTORNILLADOR Y LLAVE PVC HEA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31973,
+    "name": "AUTO 10X6CM DSÑO POLICIA/BOMBERO /FRICCION CJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31974,
+    "name": "AUTO 8X13X17CM FRICC PLAST DISPLAY BOX X9PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31975,
+    "name": "AUTO C/SOMBRERO 18X10X11 PULLSTRING OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31976,
+    "name": "AUTO F1 10X4 PUSH AND GO CLR SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31977,
+    "name": "AUTO F1 8X4CM FW SURT CLRS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31978,
+    "name": "AUTO FRICCION C/CARITA 10X7X6CM CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31979,
+    "name": "CAMION 10X19CM FRIC C/SOMBRERO DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31980,
+    "name": "CAMION C/ACOPLADO 14X4CM FRICC DISPLAY X 12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31981,
+    "name": "CAMION FRICCION C/RUEDA PATONA SURT 3 CLRS CAJA DISPLAY X8 1",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31982,
+    "name": "CAMION PLAST 19X10X7CM RUEDA LIBRE CONSTRUCCION 3 MOD SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31983,
+    "name": "CAMIONETA 11X7,5CM PB SURT CLRS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31984,
+    "name": "CAMIONETA MONSTER 15X11X13CM FRICC C/SONID A PILA RELOJ DISP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31985,
+    "name": "CARTING 7,5X13CM FW SURT CLRS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31986,
+    "name": "COCODRILO ARRASTRE 28X15X19CM C/ENCASTRES PLAST RED",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31987,
+    "name": "DINOSAURIO 17X10X9 PULLSTRING LUZ PILA RELOJ OPP (EXSD9502)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31988,
+    "name": "DINOSAURIO A CUERDA CLR SURT X3 OPP PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31989,
+    "name": "ENCASTRE X5PCS C/MANGO ARRASTRE BOLSA PVC 20X8CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31990,
+    "name": "ESCORPION 23X18X12 PULLSTRING C/CAMPANA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31991,
+    "name": "EXCAVADORA 15X11CM PB DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31992,
+    "name": "EXCAVADORA 16X7CM FRICC C/MUÑECO DISPLAY X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31993,
+    "name": "HELICOPTERO 16X10X7 PULLSTRING CAMUOFLAGE INF C/LUZ A PILA R",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31994,
+    "name": "HELICOPTERO 20X7X6 PULLSTRING CAMUOFLAGE C/LUZ A PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31995,
+    "name": "LOCOMOTORA 10X10 P/B INF C/SILBATO OJOS DISPLAY X16",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31996,
+    "name": "MOTO 11X5,5 C/ANIMAL INF MOD SURT FRIC DISPLAY BX X9",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31997,
+    "name": "MOTO 12X8X7CM DSÑ INFANTIL PVC HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31998,
+    "name": "MOTO 13X8CM FRICC DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31999,
+    "name": "PERRO 13X12X7 DESARMABLE C/DESTORNILLADOR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32000,
+    "name": "PEZ PULLSTRING 23X8,5X11,5CM CLR SURT X3 OPP PILA RELOJ (EX SD13365)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32001,
+    "name": "ROBOT 12X9 P/B INF CARAS SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32002,
+    "name": "ROBOT 9X11CM FRICC MUEVE CEJAS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32003,
+    "name": "ROBOT EXCAVADORA 15X11CM PB DISPLAY X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32004,
+    "name": "SAPO 8X16CM TOCA TAMBOR A CUERDA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32005,
+    "name": "TANQUE LANZA MISILES 11X9CM FRICC DISPLAY X12",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

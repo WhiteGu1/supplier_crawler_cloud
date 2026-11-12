@@ -1,0 +1,76 @@
+{
+  "batch_id": 25,
+  "total": 10,
+  "products": [
+    {
+      "id": 35748,
+      "name": "Balanza Personal De Vidrio",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e5992efc934e5ff5b93d87c19b72881b.png"
+    },
+    {
+      "id": 35749,
+      "name": "Cepillo De Pelo 58393",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c098f033cc46150a07483720b4412bc8.jpg"
+    },
+    {
+      "id": 35750,
+      "name": "Cepillo De Pelo 58394",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1a04f61526f8b6a987088770b6968455.jpg"
+    },
+    {
+      "id": 35751,
+      "name": "Cepillo De Pelo 58395",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/dabdfa91c496c83f15258b9697c7e78a.jpg"
+    },
+    {
+      "id": 35752,
+      "name": "Cepillo De Pelo 58401",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a4dc8fd58a6b1b5afbaefdee44746dfb.jpg"
+    },
+    {
+      "id": 35753,
+      "name": "Cepillo De Pelo 58454",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7357b34b8886764436c71ea1772f0fbe.jpg"
+    },
+    {
+      "id": 35754,
+      "name": "Cepillo De Pelo 58455",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/f2cc1e62d45a9430580998c4efbb0cf4.jpg"
+    },
+    {
+      "id": 35755,
+      "name": "Cepillo De Pelo 58456",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/630027210ccfa15fca3afb4b123b33d0.jpg"
+    },
+    {
+      "id": 35756,
+      "name": "Cepillo De Pelo 58458",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c611683ac797a147b32ef9d6b161f82b.jpg"
+    },
+    {
+      "id": 35757,
+      "name": "Cepillo De Pelo 58459",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c19fbbb2f086e5e8fe729726c5806b57.jpg"
+    }
+  ]
+}

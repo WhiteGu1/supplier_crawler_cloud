@@ -1,0 +1,76 @@
+{
+  "batch_id": 21,
+  "total": 10,
+  "products": [
+    {
+      "id": 35708,
+      "name": "Plato De Acero Inoxidable, Dorado, 17Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a2890d68228480cd654539b7f0c700e6.png"
+    },
+    {
+      "id": 35709,
+      "name": "Plato De Acero Inoxidable, Dorado, 23Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a15049c7d45e4e864a44b2206c1c58b6.jpg"
+    },
+    {
+      "id": 35710,
+      "name": "Plato Giratorio Vidrio Transparente C/Pie 30* 6.5 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/967c27999d707e2043a1ab624645a8d6.png"
+    },
+    {
+      "id": 35711,
+      "name": "Plato Giratorio Vidrio Transparente C/Pie 35* 6.5 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c7c080b2051b15bff0d7ff87d0dfbe15.png"
+    },
+    {
+      "id": 35712,
+      "name": "Cafetera 3 Pocillos 29615",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/2453826a61136b385a4946669831471c.png"
+    },
+    {
+      "id": 35713,
+      "name": "Cafetera 6 Pocillos 29616",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1f2287d6ba3bc05c311002c5d2f8901b.png"
+    },
+    {
+      "id": 35714,
+      "name": "Cafetera 12 Pocillos 29618",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/31b0724baf3d871077465b022b5d5ef5.png"
+    },
+    {
+      "id": 35715,
+      "name": "Molde 26*18*2.5",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/f13783dcd7bba3095c30b2120ed7fd9c.png"
+    },
+    {
+      "id": 35716,
+      "name": "Estante Organizador, 26.5X21X17.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/439f8f3b56e84d3365089d9798cd124a.png"
+    },
+    {
+      "id": 35717,
+      "name": "Estante Organizador, 28X12.5X25Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e20b20c7ada6daebed12e730c9478fe5.png"
+    }
+  ]
+}

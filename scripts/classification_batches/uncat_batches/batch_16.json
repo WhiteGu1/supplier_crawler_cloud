@@ -1,0 +1,76 @@
+{
+  "batch_id": 16,
+  "total": 10,
+  "products": [
+    {
+      "id": 35658,
+      "name": "Balanza De Cocina 10 Kg 24 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/2415d84b2cb1f11a1ea83d29fb395f99.png"
+    },
+    {
+      "id": 35659,
+      "name": "Bowl De Acero Inoxidable, Dorado, 25.5X8.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/bd2f9bb36e9dbf2d164beb0b618e27d9.jpg"
+    },
+    {
+      "id": 35660,
+      "name": "Hielera Flexible Para Hielos Redondos, 12,8X14Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/75ea4ecf9dd48e3cc656d1d9d19d4665.png"
+    },
+    {
+      "id": 35661,
+      "name": "Botella De Plastico, 900Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b62cbe000a6cdc5a842343f9e1d4a576.jpg"
+    },
+    {
+      "id": 35662,
+      "name": "Set Botella + Vaso Vidrio 700ml+200ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e991fe15e1dfe2571389d1eeb9e1ce57.png"
+    },
+    {
+      "id": 35663,
+      "name": "Lunchera Doble piso 14*14*13,5 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/ef899c6e15ad1787cd364a74117b602e.png"
+    },
+    {
+      "id": 35664,
+      "name": "Fiambrera, 3 Compartimentos 17*17*8,5",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/3cd2c17e4e2331346c07cf49798aacd1.png"
+    },
+    {
+      "id": 35665,
+      "name": "Lunchera De Plástico Con Divisiones 7*6*8cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7283f60c85eb3f1de1ef63ea1f674552.png"
+    },
+    {
+      "id": 35666,
+      "name": "Lunchera tipo Black doble piso, 2 Compartimentos 18*11,5*12",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/32509a13294113ca022d4795b8368363.png"
+    },
+    {
+      "id": 35667,
+      "name": "Lunchera Infantil 3 Compartimentos 19*14*8,5 59445",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/d5deff17513d3cae4875c09d31ca8bdc.jpg"
+    }
+  ]
+}

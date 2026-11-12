@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30606,
+    "name": "PORTA VELAS METALICO X3 61X22X22/40,5X16X16/25X10X10CM C/MADERA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30607,
+    "name": "PORTA VELAS METALICO X3 52X21X21/36,5X16X16/21X10X10CM C/MADERA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30608,
+    "name": "PORTA VELAS 22X16CM BAMBOO REDONDA AROS CAJA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30609,
+    "name": "PORTA VELAS 20CM BAMBOO REDONDA AROS CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30610,
+    "name": "PORTA VELAS 30CM BAMBOO REDONDA AROS REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30611,
+    "name": "CAJA CANDELABRO 15X10CM HIERRO REDONDO 1 CLR MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30612,
+    "name": "CAJA CANDELABRO 21X15CM HIERRO REDONDO 1 CLR CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30613,
+    "name": "CANDELABRO HIERRO 22CM SURT 4 CLRS KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30614,
+    "name": "CANDELABRO HIERRO 27CM SURT 4 CLRS KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30615,
+    "name": "CANDELABRO HIERRO 18CM BASE BOLA SURT 4 CLRS KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30616,
+    "name": "CANDELABRO HIERRO 24CM BASE BOLA SURT 4 KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30617,
+    "name": "CLRS CANDELABRO HIERRO 22CM BASE REDONDA SURT CLRS KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30618,
+    "name": "4 CANDELABRO HIERRO 28CM BASE REDONDA SURT 4 CLRS KHAKI/BEIGE/VIOLETA/NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30619,
+    "name": "CANDELABRO VIDRIO 17CM HIERRO SURT 2 CLRS BLANCO Y NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30620,
+    "name": "CANDELABRO VIDRIO 22CM HIERRO SURT 2 CLRS BLANCO Y NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30621,
+    "name": "CANDELABRO VIDRIO 26CM HIERRO SURT 2 CLRS BLANCO Y NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30622,
+    "name": "CANDELABRO VIDRIO 25X13,5X6CM P/5 VELAS BOQUILLAS REDONDAS CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30623,
+    "name": "CANDELABRO VIDRIO 27X15X6CM P/3 VELAS BOQUILLAS GRANDES CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30624,
+    "name": "CANDELABRO METALICO 23X12CM P/5 VELAS CLR DORADO BASE REDONDA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30625,
+    "name": "CANDELABRO METALICO 34X16CM P/5 VELAS CLR DORADO BASE REDONDA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30626,
+    "name": "CANDELABRO VIDRIO 9X9CM C/ADORNOS METALICOS CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30627,
+    "name": "CANDELABRO VIDRIO 10X10CM C/ADORNOS METALICOS TAPA METALICA C/BOLA CRISTAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30628,
+    "name": "CANDELABRO METALICO 32X12CM F/FLOR BASE BOQUILLA Y HOJAS CRISTAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30629,
+    "name": "CANDELABRO METALICO 42X22CM P/5 VELAS BOQUILLA CRISTAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30630,
+    "name": "CANDELABRO 25X21CM C/ADORNO METALICO REDONDO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30631,
+    "name": "CANDELABRO 35X21CM C/ADORNO METALICO REDONDO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30632,
+    "name": "CANDELABRO 35X23CM P/3 VELAS C/FORMA FLOR BOQUILALS Y HOJAS CRISTAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30633,
+    "name": "CANDELABRO METALICO X3 BOQUILLA CRISTAL ESMERILADO CLR NEGRO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30634,
+    "name": "CANDELABRO METALICO X3 BOQUILLA CRISTAL F/TULIPA CLR BLANCO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30635,
+    "name": "CANDELABRO METALICO 40X31X6CM P/10 VELAS BOQUILLAS CRISTAL CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30636,
+    "name": "CANDELABRO 5 VELAS CON BASE EN V -CRISTAL Y VIDRIO -25X6X1",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30637,
+    "name": "CANDELABRO 5 VELAS CON BASE EN V -ALUMINIO, CRISTAL Y VIDRI",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30638,
+    "name": "CANDELABRO 9 VELAS -CRISTAL, VIDRIO Y HIERRO 12*25,5 SURT",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30639,
+    "name": "- CANDELABRO 8X11CM C/BASE DE HIERRO NGRO 2 VELAS C/PORTAVELA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30640,
+    "name": "CANDELABRO 12X30,5CM C/BASE DE PLAST RECUBIERTO EN HIERRO NG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30641,
+    "name": "CANDELABRO 12X31CM C/BASE PLAST RECUBIERTO HIERRO NGRO 2",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30642,
+    "name": "EN CANDELABRO 12X36CM C/BASE PLAST RECUBIERTO EN HIERRO NGRO 3",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30643,
+    "name": "CANASTO X3 TELA -30X18/27X16/24X14 -CLR BLANCO-OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30644,
+    "name": "CANASTO X3 TELA -28X28X20/24X24X18/20X20X16 -CLRS BEIGE/GRIS -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30645,
+    "name": "CANASTO X3 TELA -38X26X22/34X23X20/30X20X18 -CLRS BEIGE/GRIS -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30646,
+    "name": "CANASTI X3 TELA -38X26X22/34X23X20/30X20X18 CLRS BEIGE -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30647,
+    "name": "- CANASTA X3 POLIESTER C/MANIJA PU - 28X21/24X19/20X17 -CLR BLANCO -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30648,
+    "name": "CANASTA X3 POLIESTER C/MANIJA PU - 32X22X20/28X18X18/24X14X16 -CLR BLANCO -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30649,
+    "name": "CANASTA X3 TERCIOPELO/EVA/POLIESTER - 22X16/19X14/16X12 -CLR GRIS -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30650,
+    "name": "CANASTA X3 TERCIOPELO/EVA/POLIESTER - 28X28X20/24X24X18/20X20X16 -CLR GRIS -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30651,
+    "name": "CANASTA X3 TERCIOPELO/EVA/POLIESTER - 25X25X12/20X20X11/16X16X10 -CLRS GRIS/CREMA - OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30652,
+    "name": "CANASTA X3 TERCIOPELO/EVA/POLIESTER - 38X26X22/34X23X20/30X20X18 -CLR GRIS -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30653,
+    "name": "CANASTA X3 TERCIOPELO/EVA/POLIESTER - 38X26X22/34X23X20/30X20X18 -CLR CREMA",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30654,
+    "name": "CANASTA X3 HOJA DE MAIZ 34X27/29X23/25X20 -OPP C/MANIJA DE PAPEL -CLR BEIGE -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30655,
+    "name": "CANASTA X3 HOJA DE MAIZ 39X26X22/33 C/MANIJA DE PAPEL -CLR BEIGE -OPP",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

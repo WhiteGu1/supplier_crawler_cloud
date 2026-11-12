@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30906,
+    "name": "SOMBRERO 41CM MIMBRE C/TIRA TELA SURT 2 CLRS HANGTAG",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30907,
+    "name": "GOMITAS PELO 4CM C/FORRO F/MOÑO SURT SURT 4 CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30908,
+    "name": "4DÑS SET COLITAS MOSTACILLAS X50PCS SURT 15DSÑ SURT 5CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30909,
+    "name": "SET COLITAS TRENZADAS C/ADORNITO X50PCS 15DSÑ SURT 4 CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30910,
+    "name": "SURT SET HEBILLAS 3CM X10 PCS SURT 7DSÑ SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30911,
+    "name": "SET HEBILLAS X10PCS SURT 3 CLRS F/HOJA CAJA PVC VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30912,
+    "name": "SET VINCHAS 16CM FORRADA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30913,
+    "name": "SET VINCHAS 16CM LISA GRUESA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30914,
+    "name": "SET VINCHAS 16CM FORRADAS C/TRENZA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30915,
+    "name": "SET HEBILLAS C/FORMITAS X10 SURT 4DSÑ 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30916,
+    "name": "SET COLITAS PLUSH C/FORMITAS X10PCS SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30917,
+    "name": "4DÑS SET VINCHAS X12PCS 0.8CM C/MOÑOS SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30918,
+    "name": "SET VINCHAS X12PCS 1,2CM TRENZAS SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30919,
+    "name": "SOMBRERO 35CM MIMBRE C/ONDEADO SURT 2 HANGTAG",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30920,
+    "name": "CLRS SOMBRERO DAMA X20 38X11 4CLR C/CINTA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30921,
+    "name": "VINCHA 16X1,5CM PLAST RECUBIERTA EN POLYESTER FINITA DSÑO EN",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30922,
+    "name": "VINCHA 16X3CM PLAST GRUESA TRENZADA CUADRILLE SURT 3 CLRS BE",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30923,
+    "name": "VINCHA 16X2CM PLAST RECUBIERTA EN POLYESTER FINITA C/STRASS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30924,
+    "name": "VINCHA P/PELO PLUSH C/OREJITAS SURT 3 CLRS (BCO/CLST/GRS) CA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30925,
+    "name": "HEBILLA 7,5X2CM PLAST P/PELO RECUBIERTO EN LISO SURT 4CLR VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30926,
+    "name": "PU SET HEBILLAS X30PCS SURT 3 CLRS F/FLOR CAJA PVC VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30927,
+    "name": "SET VINCHA 16CM FORRADA TRENZADA SURT 3 OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30928,
+    "name": "CLRS SET VINCHA 16CM FORRADA TRENZADA SURT 3 OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30929,
+    "name": "CLRS SET VINCHA 16CM FORRADA TRENZADA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30930,
+    "name": "SET VINCHAS 16CM FORRADAS C/MOÑO SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30931,
+    "name": "4 CLRS SET COLITAS MOSTACILLAS X50PCS SURT 15DSÑ 5CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30932,
+    "name": "SURT HEBILLA 5CM X4PC XCART 6 CART SURT 4 CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30933,
+    "name": "SET VINCHA 16CM FORRADA TRENZADA SURT 2 OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30934,
+    "name": "CLRS SET VINCHAS 16CM FORRADA C/MOÑO SURT 3 OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30935,
+    "name": "CLRS SET VINCHAS 16CM LISA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30936,
+    "name": "SET VINCHAS 16CM C/CUADRICULA SURT 3 CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30937,
+    "name": "OPP VINCHA 16X2,7CM PLAST RECUBIERTA EN POLYESTER GRUESA TRENZAD",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30938,
+    "name": "VINCHA 15X3CM PLAST RECUBIERTA EN POLYESTER GRUESA MULLIDA S",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30939,
+    "name": "SET HEBILLAS X10PCS SURT 3 CLRS F/NUBE CAJA VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30940,
+    "name": "PVC SET VINCHA 16CM FORRADA SURT 4 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30941,
+    "name": "SET VINCHA 16CM FORRADA TRIPLE TRENZA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30942,
+    "name": "SET VINCHAS 16CM FORRADA SURT 3 CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30943,
+    "name": "SET COLITAS C/FORMITAS X10 SURT 9DSÑ 3CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30944,
+    "name": "OPP HEBILLA 7X3CM PLAST P/PELO DE METAL RECUBIERTO EN POLYESTER VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30945,
+    "name": "SET COLITAS 4CM X200OPCS 12PCS X CART SURT CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30946,
+    "name": "4 SET COLITAS 5CM X200PCS 6PCS X CART SURT 6CLRS OPP VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30947,
+    "name": "SET HEBILLAS X30PCS SURT 4 CLRS F/NENES CAJA PVC VENTA X BULTO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30948,
+    "name": "SET VINCHAS 16CM ANIMAL PRINT SURT 2 CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30949,
+    "name": "OPP SET VINCHAS X12PCS 1,2CM LISAS SURT 3 CLRS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 30950,
+    "name": "TOALLA GIMNASIO 100X30CM SURT 3 CLRS BLISTER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30951,
+    "name": "PESA TOBILLERA 1KG NEGRA C/CORREA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30952,
+    "name": "PESA TOBILLERA 4KG NEGRA C/2 CORREA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30953,
+    "name": "SET EJERCITADORES DE MANOS 42X42CM C/RESORTES Y SOGA DOBLE B",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30954,
+    "name": "EJERCITADOR DE MANOS 8X15CM GOMA C/PUNTITAS NARANJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30955,
+    "name": "EJERCITADOR PIERNAS 32X4CM GOMA C/PUNTITAS SURT 4 CLRS",
+    "current_cat": "运动户外"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

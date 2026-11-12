@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28506,
+    "name": "TETERA 10X5,5CM 230ML C/VASO VIDRIO TRANSP WHITE BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28507,
+    "name": "TETERA 12X12CM 600ML C/VASO VIDRIO TRANSP WHITE BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28508,
+    "name": "TETERA 13X14CM 1200ML VIDRIO REDONDEADA C/VASO C/TAPA Y MANGO MADERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28509,
+    "name": "TETERA 10X11CM VIDRIO TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28510,
+    "name": "TETERA 13X8,5CM 1200ML VIDRIO C/METAL PICO ERGUIDO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28511,
+    "name": "TETERA 10X8,5CM 800ML VIDRIO C/METAL PICO ERGUIDO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28512,
+    "name": "TETERA 13X8,5CM 1200ML VIDRIO C/METAL PICO RECTO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28513,
+    "name": "TETERA 12,5X8,5CM 1000ML VIDRIO C/METAL CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28514,
+    "name": "TETERA 10,5X8,5CM 1000ML VIDRIO C/METAL CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28515,
+    "name": "TETERA 13X12CM 1200ML VIDRIO C/RELIEVE C/VASO C/TAPA Y MANGO MADERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28516,
+    "name": "TETERA 13X14CM 1200ML VIDRIO C/VASO C/TAPA Y MANGO MADERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28517,
+    "name": "TETERA VIDRIO X2 APILABLE 1600ML CAJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28518,
+    "name": "TETERA CERAMICA 1L F/CALABAZA /PICO CISNE /TAPA SURT CLR BLCO/ GRIS/ NEGRO MATE CJA REGALO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28519,
+    "name": "JARRO ESPUMADOR 7,5X14CM 350ML TRANSP CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28520,
+    "name": "JARRO ESPUMADOR 9,5X17CM 600ML TRANSP CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28521,
+    "name": "JARRO ESPUMADOR 11,5X20CM 800ML TRANSP CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28522,
+    "name": "PRENSA FRANCESA 1000ML C/TAPA Y SOPORTE DE METAL -VIDRIO -",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28523,
+    "name": "JARRA 1L C/TAPA DE PLASTICO -VIDRIO - 13,8X9,6X24 -CAJA CO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28524,
+    "name": "JARRA VIDRIO 24X9,3CM 1,4L C/TAPA METAL CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28525,
+    "name": "JARRA VIDRIO 21,5X11,0CM 1580ML C/TAPA PLASTICA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28526,
+    "name": "JARRA VIDRIO 23,1X11,2CM 1850ML C/TAPA PLASTICA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28527,
+    "name": "JARRA VIDRIO 23,1X11,2CM 1700ML C/TAPA PLASTICA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28528,
+    "name": "JARRA VIDRIO 23,1X11,2CM 1890ML C/TAPA PLASTICA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28529,
+    "name": "JARRA 21X11,5CM 1800ML VIDRIO C/RELIEVE C/MANIJA TAPA METAL CLR MADERA CJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28530,
+    "name": "JARRA 21X12CM 1800ML VIDRIO C/MANIJA TAPA METAL CLR MADERA CJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28531,
+    "name": "JARRA VIDRIO 16,5X11X12,5CM 650ML RED C/FILTRO C/TAPA CORCHO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28532,
+    "name": "JARRA 20X13,5CM 1800ML VIDRIO C/MANIJA TAPA METAL CLR MADERA CJA BLCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28533,
+    "name": "JARRA 21CM 1800ML VIDRIO C/MANIJA T/METAL CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28534,
+    "name": "JARRA 21,5CM 1800ML VIDRIO C/MANIJA T/METAL CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28535,
+    "name": "JARRA 23CM 1600ML VIDRIO RELIEVE/RAYAS C/MANGO Y TAPA METAL CLR MADERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28536,
+    "name": "JARRA 23CM 1800ML VIDRIO C/MANGO Y TAPA METAL CLR MADERA CJA BLANCA.",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28537,
+    "name": "JARRA 23,5CM 1800ML VIDRIO C/MANIJA T/METAL CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28538,
+    "name": "JARRA 24CM 1800ML VIDRIO C/MANGO Y TAPA METAL CLR MADERA CJA BLANCA.",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28539,
+    "name": "JARRA DE VIDRIO 17X12,5X24CM MANIJA Y BASE CLR NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28540,
+    "name": "JARRA 24CM 1800ML VIDRIO C/MANGO Y TAPA METAL CLR MADERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28541,
+    "name": "JARRA 24CM 1800ML VIDRIO C/MANIJA T/METAL CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28542,
+    "name": "- JARRA DE VIDRIO C/TAPA PLASTICA 1700ML 26X11,2CM -DSÑO ROMBOS -CAJA COLOR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28543,
+    "name": "JARRA VIDRIO C/TAPA PLAST 1770ML C/VASOS X6 278ML-26X10,2CM Y 13X6,9CM -DSÑO RECTANGULOS -CAJA COLOR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28544,
+    "name": "JARRA PLASTICA TRANSPARENTE 28X14CM/2,5L C/ESTAMPADO FRUTAL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28545,
+    "name": "JARRA C/6 VASOS 400ML C/TAPA PLAST CLR VIOLETA POLYBAG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28546,
+    "name": "JARRA 750ML PLAST C/TAPA PLAST OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28547,
+    "name": "JARRA 750ML PLAST C/TAPA PLAST OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28548,
+    "name": "DISPENSER CEREAL X2 DE APOLLO TARRO TRASNP BASE 2 CLR SURT G",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28549,
+    "name": "DISPENSER VIDRIO 3,8LTS X 2 PCS C/ATRIL HIERRO Y TAPA METALICA CAJA COLOR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28550,
+    "name": "DISPENSER VIDRIO 16X27,5CM C/BASE ALTA CUADRADA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28551,
+    "name": "DISPENSER VIDRIO 18,2X31CM CILINDRO C/BASE Y TAPA MADERA DSÑO CUADROS C/RAYAS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28552,
+    "name": "DISPENSER AGUA 14X22CM 3L C/CANILLA /MANIJA CUERO BLANCA CLR TRANSP OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28553,
+    "name": "DISPENSER VIDRIO 18,5X14,5X24,8CM 4L DSÑO LISO C/CANILLA /TAPA Y ATRIL BAMBU CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28554,
+    "name": "DISPENSER PLAST 2500ML C/4 VASOS PLAST 400ML SURT 3 CLRS DSÑO FRUTAL OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28555,
+    "name": "DISPENSER PLAST 3800ML C/4 VASOS PLAST 600ML 1 COLOR DSÑO FRUTAL OPP",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

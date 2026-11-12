@@ -1,0 +1,85 @@
+{
+  "batch_id": 8,
+  "items": [
+    {
+      "id": 35878,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDAD CHIMENEA C/U",
+      "sku": "36773136",
+      "brand": "",
+      "image_local": "images/sfpanda/2a8ef62516df77a14dd1c8fa1909c790.webp"
+    },
+    {
+      "id": 35879,
+      "supplier_id": 2,
+      "name": "Encendedor cocina Makao 27cm largo",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/fac2d5bed46e1284e1e23c8c95a7b5a2.jpg"
+    },
+    {
+      "id": 35880,
+      "supplier_id": 2,
+      "name": "Hisopo St Valley (ALGABO) x100",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/53628a18a30781c3d713819ded5133d1.jpg"
+    },
+    {
+      "id": 35881,
+      "supplier_id": 2,
+      "name": "Bolsa con huesito para perro",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/4fcf0f05f09f8f63050d547e8ed4e128.jpg"
+    },
+    {
+      "id": 35882,
+      "supplier_id": 2,
+      "name": "Bolsa para freezer x10u 25x35cm GANGA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/204b0be73a5daaf97f004069255d29b7.jpg"
+    },
+    {
+      "id": 35883,
+      "supplier_id": 2,
+      "name": "Bolsa para horno x10u 30x45cm GANGA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/cae8eff3031d3db76fec2b1834f6920d.jpg"
+    },
+    {
+      "id": 35884,
+      "supplier_id": 2,
+      "name": "Separador para freezer x100u 20x25cm GANGA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/c979f4da2e56489fc3b7c25ba20d5e8a.jpg"
+    },
+    {
+      "id": 35885,
+      "supplier_id": 2,
+      "name": "Tramontina New Kolor AZUL cuchara sopera",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/5112c26088fbb2a0b217add23ec44fb6.jpg"
+    },
+    {
+      "id": 35886,
+      "supplier_id": 2,
+      "name": "Tramontina New Kolor AZUL cucharita",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/e6dba3798f1b1f83abc3b1141b50bd0b.jpg"
+    },
+    {
+      "id": 35887,
+      "supplier_id": 2,
+      "name": "Tramontina New Kolor AZUL cuchillo",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/0ab1faff77e44e8387b2043c35980e1c.jpg"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31006,
+    "name": "CONSERVADORA TELA 28X20X20CM 9L CLR CELESTE POLYBAG",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31007,
+    "name": "SET HELADERAS PLAST C/BOTELLA 1L/4L/8L/19L/60L C/RUEDAS SURT",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31008,
+    "name": "SET HELADERAS PLAST C/BOTELLA 1L/4L/8L/19L/60L SURT 2 CLRS",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31009,
+    "name": "PARRILLA PORTATIL 37X30X23CM ACERO INOX",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31010,
+    "name": "PARRILLA PORTATIL CIRCULAR C/PATAS CLR NEGRO 2 NIVELES",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31011,
+    "name": "PARRILLA PORTATIL 43X57CM CIRCULAR CLR ROJO NEGRO CJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31012,
+    "name": "Y PARRILLA PORTATIL 50X30X56CM JY-2025 RECTANG C/ACC CLR NEGRO CJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31013,
+    "name": "PARRILLA PORTATIL 53X22X87CM RECTANG C/RUEDAS JY-2029 CLR NGRO Y RJO CJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31014,
+    "name": "CARRITO HIERRO + TELA P/PLAYA 82X47X55CM NEGRO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31015,
+    "name": "CARRITO HIERRO + TELA P/PLAYA 115X47X55CM NEGRO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31016,
+    "name": "VENTILADOR DE MANO 15CM PLASTICO A PULSO F/OSO CLR AMARILLO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31017,
+    "name": "VENTILADOR DE MANO 15CM PLASTICO A PULSO F/PAJARITO CLR AZUL",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31018,
+    "name": "VENTILADORES MANUALES 15CM SURT 4 CLRS F/DINO CAJA DISPLAY X24",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31019,
+    "name": "VENTILADORES MANUALES 15CM SURT 4 CLRS F/UNICORNIOS CAJA DISPLAY X25",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31020,
+    "name": "VENTILADOR DE MANO 17CM PLASTICO CARGA F/CUAD CLR ROSA C/MUÑEQUITO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31021,
+    "name": "TIPO VENTILADOR DE MANO 17CM PLASTICO CARGA F/CUAD CLR CELESTE C/ADORNITO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31022,
+    "name": "TIPO VENTILADOR DE MANO 18CM PLASTICO CARGA TIPO F/MACETA CLR NARANJA Y VERDE",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31023,
+    "name": "VENTILADOR DE MANO 15CM PLASTICO CARGA F/ANIMALITO SURT 3 CLRS Y DSÑ",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31024,
+    "name": "TIPO VENTILADOR DE MANO 18CM PLASTICO CARGA FUNCIÓN HUMIFICADOR C/TUBO P/ESCENCIAS VIOLETA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31025,
+    "name": "TIPO VENTILADOR DE MANO 15CM PLASTICO CARGA TIPO CLR F/OSITO CLR ROSA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31026,
+    "name": "VENTILADOR DE MANO 20CM PLASTICO CARGA F/CONEJITO SURT 4 CLRS ROSA/BLANCO/OCRE/CELESTE",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31027,
+    "name": "TIPO VENTILADOR DE MANO 17CM PLASTICO A PULSO F/PALTA CLR VERDE",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31028,
+    "name": "VENTILADOR CUELLERA DOBLE PLASTICO CARGA TIPO CLR ROJO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31029,
+    "name": "VENTILADOR CUELLERA DOBLE PLASTICO CARGA CLR AMARILLO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31030,
+    "name": "TIPO VENTILADOR DE MANO 15CM PLASTICO CARGA F/ASTRONAUTA SURT 2 CLRS",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31031,
+    "name": "TIPO VENTILADOR DE MANO 19,5CM PLASTICO CARGA TIPO F/REDONDA C/MANGO A PILA CLR MIXTO SURT CLRS",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31032,
+    "name": "VENTILADOR 13X8CM C/MANGO USB F/PALTA CAJA REG",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31033,
+    "name": "VENTILADOR 16X8CM C/MANGO C/DETALLE DORADO USB CAJA REG",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31034,
+    "name": "VENTILADOR 21X10CM C/MANGO USB CAJA REG",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31035,
+    "name": "VENTILADOR DE MESA 22CM PLASTICO RETRAIBLE CARGA TIPO CLR AMARILLO Y NARANJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31036,
+    "name": "VENTILADOR DE MESA 20CM PLASTICO CARGA CLR BLANCO Y AZUL",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31037,
+    "name": "TIPO VENTILADOR DE MESA 18CM PLASTICO CARGA TIPO CLR AMARILLO Y NARANJA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31038,
+    "name": "DUAL FUNCTION ELECTRIC MOSQUITO NET (MOSQUITO LAMP AND MOSQUITO KILLER) USB CHARGER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31039,
+    "name": "MATAMOSCAS USB 20,8X50,8CM DC5V/1A 2W /PLASTICO C/BAT 500 MAH CLR BLANCO/GRIS PVC+HEADER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31040,
+    "name": "RAQUETA MATA MOSQUITOS PLASTICO CAJA REG",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31041,
+    "name": "SET VALIJA X3 PLASTICA 20\"/24\"/28\" RÍGIDA NEGRA",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31042,
+    "name": "SET VALIJA X3 PLASTICA 20\"/24\"/28\" RÍGIDA PLATEADA",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31043,
+    "name": "SET VALIJA X3 PLASTICA 20\"/24\"/28\" RÍGIDA GRIS",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31044,
+    "name": "SET VALIJA X3 PLASTICA 20\"/24\"/28\" RÍGIDA AZUL",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31045,
+    "name": "SET VALIJA X3 PLASTICA 20\"/24\"/28\" RÍGIDA EIFFEL",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31046,
+    "name": "SET VALIJAS PLAST X3PCS 20\"/24\"/28\" RIGIDAS RAYAS CLR GRIS",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31047,
+    "name": "SET VALIJAS PLAST X3PCS 20\"/24\"/28\" RIGIDAS CLR NEGRO",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31048,
+    "name": "RAYAS PORTACOSMETICO C/ LED 21X14,5X14CM C/BAT 1000MAH C/USB SURT CLR NGRO/ BEIGE/ ROSA",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31049,
+    "name": "PORTACOSMETICO C/ LED 23X15X18CM C/BAT 1000MAH C/USB SURT CLR NGRO/ BEIGE/ ROSA",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31050,
+    "name": "PORTACOSMETICO C/ LED 25X18X20CM C/BAT 1000MAH C/USB SURT CLR NGRO/ BEIGE/ ROSA",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31051,
+    "name": "SET ORGANIZADOR DE VIAJE X7 40X30X12/ 33X28X12/ 30X20X12/ 36X27/ 28X20X12/ 27X12/ 36X21CM POLYBAG",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31052,
+    "name": "BOLSO ORGANIZADOR DE VIAJE 40X14X32CM CLR NEGRO/GRIS POLYBAG",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31053,
+    "name": "BOLSA TRAJE 100X60CM 80G/M2 CLR NEGRO /VENTANA TARJETA CLR",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31054,
+    "name": "BOLSA TRAJE 140X60CM TRASLUCIDO 40GSM OPP BAG",
+    "current_cat": "旅行用品"
+  },
+  {
+    "id": 31055,
+    "name": "PORTA CREMA 4CM 20ML PLAST BLANCO OPP",
+    "current_cat": "旅行用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

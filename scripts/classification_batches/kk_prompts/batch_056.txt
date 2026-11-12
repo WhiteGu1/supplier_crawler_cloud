@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30656,
+    "name": "CANASTA X3 -RECTANG 38X26X22/ 34X23X20/ 30X20X18CM -CON RELIEVE /MANGO PU MARRON SURT CLR GRIS/ BEIGE/ BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30657,
+    "name": "CANASTA X4 -RECTANG 35X25X16/ 23X16X12 (3X)CM -CON RELIEVE /MANGO PU MARRON SURT CLR GRIS/ BEIGE/ BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30658,
+    "name": "CANASTA X3 -CIRCULAR 22X16/ 19X14/ 16X12CM CON RELIEVE /MANGO PU MARRON SURT CLR GRIS/ BEIGE/ BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30659,
+    "name": "- CANASTA X3 -RECTANG 38X26X22/ 34X23X20/ 30X20X18CM -CON PELUCHE /MANGO PU MARRON SURT CLR VISON/ BEIGE/ BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30660,
+    "name": "SET CANASTAS CARTON FORRADA EN TELA X3PCS 3CLRS GRS/RS/BG -",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30661,
+    "name": "SET X2 CAJA CORDEROY MARRON RECTANGULAR C/PELUCHE F/PERRO 29X19X13CM / 39X29X17,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30662,
+    "name": "SET X2 CAJA CORDEROY MARRON RECTANGULAR C/PELUCHE F/ELEFANTE 29X19X13CM / 39X29X17,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30663,
+    "name": "SET X2 CAJA CORDEROY MARRON CIRCULAR C/PELUCHE F/ELEFANTE 18X15CM / 29X20CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30664,
+    "name": "SET X2 CAJA CORDEROY MARRON CIRCULAR C/PELUCHE F/PERRO 18X15CM / 29X20CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30665,
+    "name": "SET X5 CESTO DE PANA GRIS REDONDO C/TAPA MADERA 18X13/15CM -23X16,5/18,5CM - 28X20/22CM -34,5X39,5/41,5CM -41X43/45CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30666,
+    "name": "SET X5 CESTO DE PANA BLANCO REDONDO C/TAPA MADERA NEGRA 18X13/15CM -23X16,5/18,5CM 28X20/22CM -34,5X39,5/41,5CM -41X43/45CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30667,
+    "name": "SET X5 CESTO DE PANA GRIS RECTANGULAR C/TAPA - MADERA 28,5X18,5X13/15CM -33,5X23,5X16,5/18,5CM -38,5X28,5X20/22CM -33,5X24,5X41/43 - 40,5X31,5X45/47CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30668,
+    "name": "SET X5 CESTO DE PANA BLANCO RECTANGULAR C/TAPA MADERA NEGRA 28,5X18,5X13/15CM - 33,5X23,5X16,5/18,5CM -38,5X28,5X20/22CM - 33,5X24,5X41/43 -40,5X31,5X45/47CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30669,
+    "name": "SET X5 CAJA LINO BEIGE RECTANGULAR C/TAPA BAMBU 28,5X18,5X13/14,5CM -33,5X23,5X16,5/18CM 38,5X28,5X20/21,5CM -33,5X24,5X41/42CM - 40,5X30,5X45/46,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30670,
+    "name": "SET X5 CAJA LINO NEGRA RECTANGULAR C/TAPA - BAMBU 28,5X18,5X13/14,5CM -33,5X23,5X16,5/18CM 38,5X28,5X20/21,5CM -33,5X24,5X41/42CM - 40,5X30,5X45/46,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30671,
+    "name": "SET X5 CAJA LINO BEIGE REDONDA C/TAPA BAMBU - 18X13/14,5CM -23X17/18,5CM -28X20/21,5CM - 34,5X39/40,5CM -40,5X43/44,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30672,
+    "name": "SET X5 CAJA LINO BEIGE REDONDA C/TAPA BAMBU 18X13/14,5CM -23X17/18,5CM -28X20/21,5CM 34,5X39/40,5CM -40,5X43/44,5CM",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30673,
+    "name": "SET X3 CAJA LINO 38X28X20/33X23X18/28X18X16CM - C/MANIJA TELA SURT CLR GRIS/BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30674,
+    "name": "SET X3 CAJA LINO 32X32X29/28X28X27/24X24X24CM C/MANIJA TELA CLR JEAN",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30675,
+    "name": "SET X3 CESTA CUERDA OVAL 39X27X18/35X24X16/31X20X14CM SURT CLR BEIGE/NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30676,
+    "name": "SET X4 CESTA ROPA SIMIL MIMBRE CIRCULAR 42X53/30X22/25X19/22X17CM C/TAPA CLR NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30677,
+    "name": "SET X3 CAJA 40X30X23/35X25X20/28X19X18CM C/HUECO AGARRE LATERAL SURT CLRS GRIS/BLANCO/NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30678,
+    "name": "SET X5 CAJA 42X30X20/38X27X18/20X20X16/22X16X13/17X14CM C/MANIJA HEBILLA SURT CLRS GRIS/BLANCO/NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30679,
+    "name": "CESTO 31X31CM VELLON C/ASAS /MARCO HIERRO /\"LOVE\" CLR BEIGE HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30680,
+    "name": "CESTO 38X38X29CM GAMUZA C/ASAS C/MARCO HIERRO CLR BEIGE HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30681,
+    "name": "CESTO 38X26X25CM VELLON C/ASAS /MARCO HIERRO /\"HOME\" CLR BEIGE HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30682,
+    "name": "CESTA ROPA 35X35X40CM ALGODÓN C/MARCO BAMBU CLR GRIS",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30683,
+    "name": "CESTA ROPA 30X30X30CM ALGODÓN C/MARCO BAMBU CLR GRIS",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30684,
+    "name": "CESTA ROPA 44X33X69CM C/MARCO BAMBU /TAPA CLR GRIS SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30685,
+    "name": "CESTA ROPA 3 DIV 54X34X74CM CLR GRIS SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30686,
+    "name": "CESTA ROPA BORDADO 40X30X60CM POLIESTER /PLEGABLE C/TAPA /MANIJAS SURT CLR GRIS/NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30687,
+    "name": "CESTA ROPA CORDEROY 35X30X50CM PLEGABLE C/MANIJAS LARGAS SURT CLRS BLANCO/GRIS/BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30688,
+    "name": "CESTA ROPA F/BOLSA 35X27X50CM C/MANIJA LARGA SURT CLR GRIS/BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30689,
+    "name": "CANASTO ROPA 40X60X35CM C/CARCASA MADERA CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30690,
+    "name": "CANASTO ROPA 95X40X30CM C/TOALLERO CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30691,
+    "name": "CANASTO ROPA 78X30X72CM C/DOBLE CESTO CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30692,
+    "name": "CANASTO ROPA 35X40X58 MADERA Y TELA S/TAPA CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30693,
+    "name": "CANASTO X3 36X25X15,5/33X23X14,5/29,5X20X12,5CM OVAL TEJIDO C/MANIJAS BEIGE HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30694,
+    "name": "CANASTO X3 28X19,5/25X17/18X12,5CM REDONDO TEJIDO C/MANIJAS BEIGE HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30695,
+    "name": "SET CANASTAS PLASTICO+MADERA+HIERRO X3 40X30X15/35X25X13/30X20X11CM BULK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30696,
+    "name": "SET CANASTOS PLASTICO+MADERA+HIERRO X2 35X35X29/31X31X27CM BULK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30697,
+    "name": "ORGANIZADOR 30X23,5X16,5CM DSÑO AGUJERO F/ROMBO C/TAPA /MANIJAS CUERO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30698,
+    "name": "ORGANIZADOR 34,5X26,6X18,5CM DSÑO AGUJERO F/ROMBO C/TAPA /MANIJAS CUERO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30699,
+    "name": "ARMARIO MADERA 40X30X94CM C/4 CAJONES 36X28X19CM SURT CLR GRIS/BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30700,
+    "name": "TELA ARMARIO MADERA 40X30X94CM C/4 CAJONES TELA 36X28X19CM SURT CLR BEIGE/BLANCO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30701,
+    "name": "SET X3 CAJA FIELTRO 38X38X29/35X35X26/32X32X23CM DSÑO ENGOMADO C/MANIJA TELA CLR NEGRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30702,
+    "name": "CAJA CORDEROY RECTANG 40X30X22CM SURT BLANCO/BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30703,
+    "name": "SET CAJAS X3 PCS 23X17X6,5/26X19X8/29X21X9,5CM RECT M/\"WISHE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30704,
+    "name": "SET CAJAS X3 PCS 23X17X6,5/26X19X8/29X21X9,5CM RECT LISAS M/",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30705,
+    "name": "SET CAJAS X3 24,5X17X6,5/29X21X9/33,5X25X11,5CM C/MOÑO LISO SURT CLR AZUL / BEIGE",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

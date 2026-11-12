@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28856,
+    "name": "VASO PLAST 11CM 350ML C/SORBETE Y TAPA PLAST SURT 3 CLRS DSÑO FRUTAL CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28857,
+    "name": "VASO PLASTICO C/SORBETE 9 X 11 X 6 CM 400 ML SURTIDO 4 COLOR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28858,
+    "name": "VASO PLASTICO C/SORBETE 9 X 11 X 6.3 CM 400 ML SURTIDO 4 COL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28859,
+    "name": "VASO PLASTICO C/SORBETE9 X 15.7 X 6.3 CM 600ML SURTIDO 4 COL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28860,
+    "name": "VASO PLASTICO C/SORBETE 9 X 15.7 X 6.5 CM 600 ML SURTIDO 4",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28861,
+    "name": "VASO 6,5X16X10CM 450ML PLAST DSÑO DONA C/PAJITA /TAPA MUÑECO CLR SURT CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28862,
+    "name": "VASO PLASTICO 500ML C/SORBETE Y TAPA PLAST SURT 4 CLRS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28863,
+    "name": "VASO PLAST 13CM 400ML C/SORBETE Y TAPA PLAST SURT 4 CLRS DSÑO ROBOTITO CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28864,
+    "name": "VASO PLAST 15CM 350ML C/SORBETE Y TAPA PLAST SURT 2 CLRS DSÑO PELOTITAS DE COLORES CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28865,
+    "name": "VASO PLAST 16CM 350ML C/SORBETE Y TAPA PLAST SURT 2 CLRS DSÑO ARCOIRIS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28866,
+    "name": "VASO 10,5X17CM 450ML C/PAJITA /MUÑECO PLAST DSÑO UNICORNIO CLR SURT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28867,
+    "name": "VASO PLAST 17CM 350ML C/SORBETE SILICONA Y TAPA PLAST C/PELOTITAS DE CLRS SURT 2 CLRS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28868,
+    "name": "VASO PLASTICO C/SORBETE 9,5 X 18,5CMS SURTIDO 3-4 COLORES",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28869,
+    "name": "VASO PLAST 19CM 250ML C/SORBETE Y TAPA PLAST SURT 2 CLRS DSÑO OREJAS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28870,
+    "name": "VASO PLASTICO 21CM 400ML C/SORBETE Y TAPA PLAST DSÑO ANIMALITOS SURT 3 CLRS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28871,
+    "name": "VASO PALST 21CM 450ML C/SORBETE Y TAPA PLAST SURT 3 CLRS DSÑO FLAMENCO Y ACCESORIOS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28872,
+    "name": "VASO PLASTICO 350ML C/SORBETE Y TAPA PLAST SURT 4 CLRS DSÑO HELADO CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28873,
+    "name": "VASO PLASTICO 450ML C/TAPA F/DONA SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28874,
+    "name": "VASO PLASTICO 20X10 C/TAPA Y SORBETE BASE GLITTER ESTAMP LET",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28875,
+    "name": "VASO PLASTICO 20X10 C/TAPA Y SORBETE BASE GLITTER ESTAMP LET",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28876,
+    "name": "VASO PLASTICO 530ML 24CM ARCOIRIS C/PAJITA CLR CELESTE CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28877,
+    "name": "VASO PLASTICO C/SORBETE 9 X 18.5 X 6.5 CM 600 ML DSÑO DINO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28878,
+    "name": "VASO PLASTICO 23X7CM 450ML C/TAPA/SORBETE/ESTAMPADO UNICORNI",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28879,
+    "name": "BOTELLA 17X10CM PLAST C/COLADOR C/SORBETE SILICONA C/MANIJA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28880,
+    "name": "VASO 12CM 350ML ESTAMP PINOS C/PAJITA ESPIRAL CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28881,
+    "name": "VASO 28X13CM 1200ML PLAST C/TAPA C/SORBETE C/MANIJA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28882,
+    "name": "VASO 10,5X17CM 450ML C/PAJITA /MUÑECO PLAST DSÑO PANDA CLR S",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28883,
+    "name": "BOTELLA 15X11,3X19,5CM 1,2L T/BAMBOO C/PAJITA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28884,
+    "name": "VASO PLAST 23CM 450ML C/SORBETE Y TAPA PLAST C/OREJAS RATON Y ADORNOS CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28885,
+    "name": "VASO PLAST 23CM 450ML C/SORBETE Y TAPA PLAST DSÑO CON DULCES CAJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28886,
+    "name": "VASO PLASTICO 26CM 1200ML C/SORBETE TAPA Y FILTRO PLAST C/MA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28887,
+    "name": "SET VASOS X3 20/19/16CM PLAST C/TAPA Y SORBETE OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28888,
+    "name": "SET VASOS X3 22/19/17CM PLAST C/TAPA Y SORBETE OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28889,
+    "name": "VASO VIDRIO 13X10X8 C/ASA/TAPA METAL/SORBETE Y PIZARRA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28890,
+    "name": "SET COMEDOR P/BEBE 16X11X8CCM 4 PIEZAS DSÑO HIPO CLR LILA BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28891,
+    "name": "SET COMEDOR P/BEBE 5 PIEZAS DSÑO CANGREHO CLR ROSA BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28892,
+    "name": "SET COMEDOR P/BEBE 26,7X28,1X3CM 5 PIEZAS DSÑO PINGÜINO CLR CELESTE BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28893,
+    "name": "SET COMEDOR P/BEBE 25X21,5X4CM 6 PIEZAS DSÑO HIPO CLR AMARILLO BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28894,
+    "name": "SET COMEDOR P/BEBE 26X19,6X4CM 4 PIEZAS DSÑO KOALA CLR AZUL BLISTER VENTA X BULTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28895,
+    "name": "SET COMEDOR P/BEBE 26X19,6X4CM 5 PIEZAS DSÑO GATO CLR ROSA }BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28896,
+    "name": "VASO P/BEBE 14,5X4CM 220ML C/MANIJAS PICO PLEGABLE CLR AZUL BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28897,
+    "name": "Y VASO P/BEBE 11X6CM 180ML C/MANIJAS DSÑO BEBE C/CORAZON CLR ROSA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28898,
+    "name": "VASO P/BEBE 15X15CM C/ SET/CUBIERTOS PLATO /MANIJAS TAPA F/PATO CLR AMARILLO BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28899,
+    "name": "VASO PLASTICO 270ML 16,3X12,4CM P/BEBE C/SORBETE SILIC. SIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28900,
+    "name": "VASO PLASTICO 350ML 17X7,5CM P/BEBE C/SORBETE SILIC. SIST.",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28901,
+    "name": "VASO PLASTICO 500ML 17.7X8.3CM P/BEBE C/SORBETE SILIC. SIST.",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28902,
+    "name": "VASO PLASTICO 13X6 INFANTIL C/TAPA CABEZA ANIMAL CLR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28903,
+    "name": "VASO C/MANIJAS INFANTIL 14CM M/SMILEY CLRS SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28904,
+    "name": "BOTELLA ALUMINIO 17X6,6CM 500ML DSÑO SURT EGG PKG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 28905,
+    "name": "BOTELLA ALUMINIO 17X7,3CM 500ML DSÑO PARIS SURT CLR EGG",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

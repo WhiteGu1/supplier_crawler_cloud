@@ -1,0 +1,72 @@
+[
+  {
+    "id": 20135,
+    "supplier_id": 1,
+    "sku": "35176609",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\4a344bbb58b32f945bb47d9dfe0dfda3.webp"
+  },
+  {
+    "id": 18352,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "PELOTITAS GOMA ESPUMA FUTBOL EN CAJA (SB55249)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\09b6929aa5231b519ba99e8ec84ef06e.jpg"
+  },
+  {
+    "id": 18353,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "PELOTITAS GOMA ESPUMA EN CAJA CON DIBUJO (SB55250)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\d6713a1d4859fac97aca2fb882adbe72.jpg"
+  },
+  {
+    "id": 18354,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "PELOTITAS GOMA ESPUMA RUGBY EN CAJA (SB56040)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\e2a243f64b1ecb9850aefe49fb30fb37.jpg"
+  },
+  {
+    "id": 18359,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "BINGO AFA CAJA CUADRADA (SB 57490)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\77ecaf726f66d9318f153254ecd831ed.jpg"
+  },
+  {
+    "id": 18360,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "BINGO AFA (SB 57491)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\f82b3e254b6c70e325c7f3dbc778c967.jpg"
+  },
+  {
+    "id": 18361,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "JUEGO BINGO SPIDERMAN (SB 54859)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\40996bee0855038ff19ae327872fe668.jpg"
+  },
+  {
+    "id": 18362,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "DESCUBRI QUIEN ES (SB 53935)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\c633de1e8c2fb98a64f6f857fc24c14d.jpg"
+  },
+  {
+    "id": 18363,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "TATETI DESAFIO (SB 57457)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\8ba64b0613a8e0af6a07ea98118c2c46.jpg"
+  },
+  {
+    "id": 18364,
+    "supplier_id": 3,
+    "sku": "",
+    "name": "HAPPY MONKEY CHICO (SB 53932)",
+    "image": "D:\\projects\\supplier_crawler\\images\\Trapoman\\65f50f7ffe7f1fe674a78df5c44a486f.jpg"
+  }
+]

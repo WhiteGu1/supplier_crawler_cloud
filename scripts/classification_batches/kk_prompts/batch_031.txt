@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29406,
+    "name": "ESCOBILLA DE BAÑO 9,3X37,8CM ACERO INOX",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29407,
+    "name": "CEPILLO DE BAÑO POLIRESINA C/MANGO METAL -9,2X36,3 -BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29408,
+    "name": "CEPILLO DE BAÑO 9,6X38CM PP C/TAPA BAMBU -CLR BEIGE",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29409,
+    "name": "CEPILLO DE BAÑO 9,7X38,4CM PP C/TAPA BAMBU -CLR BEIGE -CAJ",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29410,
+    "name": "CEPILLO DE BAÑO 10X10X38 -C/ MANGO BAMBU C/SOPORTE PLASTICO -CLR NEGRO OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29411,
+    "name": "CEPILLO DE BAÑO POLIRESINA 10X10X36,5CM - C/MANGO DE BAMBU -CLR NEGRO -BUBBLE BAG -EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29412,
+    "name": "- CEPILLO DE BAÑO 9,7X38,4CM PP C/TAPA BAMBU -CLR NEGRO -CAJ",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29413,
+    "name": "ESCOBILLA DE BAÑO DE HIERRO INTERIOR PP 9,5X27-38 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29414,
+    "name": "- ESCOBILLA DE BAÑO DE HIERRO INTERIOR PP 10X27-38 -CLR NEGRO MATE -OPP + CAJA BLANCA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29415,
+    "name": "- ESCOBILLA DE BAÑO DE HIERRO INTERIOR PP - 9,5X27,5-38 -DISEÑO MARMOL -OPP + CAJA BLANCA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29416,
+    "name": "CEPILLO DE BAÑO POLIRESINA -10X40 -DSÑO MARMOL -BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29417,
+    "name": "SET X5 ACC. BAÑO -CEPILLO BAÑO 11,5X38,9CM VASO 7,9X10,3CM",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29418,
+    "name": "CEPILLOLIMPIAINODORO39X9BASEYMANG OACEROINOXCILINDRI",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29419,
+    "name": "ESCOBILLA BAÑO 29,3X40,5CM C/MANGO ACERO INOX CLR BLANCO MATE CJA BLANCA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29420,
+    "name": "JABONERA POLIRESINA -11,2X11,2X3CM - C/DECO BAMBU -CLR NEGRO -BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29421,
+    "name": "PORTACEPILLO DIENTES 9,3X11,5CM CLR BLANCO Y GRIS TARJETA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29422,
+    "name": "PORTA CEPILLO 10,9X11,6X27CM F/OSO CLR MARRON SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29423,
+    "name": "DISPENSER JABON POLIRESINA - 7,5X7,5X16,5CM -C/DECO BAMBU -CLR NEGRO -BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29424,
+    "name": "DISPENSER JABON POLIRESINA -7X16 - C/BOMBA PLASTICA -DSÑO MARMOL - BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29425,
+    "name": "DISPENSER JABON 15CM BOTON PLAST PLATEADO CUERPO SURT CLR GRIS/AZUL/CLSTE/ROSA DISPLAY X12",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29426,
+    "name": "DISPENSER JABON PLASTICO -7,3X17,5 - C/BOMBA PLASTICA -CLR GRIS -BUBBLE BAG + EGG PACK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29427,
+    "name": "SET X3 ACC. BAÑO -VASO 7,6X6,7X10,6CM JABONERA 11,8X9,3X3CM",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29428,
+    "name": "SET X3 ACC. BAÑO -VASO 7,6X6,7X10,6CM JABONERA 11,8X9,3X3CM",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29429,
+    "name": "DISPENSER JABON 17CM BOTON PLAST PLATEADO CUERPO GRIS/ROSA/AZUL DISPLAY X12",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29430,
+    "name": "DISPENSER JABON 17CM BOTON PLAST PLATEADO SURT CELESTE/VERDE/NEGRO DISPLAY X12",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29431,
+    "name": "DISPENSER JABON 17,5CM BOTON PLAST COBRE/PLATA SURT CLR NEGRO/BLANCO/TRANSP DISPLAY X15",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29432,
+    "name": "DISPENSER PLAST 17X7CM 290ML P/JAB LIQ RED BICO RS GD DBX",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29433,
+    "name": "JABONERA SET X2 11,5X8X1CM SILICONA CLR NEGRO/GRIS TJTA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29434,
+    "name": "JABONERA 12,5X9,5CM F/OSO CLR MARRON SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29435,
+    "name": "JABONERA 11,5X12,5CM C/PORTA CEPILLO F/OSO CLR MARRON SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29436,
+    "name": "JABONERA 14X12CM F/CONEJO C/LENTES CLR LILA SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29437,
+    "name": "JABONERA 15X13CM F/RANA CLR VERDE OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29438,
+    "name": "DISPENSER CREMA 10CM 150ML PLAST OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29439,
+    "name": "PORTA HISOPOS 9,3X13CM CILINDRO VIDRIO C/TAPA SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29440,
+    "name": "PORTA ALMOHADILLA ALGODÓN 6,8X18,5CM CILINDRO PLAST C/TAPA BAMBU SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29441,
+    "name": "GANCHO METAL -5,2X5,2X2,8 -CLR SATINADO -BLISTER",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29442,
+    "name": "GANCHO METAL -4,5X4,5X2,8 -CLR SATINADO -BLISTER",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29443,
+    "name": "GANCHO L 5X5X6CM CUADRADO HIERRO Y BAMBU CLR NEGRO CJA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29444,
+    "name": "GANCHO F/ESTRELLA 9,5X4,5X9CM C/SUCCION SURT CLR BLANCO/ TURQUESA TARJETA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29445,
+    "name": "ORGANIZADOR BAÑO 25X9,5X19CM F/GANCHO /ALAMBRE CROMADO HANGTAG",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29446,
+    "name": "PERCHERO P/PUERTA 26,5X3X21CM METAL BLANCO C/3 POMO DE CLRS AZ/ROSA/GRIS TJTA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29447,
+    "name": "PERCHERO P/PUERTA 30X3X20CM METAL C/3 POMO ABS CLR NEGRO TJTA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29448,
+    "name": "ORGANIZADOR BAÑO 4DIV 24,5X17,5X13,2CM \"BATHROOM\" METAL CLR BLANCO",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29449,
+    "name": "ORGANIZADOR DUCHA 2 LVL 32X11X73CM C/PORTA TOALLA /SUCCION /ALAMBRE CROMADO TJTA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29450,
+    "name": "MESA P/DUCHA 70X23X3,8CM EXTENSIBLE A 105CM BAMBU SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29451,
+    "name": "CABEZAL DUCHA 8,5CM 5 FUNCIONES CROMADO DOBLE BLISTER",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29452,
+    "name": "SOPAPA 15X56,5CM PLAST CONO C/RAYAS MANGO ACERO BLANCO Y GRI",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29453,
+    "name": "CORTINA BAÑO 180CM CUAD. PLAST. 3 MOD SURT. PVC",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29454,
+    "name": "CORTINA BAÑO 180X180CM DSÑO TAPIZ CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29455,
+    "name": "CORTINA BAÑO 180X180CM DÑO TAPIZ CART",
+    "current_cat": "卫浴用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

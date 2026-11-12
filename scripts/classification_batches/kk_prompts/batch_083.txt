@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32006,
+    "name": "TELEFONO 10X9X7 PULLSTRING INF OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32007,
+    "name": "TELEFONO 13X9X11 PULLSTRING INF OJOS SONIDO RED",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32008,
+    "name": "TORTUGA17X8X9PULLSTRINGLUZPILARELOJ OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32009,
+    "name": "TRACTOR R/L 8X9X9CM C/CARITA AMARILLO CAJA DISPLAY X12PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32010,
+    "name": "TREN 20X9X12CM PULLSTRING PLAST PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32011,
+    "name": "TREN 9X9X9CM PLAST FRICCION 4X4 2 CLR SURT A PILA RELOJ DISP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32012,
+    "name": "TREN A FRICCION C/RUEDA PATONA 8,7X8X8,8CM SURTIDO CLRS CAJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32013,
+    "name": "TRICICLO FRICCION C/MUÑECO SURT 2 CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32014,
+    "name": "VEHICULO CONSTR 7,5X10CM CJA DISPLAY X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32015,
+    "name": "BATERIA A PILA MUSICAL LUZ CJA REG MALETIN",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32016,
+    "name": "CAJA MUSICAL 19X18 INFANTIL F/CASA A PILA C/SONIDO CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32017,
+    "name": "CARACOL A PILA MUSICAL CAJA VENT 25X17X6,5CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32018,
+    "name": "CASA MUSICAL 16,5X16CM C/LUZ Y SONIDO PILA DSÑO ANIMALES CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32019,
+    "name": "A CELULAR 17X6X3 A PILA LUZ/SONIDO/ESPEJO CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32020,
+    "name": "CONEJO A PILA C/2 CRIAS LUZ Y SONIDO CJA VENT 27X19X13",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32021,
+    "name": "CONEJO A PILA RUEDA LOCA C/LUZ Y SONIDO C/CUERDA OPP 19XX14X",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32022,
+    "name": "ELEFANTE A PILA C/2 CRIAS LUZ Y SONIDO CJA VENT 27X19X13",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32023,
+    "name": "ELEFANTE MUSICAL 13X14CM C/SONIDO A PILA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32024,
+    "name": "GUITARRA 42X13X3 ROCKERA CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32025,
+    "name": "GUITARRA 43X16CM F/MARIPOSA C/LUZ Y SONIDO A PILA CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32026,
+    "name": "GUITARRA F/MARIP. 36X14 C/LUZ Y SON A PILA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32027,
+    "name": "MALETIN 20X16X6CM PLASTICO MUSICAL C/LUZ Y SONIDO CJA ABIERT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32028,
+    "name": "MAMADERA 15X10 A PILA MUSICAL /DSÑO OSO/ VACA CLR BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32029,
+    "name": "MICROFONO MUSICAL A PILA 6,5X20CM SURT 4 CLRS CAJA DISPLAY X",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32030,
+    "name": "MONO A PILA MUSICAL CAJA VENT 17,5X15,5X4,5CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32031,
+    "name": "MUÑECO A PILA MUSICAL 12X10CM F/RANITA CAJA DISPLAY X8PC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32032,
+    "name": "MUSICAL 12X11CM F/ANIMAL C/SONIDO A PILA SURT 2 DSÑO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32033,
+    "name": "MUSICAL 13X12CM APRETADOR SILICONA F/MARIPOSA DOBLE BLISTER A PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32034,
+    "name": "MUSICAL 13X16CM C/SONIDO A PILA F/HIPOCAMPO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32035,
+    "name": "MUSICAL 13X16CM C/SONIDO A PILA F/UNICORNIO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32036,
+    "name": "MUSICAL 14X9CM C/SONIDO A PILA F/DRAGON CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32037,
+    "name": "MUSICAL F/PATO 17X9CM C/SONIDO A PILA PLAST DISPLAY BOX X6PC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32038,
+    "name": "ORGANO 11X9CM C/SONIDO A PILA F/RANA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32039,
+    "name": "ORGANO 11X9CM C/SONIDO A PILA F/UNICORNIO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32040,
+    "name": "ORGANO 13X14CM C/SONIDO A PILA F/GATO SURT 3 CLRS CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32041,
+    "name": "ORGANO 13X9X4CM C/SONIDO A PILA SURT DSÑO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32042,
+    "name": "3 ORGANO 17X16,5CM C/SONIDO A PILA F/DINOSAURIO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32043,
+    "name": "ORGANO 18X22CM C/SONIDO A PILA F/DRAGON CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32044,
+    "name": "ORGANO 19X13,5CM C/LUZ Y SONIDO A PILA F/NUBE CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32045,
+    "name": "ORGANO 19X13X3 3 MOD F/PERRO 2 CLRS/JIRAFA A PILA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32046,
+    "name": "ORGANO 22X14CM C/SONIDO A PILA F/VACA C/MAMADERA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32047,
+    "name": "ORGANO 22X23CM C/LUZ Y SONIDO A PILA F/DALMATA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32048,
+    "name": "ORGANO 23X12CM C/LUZ Y SONIDO A PILA F/GATO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32049,
+    "name": "ORGANO 26X15CM C/SONIDO A PILA F/DINOSAURIO SURT 4 DSÑO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32050,
+    "name": "ORGANO 26X24CM C/SONIDO A PILA F/DINOSAURIO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32051,
+    "name": "ORGANO 30X22X5CM PLAST MUSICAL C/LUZ Y SONIDO A PILA CJA VEN",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32052,
+    "name": "ORGANO A PILA 11,5X12,5CM C/SONIDO F/CARPINCHO DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32053,
+    "name": "ORGANO A PILA 13X10 PATO CLR SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32054,
+    "name": "ORGANO A PILA F/DINO SURT 4 CLS CAJA VENT 10X10CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32055,
+    "name": "ORGANO A PILA F/ORUGA C/LUZ Y SONIDO",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

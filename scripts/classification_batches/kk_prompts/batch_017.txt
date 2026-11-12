@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28706,
+    "name": "BOTELLA ACERO INOX 7X24CM 750ML \"YOU CAN DO IT\" SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28707,
+    "name": "BOTELLA ACERO INOX 7X24CM 500ML IN304 OUT201 C/MANIJA SURT 3CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28708,
+    "name": "BOTELLA ACERO INOX 201 7X24,5CM 750ML NEW YORK CITYSURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28709,
+    "name": "BOTELLA ACERO INOX 201 7X25CM 750ML DSÑO FUTBOL SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28710,
+    "name": "BOTELLA ACERO INOX 201 6,6X26CM 750ML LOVE LIFE GIRL SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28711,
+    "name": "BOTELLA ACERO INOX 201 7,3X27,5CM 750ML DSÑO CAMIONETA SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28712,
+    "name": "BOTELLA ACERO INOX 201 7,3X27,5CM 750ML KEEP CALM C/TAPA ACERO CLR SURT CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28713,
+    "name": "BOTELLA DE ACERO INOX 21CMS 500ML",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28714,
+    "name": "BOTELLA ACERO INOX 7,5X28CM 750ML IN304 OUT201 C/MANIJA DSÑO CARRERA CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28715,
+    "name": "BOTELLA ACERO INOX 1000ML 27,5CM LISA CLR CELESTE CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28716,
+    "name": "BOTELLA PLASTICA 27X7CM 550ML NEGRA BASE Y TAPA METAL WHITE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28717,
+    "name": "BOTELLA PLASTICA 29X7CM 750ML NEGRA BASE Y TAPA METAL WHITE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28718,
+    "name": "BOTELLA ACERO 304 30X8CM 1LTS SURT 3 CLRS VERDE/NEGRO/PLATEADOCAJAREG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28719,
+    "name": "BOTELLA DE ACERO 304 34X9,5CM 1,5LTS SURT 3 CLRSVERDE/NE",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28720,
+    "name": "BOTELLA PLASTICO/ACERO 24X7 TRANSP CLR ABAJO/ARRIBA ACERO TA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28721,
+    "name": "BOTELLA ACERO 6,5X19CM 400ML OSO SENTADO SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28722,
+    "name": "BOTELLA ACERO 6,5X21CM 550ML GOOD WILL SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28723,
+    "name": "BOTELLA ACERO 6,5X21,5CM 600ML AMAZING SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28724,
+    "name": "BOTELLA ACERO 6,5X22CM 600ML DSÑO ASTRONAUTA SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28725,
+    "name": "BOTELLA ACERO 6,5X22CM 600ML ONE DAY SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28726,
+    "name": "BOTELLA ACERO 6,5X23,5CM 600ML \"OUTSIDE\" SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28727,
+    "name": "BOTELLA ACERO 6,5X24CM 600ML DSÑO CALLE SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28728,
+    "name": "BOTELLA ACERO 7X24CM 750ML DSÑO BICI SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28729,
+    "name": "BOTELLA ACERO 6,6X25CM 600ML JUST BE NICE SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28730,
+    "name": "BOTELLA DE METAL 25CM 900ML ANIMAL 3 DSÑ SURT OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28731,
+    "name": "BOTELLA ACERO 6,6X25CM 600ML SPORT SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28732,
+    "name": "BOTELLA ACERO 600ML 7X19CM NOW OR NEVER SURT CLR CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28733,
+    "name": "BOTELLA 1000ML AI304 C/TAPA VASO RECUBIERTO ACERO TIPO TERMO C/BOMBILLA SURT 3 CLR CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28734,
+    "name": "BOTELLA 1200ML AI304 C/TAPA VASO RECUBIERTO ACERO TIPO TERMO C/BOMBILLA SURT 3 CLR CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28735,
+    "name": "BOTELLA PLASTICO 25X7 C/EXPRIMIDOR TAPA ACERO ESTAMP H2O 3",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28736,
+    "name": "BOTELLA PLASTICO 23X7 FROST TAPA METAL ADENTRO/AFUERA 3 CLRS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28737,
+    "name": "BOTELLA PLASTICO 900ML 26CM HELADO CLR MARRON Y BEIGE OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28738,
+    "name": "BOTELLA PLASTICO 700ML 22CM \"SPORTS\" RECTANG CLR GRIS/ROJO/AZUL OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28739,
+    "name": "BOTELLA PLASTICO 650ML 19CM ESTAMP/ PANDA C/CORREA CLR NEGRO OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28740,
+    "name": "BOTELLA 750ML AI204 C/TAPA PLAST C/SORBETE SILICONA SURT 4 CLRS AZUL/VERDE/NEGRO/ROSA CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28741,
+    "name": "BOTELLA PLASTICO 900ML 26CM \"SPORTS\" CLR AZUL OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28742,
+    "name": "BOTELLA PLASTICO 1000ML 26CM DSÑO MOTIVACION CLR AZUL Y ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28743,
+    "name": "BOTELLA 21X7CM PLAST C/COLADOR C/SORBETE VERDE OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28744,
+    "name": "BOTELLA PLASTICO 600ML CLR ROJO/CELESTE POLYBAG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28745,
+    "name": "BOTELLA PLASTICO 850ML 14CM F/OREJAS REDONDAS CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28746,
+    "name": "BOTELLA PLASTICO 610ML 24CM LISA CLR ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28747,
+    "name": "BOTELLA PLASTICO 650ML 23CM \"TEA/CAFÉ\" CLR ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28748,
+    "name": "BOTELLA PLASTICO 1280ML 26CM OJOS SALTONES C/PAJITA CLR NGRO Y ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28749,
+    "name": "BOTELLA PLASTICO 1300ML 24CM DSÑO HELADO CLR ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28750,
+    "name": "VASO PLASTICO TRANSPARENTE 21X8CM DEPORTIVO C/PICO/SPORT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28751,
+    "name": "BOTELLA PLASTICO 600ML 23CM \"MY BOTTLE\" CLR TRANSP OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28752,
+    "name": "BOTELLA PLASTICO 700ML 24CM \"MY BOTTLE\" CLR TRANSP OPACO OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28753,
+    "name": "BOTELLA 500ML AI204 C/TAPA PLAST C/MANIJA SURT 4CLRS CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28754,
+    "name": "BOTELLA 600ML AI304 C/TAPA PLAST SURT 4 CLRS CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28755,
+    "name": "BOTELLA 700ML 25CM PLAST DSÑO CAPIBARA SURT CLR OPP",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,76 @@
+{
+  "batch_id": 8,
+  "total": 10,
+  "products": [
+    {
+      "id": 35578,
+      "name": "ANOTADOR CON DIBUJOS 20*14 C/U",
+      "sku": "35179262",
+      "brand": "",
+      "image_local": "images/sfpanda/6e9beb701c48c5a5a0b8b3d86e9e91f4.webp"
+    },
+    {
+      "id": 35579,
+      "name": "ORGANIZADOR C/U",
+      "sku": "35179245",
+      "brand": "",
+      "image_local": "images/sfpanda/0e37d2c1949bd04b43af7003220444f3.webp"
+    },
+    {
+      "id": 35580,
+      "name": "MANTA CON PELUCHE C/U",
+      "sku": "35179162",
+      "brand": "",
+      "image_local": "images/sfpanda/44417c268c0002212eee4be578e3f38a.webp"
+    },
+    {
+      "id": 35581,
+      "name": "CESTO C/U",
+      "sku": "35178784",
+      "brand": "",
+      "image_local": "images/sfpanda/28beb81d36e2f4aafb0af333be0f7a60.webp"
+    },
+    {
+      "id": 35582,
+      "name": "ANTIFAZ C/U",
+      "sku": "35178733",
+      "brand": "",
+      "image_local": "images/sfpanda/014a835c4ca6a47928770065e5dc7780.webp"
+    },
+    {
+      "id": 35583,
+      "name": "CESTO C/U",
+      "sku": "35178437",
+      "brand": "",
+      "image_local": "images/sfpanda/eeb1bef3a8c928d2446126aa49ae9330.webp"
+    },
+    {
+      "id": 35584,
+      "name": "BOLSA PARA AGUA C/U",
+      "sku": "35178411",
+      "brand": "",
+      "image_local": "images/sfpanda/e41f1e99f0eace29b1cc1da1b372e7ed.webp"
+    },
+    {
+      "id": 35585,
+      "name": "ARBOL + ADORNOS NAVIDEÑOS C/U",
+      "sku": "35178404",
+      "brand": "",
+      "image_local": "images/sfpanda/098e414bbd0dd17c4d572bf272f98e63.webp"
+    },
+    {
+      "id": 35586,
+      "name": "ORGANIZADOR C/U",
+      "sku": "35178350",
+      "brand": "",
+      "image_local": "images/sfpanda/78d26de2a75a0e2e82ab73dfc8459b8d.webp"
+    },
+    {
+      "id": 35587,
+      "name": "CESTO C/U",
+      "sku": "35178335",
+      "brand": "",
+      "image_local": "images/sfpanda/f3e0bc35f834a03e2fb1ef4d8458f55e.webp"
+    }
+  ]
+}

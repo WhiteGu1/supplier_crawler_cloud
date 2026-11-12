@@ -1,0 +1,76 @@
+{
+  "batch_id": 5,
+  "total": 10,
+  "products": [
+    {
+      "id": 35548,
+      "name": "TRACTOR EN CAJA (46Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/fe9c766ecfb58d24bc2a273aec29e677.jpg"
+    },
+    {
+      "id": 35549,
+      "name": "BLOQUES EN BOLSA PASTEL (160Y-P)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/0a51a110cc6b16d7ba11d9b0ce5fd847.jpg"
+    },
+    {
+      "id": 35550,
+      "name": "BLOQUES EN BOLSA COLORES OSCUROS (160)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/ccfee51677f6a5d87a287dee2a83ce6f.jpg"
+    },
+    {
+      "id": 35551,
+      "name": "BLOQUES PASTEL EN VALIJITA X 70 PIEZAS (170Y-P)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/cb39064e0135170e720eca5062affe35.jpg"
+    },
+    {
+      "id": 35552,
+      "name": "LADRILLOS COLORES OSCUROS EN VALIJITA X260 PIEZAS (172Y)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/dd450ad4e30528006645bc82ef16e73c.jpg"
+    },
+    {
+      "id": 35553,
+      "name": "DISCO VOLADOR (450)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/edcf60531e378c7d836bfee61df65c02.jpg"
+    },
+    {
+      "id": 35554,
+      "name": "LANCHA PARA EL AGUA (850)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/35d47731db9aa8149707a7d9392a6992.jpg"
+    },
+    {
+      "id": 35555,
+      "name": "Recipiente para Residuos vaiven 6 LT (O0642)",
+      "sku": "O0642",
+      "brand": "",
+      "image_local": "images/osa/dc4b487d69c1ab2ba6f25ec4ab7d86b5.webp"
+    },
+    {
+      "id": 35556,
+      "name": "Cesto Plastico con Tapa 3.7 litros (3396)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/osa/d7ae81e8ca877236447e3c991f251c85.webp"
+    },
+    {
+      "id": 35557,
+      "name": "BOLIGRAFO UNICORNIO C/U",
+      "sku": "35182635",
+      "brand": "",
+      "image_local": "images/sfpanda/2fada832ff1ec3424a0af8a51fd95316.webp"
+    }
+  ]
+}

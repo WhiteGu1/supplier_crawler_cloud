@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29456,
+    "name": "CORTINA BAÑO 180X180CM DSÑO LISO CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29457,
+    "name": "CORTINA BAÑO 180X180CM DÑO RAYAS CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29458,
+    "name": "CORTINA BAÑO 180X180CM DSÑO LUNARES CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29459,
+    "name": "CORTINA BAÑO 180X180CM DSÑO LISO CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29460,
+    "name": "CORTINA BAÑO 180X180CM DÑO LUNARES CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29461,
+    "name": "CORTINA BAÑO 180X180CM DÑO CUADROS CART",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29462,
+    "name": "ESPEJO LED RECTANG 22X15,7X2,5CM PLASTICO C/CABLE \"C\" /BAT 800MAH CLR BLANCO CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29463,
+    "name": "ESPEJO LED RECTANG 16,7X11,5X26,5CM PLASTICO C/BASE /A PILAS CLR NEGRO CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29464,
+    "name": "ESPEJO 27X37CM C/BASE REDONDO P/MAQUILLAJE PLAST C/LUCES X7 /USB SURT CLR BLCO/ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29465,
+    "name": "ESPEJO 13X18CM RECTANGULAR REBATIBLE P/MAQUILLAJE PLAST C/LUZ /USB SURT CLR BLCO/ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29466,
+    "name": "ESPEJO 25,8X18,8 OVALADO BORDE GRUESO BLANCO OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29467,
+    "name": "ESPEJO 23X8,3CM C/BASE RESINA DSÑO MARMOL GRIS CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29468,
+    "name": "ESPEJO CIRCULAR 21,5X8,4X23,2CM C/BASE HIERRO CLR NEGRO CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29469,
+    "name": "ESPEJO 17X22CM CIRCULAR C/OREJAS CONEJO CLR ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29470,
+    "name": "ESPEJO 14X17CM RECTANG BORDE LISO ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29471,
+    "name": "ESPEJO 22X17,2CM RECTANG BORDE TRENZA CLR ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29472,
+    "name": "ESPEJO 11X18CM RECTANGULAR C/SOPORTE C/LUZ /USB SURT CLR BLCO/ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29473,
+    "name": "ESPEJO 26X19CM RECTANG BORDE GRUESO ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29474,
+    "name": "ESPEJO 15,5X18,5CM RECTANG BORDE LISO AMARILLO OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29475,
+    "name": "ESPEJO 20X19CM C/PIE SURT 4 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29476,
+    "name": "ESPEJO 20X15CM RECTANG BORDE NUBE CLR LILA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29477,
+    "name": "ESPEJO 20,2X15,2CM RECTANG BORDE IRREGULAR CLR AMARILLO OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29478,
+    "name": "ESPEJO 18X12CM CUADRADO M/GATITO SURT 4 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29479,
+    "name": "ESPEJO 19CM CIRCULAR BORDE TRENZA CLR AMARILLO OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29480,
+    "name": "ESPEJO 15X22CM OVALADO C/OREJAS OSO CLR LILA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29481,
+    "name": "SET ESPEJO DE BOLSILLO 7,5CM REDONDO SURT 4 DSÑ OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29482,
+    "name": "SET ESPEJO LLAVERO 8X6CM SURT 3 DSÑ CAJA DISPLAY X12",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29483,
+    "name": "SET ESPEJO DE BOLSILLO 8X6,5CM SURT 5DÑS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29484,
+    "name": "ESPEJO 20X16CM C/IMAGEN ANIMALES SURT 3 DSÑ 3 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29485,
+    "name": "ESPEJO 18X16CM C/IMAGEN ANIMALES SURT X3 DSÑ 3 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29486,
+    "name": "ESPEJO 22X18CM C/IMAGEN ANIMALES SURT X3 DSÑ 3 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29487,
+    "name": "ESPEJO 16X23CM RECTANGULAR C/SOPORTE C/LUZ /USB CLR BLCO/ROSA OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29488,
+    "name": "ESPEJO PLUSH 15X8CM C/MANGO SURT 5 DSÑ SURT 2 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29489,
+    "name": "ESPEJO PLUSH 22X12CM C/MANGO SURT 4 DSÑ SURT 2 CLRS OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29490,
+    "name": "TOALLA 35X75CM ESTAMP CAPIBARA CLR MARRON/BEIGE/CREMA/GRIS",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29491,
+    "name": "TOALLA 70X140CM ESTAMP UNICORNIO CLR AZUL/ROSA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29492,
+    "name": "VINCHA P/PELO C/COLITAS F/CAPIBARA CLR ROSA/BLANCO CARD",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29493,
+    "name": "TOALLA 70X140CM ESTAMP CAPIBARA CLR MARRON/BEIGE/CREMA/GRIS",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29494,
+    "name": "TOALLA 35X75CM ESTAMP UNICORNIO CLR AZUL/ROSA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29495,
+    "name": "TOALLA 70X140CM F/PERRO C/OREJAS LARGAS CLR ROSA/VLTA/AZUL/CLSTE",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29496,
+    "name": "DISPENSER JABON SET X2 7X19,3CM C/BASE BAMBU /\"DISHES\" /\"HANDS\" CLR BLANCO Y NEGRO CJA VENTANA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29497,
+    "name": "DISPENSER JABON 410ML 7X7X19CM VIDRIO SURT CLR CELESTE/ GRIS",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29498,
+    "name": "DISPENSER JABON 410ML 7X7X19CM VIDRIO C/BOMBA PLAST SURT CLR CELESTE/ GRIS CLARO EGG CRATE",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29499,
+    "name": "DISPENSER JABON 410/570ML 7X7X19CM VIDRIO SURT CLR CELESTE/ GRIS CLARO EGG CRATE",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29500,
+    "name": "SET DE TOALLEROS ACERO X6 CHROME CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29501,
+    "name": "SET DE TOALLEROS METAL X6 CHROME CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29502,
+    "name": "SET DE TOALLEROS METAL X6 CHROME CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29503,
+    "name": "SET DE TOALLEROS ACERO X6 NEGRO WINDOW BOX",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29504,
+    "name": "TOALLA 35X75CM SMILE CLR VRDE/ROSA/NRJA/AMRILLO/LILA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29505,
+    "name": "TOALLA 70X140CM SMILE CLR VRDE/ROSA/NRJA/AMRILLO/LILA",
+    "current_cat": "美妆个护"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

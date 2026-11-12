@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28206,
+    "name": "-CLR GRIS AGUA -B",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28207,
+    "name": "PLANCHA AL3003 24X24X3 C/MANGO BAKELITA -CLR AZUL -BUBBLE",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28208,
+    "name": "CACEROLA AL3003 -16X7,3 -C/TAPA VIDRIO -CLR GRIS AGUA -B",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28209,
+    "name": "SET SARTENES X3 AL3003 20X4/24X4,5/28X5 C/MANGO BAKELITA -C",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28210,
+    "name": "SARTEN P/SALSA PEQUEÑA 12X6,5CM AL3003 C/MANGO BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28211,
+    "name": "SARTEN 20X4,2CM AL3003 C/MANGO BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28212,
+    "name": "SARTEN 24X4,7CMCM AL3003 C/MANGO BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28213,
+    "name": "SARTEN 28X5,2CM AL3003 C/MANGO BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28214,
+    "name": "PLANCHA 24X24X3CM AL3003 CUAD C/MANGO BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28215,
+    "name": "CACEROLA P/SALSA 18X8,3CM AL3003 C/MANGO BAKELITA Y TPA VIDRIO CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28216,
+    "name": "CACEROLA 20X9CM AL3003 C/MANGO BAKELITA Y TPA VIDRIO SURT CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28217,
+    "name": "CACEROLA 24X11CM AL3003 C/MANGO BAKELITA Y TPA VIDRIO CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28218,
+    "name": "CACEROLA P/SALSA 16X7,3CM AL3003 C/MANGO BAKELITA Y TPA VIDRIO CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28219,
+    "name": "SET SARTEN X3 -20X4/24X4,5/28X5,2CM - CLR NEGRO-CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28220,
+    "name": "SET COCINA X6 CACEROLA 18X8,3CM OLLA 24X11CM SARTEN 24X4,7CM SARTEN 28X5,2CM CLR NEGRO CLR BOX",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28221,
+    "name": "SARTEN 20X4,5CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28222,
+    "name": "SARTEN 24X5CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28223,
+    "name": "SARTEN 28X5,5CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28224,
+    "name": "CACEROLA P/SALSA 16X7,5CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28225,
+    "name": "CACEROLA P/SALSA 18X8CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR NEGRO CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28226,
+    "name": "CACEROLA 20X9,5CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO SURT CLR NEGRO CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28227,
+    "name": "CACEROLA 22X10CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO SURT CLR NEGRO CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28228,
+    "name": "CACEROLA 24X11 AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR NEGRO CJA VENTANA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28229,
+    "name": "SET COCINA X6 MANGO DESMONT CACEROLA 18X8CM OLLA 24X11CM SARTEN 24X5CM SARTEN 28X5,5CM CLR NEGRO CLR BOX",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28230,
+    "name": "SARTEN 20X4,3CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR CREMA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28231,
+    "name": "SARTEN 24X4,7CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR CREMA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28232,
+    "name": "SARTEN 28X5,2CM AL3003 C/MANGO DESMONTABLE BAKELITA CLR CREMA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28233,
+    "name": "CACEROLA 16X8,8CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR CREMA CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28234,
+    "name": "CACEROLA 20X10CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR CREMA CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28235,
+    "name": "CACEROLA 22X10,5CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR CREMA CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28236,
+    "name": "CACEROLA 24X11,8CM AL3003 C/MANGO DESMONTABLE BAKELITA Y TPA VIDRIO CLR CREMA CLR CARTON",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28237,
+    "name": "SET COCINA X5 AL3003 C/MANGO DESMONT/ OLLA C/TAPA 18X9,3CM/ SARTEN 20X4,3CM/ SARTEN 26X7,5CM -CLR CREMA CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28238,
+    "name": "SET COCINA X9 AL3003 C/MANGO DESMONT/ OLLA C/TAPA 18X9,3 + 20X10CM / SARTEN 20X4,3 + 26X5 + 26X7,5CM -CLR CREMA CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28239,
+    "name": "CACEROLA 16X9,5CM ACERO INOX C/TAPA VIDRIO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28240,
+    "name": "CACEROLA 18X10,5CM ACERO INOX C/TAPA VIDRIO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28241,
+    "name": "CACEROLA 22X12,5CM ACERO INOX C/TAPA VIDRIO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28242,
+    "name": "BATERIA COCINA 7PCS ACERO INOX OLLA /TAPA VIDRIO (16X9,5/ OLLA 18X10,5/ OLLA 22X12,5 / SARTEN 22X6CM)",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28243,
+    "name": "CACEROLA 16X9,5CM ACERO INOX C/TAPA VIDRIO CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28244,
+    "name": "CACEROLA 18X10,5CM ACERO INOX C/TAPA VIDRIO CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28245,
+    "name": "CACEROLA 22X12,5CM ACERO INOX C/TAPA VIDRIO CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28246,
+    "name": "BATERIA COCINA 7PCS ACERO INOX OLLA /TAPA VIDRIO (16X9,5/ OLLA 18X10,5/ OLLA 22X12,5 / SARTEN 22X6CM) CLR NEGRO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28247,
+    "name": "CACEROLA 16X9,5CM ACERO INOX C/TAPA VIDRIO CLR VERDE PASTEL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28248,
+    "name": "CACEROLA 18X10,5CM ACERO INOX C/TAPA VIDRIO CLR VERDE PASTEL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28249,
+    "name": "CACEROLA 22X12,5CM ACERO INOX C/TAPA VIDRIO CLR VERDE PASTEL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28250,
+    "name": "BATERIA COCINA 7PCS ACERO INOX OLLA /TAPA VIDRIO (16X9,5/ OLLA 18X10,5/ OLLA 22X12,5 / SARTEN 22X6CM) CLR VERDE PASTEL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28251,
+    "name": "CACEROLA 16X9,5CM ACERO INOX C/TAPA VIDRIO C/ASA SILICONA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28252,
+    "name": "CACEROLA 18X10,5CM ACERO INOX C/TAPA VIDRIO C/ASA SILICONA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28253,
+    "name": "CACEROLA 22X12,5CM ACERO INOX C/TAPA VIDRIO C/ASA SILICONA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28254,
+    "name": "BATERIA COCINA 7PCS ACERO INOX /TAPA VIDRIO/ ASAS SILICONA (OLLA 16X9,5/ OLLA 18X10,5/ OLLA 22X12,5 / SARTEN 22X6CM)",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28255,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -43X24,5X55 -OPP + CAJA COLOR",
+    "current_cat": "厨房炊具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

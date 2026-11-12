@@ -1,0 +1,76 @@
+{
+  "batch_id": 9,
+  "total": 10,
+  "products": [
+    {
+      "id": 35588,
+      "name": "ALMOHADA DE VIAJE C/U",
+      "sku": "35178323",
+      "brand": "",
+      "image_local": "images/sfpanda/6de91e0169402d12b1dc7c14d5291387.webp"
+    },
+    {
+      "id": 35589,
+      "name": "TAPAS DESECHABLES PCS*100",
+      "sku": "35178286",
+      "brand": "",
+      "image_local": "images/sfpanda/52ba3a91dfd33c439d55691c9766afbf.webp"
+    },
+    {
+      "id": 35590,
+      "name": "ANTIFAZ C/U",
+      "sku": "35178272",
+      "brand": "",
+      "image_local": "images/sfpanda/de4a233a0f5a5518e282325c342ea9c7.webp"
+    },
+    {
+      "id": 35591,
+      "name": "TOALLA DE YOGA C/U",
+      "sku": "35178261",
+      "brand": "",
+      "image_local": "images/sfpanda/d8a0bab80cec31373423f42602e3bf12.webp"
+    },
+    {
+      "id": 35592,
+      "name": "GUIRNALDA LED NAVIDEÑA C/U",
+      "sku": "35178237",
+      "brand": "",
+      "image_local": "images/sfpanda/8033bdadcfcd9540c69299e88327e000.webp"
+    },
+    {
+      "id": 35593,
+      "name": "CARTERA C/U",
+      "sku": "35178212",
+      "brand": "",
+      "image_local": "images/sfpanda/f6ca13a397ee3e7c348a6a4d36708856.webp"
+    },
+    {
+      "id": 35594,
+      "name": "BOLA DE CRISTAL C/U",
+      "sku": "35178165",
+      "brand": "",
+      "image_local": "images/sfpanda/820b3d3d2fab935f1afa026931f3a218.webp"
+    },
+    {
+      "id": 35595,
+      "name": "CESTO C/U",
+      "sku": "35178130",
+      "brand": "",
+      "image_local": "images/sfpanda/58d42068c7a5c72ce1973e66cadf3e78.webp"
+    },
+    {
+      "id": 35596,
+      "name": "TOALLA PCS*3",
+      "sku": "35178123",
+      "brand": "",
+      "image_local": "images/sfpanda/134bfda48d0a9c52e10ae355538cf997.webp"
+    },
+    {
+      "id": 35597,
+      "name": "CESTO PCS*3",
+      "sku": "35178118",
+      "brand": "",
+      "image_local": "images/sfpanda/5ca777b8b6e47d3e14e7a37bb4839f95.webp"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29056,
+    "name": "FRASCO VIDRIO 9,5X22,2CM 1,25L F/CILINDRO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29057,
+    "name": "FRASCO VIDRIO 14,3X10X28,2CM 3,5L F/RECTANG C/TAPA CLRS GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29058,
+    "name": "FRASCO VIDRIO 12X8X28CM 2L F/RECTANG C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29059,
+    "name": "FRASCO VIDRIO 14,3X10X9,8CM 800ML F/RECTANG C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29060,
+    "name": "FRASCO VIDRIO 14,3X10X14,5CM 1,4L F/RECTANG C/TAPA CLR GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29061,
+    "name": "FRASCOS VIDRIO 14,3X10X19CM 1,9L F/RECTANG C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29062,
+    "name": "FRASCO VIDRIO 9,5X13CM 700ML F/CILINDRO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29063,
+    "name": "FRASCO VIDRIO 12X8X9,8CM 500ML F/RECTANG C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29064,
+    "name": "CEREALEROS 4 BOQUILLAS 14 X 14 X 20.5 CM 2000 ML",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29065,
+    "name": "CEREALEROS 2 BOQUILLAS 19 X 10.5 X 24 CM 2500 ML",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29066,
+    "name": "CEREALEROS 4 BOQUILLAS 14 X 14 X 25 CM 2500 ML",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29067,
+    "name": "LATA \"CEREAL\" 9,5X23,5CM RECTABG C/TAPA BAMBU CLR BLANCO EGG CRATE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29068,
+    "name": "LATA 9,5X18,5CM RECTANG C/TAPA BAMBU CLR BLANCO EGG CRATE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29069,
+    "name": "LATA 10,3X15,3CM GALVANIZADA MTVO \"COFFEE/SUGAR/TEA\" C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29070,
+    "name": "LATA 17,5X12,8X15,9CM GALVANIZADA MTVO \"COFFEE\" C/TAPA BAMBU",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29071,
+    "name": "LATA 17,5X12,8X25CM GALVANIZADA MTVO \"BISCUIT\" C/TAPA BAMBU",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29072,
+    "name": "LATA CILINDRO 11,4X13,5CM GALVANIZADA C/TAPA BAMBU SURT CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29073,
+    "name": "LATA 13,5X17CM \"CAFÉ/AZUCAR/YERBA\" C/TAPA BAMBU SURT CLR NEGRO/BLANCO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29074,
+    "name": "LATA 9,5X13CM \"COFFE/SUGAR/TEA\" C/TAPA BAMBU CLR BLANCO POLYBAG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29075,
+    "name": "LATA 15X20CM \"BISCUITS\" DSÑO ONDAS C/TAPA MANIJA MADERA CLR NEGRO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29076,
+    "name": "LATA 33X18X12CM \"BREAD\" C/TAPA BAMBU CLR BLANCO/ GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29077,
+    "name": "LATA \"BISCUIT\" 13,8X16,5CM RECTANG C/TAPA BAMBU CLR BLANCO POLYBAG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29078,
+    "name": "LATA \"PASTER\" 9,5X26,5CM RECTANG C/TAPA BAMBU CLR BLANCO EGG CRATE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29079,
+    "name": "LATA 17,5X12,8X9CM GALVANIZADA MTVO \"TEA\" C/TAPA BAMBU CLR B",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29080,
+    "name": "LATA 13,5X17CM \"COFFEE/SUGAR/TEA\" C/TAPA BAMBU CLR BEIGE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29081,
+    "name": "LATA 33,2X18,2X15,6 GALVANIZADA MTVO \"?BREAD?\" C/TAPA BAMBU SURT CLR NEGRO/GRIS/VERDE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29082,
+    "name": "LATA 10,5X12,7CM GALVANIZADA MTVO \"COFFEE/SUGAR/TEA\" C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29083,
+    "name": "LATAS APILABLES SET X3 REDONDA 16X25CM \"COOKIES/CAKE/BISCUITS\" C/TAPA BAMBU",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29084,
+    "name": "LATAS SET X4 28X20,5X25CM \"PAN\"/ 11,4X14CM (X3) \"CAFÉ/AZUCAR/YERBA\" C/TAPA BAMBU CLR NEGRO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29085,
+    "name": "LATA 33,5X18X24CM \"BREAD\" / (X3) 11X15CM \"COFFEE/SUGAR/TEA\" C/TAPA MANIJA CLR BLANCO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29086,
+    "name": "LATAS SET X4 33X5X21X16CM \"BREAD\" / (X3) 11,4X13,5CM \"COFFEE/TEA/SUGAR\" SURT CLR ROSA/CREMA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29087,
+    "name": "LATAS SET X4 33,5X18X20,5CM \"BREAD\"/ 11X15CM (X3) \"COFFEE/SUGAR/TEA\" C/TAPA BAMBU CLR BEIGE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29088,
+    "name": "LATA 9,5X12 CM \"SUGAR\" C/TAPA C/MANIJA MADERA SURT. CLR CELESTE/ROSA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29089,
+    "name": "LATA 9,5X12CM \"COFFEE\" C/TAPA MANIJA MADERA SURT CLR CELESTE/ROSA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29090,
+    "name": "COPA CHAMPAGNE X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29091,
+    "name": "COPA CHAMPAGNE X6 DORADA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29092,
+    "name": "COPA CHAMPAGNE X6 NEGRA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29093,
+    "name": "SET COPA CHAMPAGNE X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29094,
+    "name": "COPA CHAMPAGNE VIDRIO (X6) 24,5X4,7CM 230ML 175G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29095,
+    "name": "COPA VINO X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29096,
+    "name": "COPA VINO X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29097,
+    "name": "COPA VINO X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29098,
+    "name": "COPA VINO X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29099,
+    "name": "COPA VIDRIO X6 160ML TRANSP R/RAYAS Y BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29100,
+    "name": "SET X6 COPA VIDRIO 9,4X7,4X22,5CM TALLO CLR NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29101,
+    "name": "COPA X6 TRANSPARENTE GRIS C/RELIEVE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29102,
+    "name": "SET COPA VINO X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29103,
+    "name": "COPA VINO X6 NEGRA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29104,
+    "name": "SET COPA VINO X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29105,
+    "name": "COPA X6 TRANSPARENTE C/RELIEVE Y ADORNO CLR BOX",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

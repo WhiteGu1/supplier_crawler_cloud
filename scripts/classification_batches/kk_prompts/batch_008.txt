@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28256,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -47X26X59",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28257,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -55X31X32 -OPP + CAJA COLOR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28258,
+    "name": "SARTEN INTERIOR CERAMICO C/TAPA DE VIDRIO TIPO -ACERO INOXIDABLE - 55X43X22 -OPP + CAJA COLOR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28259,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -38X33,5X5",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28260,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -43X24,5X5",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28261,
+    "name": "CACEROLA C/TAPA VIDRIO TIPO -ACERO INOXIDABLE -47X26X59",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28262,
+    "name": "SARTEN INTERIOR CERAMICO C/TAPA DE VIDRIO TIPO -ACERO IN",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28263,
+    "name": "PLANCHA 22CM RED HIERRO C/BASE 26X23CM MADERA SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28264,
+    "name": "PLANCHA 24CM RED HIERRO C/BASE 28X26CM MADERA SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28265,
+    "name": "PLANCHA C/MANGO REDONDA 18CM HIERRO C/BASE 21,5CM SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28266,
+    "name": "PLANCHA C/MANGO REDONDA 20CM HIERRO C/BASE 23CM MADERA SHK P",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28267,
+    "name": "PLANCHA 25X15,5CM REDONDA HIERRO C/BASE 29X18,5CM MADERA SHK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28268,
+    "name": "PLANCHA REDONDA C/ASAS 16CM HIERRO C/BASE 22X17CM MADERA SHK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28269,
+    "name": "PLANCHA RED C/ASAS 23CM HIERRO C/BASE 25X24CM MADERA SHK PAC",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28270,
+    "name": "PLANCHA REDONDA C/ASAS 18CM HIERRO C/BASE 21X26CM MADERA SHK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28271,
+    "name": "PLANCHA OVAL C/ASAS 21,5X14CM C/BASE 28X17CM MADERA SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28272,
+    "name": "PLANCHA OVAL C/ASAS 24X15CM C/BASE 31X16CM MADERA SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28273,
+    "name": "PLANCHA 23X23CM CUADRADA HIERRO C/BASE 26X26CM MADERA SHK PA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28274,
+    "name": "PLANCHA C/ASAS RECTANGULAR 26X17CM HIERRO C/BASE 35X22CM MAD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28275,
+    "name": "PLANCHA C/ASAS RECTANGULAR 32X21CM HIERRO C/BASE 40X28CM MAD",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28276,
+    "name": "PLATO HONDO REDONDO 19CM HIERRO C/BASE 26X20CM MADERA SHK PA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28277,
+    "name": "PLATO HONDO REDONDO 24CM HIERRO C/BASE 29X25CM MADERA SHK PA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28278,
+    "name": "OLLA REDONDA 10CM HIERRO C/BASE 15X11,5CM MADERA SHK PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28279,
+    "name": "SET X3 BANDEJA CUADRADA 33X25X5,5/ 37X27X5,5/ 41X29X5,5CM AL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28280,
+    "name": "FUENTE VIDRIO RECT 38X25,4X6,5CM 3,8L VIDRIO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28281,
+    "name": "CANASTA P/FRITURAS C/MANGO REDONDA 9X9CM ACERO 201 NEGRO OPP",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28282,
+    "name": "ACEITERA/VINAGRERA C/TAPA METALICA - VIDRIO -5X5X31CM -EGG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28283,
+    "name": "ACEITERA/VINAGRERA 250ML C/CARCASA METALICA -VIDRIO -6,3X6",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28284,
+    "name": "ACEITERA/VINAGRERA 500ML CUADRADO C/TAPA METALICA -VIDRIO -",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28285,
+    "name": "ACEITERA/VINAGRERA 750ML CUADRADO C/TAPA METALICA -VIDRIO -",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28286,
+    "name": "ACEITERA/VINAGRERA 800ML C/TAPA METALICA -VIDRIO -17X10.7X",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28287,
+    "name": "ACEITERA/VINAGRERA 25CM 250ML RECUBIERTO EN ACERO C/ PICO PL",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28288,
+    "name": "ACEITERA/VINAGRERA C/TAPA A PRESION 220ML -VIDRIO -5X5X18",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28289,
+    "name": "ACEITERA/VINAGRERA C/RELIEVE 500ML C/TAPA A PRESION -VIDRIO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28290,
+    "name": "ESPECIERO VIDRIO X6PCS 22,5X15X15CM T/BAMBOO C/SOPRTE BAMBOO",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28291,
+    "name": "ESPECIERO VIDRIO X12 C/TAPA Y ATRIL GIRATORIO BAMBOO 120ML CAJA BLCA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28292,
+    "name": "Y ESPECIEROS VIDRIO X 4 C/TAPA Y ATRIL BAMBOO 250ML CLR BOX",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28293,
+    "name": "ESPECIERA C/TAPA BAMBU 300ML -VIDRIO 8X8X12,5 -EGG PACK",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28294,
+    "name": "- ESPECIERO 34X11CM SET X8 C/ATRIL RECTO MADERA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28295,
+    "name": "SET AZUCARERAS X3PCS 7,5X8CM VIDRIO C/TAPA Y CUCHARA MADERA",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28296,
+    "name": "MOLDE P/HELADO X4 PALITOS 13X7X10,7CM F/GAJO KIWI TARJETA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28297,
+    "name": "PLACA SILICONA 40X60CM P/CUPCAKES",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28298,
+    "name": "CORTADORES TORTA X6 F/PORCIONES ACERO INOX CAJA REG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28299,
+    "name": "CORTADORES TORTA X3 25X15X4,5/20X12X4,5/15X8X4,5CM ACERO INOX REDONDAS CAJA REG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28300,
+    "name": "CORTANTE 21X22X5CM 3PCS ACERO INOX F/MUÑECO CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28301,
+    "name": "CORTANTE 21X22X5CM 3PCS ACERO INOX F/TREBOL CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28302,
+    "name": "CORTANTE 21X22X5CM 3PCS ACERO INOX F/FLOR CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28303,
+    "name": "CORTANTE 21X22X5CM 3PCS ACERO INOX F/KITTY CJA CLR",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28304,
+    "name": "CORTADORES TORTA X3 25X25X6/20X20X6/15X15X6CM ACERO INOX CUADRADAS CAJA REG",
+    "current_cat": "厨房炊具"
+  },
+  {
+    "id": 28305,
+    "name": "MOLDE TORTA EXTENSIBLE 20 A 40CM CUADRADA CLR BOX",
+    "current_cat": "厨房炊具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

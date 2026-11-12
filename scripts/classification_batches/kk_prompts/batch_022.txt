@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28956,
+    "name": "TUPPER 15,5X15,5X6,5 CUADRADO DSÑO CAPIBARA CLR SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28957,
+    "name": "SET TUPPER C/VASO 18X13X7,2 / 16,5X7,5X7,5CM DSÑO CAPIBARA CLR SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28958,
+    "name": "SET TUPPER C/VASO 18X12,2X7/ 17X7,5X7,5CM DSÑO CAPIBARA CLR SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28959,
+    "name": "TUPPER 400ML CUADRADO PLAST CLR PASTEL SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28960,
+    "name": "TUPPER 600ML CUADRADO PLAST LR PASTEL SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28961,
+    "name": "TUPPER 900ML CUADRADO PLAST CLR PASTEL SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28962,
+    "name": "TUPPER 1460ML CUADRADO CLR PASTEL SURT OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28963,
+    "name": "TUPPER 29,5X9,5X5,5CM C/ 4 DIVISIONES /TAPA TRANSP OPACO OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28964,
+    "name": "TUPPER 29,5X9,5X5,5CM C/ 3 DIVISIONES /TAPA TRANSP OPACO OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28965,
+    "name": "TUPPER 29,5X10X6CM C/3 DIVISIONES /TAPA TRANSP OPACO OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28966,
+    "name": "SET TUPPERS 14 X 13 CM X 3PCS 400, 800, 1500ML COLORES SURTI",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28967,
+    "name": "TUPPER 22X9,1CM 1,9L C/TAPA BORDE SURT CLR CELESTE/VERDE ROSA -BOLSA BURBUJA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28968,
+    "name": "TUPPER 22X9,1CM 1,9L C/TAPA BORDE SURT CLR CELESTE/VERDE ROSA -BOLSA BURBUJA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28969,
+    "name": "TUPPER 22X9,1CM 1,9L C/TAPA BORDE SURT CLR CELESTE/VERDE ROSA -BOLSA BURBUJA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28970,
+    "name": "TUPPER PLASTICO REDONDO 22.5 X 22.5 X 12.3 CM 2,6L COLOR M",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28971,
+    "name": "TUPPER PLASTICO REDONDO 18.5 X 18.5 X 10 CM 1,2L COLOR MIX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28972,
+    "name": "TAPPER TRANSP 22X16X9CM RECTANG C/ CUCHILLO TENEDOR Y OREJAS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28973,
+    "name": "SET TUPPERS PLASTICOS X7 PCS (2 PCS 9.6 6.9 X 7 CMS + 2 PC",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28974,
+    "name": "X TUPPER 17,5X11,5X18,5CM 2,5L RECTANG \"LEISURE..\" CLR MARRON OPP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28975,
+    "name": "TUPPER CIRCULAR SET X4 12X8,4/ 15,8X9,8/ 19,3X11,5/ 22,5X12,9CM PP+TPR CLR VLTA/ NGRO/ VERDE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28976,
+    "name": "TUPPER SET X2 18X11,5CM PP ENSALADERA CLR GRIS CARD",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28977,
+    "name": "TUPPER SET X2 22X15CM PP ENSALADERA CLR BLCO CARD",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28978,
+    "name": "SET DE TUPPERS X3 CUADRADO 23X23X13/ 19X19X11/ 16X16X9CM CLR TRANSP AZUL",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28979,
+    "name": "TUPPER VIDRIO 14,8CM 620ML F/REDONDA C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28980,
+    "name": "TUPPER VIDRIO 12,8X6CM 400ML F/REDONDA C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28981,
+    "name": "TUPPER VIDRIO 17,1X7,3CM 950ML F/REDONDA C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28982,
+    "name": "TUPPER VIDRIO 15X6,8CM 800ML F/CUADRADA C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28983,
+    "name": "TUPPER VIDRIO 13,1X6,3CM 520ML F/CUADRADA C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28984,
+    "name": "TUPPER RECTANG 23,8X18X11,1CM 2,6L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28985,
+    "name": "TUPPER RECTANG 23,5X15X5,3CM 1L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28986,
+    "name": "TUPPER RECTANG 28,4X20,1X5,7CM 1,6L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28987,
+    "name": "TUPPER RECTANG 19,8X14,3X8,8CM 1380ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28988,
+    "name": "TUPPER RECTANG 39,5X24,2X7,5CM 3,6L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28989,
+    "name": "TUPPER RECTANG 16,3X11,5X7,3CM 800ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28990,
+    "name": "TUPPER RECTANG 14,2X10,2X6,5CM 470ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28991,
+    "name": "TUPPER RECTANG 25,3X22X6CM 1,6L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28992,
+    "name": "TUPPER OVAL 30,6X21,3X7,3CM 2L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28993,
+    "name": "TUPPER OVAL 26,7X18,2X7CM 2L VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28994,
+    "name": "TUPPER VIDRIO 15,5X11,2X6,3CM 370ML TAPA PLAST CLIP",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28995,
+    "name": "CONTENEDOR PLASTICO 19.5 X 19.5 X 15.5 CM",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28996,
+    "name": "BOWL ACERO INOX 20X12CM C/BASE SILICONA /TAPA TRANSPARENTE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28997,
+    "name": "BOWL ACERO INOX 24X14CM C/BASE SILICONA /TAPA TRANSPARENTE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28998,
+    "name": "BOWL ACERO INOX 16X10CM C/BASE SILICONA /TAPA TRANSPARENTE",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 28999,
+    "name": "BOWL REDONDO 17,4X9,7CM 1050ML VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29000,
+    "name": "BOWL REDONDO 15,6X9,3CM 800ML VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29001,
+    "name": "BOWL REDONDO 21,3X12,3CM 2,1L VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29002,
+    "name": "BOWL CUADRADO 20,3X15,6X7,4CM 670ML VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29003,
+    "name": "BOWL CUADRADO 23,9X18,4X8,5CM 1070ML VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29004,
+    "name": "BOWL CUADRADO 17,8X13,8X6,8CM 400ML VIDRIO T/BAMBOO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29005,
+    "name": "BOWL CUADRADO 17,8X13,8X6,8CM 400ML VIDRIO T/GLASS",
+    "current_cat": "厨房储物"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

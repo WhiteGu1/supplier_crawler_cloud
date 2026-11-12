@@ -1,0 +1,76 @@
+{
+  "batch_id": 23,
+  "total": 10,
+  "products": [
+    {
+      "id": 35728,
+      "name": "Dispenser + Organizador De Bacha De Acero Inoxidable Y Plastico 2 en 1, 12X17X18",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/097b5b867dfe24015bd7f97e6cb195b9.jpg"
+    },
+    {
+      "id": 35729,
+      "name": "Caja De Te, 3 Divisiones,  23.8X8.5X6.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/0239f56d33cda146f79cc04f9866ae2d.jpg"
+    },
+    {
+      "id": 35730,
+      "name": "Caja De Te, 6 Divisiones, 23.8X15X6.5Cm 59877",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9d7bcddd60e1eb8f7ab6fabb27d1bb20.jpg"
+    },
+    {
+      "id": 35731,
+      "name": "Caja De Te, 6 Divisiones, 23.8X15X6.5Cm 59880",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/2ea0bafedafe7819f00ad0c3af568abd.jpg"
+    },
+    {
+      "id": 35732,
+      "name": "Caja De Te, 6 Divisiones, 23.8X15X6.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/34c94e63f7db8c99d96ff88ddc44ad2a.jpg"
+    },
+    {
+      "id": 35733,
+      "name": "Caja De Te, 4 Divisiones, 18×18×6.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/545afd60f38618b0a81f8775617f559f.jpg"
+    },
+    {
+      "id": 35734,
+      "name": "Alfombra Rectangular De Poliester",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/ca41454b05f88c983dd73aa621938a44.png"
+    },
+    {
+      "id": 35735,
+      "name": "Cojin, 40X40 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e48ea9822bc7e081510ae78deb3667ce.jpg"
+    },
+    {
+      "id": 35736,
+      "name": "Cojin, 40X40 Cm 58742",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b243a9d3c506d0725327e30bed562495.jpg"
+    },
+    {
+      "id": 35737,
+      "name": "Maceta cemento  13Cm 33381",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/636cbebb513f5d4149f158ced345da4d.jpg"
+    }
+  ]
+}

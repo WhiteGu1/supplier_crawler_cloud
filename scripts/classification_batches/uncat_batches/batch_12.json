@@ -1,0 +1,76 @@
+{
+  "batch_id": 12,
+  "total": 10,
+  "products": [
+    {
+      "id": 35618,
+      "name": "BROCHE PCS*3",
+      "sku": "35176185",
+      "brand": "",
+      "image_local": "images/sfpanda/b8f6b58e32c56b7de1f360ba0958bdcf.webp"
+    },
+    {
+      "id": 35619,
+      "name": "PEINE C/U",
+      "sku": "35176010",
+      "brand": "",
+      "image_local": "images/sfpanda/c5d1f8558710f8bb32a2baa01f319685.webp"
+    },
+    {
+      "id": 35620,
+      "name": "ALMOHADA DE VIAJE C/U",
+      "sku": "35175949",
+      "brand": "",
+      "image_local": "images/sfpanda/fb324e2b168c2a6049b62b4399b7cd8c.webp"
+    },
+    {
+      "id": 35621,
+      "name": "SECA VIDRIO ECO (A-2919/244315)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/eaaeccf2576f934c13fbf7858155a604.jpg"
+    },
+    {
+      "id": 35622,
+      "name": "SET 7 PIEZAS CAROL (23101)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/d6ffbfc2d7c5c373091e2f6e6fd904fd.jpg"
+    },
+    {
+      "id": 35623,
+      "name": "SET CUCHILLAS X3 MANGO SILICONA CAROL (23100)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/c1a76e862c7a830bc49d9ffbf63bac4c.jpg"
+    },
+    {
+      "id": 35624,
+      "name": "ESPATULA SILICONA EN BLISTER VERDE CAROL (55210)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/814845a0b49fbb260c629de45da98b1e.jpg"
+    },
+    {
+      "id": 35625,
+      "name": "Espatulas Para Pastel Set X2 25cm+30cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/8bee32e01d53b8a6e10aa769ea0887fa.jpg"
+    },
+    {
+      "id": 35626,
+      "name": "Set X2 De Espatulas De Bambu 30x6cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9673caefe7cfff9a0cf482733a102012.jpg"
+    },
+    {
+      "id": 35627,
+      "name": "Set De Utensilios, Bambu 30x6 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/dbdff6fd31ad81be736f98a9b6f5d9a4.jpg"
+    }
+  ]
+}

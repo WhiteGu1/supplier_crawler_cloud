@@ -1,0 +1,76 @@
+{
+  "batch_id": 20,
+  "total": 10,
+  "products": [
+    {
+      "id": 35698,
+      "name": "Vaso Termico,Colores Varios, 900 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7f76ff9e1c4ef256d94a0b54cd6d2caa.jpg"
+    },
+    {
+      "id": 35699,
+      "name": "Vaso Termico,Colores Varios, 510 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/87416f7b0287ddc4e4c11046fd57aee4.jpg"
+    },
+    {
+      "id": 35700,
+      "name": "Vaso Termico,Colores Varios, 500 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b7880d3ee0e5aa156797bc0c162507b3.png"
+    },
+    {
+      "id": 35701,
+      "name": "Encendedor/ chispero Usb De Metal",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a6732108d9a7ae82cf5a70a48b151532.png"
+    },
+    {
+      "id": 35702,
+      "name": "Set X3 De Espatulas De Bambu 30x6 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/63e44416a549a42e2950895b47f78727.jpg"
+    },
+    {
+      "id": 35703,
+      "name": "Botella Termica, Colores Varios 500 Ml 58196",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e5ca2a3ae9a78cebfafd1140db55621c.jpg"
+    },
+    {
+      "id": 35704,
+      "name": "Tabla De Cortar De Acero Inoxidable, 34 X 23cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/586d0600a41c42c281590a5a3c7b6285.jpg"
+    },
+    {
+      "id": 35705,
+      "name": "Tabla De Cortar De Acero Inoxidable, 29 X 20cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/696417fcf6c71b91b1b55cecb804006f.jpg"
+    },
+    {
+      "id": 35706,
+      "name": "Plato Acero Inoxidable, Dorado, 30Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b3bcfe25056631aa6fb76deb9c82d904.jpg"
+    },
+    {
+      "id": 35707,
+      "name": "Soplete 17,5 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/cc4e4c3c4293d84b8f8b7ad5e58b8df1.jpg"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "batch_id": 13,
+  "items": [
+    {
+      "id": 35928,
+      "supplier_id": 2,
+      "name": "Nebulizador Ultrasonico NB-152 CORONET",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/9aae9dd79bcc5dded267bc743c406711.jpg"
+    },
+    {
+      "id": 35929,
+      "supplier_id": 2,
+      "name": "Teflon x10mts Candela 1/2",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/65890e0a7341809476fda5801b32e80b.jpg"
+    },
+    {
+      "id": 35930,
+      "supplier_id": 2,
+      "name": "Adhesivo Voligoma ch x30ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/1bea2ef7c52004f82516bec50989850b.jpg"
+    },
+    {
+      "id": 35931,
+      "supplier_id": 2,
+      "name": "Adhesivo Voligoma gr x50ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/2cd55dd4d493dd676daf34ace1e43ed7.jpg"
+    },
+    {
+      "id": 35932,
+      "supplier_id": 2,
+      "name": "Corrector FILGO cuerpo pastel 7ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/506e84f746dcb7e45cd32a151db00c26.jpg"
+    },
+    {
+      "id": 35933,
+      "supplier_id": 2,
+      "name": "Folio A4 standard x 10u LUMA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/d1ce705f56fa7707a0bec3abf4ba4776.jpg"
+    },
+    {
+      "id": 35934,
+      "supplier_id": 2,
+      "name": "Folio N°3 standard escolar x10u LUMA",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/8b611b3d0b8709451b6c6484ade75b0b.jpg"
+    },
+    {
+      "id": 35935,
+      "supplier_id": 2,
+      "name": "Marcador 2 ptas permanente Filgo Azul",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/a66c111d2b723ea4302386894d3ac159.jpg"
+    },
+    {
+      "id": 35936,
+      "supplier_id": 2,
+      "name": "Tempera Tintoreto pomo x10 AMARILLO",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/b477813fb8441c8cdc3f11b54f4b2b8f.jpg"
+    },
+    {
+      "id": 35937,
+      "supplier_id": 2,
+      "name": "Tempera Tintoreto pomo x10 AZUL",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Diego/1cf8a9c92d79b00378c88a2b23c3871a.jpg"
+    }
+  ]
+}

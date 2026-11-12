@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33546,
+    "supplier_id": 11,
+    "sku": "24100",
+    "name": "SLIME ARENA MAGICA",
+    "image": "/images/panda_99/24100.jpg"
+  },
+  {
+    "id": 33549,
+    "supplier_id": 11,
+    "sku": "24107M",
+    "name": "JUEGO MESA",
+    "image": "/images/panda_99/24107M.jpg"
+  },
+  {
+    "id": 33550,
+    "supplier_id": 11,
+    "sku": "24108",
+    "name": "LAPIZ 3D",
+    "image": "/images/panda_99/24108.jpg"
+  },
+  {
+    "id": 33551,
+    "supplier_id": 11,
+    "sku": "24108A",
+    "name": "REPUESTO LAPIZ 3D",
+    "image": "/images/panda_99/24108A.jpg"
+  },
+  {
+    "id": 33553,
+    "supplier_id": 11,
+    "sku": "24111",
+    "name": "JUEGO GOLF(168)",
+    "image": "/images/panda_99/24111.jpg"
+  },
+  {
+    "id": 33556,
+    "supplier_id": 11,
+    "sku": "24114",
+    "name": "TRACTOR CON ACCESORIOS(48)",
+    "image": "/images/panda_99/24114.jpg"
+  },
+  {
+    "id": 33557,
+    "supplier_id": 11,
+    "sku": "24115",
+    "name": "JUEGO DESTREZA(120)",
+    "image": "/images/panda_99/24115.jpg"
+  },
+  {
+    "id": 33558,
+    "supplier_id": 11,
+    "sku": "24116",
+    "name": "TRACTOR CON ACCESORIOS(48)",
+    "image": "/images/panda_99/24116.jpg"
+  },
+  {
+    "id": 33559,
+    "supplier_id": 11,
+    "sku": "24121",
+    "name": "BLOQUES X 55PCS(48)",
+    "image": "/images/panda_99/24121.jpg"
+  },
+  {
+    "id": 33568,
+    "supplier_id": 11,
+    "sku": "24009",
+    "name": "MUÑECOS COPA MUNDO",
+    "image": "/images/panda_99/24009.jpg"
+  }
+]

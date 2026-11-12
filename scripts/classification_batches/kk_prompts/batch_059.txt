@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30806,
+    "name": "RELOJ DESPERTADOR PLAST SIMIL MADERA USB 10,5X4,5CM DIGITAL",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30807,
+    "name": "RELOJ DESPERTADOR PLAST SIMIL MADERA USB 15X7X4,5CM PRISMA L",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30808,
+    "name": "RELOJ DESPERTADOR PLAST SIMIL MADERA USB 14,5X8CM DIGITAL F/",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30809,
+    "name": "RELOJ DESPERTADOR PLASTICO USB 23X7X4CM NEGRO LUCES MIX BLAN",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30810,
+    "name": "RELOJ DESPERTADOR PLAST SIMIL MADERA USB 15X7CM LUZ BLANCA S",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30811,
+    "name": "ADORNO METALICO 20X11,3X8,7CM F/RELOJ CLR BLANCO CAJA MARRON",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30812,
+    "name": "ADORNO METALICO 20X11,3X8,7CM F/RELOJ CLR NEGRO CAJA MARRON",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30813,
+    "name": "ADORNO 17X11CM VIDRIO C/RELOJ METALICO CAJA MARRON",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30814,
+    "name": "LINTERNA METALICA C/VELA LED 10X10X18CM C/BATERIA -DSÑO REJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30815,
+    "name": "LINTERNA METALICA C/VELA LED 14X14X26CM C/BATERIA -CAJA MA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30816,
+    "name": "LINTERNA METALICA C/VELA LED 11X11X20,5CM C/BATERIA -DSÑO H",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30817,
+    "name": "LINTERNA LED METALICA -CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30818,
+    "name": "LINTERNA METALICA C/VELA LED 16X16X22CM C/BATERIA -DSÑO REJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30819,
+    "name": "LINTERNA LED TEJIDA 16,5X16,5X33,5CM DSÑO OCTAGONO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30820,
+    "name": "LAMPARA LED 26CM PLASTICO CARGA TIPO F/OSITO CLR ROSA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30821,
+    "name": "LAMPARA LED 23CM PLASTICO CARGA TIPO F/LEONCITO CLR AMARILLO CLARO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30822,
+    "name": "LAMPARA LED DOBLE REFLECTOR 26CM PLASTICO CARGA TIPO F/LEONCITO CLR VERDE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30823,
+    "name": "LAMPARA LED 22X12CM PLASTICO CARGA TIPO F/COCHE ASTRONAUTA CLR VERDE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30824,
+    "name": "LAMPARA LED 21CM PLASTICO CARGA TIPO F/NAVE ASTRONAUTA CLR BLANCO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30825,
+    "name": "LAMPARA LED 27CM PLASTICO CARGA TIPO F/ASTRONAUTA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30826,
+    "name": "LAMPARA PROYECTOR F/ASTRONAUTA PARADO CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30827,
+    "name": "USB LAMPARA PROYECTOR F/ASTRONAUTA SENTADO CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30828,
+    "name": "USB VELADOR SILICONA USB 16X10CM F/PATO ACOSTADO TACTIL INFANTIL",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30829,
+    "name": "VELADOR SILICONA USB 18X8CM F/CONEJO ACOSTADO TACTIL INFANTI",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30830,
+    "name": "VELADOR SILICONA USB 15X11CM F/BALLENA TACTIL INFANTIL LED 7",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30831,
+    "name": "VELADOR SILICONA USB 15X9CM F/DRAGON TACTIL INFANTIL LED 7",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30832,
+    "name": "VELADOR SILICONA USB 16X11CM F/BALLENA TACTIL INFANTIL LED 7",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30833,
+    "name": "VELADOR SILICONA USB 14X10CM F/OJOS-LENGUA TACTIL INFANTIL L",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30834,
+    "name": "VELADOR 20CM CERAMICO F/UNICORNIO C/PANTALLA F/LUNA POLIRESINA USB SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30835,
+    "name": "VELAS LED X2 17CM PLAST DSÑO LISO BLISTER A RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30836,
+    "name": "PILA VELAS LED X2 24,5CM PLAST DSÑO LISO BLISTER PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30837,
+    "name": "A VELAS LED X2 27,5CM PLAST DSÑO LISO BLISTER A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30838,
+    "name": "VELAS LED X2 25CM PLAST DÑO ESPIRALADAS BLISTER A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30839,
+    "name": "VELAS LED X4 27,5CM PLAST DSÑO LISO BLISTER PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30840,
+    "name": "A VELAS LED X12 3,5CM PLAST DSÑO LISO CLR BLANCA BLISTER A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30841,
+    "name": "VELAS LED X24 4CM PLAST DSÑO LISO CAJA DISPLAY A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30842,
+    "name": "VELAS LED X4 4CM DÑO LISO BLISTER A PILA RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30843,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CIRCULAR 15CM CON CONTROL REM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30844,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CILINDRO 12X20CM CON CONTROL",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30845,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CILINDRO CON RAYAS 10X20CM CO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30846,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CUADRADO 10CM CON CONTROL REM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30847,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CUADRADO CON CONTROL REM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30848,
+    "name": "12CM VELADOR LUZ LED AMBIENTE FORMA HUEVO 10X15CM CON CONTROL REM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30849,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CIRCULAR 20CM CON CONTROL REM",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30850,
+    "name": "VELADOR LUZ LED AMBIENTE FORMA CILINDRO CON RAYAS 10X15CM CO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30851,
+    "name": "VELADOR PARA MESA FORMA HONGO 13X21CM LUZ LED CON DIMMER",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30852,
+    "name": "CON LAMPARA 27,5X19,5X11,5CM F/HOGAR C/LEÑOS USB CLR NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30853,
+    "name": "LAMPARA 29,8X25X13CM F/HOGAR C/LEÑOS USB NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30854,
+    "name": "CLR LAMPARA 34,5X25X13CM F/HOGAR C/LEÑOS USB NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30855,
+    "name": "CLR LAMPARA 34,5X29,8X13CM F/HOGAR C/LEÑOS USB CLR NEGRA CAJA REG",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

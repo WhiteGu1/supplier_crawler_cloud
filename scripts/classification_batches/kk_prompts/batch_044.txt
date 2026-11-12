@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30056,
+    "name": "MOCHILA 27X22X9CM ESTAMPO PATITO 3 CLR SURT OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30057,
+    "name": "MOCHILA 27X22X10CM MARIPOSA COLORIDA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30058,
+    "name": "MOCHILA 30X23X12CM FORMA CAMION",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30059,
+    "name": "MOCHILA 40X30X13CM ROSA UNICORNIO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30060,
+    "name": "MOCHILA 43X30X13CM ROSA PASTEL 3DSÑ SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30061,
+    "name": "MOCHILA M/\"LOVE\" 25X21X9CM",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30062,
+    "name": "MOCHILA TRANSPARENTE M/ARCOIRIS 30X22X12CM SURT 2CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30063,
+    "name": "MOCHILA M/\"HAPPY VIBES\" PVC 30X22X12CM SURT 2CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30064,
+    "name": "MOCHILA M/CORAZON PVC 24X23X11CM SURT 2CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30065,
+    "name": "MOCHILA 29X26X10CM SURT 2 M. DINO / ASTRONAUTA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30066,
+    "name": "MOCHILA 35X28X10CM M/DINO COOL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30067,
+    "name": "MOCHILA 31X24X11CM SURT 2 M. UNICORNIO/DINO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30068,
+    "name": "MOCHILA 30X26X12CM POLYESTER C/3 COMPARTIMIENTOS CON FIGURA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30069,
+    "name": "MOCHILA PLASTICA + PU 36X27X13CM INFANTIL 2 BOLSILLOS SURT 3 DISEÑOS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30070,
+    "name": "MOCHILA PLASTICA + PU 30X24X11,5 INFANTIL 1 BOLSILLO SURT 3 DISEÑOS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30071,
+    "name": "MOCHILA 26X22X10CM 2 CIERRE PLAST BRILLOSO SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30072,
+    "name": "MOCHILA F/DINO 24X22X9CM 2 CIERRES SURT 2 CLRS VERDE Y ROSA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30073,
+    "name": "MOCHILA 35X25X10CM C/DIBUJO CONEJITOS 2 CIERRES SURT 2 CLRS ROSA/CELESTE OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30074,
+    "name": "MOCHILA 27X21X9CM C/DIBUJO INFANTIL 2 CIERRES SURT 4 DÑS DINO/ASTRONAUTA/FRUTILLA/PATITO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30075,
+    "name": "MOCHILA 30X26X9CM C/MONEDERITOS 2 CIERRES F/ANIMALES SURT 2 DSÑ 2 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30076,
+    "name": "MOCHILA 19X18X6CM SURT 2 DSÑ PANDA Y PERRO 1 CIERRE OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30077,
+    "name": "MOCHILA 26X24X10CM DIBUJO SURT 2 DSÑ NUMEROS Y PELOTAS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30078,
+    "name": "MOCHILA 24X20X9CM 2 CIERRES F/LEON SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30079,
+    "name": "MOCHILA 24X20X11CM 2 CIERRES F/TRACTOR SURT 5 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30080,
+    "name": "MOCHILA 29X25X9CM F/OSO 1 CIERRE SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30081,
+    "name": "MOCHILA 29X25X9CM F/PERRO 1 CIERRE SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30082,
+    "name": "MOCHILA 30X26X5CM M/3D DINO Y UNICORNIO SURT 2 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30083,
+    "name": "MOCHLA 31X25X10CM M/3D PRINCESA Y AUTO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30084,
+    "name": "MOCHILA 42X28X12CM GRIS Y NEGRA BOLSILLO LARGO C/CABLE USB OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30085,
+    "name": "MOCHILA 39X27X11CM NEGRA CALADO DIAGONAL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30086,
+    "name": "MOCHILA 39X27X11CM NEGRA DSÑ TORTUGA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30087,
+    "name": "MOCHILA 43X30X10CM SURT 3CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30088,
+    "name": "MOCHILA 42X30X11CM SURT 3CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30089,
+    "name": "MOCHILA 43X30X11CM SURT 3CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30090,
+    "name": "MOCHILA 30X25X10CM RUSTICA CAMOUFLAGE CIERRE X3 2 CLR SURT O",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30091,
+    "name": "MOCHILA M/STARS POLYESTER 31X24X11CM SURT 4CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30092,
+    "name": "MOCHILA M/\"LETTERS…\" POLYESTER 31X24X11CM SURT 4 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30093,
+    "name": "MOCHILA M/AIREADA 40X30X12CM SURT 4CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30094,
+    "name": "MOCHILA M/AIREADA 40X30X12CM SURT 4CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30095,
+    "name": "MOCHILA M/AIREADA 40X30X12CM SURT 4CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30096,
+    "name": "MOCHILA 33X23X9CM POLYESTER C/3 CIERRES PLAST SURT 3 CLRS VD",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30097,
+    "name": "MOCHILA 30X22X11CM TELA ACOLCHADA SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30098,
+    "name": "MOCHILA 25X21X10CM TELA ACOLCHADA SURT 5 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30099,
+    "name": "MOCHILA 40X31X12CM TELA ACOLCHADA SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30100,
+    "name": "MOCHILA 16\" X3PCS (CANOPLA-BOLSITO- MOCHILA) C/CARRITO Y LUZ SURT 2 DISEÑOS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30101,
+    "name": "MOCHILA 16\" X3PCS (CANOPLA-BOLSITO- MOCHILA) C/CARRITO Y LUZ SURT 2 DISEÑOS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30102,
+    "name": "MOCHILA 16\" X3PCS (CANOPLA-BOLSITO- MOCHILA) C/CARRITO Y LUZ SURT 4 DISEÑOS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30103,
+    "name": "MOCHILA PLASTICA + PU 41X31X14CM C/CARRITO ALUMINIO 3 BOLSILLOS C/CARTUCHERA Y BOLSO DE MANO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30104,
+    "name": "MOCHILA PLASTICA + PU 41X31X14CM C/CARRITO ALUMINIO 3 BOLSILLOS C/CARTUCHERA Y BOLSO DE MANO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30105,
+    "name": "MOCHILA PLASTICA + PU 41X31X14CM C/CARRITO ALUMINIO 3 BOLSILLOS C/CARTUCHERA Y BOLSO DE MANO OPP",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32606,
+    "name": "MESA AUXILIAR 40X30X56CM METAL Y MDF CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32607,
+    "name": "- MESA AUXILIAR 32X28,5X37CM METAL Y MDF CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32608,
+    "name": "- MESA AUXILIAR 38,5X38,5X50CM METAL Y MDF -CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32609,
+    "name": "MESA AUXILIAR 32X32X55CM METAL Y MDF CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32610,
+    "name": "- MESA AUXILIAR 26X26X71CM METAL Y MDF - CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32611,
+    "name": "MESA RATONA 40X40X49CM METAL -CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32612,
+    "name": "MESA 60X60X105CM DE PIEDRA ESTRUCTURA HIERRO C/CARBON SHUO BEIGE CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32613,
+    "name": "MESA 80X80X74CM DE PIEDRA ESTRUCTURA DE HIERRO NEGRA CUADRADA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32614,
+    "name": "MESA 80X80X72CM ACERO INOXIDABLE REDONDA NEGRA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32615,
+    "name": "MESA 80X80X74CM MADERA PIE CENTRAL ESTRUCTURA HIERRO REDONDA BLANCA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32616,
+    "name": "MESA 71X80CM CUAD DE HIERRO NEGRO C/VIDRIO TEXTURARO TEMPLAD",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32617,
+    "name": "MESA 80X80X72CM ACERO INOXIDABLE REDONDA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32618,
+    "name": "MESA 1400X80CM DE PIEDRA ESTRUCTURA DE HIERRO NEGRA RECTANGULAR CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32619,
+    "name": "MESA 50X50X45CM PLAST C/PATAS MADERA REDONDA CLR BLANCO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32620,
+    "name": "MESA 50X50X45CM PLAST C/PATAS MADERA REDONDA CLR NEGRO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32621,
+    "name": "MESA 2 PISOS MDF+HIERRO 30X30X45CM CLR MAD CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32622,
+    "name": "SET X2 MESA RATONA APILABLE 40X40X40CM Y 45X45X45CM -CAJA M",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32623,
+    "name": "MESA REDONDA 80X80X74CM CERAMICA Y CHAPA BLANCA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32624,
+    "name": "MESA BAR METAL 80X80CM TAMPO VIDRIO PLEGABLE",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32625,
+    "name": "MESA BAR METAL 60X60CM TAMPO VIDRIO PLEGABLE",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32626,
+    "name": "MESA DESAYUANADOR MDF+HIERRO 58X40X30CM C/TABLA DÑO MARMOL DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32627,
+    "name": "MESA DESAYUNADOR MDF+HIERRO 58X40X30CM DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32628,
+    "name": "MESA PLAST+HIERRO 30X40X59CM CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32629,
+    "name": "MESA DESAYUNADOR MDF+HIERRO 59X46X28CM DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32630,
+    "name": "ESQUINERO 98X30CM C/3 ESTANTES CJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32631,
+    "name": "SET MESAS MDF+HIERRO X3 30X30X40/40X40X45/50X50X50CM REDONDA CLR ROBLE DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32632,
+    "name": "SET MESAS MDF+HIERRO X3 30X30X40/40X40X45/50X50X50CM REDONDA CLR PINO DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32633,
+    "name": "SET MESAS MDF+HIERRO X3 34X34X41/40X40X46/46X46X51CM CUADRADAS CLR ROBLE DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32634,
+    "name": "MESA MDF+HIERRO 52X40X40CM REDONDA C/PLASTICO DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32635,
+    "name": "MESA MDF+HIERRO 50X50X48CM 2 ESTANTES CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32636,
+    "name": "MESA MDF+HIERRO X2 30X30X45/40X40X50CM CLR MAD CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32637,
+    "name": "MESA MDF+HIERRO X2 60X60X39/80X80X46CM CLR ROBLE CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32638,
+    "name": "MESA MDF+HIERRO 38X38X50CM CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32639,
+    "name": "MESA MDF+HIERRO 40X57CM CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32640,
+    "name": "SET MESAS X3 MDF+HIERRO 30X30X34/35X35X38/40X40X42 CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32641,
+    "name": "SET MESAS X3 MDF+HIERRO 30X30X40/40X40X45/50X50X50CM CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32642,
+    "name": "MESA PAPEL+HIERRO 40X40CM REDONDA C/SOGA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32643,
+    "name": "MESA PAPEL+HIERRO 40X40CM REDONDA C/SOGA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32644,
+    "name": "MESA P/TV MDF+HIERRO 95X76X30CM OVAL 4 ESTANTES CLR ROBLE DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32645,
+    "name": "MUEBLE BIBLIOTECA 175X83X35CM C/7 ESTANTES DESNIVELES DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32646,
+    "name": "MESA P/TV MDF+HIERRO 85X76X30CM 3 ESTANTES DESARMADO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32647,
+    "name": "MESA MDF 40X40X50CM CLR MAD CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32648,
+    "name": "MESA DE PLÁSTICO DISEÑO RATÁN. PLÁSTICO POLIPROPILENO 80 X 8",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32649,
+    "name": "MESA PLASTICA 180X74X74CM RECTANGULAR PLEGABLE PIES ACERO VALIJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32650,
+    "name": "MESA PLASTICA 80X74CM REDONDA PLEGABLE PIES ACERO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32651,
+    "name": "MESA PLASTICA 86X86X74CM CUADRADA PLEGABLE PIES ACERO VALIJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32652,
+    "name": "MESA PLASTICA 244X74X74CM RECTANGULAR PLEGABLE PIES ACERO VALIJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32653,
+    "name": "MESA PLASTICA 122X74CM REDONDA PLEGABLE PIES ACERO VALIJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32654,
+    "name": "MESA PLASTICA 122X60X48/61/74CM PLEGABLE ALTURA REGULABLE C/PIES ACERO VALIJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32655,
+    "name": "ORGANIZADOR 3 LVL 45X33X108CM C/MARCO BAMBU /3 CAJONES S/M/L CLR GRIS CJA MARRON",
+    "current_cat": "家居收纳"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

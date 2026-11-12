@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31806,
+    "name": "CHIFLE 17X18 X3 ANIMALES CLR PVC HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31807,
+    "name": "COCODRILO 20X7X5 PULLSTRING LUCES PILA RELOJ OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31808,
+    "name": "COCODRILO ASTRONAUTA 19,5X21X14CM RUEDA LOCA C/LUZ Y SONIDO A PILA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31809,
+    "name": "CONEJO 12X5CM A CUERDA SALTARIN SURT CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31810,
+    "name": "DINO DESARMABLE 17X20CM C/DESTORNILLADOR PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31811,
+    "name": "DINO DESARMABLE 19X14CM C/DESTORNILLADOR PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31812,
+    "name": "DINO DESARMABLE 21X13CM C/DESTORNILLADOR PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31813,
+    "name": "DINO MUSICAL 17X13CM PELUCHE C/LUZ Y SONIDO A PILA CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31814,
+    "name": "DINOSAURIO 17X10 A CUERDA SALTA CLR SURT DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31815,
+    "name": "DINOSAURIO A PILA 18X8X12CM C/LUZ Y SONIDO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31816,
+    "name": "DINOSAURIO A PILA 20X17X18 CON LUZ Y SONIDO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31817,
+    "name": "DINOSAURIO A PILA MUSICAL C/LUZ Y SONIDO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31818,
+    "name": "DINOSAURIO C/RESORTE C/SONIDO SURT 3CLRS CAJA DISPLAY X12 A",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31819,
+    "name": "DINOSAURIO DESARMABLE BOLSA PVC 22X17CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31820,
+    "name": "DINOSAURIO DESARMABLE BOLSA PVC 25X25CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31821,
+    "name": "DINOSAURIO10X12ACUERDAOPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31822,
+    "name": "DINOSAURIOS 12X3X7 X6 VARIOS BLIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31823,
+    "name": "DINOSAURIOS X5 SURTIDO C/PLANTAS/ROCA BLISTER 22X29X4",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31824,
+    "name": "ELEFANTE PELIUCHE A PILA 20X14CM C/SONIDO CAJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31825,
+    "name": "ELEFANTE PELUCHE A PILA 19X17CM C/LUZ SONIDO CAJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31826,
+    "name": "GUSANO 12X8CM A CUERDA SURT CLRS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31827,
+    "name": "GUSANO A ROSCA 12,5X4CM SURT 4 CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31828,
+    "name": "HIPOCAMPO A ROSCA MUEVE ALETA OPP 14X9X5CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31829,
+    "name": "INFLADOR GLOBOS 10X20CM C/ACCEOSRIOS AUTO X2 SURT PATO/RANA/PAJARO GASOLINERA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31830,
+    "name": "JIRAFA GIRATORIA 14X24CM CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31831,
+    "name": "JUEGO DE VASOS APILABLES 12,5X5,5CM X8PISOS PUNTA PATITO CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31832,
+    "name": "JUEGO DE VASOS APILABLES 15X7CM F/RANA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31833,
+    "name": "KING KONG 25X20 ARTICULADO CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31834,
+    "name": "KOALA 6X9 A CUERDA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31835,
+    "name": "MONO ASTRONAUTA 22X19X11CM C/LUZ Y SONIDO A PILA /MOVIM CJA CLR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31836,
+    "name": "MONO C/BANANA 15X9,5X9,5CM C/LUZ Y SONIDO A PILA /MOVIM CJA CLR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31837,
+    "name": "MONO MUSICAL 16X15CM PELUCHE C/LUZ Y SONIDO A PILA CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31838,
+    "name": "PATITO P/B SURT 4 CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31839,
+    "name": "PELUCHE PERRO 21X24CM C/CARTERA Y ACCESORIOS CAJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31840,
+    "name": "PELUCHE UNICORNIO 23X24CM C/CARTERA Y ACCESORIOS CAJA ABIERTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31841,
+    "name": "PERRO A PILA 18X12 LUZ SONIDO TRANSP 2 MOD SURT CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31842,
+    "name": "PERRO C/MOTO 11X10CM PULLSTRING CJA DISPLAY X9",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31843,
+    "name": "PERRO14X14X8PELUCHEMOV/SONIDOAPILA CAJADISPLAY",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31844,
+    "name": "PEZ 20X9,5X13,5CM PLASTICO MUSICAL C/LUZ Y SONIDO C/ENGRENAJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31845,
+    "name": "PEZ P/B MUEVE ALETA OPP 11X5X6CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31846,
+    "name": "POLLITO EN HUEVO 13X7CM PULLSTRING DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31847,
+    "name": "PULPO A PILA C/ LUZ SONIDO Y MOVIMIENTO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31848,
+    "name": "RANA 11X10 A CUERDA NADA EN AGUA DISPLAY X6",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31849,
+    "name": "RANA 15X13CM APRETA SILICONA DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31850,
+    "name": "RANA GIRATORIA 14X24CM BEBE CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31851,
+    "name": "RANA SALTARIN 9CM A ROSCA 3 CLRS CAJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31852,
+    "name": "SAPITO NADADOR A CUERDA P/BAÑERA SURT 4 CLRS CAJA DISPLAY X1",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31853,
+    "name": "SAPO A PILA 17X9 LUZ Y SONIDO OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31854,
+    "name": "SET ANIMALES X24PCS 46X33CM 8 ANIMALES Y ACCESORIOS BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31855,
+    "name": "SET DINOSAURIOS 24X30CM CJA VALIJA DSÑO DINO",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

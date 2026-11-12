@@ -1,0 +1,76 @@
+{
+  "batch_id": 2,
+  "total": 10,
+  "products": [
+    {
+      "id": 35518,
+      "name": "NECESER ESTAMPADO DE VIAJE C/U",
+      "sku": "36650127",
+      "brand": "",
+      "image_local": "images/sfpanda/f3118ba0ed8687f47868ca5b1d4b8e4f.webp"
+    },
+    {
+      "id": 35519,
+      "name": "BANDOLERA DE PANA C/U",
+      "sku": "36650126",
+      "brand": "",
+      "image_local": "images/sfpanda/6ab079ae7f83997b21efdaba974edf25.webp"
+    },
+    {
+      "id": 35520,
+      "name": "BILLETERA LARGA C/U",
+      "sku": "36650124",
+      "brand": "",
+      "image_local": "images/sfpanda/6ddc7beb10077cc36a5772cca8e21917.webp"
+    },
+    {
+      "id": 35521,
+      "name": "BILLETERA LARGA C/U",
+      "sku": "36650123",
+      "brand": "",
+      "image_local": "images/sfpanda/a144cf97e6e63171a9dff1884cef8703.webp"
+    },
+    {
+      "id": 35522,
+      "name": "NECESER DE VIAJE C/U",
+      "sku": "36650122",
+      "brand": "",
+      "image_local": "images/sfpanda/757e047f44f1e27c82f56425412f3495.webp"
+    },
+    {
+      "id": 35523,
+      "name": "NECESER DE VIAJE C/U",
+      "sku": "36650120",
+      "brand": "",
+      "image_local": "images/sfpanda/93c0ff2b116465ffb6b6f20fda4f814d.webp"
+    },
+    {
+      "id": 35524,
+      "name": "NECESER DE NYLON C/U",
+      "sku": "36650117",
+      "brand": "",
+      "image_local": "images/sfpanda/9c567bf3daaced480971ea3cdcf2dfb8.webp"
+    },
+    {
+      "id": 35525,
+      "name": "NECESER DE NYLON C/U",
+      "sku": "36650116",
+      "brand": "",
+      "image_local": "images/sfpanda/aecb6e8241b145c76b63b12db68d5c07.webp"
+    },
+    {
+      "id": 35526,
+      "name": "CINTA CORRECTORA C/U",
+      "sku": "36650115",
+      "brand": "",
+      "image_local": "images/sfpanda/7d5258c71b355835c62607bc6c81ef9d.webp"
+    },
+    {
+      "id": 35527,
+      "name": "CARPETA ORGANIZADORA EN ACORDEÓN C/U",
+      "sku": "36650113",
+      "brand": "",
+      "image_local": "images/sfpanda/b53167f707e54e0a274b1fde598a8807.webp"
+    }
+  ]
+}

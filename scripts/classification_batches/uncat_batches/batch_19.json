@@ -1,0 +1,76 @@
+{
+  "batch_id": 19,
+  "total": 10,
+  "products": [
+    {
+      "id": 35688,
+      "name": "Botella De Vidrio Con Tapon De Corcho, Ambar 950 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e8b25089c55bec40b7f87124d5d85207.png"
+    },
+    {
+      "id": 35689,
+      "name": "Botella Licorera De Vidrio, 1000 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c2eeb85e0d214505b00c18675ca153dd.png"
+    },
+    {
+      "id": 35690,
+      "name": "Copa Vidrio Color 320Ml X6 50541-A",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a1173b340861bdf67877bcc785bc6f33.png"
+    },
+    {
+      "id": 35691,
+      "name": "Botella Termica, Colores Varios 500 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/53daf275fe01c36850f2e9f2aef208e6.jpg"
+    },
+    {
+      "id": 35692,
+      "name": "Botella Termica, Colores Varios 750 Ml 58182",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a1f6ff111b95fc6a0206a82633357e10.png"
+    },
+    {
+      "id": 35693,
+      "name": "Botella Termica 1000ml 58185",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1a0ce46d1413303ee0c3a1b76ebe75ae.jpg"
+    },
+    {
+      "id": 35694,
+      "name": "Botella Termica 650ml  58186",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/bf66d8e9027033ff68fb57c395dc01da.jpg"
+    },
+    {
+      "id": 35695,
+      "name": "Vaso Termico, Estampas Varias, 710 Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9d44dbb08bdbdd757939ec1ee4ebf42f.png"
+    },
+    {
+      "id": 35696,
+      "name": "Botella Termica 1000 ml58197",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/01aa1c50e79eb1da87a9498374ba25a6.jpg"
+    },
+    {
+      "id": 35697,
+      "name": "Botella Termica 650ml 58198",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/d719f83c60a2ef1f076b49bed31ffd3f.jpg"
+    }
+  ]
+}

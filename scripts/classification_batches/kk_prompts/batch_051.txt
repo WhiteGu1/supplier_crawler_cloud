@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30406,
+    "name": "ADORNO 37X28X23CM HOMBRE EN HAMACA ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30407,
+    "name": "ADORNO 21X10CM METALICO F/ARBOL C/FLORES GOTA BLANCA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30408,
+    "name": "ADORNO METALICO 24X19CM C/VIDRIO 15X19CM F/BOTELLA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30409,
+    "name": "ADORNO METALICO 24X19CM C/VIDRIO 15X19CM F/BOTELLA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30410,
+    "name": "ADORNO VIDRIO 19X7CM F/PLANETA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30411,
+    "name": "ADORNO VIDRIO 26X7CM F/PLANETA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30412,
+    "name": "ADORNO VIDRIO 29X7CM F/PLANETA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30413,
+    "name": "ADORNO 22X8CM VIDRIO F/PLANETA A LA MITAD CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30414,
+    "name": "ADORNO 24X15X8CM VIDRIO F/PLANETAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30415,
+    "name": "ADORNO 24X8X8CM VIDRIO F/PLANETAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30416,
+    "name": "ADORNO 27X10X8CM VIDRIO F/PLANETAS PARTIDOS A LA MITAD CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30417,
+    "name": "ADORNO 27X10X8CM VIDRIO F/PLANETAS PARTIDOS LA MITAD CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30418,
+    "name": "A ADORNO 32X4,5CM VIDRIO F/PLANETAS PARTIDOS LA MITAD CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30419,
+    "name": "A ADORNO 28X10CM VIDRIO F/PLANETAS PARTIDOS A LA MITAD CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30420,
+    "name": "ADORNO VIDRIO 23X8CM F/BANJO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30421,
+    "name": "ADORNO VIDRIO 30X11CM F/BANJO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30422,
+    "name": "ADORNO VIDRIO 34X13CM F/GUITARRA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30423,
+    "name": "ADORNO VIDRIO 22X10CM F/CAMARA FOTOS C/ADORNOS SURT CLR DORADO/NEGRO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30424,
+    "name": "ADORNO VIDRIO 26X18CM F/CAMARA C/FLASH ADORNOS DORADOS Y NEGROS CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30425,
+    "name": "ADORNO 25X18CM VIDRIO F/CAMARA C/FLASH C/ADORNOS DORADOS Y NEGROS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30426,
+    "name": "ADORNO VIDRIO 22X14CM F/RADIOGRABADOR BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30427,
+    "name": "CAJA ADORNO VIDRIO 14X8CM F/RADIO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30428,
+    "name": "ADORNO 20X14X5CM RADIOGRABADOR VIDRIO C/PARTES NEGRAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30429,
+    "name": "ADORNO VIDRIO 21X8CM ESCALERA C/HOMBRE PENSANTE CERAMICA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30430,
+    "name": "ADORNO VIDRIO 26X8CM ESCALERA C/HOMBRE PENSANTE CERAMICA CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30431,
+    "name": "ADORNO VIDRIO 28X18CM ESCALERA C/HOMBRE PENSANTE CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30432,
+    "name": "ADORNO VIDRIO 30X18CM SUBE Y BAJA C/HOMBRES PENSANTES CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30433,
+    "name": "ADORNO 24X8X5CM ESCALERA VIDRIO C/HOMBRE PENSANTE CERAMICO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30434,
+    "name": "ADORNO 26X8X8CM ESCALERA VIDRIO C/HOMBRE PENSANTE CERAMICO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30435,
+    "name": "ADORNO 20X12X8CM HOMBRE PENSANTE C/ANILLO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30436,
+    "name": "ADORNO 22X14X10CM HOMBRE PENSANTE C/ANILLO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30437,
+    "name": "ADORNO 25X30X9CM HOMBRE PENSANTE ESTRUCTURA VIDRIO BOLA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30438,
+    "name": "ADORNO 300X200X120CM BOLA VIDRIO C/HOMBRE PENSANTE C/DISCO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30439,
+    "name": "ADORNO 230X140X120CM BOLA VIDRIO C/HOMBRE PENSANTE C/DISCO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30440,
+    "name": "ADORNO 200X120X120CM BOLA VIDRIO C/HOMBRE PENSANTE C/DISCO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30441,
+    "name": "ADORNO VIDRIO 12,2X6X6CM C/TAPON NEGRO MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30442,
+    "name": "CAJA ADORNO VIDRIO 11X5X5CM C/TAPON NEGRO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30443,
+    "name": "ADORNO VIDRIO 21X4CM F/ESFERA PARTIDA A LA MITAD CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30444,
+    "name": "ADORNO VIDRIO 25X6CM F/ESFERA PARTIDA A MITAD CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30445,
+    "name": "LA ADORNO 20X11CM BOLA VIDRIO C/ESTRUCTURA METALICA CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30446,
+    "name": "ADORNO 27X11CM BOLA VIDRIO C/ESTRUCTURA METALICA HELICOIDAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30447,
+    "name": "ADORNO 33X15CM BOLA VIDRIO C/ESTRUCTURA METALICA HELICOIDAL CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30448,
+    "name": "ADORNO 18X16CM BOLA VIDRIO C/ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30449,
+    "name": "ADORNO 27X19CM BOLA VIDRIO C/ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30450,
+    "name": "ADORNO 20X15X15CM BOLA VIDRIO C/ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30451,
+    "name": "ADORNO 22X18X18CM BOLA VIDRIO C/ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30452,
+    "name": "ADORNO 27X27X8,5CM F/AJEDREZ VIDRIO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30453,
+    "name": "ADORNO 13X12CM VIDRIO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30454,
+    "name": "ADORNO 18X14X7CM VIDRIO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30455,
+    "name": "ADORNO 18X18X10CM VIDRIO TRANSPARENTE C/BOLAS NEGRAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

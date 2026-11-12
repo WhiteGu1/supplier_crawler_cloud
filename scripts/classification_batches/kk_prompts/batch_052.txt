@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30456,
+    "name": "CENTRO DE MESA METALICO 28X18CM C/ADORNOS CRISTAL Y BASE ESPEJO CLR PLATEADO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30457,
+    "name": "CENTRO DE MESA METALICO 46,5X15CM CLR DORADO C/PUNTA CONCAVA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30458,
+    "name": "CENTRO DE MESA METALICO 61X15CM CLR DORADO C/PUNTA CONCAVA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30459,
+    "name": "CENTRO DE MESA METALICO X3 28CM/33CM/38CM C/FONDO ESPEJO CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30460,
+    "name": "CENTRO DE MESA METALICO 60X35CM C/BASE VIDRIO REDONDA CLR DORADO C/VIDRIO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30461,
+    "name": "CENTRO DE MESA VIDRIO 30X11CM REDONDO ALTO SURT 3-4 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30462,
+    "name": "CENTRO DE MESA VIDRIO 30X9CM REDONDO BAJO SURT 3-3 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30463,
+    "name": "CENTRO DE MESA VIDRIO X3 25X6/30X6/35X6CM CIRCULAR C/PATAS BOLA METALICAS PLATEADAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30464,
+    "name": "CENTRO DE MESA VIDRIO X2 30X20X6/36X26X6CM RECTANGULAR C/PATAS BOLA METALICAS PLATEADAS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30465,
+    "name": "PORTA LLAVES 20,5X25,5CM F/CASA \"HOME\" CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30466,
+    "name": "PORTA LLAVES 23,4X15,7CM F/CASA \"HOME\" CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30467,
+    "name": "PORTA LLAVES 23,6X16CM CUADRADO \"HOME\" CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30468,
+    "name": "PORTA TAZAS 30X23X2CM MADERA F/TETERA C/3 GANCHOS SURT 2 CLRS \"COFFEE\"",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30469,
+    "name": "COLGANTE 28,5X5,8CM \"HOME\" MADERA SURT CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30470,
+    "name": "2 CLRS BANDEJA 39X18X17CM PLAST (FIBRA CARB) DSÑO MARMOL C/SOPORTE",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30471,
+    "name": "PERCHERO 173CM MADERA C/8 PALOS CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30472,
+    "name": "PERCHERO 173CM MADERA C/9 PALOS CJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30473,
+    "name": "CESPED ARTIFICIAL P/PARED 1MTSX0,5MTS C/PLANTAS P/EXTERIOR SURT 3 DSÑ HANGTAG OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30474,
+    "name": "CESPED ARTIFICIAL P/PARED 1,2X2MTS P/EXTERIOR HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30475,
+    "name": "CESPED ARTIFICIAL P/PARED 1,2X2MTS P/EXTERIOR HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30476,
+    "name": "CESPED ARTIFICIAL P/PARED 1,2X2MTS P/EXTERIOR HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30477,
+    "name": "CESPED ARTIFICIAL P/PARED 1X1MTS C/PLANTAS P/EXTERIOR HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30478,
+    "name": "HUMIDIFICADOR PLASTICO 11CM USB REDONDO F/CAPSULA C/ASTRONAU",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30479,
+    "name": "FLORERO VIDRIO 39X39X48CM F/COPON ANCHO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30480,
+    "name": "FLORERO VIDRIO 49X49X51CM F/COPON ANCHO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30481,
+    "name": "FLORERO VIDRIO 43X29X55CM F/CILINDRO ONDULADO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30482,
+    "name": "FLORERO VIDRIO 43X29X45CM F/CILINDRO ONDULADO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30483,
+    "name": "FLORERO VIDRIO 34X34X45CM F/CUELLO ANGOSTO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30484,
+    "name": "FLORERO VIDRIO 41X41X53CM F/CUELLO ANGOSTO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30485,
+    "name": "FLORERO VIDRIO 53X35X35CM F/ONDULADA TIPO PANAL",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30486,
+    "name": "FLORERO VIDRIO 45X45X41CM F/ONDULADA TIPO PANAL",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30487,
+    "name": "FLORERO VIDRIO 38X38X36CM F/CONICA INCLINADA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30488,
+    "name": "FLORERO VIDRIO 47X47X23CM F/CONICA INCLINADA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30489,
+    "name": "FLORERO VIDRIO 48X32X33CM F/ALARGADA /CINTURA ALTA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30490,
+    "name": "FLORERO VIDRIO 34X34X43CM F/ALARGADA /CINTURA ALTA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30491,
+    "name": "FLORERO VIDRIO 56X42X28CM F/HEXAGONO C/CINTURA MEDIA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30492,
+    "name": "FLORERO VIDRIO 45X34X41CM F/HEXAGONO C/CINTURA MEDIA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30493,
+    "name": "FLORERO VIDRIO 49X37X29CM F/HEXAGONO CURVO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30494,
+    "name": "FLORERO VIDRIO 51X39X37CM F/GOTA GORDA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30495,
+    "name": "FLORERO VIDRIO 43X29X55CM F/GOTA ESPIRAL",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30496,
+    "name": "FLORERO VIDRIO 54X36X31CM F/VASO ANCHO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30497,
+    "name": "FLORERO VIDRIO 48X48X28CM F/ANILLOS ONDAS",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30498,
+    "name": "FLORERO VIDRIO 38X29X45CM CUADRADO C/RELIEVE ESPIRALADO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30499,
+    "name": "FLORERO VIDRIO 38X38X44CM CUADRADO C/RELIEVE ESPIRALADO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30500,
+    "name": "FLORERO VIDRIO 55X37X36CM F/GLOBO C/LATERALES RECTOS",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30501,
+    "name": "FLORERO VIDRIO 68X51X29CM C/BORDE METALIZADO",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30502,
+    "name": "FLORERO VIDRIO 14,7X12CM C/DETALLE ACACIA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30503,
+    "name": "FLORERO VIDRIO 19,6X15,8CM C/DETALLE ACACIA",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30504,
+    "name": "FLORERO VIDRIO 22X13CM F/BOLSA RAYAS HORIZONTALES SURT 3-4CLR CAJA MARRON",
+    "current_cat": "园艺户外"
+  },
+  {
+    "id": 30505,
+    "name": "FLORERO VIDRIO 28X19CM F/BOLSA RAYAS HORIZONTALES SURT 3-4CLR CAJA MARRON",
+    "current_cat": "园艺户外"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

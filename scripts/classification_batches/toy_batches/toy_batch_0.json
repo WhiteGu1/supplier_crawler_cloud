@@ -1,0 +1,72 @@
+[
+  {
+    "id": 17445,
+    "supplier_id": 1,
+    "sku": "FD40427",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\37856fee27b7cd627444ff53a32f4183.png"
+  },
+  {
+    "id": 17446,
+    "supplier_id": 1,
+    "sku": "FD40426",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\1473163ce82098b2f0327ab290206aad.png"
+  },
+  {
+    "id": 17447,
+    "supplier_id": 1,
+    "sku": "FD40419",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\16b2666d2da2671f23df44c6ada8b82c.png"
+  },
+  {
+    "id": 17448,
+    "supplier_id": 1,
+    "sku": "FD40418",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\ce10023ee2bfaa2db662923445dbf698.png"
+  },
+  {
+    "id": 17449,
+    "supplier_id": 1,
+    "sku": "FD40417",
+    "name": "JUEGO DE AGUA C/U",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\0e0969cbc5c7a50632e1ca5b8a44b5a5.png"
+  },
+  {
+    "id": 18726,
+    "supplier_id": 1,
+    "sku": "35310902",
+    "name": "CARTAS PCS*8",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\e5aac053e0b3b75a80175b270456684b.webp"
+  },
+  {
+    "id": 18727,
+    "supplier_id": 1,
+    "sku": "35310899",
+    "name": "CARTAS PCS*8",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\73f323636958b9aaa711c2d86e55b232.webp"
+  },
+  {
+    "id": 18728,
+    "supplier_id": 1,
+    "sku": "35310896",
+    "name": "CARTAS PCS*8",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\7725b6d91abc6f6c2047f512ce14d043.webp"
+  },
+  {
+    "id": 18729,
+    "supplier_id": 1,
+    "sku": "35310894",
+    "name": "CARTAS PCS*8",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\4f6694aa57e53e00567d6768bccde760.webp"
+  },
+  {
+    "id": 18730,
+    "supplier_id": 1,
+    "sku": "35310892",
+    "name": "CARTAS PCS*8",
+    "image": "D:\\projects\\supplier_crawler\\images\\sfpanda\\07dd94df28dbc88f0256311d7d6e1e44.webp"
+  }
+]

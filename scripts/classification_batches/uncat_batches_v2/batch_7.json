@@ -1,0 +1,85 @@
+{
+  "batch_id": 7,
+  "items": [
+    {
+      "id": 35868,
+      "supplier_id": 1,
+      "name": "CEPILLO DE PELO C/U",
+      "sku": "36773164",
+      "brand": "",
+      "image_local": "images/sfpanda/8ada503efda6d7390f7ed1cc3c3c00f8.webp"
+    },
+    {
+      "id": 35869,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDAD PAPA NOEL C/U",
+      "sku": "36773162",
+      "brand": "",
+      "image_local": "images/sfpanda/0faf8d44bddb98d79acac5d532f60ba7.webp"
+    },
+    {
+      "id": 35870,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDAD PAPA NOEL C/U",
+      "sku": "36773155",
+      "brand": "",
+      "image_local": "images/sfpanda/8fac4dfb5247cb8f540d3d711c934835.webp"
+    },
+    {
+      "id": 35871,
+      "supplier_id": 1,
+      "name": "ADORNO DE NAVIDAD C/U",
+      "sku": "36773153",
+      "brand": "",
+      "image_local": "images/sfpanda/df6a6b1fe0b705d215f9c34172e676fe.webp"
+    },
+    {
+      "id": 35872,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDAD PAPA NOEL C/U",
+      "sku": "36773147",
+      "brand": "",
+      "image_local": "images/sfpanda/0552ebbf6eaa385ae253945dac2a5ddb.webp"
+    },
+    {
+      "id": 35873,
+      "supplier_id": 1,
+      "name": "FAROL DECORATIVO LED C/U",
+      "sku": "36773146",
+      "brand": "",
+      "image_local": "images/sfpanda/d48f681abbd169e5912066692b2b5d27.webp"
+    },
+    {
+      "id": 35874,
+      "supplier_id": 1,
+      "name": "ARBOL LED C/U",
+      "sku": "36773145",
+      "brand": "",
+      "image_local": "images/sfpanda/722eb72fb93ae3f59daee51b1519ad9b.webp"
+    },
+    {
+      "id": 35875,
+      "supplier_id": 1,
+      "name": "ARBOL LED C/U",
+      "sku": "36773144",
+      "brand": "",
+      "image_local": "images/sfpanda/681113d48bbe4870d67c13f443c596e0.webp"
+    },
+    {
+      "id": 35876,
+      "supplier_id": 1,
+      "name": "ARBOL LED C/U",
+      "sku": "36773141",
+      "brand": "",
+      "image_local": "images/sfpanda/9e92ec66e8efb431bf5b10eb925b825e.webp"
+    },
+    {
+      "id": 35877,
+      "supplier_id": 1,
+      "name": "ADORNO NAVIDAD ESCALERA C/U",
+      "sku": "36773140",
+      "brand": "",
+      "image_local": "images/sfpanda/f458080b6b298d5b851a02fdbec3c523.webp"
+    }
+  ]
+}

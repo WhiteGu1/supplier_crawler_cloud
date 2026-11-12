@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29156,
+    "name": "BOWL VIDRIO 22,5X19X8,8CM DSÑO BURBUJA C/TAPA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29157,
+    "name": "TORTERA VIDRIO 22X24,5X17,5CM DSÑO BURBUJA C/BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29158,
+    "name": "TORTERA VIDRIO 27X14,5X18,5CM C/BASE MADERA /TAPA POMO VIDRIO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29159,
+    "name": "TORTERA VIDRIO 27X22X19CM C/BASE MADERA /TAPA POMO VIDRIO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29160,
+    "name": "TORTERA VIDRIO 32X17X21,5CM C/BASE MADERA /TAPA POMO VIDRIO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29161,
+    "name": "TORTERA DE VIDRIO 18X25CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29162,
+    "name": "BOWL VIDRIO 20X20X6,5CM 4 DIV F/ONDA /BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29163,
+    "name": "BOWL VIDRIO 20X10X7CM 2 DIV F/ONDA /BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29164,
+    "name": "BOWL VIDRIO 30X10X7CM 3 DIV F/ONDA /BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29165,
+    "name": "BOWL VIDRIO 2 24X13X8,5CM C/BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29166,
+    "name": "BOWL VIDRIO 21,7X15,3X9CM CIRCULAR DSÑO MARTILLADO C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29167,
+    "name": "BOWL VIDRIO 21,5X9X9,5CM CIRCULAR C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29168,
+    "name": "BOWL VIDRIO 14,5X7X9,8CM CIRCULAR C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29169,
+    "name": "BOWL VIDRIO 25,9X17,8X10CM CIRCULAR DSÑO MARTILLADO C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29170,
+    "name": "BOWL VIDRIO 26X11X10,5CM CIRCULAR C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29171,
+    "name": "BOWL VIDRIO X2 C/BASE MADERA 40X10,5CM",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29172,
+    "name": "BOWL VIDRIO X2 C/BASE MADERA 33,5X11CM",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29173,
+    "name": "BOWL DE VIDRIO 10X26X11CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29174,
+    "name": "BOWL DE VIDRIO 9,5X14CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29175,
+    "name": "BOWL VIDRIO 27,2X11X14CM DSÑO BURBUJA C/BASE CHICA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29176,
+    "name": "BOWL DE VIDRIO 9,2X14CM C/ BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29177,
+    "name": "BOWL VIDRIO 27X18X14,5CM C/BASE ANCHA MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29178,
+    "name": "BOWL DE VIDRIO 9,5X14,8CM C/ BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29179,
+    "name": "BOWL DE VIDRIO 10X15CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29180,
+    "name": "BOWL DE VIDRIO 8,3X15CM C/BASE ACACIA CENTRO HUECO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29181,
+    "name": "BOWL DE VIDRIO 10X15CM C/BASE ACACIA CRUZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29182,
+    "name": "EN BOWL DE VIDRIO 10,5X17,5CM C/BASE ACACIA CENTRO HUECO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29183,
+    "name": "BOWL DE VIDRIO 12X20CM C/BASE ACACIA CENTRO HUECO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29184,
+    "name": "BOWL DE VIDRIO 9X20,5CM C/ BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29185,
+    "name": "BOWL DE VIDRIO 8,8X20,6CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29186,
+    "name": "BOWL DE VIDRIO 9,5X20,7CM C/ BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29187,
+    "name": "BOWL DE VIDRIO 8,7X22CM C/BASE ACACIA CENTRO HUECO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29188,
+    "name": "BOWL DE VIDRIO 10,3X22CM C/BASE ACACIA EN CRUZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29189,
+    "name": "BOWL DE VIDRIO 15,5X22,5CM C/BASE ACACIA EN CRUZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29190,
+    "name": "BOWL DE VIDRIO 8X23,5CM C/BASE ACACIA EN CRUZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29191,
+    "name": "BOWL DE VIDRIO 11X24CM C/BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29192,
+    "name": "BOWL DE VIDRIO 11X26CM C/ BASE ACACIA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29193,
+    "name": "BOWL DE VIDRIO 18X26,5CM C/BASE ACACIA EN CRUZ",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29194,
+    "name": "JUGUERA VIDRIO 15X24,5CM C/BASE CUADR MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29195,
+    "name": "BOWL VIDRIO SET X7 5,9X9,2 (X6)/ 9,9X17,7CM TRANSP DSÑO BURBUJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29196,
+    "name": "ENSALADERA VIDRIO 20X8CM",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29197,
+    "name": "ENSALADERA VIDRIO 13X6CM",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29198,
+    "name": "ENSALADERA VIDRIO 10,5X9,5CM M/LUNARES CJA COLOR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29199,
+    "name": "PLATO TORTERO VIDRIO 25X25X3CM DISEÑO HOJAS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29200,
+    "name": "CENTRO DE MESA VIDRIO 31X11CM C/BASE BROWN BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29201,
+    "name": "DECANTADOR VIDRIO VINO 23X8,5 BROWN BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29202,
+    "name": "SET X6 TAZA VIDRIO 8X8X10,5CM C/BASE GRUESA CLR NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29203,
+    "name": "SET VASOS VIDRIO TOC-TOC X4 C/STICKER PIZARRA C/BASE MADERA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29204,
+    "name": "CENTRO DE MESA VIDRIO 22X12CM C/BASE REDONDO BROWN BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29205,
+    "name": "CARAMELERA VIDRIO 9,1X11,8CM 200G CJA CLR",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31506,
+    "name": "AUTO DEPORTIVO 8,5X4X2CM PLAST RUEDA LIBRE SURT 4CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31507,
+    "name": "AUTO DEPORTIVO 9X4,5X4CM PLAST SURT 4DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31508,
+    "name": "AUTO DEPORTIVO COUPE 16X8X8 FRICC OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31509,
+    "name": "AUTO DEPORTIVO FRICC PLAST PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31510,
+    "name": "AUTO F1 PLAS DESARMABLE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31511,
+    "name": "AUTO P/B 10CM X4 SURT 4 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31512,
+    "name": "AUTOC/RC/LUZYSONIDOCONTROLACABL EBLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31513,
+    "name": "AUTODEPORTIVO12X5X3RDALIBREOPP(EXS D18124)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31514,
+    "name": "AUTOBUS 12,5X3,5X4,5CM PLAST PULLBACK SURT 4CLRS PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31515,
+    "name": "AUTOS CARRERA 7X3X3,5CM PLAST PULLBACK SURT X8 DSÑ PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31516,
+    "name": "BARCO 10X6 P/B INFANT C/OJOS PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31517,
+    "name": "CAMION 10X4,5X3CM PLASTICO PULLBACK BOMBERO 4 MOD SURT PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31518,
+    "name": "CAMION 15X5 P/B ACOPLADO MOD 4 SURT OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31519,
+    "name": "CAMION 17X8X17CM CONSTR RUEDA LIBRE PLAST PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31520,
+    "name": "CAMION 18X7,5X5CM C/MOTO/AUTO PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31521,
+    "name": "CAMION 19X14 P/B ESCALERA AVION 2 MOD SURT OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31522,
+    "name": "CAMION 31X11X6 CARGADOR FRICC C/AUTOX4 OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31523,
+    "name": "CAMION 6X5 X6 P/B ALTO PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31524,
+    "name": "CAMION 7X3X3 X10 BOMBEROS RUEDA LIBRE PVC HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31525,
+    "name": "CAMION 7X3X3 X10 POLICIA RUEDA LIBRE PVC HEADCART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31526,
+    "name": "CAMION 7X5 X3 BUS INFANTIL FRIC DOBLE BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31527,
+    "name": "CAMION 7X6X6CM CONSTR. PULLBACK SURT 6DSÑ OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31528,
+    "name": "CAMION 9X5 X8 P/B CONSTRUCCION DOB BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31529,
+    "name": "CAMION AEROPUERTO 10X7X3,5CM PLAST SURT 2 DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31530,
+    "name": "CAMION BASURA 9X5X3,5CM PLAST SURT 4DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31531,
+    "name": "CAMION CONSTR 12X6X4CM PLAST SURT 4DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31532,
+    "name": "CAMION CONSTR 7X4X5,5CM PLAST PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31533,
+    "name": "CAMION DESARMABLE R/L SURT 2 DSÑ OPP 15X17CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31534,
+    "name": "CAMION FRICC MEZCLADORA BOLSA PVC 19X9CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31535,
+    "name": "CAMION GRUA F/DINO 25X10CM F/W C/CAMIONCITO F/DINO BOLSA PVC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31536,
+    "name": "CAMION P/B 10X5CM SURT 4 DISEÑOS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31537,
+    "name": "CAMION PLAST 25X6,5X4CM PULLBACK ACOPLADO 4 COLORES SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31538,
+    "name": "CAMIONES CARGA 13X6X3,5CM PLAST SURT DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31539,
+    "name": "4 CAMIONES CONSTR. 10X5X6CM PULLBACK SURT 3DÑS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31540,
+    "name": "CAMIONES P/B 5X10CM SURT 4 DISEÑOS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31541,
+    "name": "CAMIONES SANIDAD 13X6X3,5CM PLAST SURT 4DÑS PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31542,
+    "name": "CAMIONES X12PCS PIÑATA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31543,
+    "name": "CAMIONES X4 PCS 19X12CM RUEDA LIBRE PLAST PVC BAG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31544,
+    "name": "CAMIONETA 10X4X4CM RUEDA LIBRE SURT 5PCS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31545,
+    "name": "CAMIONETA 10X4X5CM POLICIA RUEDA LIBRE SURT 4PCS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31546,
+    "name": "CAMIONETA 11X4X4 F/P DEPORTIVA CARGA AB 4 CLR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31547,
+    "name": "CAMIONETA 13X5X5CM ABIERTA 4MOD SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31548,
+    "name": "CAMIONETA 14X10X8 FRIC DEPORTIVA RUEDA GRANDE OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31549,
+    "name": "CAMIONETA 14X7X5 PULLBACK POLICIA VENT AB 4 CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31550,
+    "name": "CAMIONETA 16X10X9 F/W C/TORNILLOS/TUERCAS/DESTORN OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31551,
+    "name": "CAMIONETA 8,5X10 FW C/DESTORNILLADOR DESARMABLE BOLSA PVC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31552,
+    "name": "CAMIONETA AMBULANCIA 7X3,5X4CM PLAST SURT 4DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31553,
+    "name": "CAMIONETA C/R 25X20CM PICK UP POLICIA MOD AB BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31554,
+    "name": "2 CAMIONETA P/B 5CM SURT 4 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31555,
+    "name": "CAMIONETA VAN 5X8X4CM PLAST SURT 4 DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

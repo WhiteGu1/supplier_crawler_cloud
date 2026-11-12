@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30156,
+    "name": "RIÑONERA 30X14CM PU C/CIERRE PLATEADO A RAYAS SURT 4 CLRS RO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30157,
+    "name": "RIÑONERA 30X14CM PU C/CIERRE PLATEADO CUADRILLE OBLICUO META",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30158,
+    "name": "RIÑONERA 30X14CM PU C/CIERRE PLATEADO ZIG-ZAG METALIZADA SUR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30159,
+    "name": "RIÑONERA 30X14CM PU C/2 CIERRES PLATEADO POLYESTER SURT 3 CL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30160,
+    "name": "RIÑONERA 27X13CM PU C/CIERRE NEGRO SURT 3 CLRS BLANCO/NEGRO/",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30161,
+    "name": "BOLSO RIÑONERA 37X10X5CM POLYESTER C/4 CIERRES PLAST SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30162,
+    "name": "RIÑONERA 28X14X3,5CM POLYESTER C/4 CIERRES PLAST SURT 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30163,
+    "name": "RIÑONERA 37X17CM PU INTERIOR POLYESTER NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30164,
+    "name": "RIÑONERA BRILLOSA 21X13X4CM C/2 CIERRES AZUL OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30165,
+    "name": "BOLSO MORRAL TELA C/CIERRE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30166,
+    "name": "BOLSITO 21X13CM PU INTERIOR POLYESTER NEGRO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30167,
+    "name": "BOLSO MANO BOTINERO TELA CUADRILLE 72X30CM",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30168,
+    "name": "CARTERA 22X15X9CM PELUCHE LOVE",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30169,
+    "name": "BOLSO MANO PLUSH T/BOLSA M/\"LUCKY\" SURT 2 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30170,
+    "name": "NECESER 16,5X6,5X12,5CM PU C/CIERRE METALICO \"LOVE\" SURT 5",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30171,
+    "name": "NECESER 22,5X13X16CM C/CIERRE Y MANIJA COMPARTIMIENTOS C/C",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30172,
+    "name": "2 NECESER 18X7,5X12,5CM C/CIERRE METALICO Y MANIJA LATERAL C/C",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30173,
+    "name": "NECESER 18X13X8CMCM PU \"WASHBAG\" C/CIERRE SURT 3 CLRS ROSA/B",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30174,
+    "name": "NECESSER C/MANIJA 24,5X19X9CM TELA ACOLCHADA SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30175,
+    "name": "CANOPLA 23X5CM T/BOLSA M/MANOS SURT 4CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30176,
+    "name": "CANOPLA POLI 21X8CM C/CIERRE ESTAMPADO MILITAR 4MOD SURT OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30177,
+    "name": "CANOPLA 21X6,5X6,5CM C/ADORNO PVC SURT 4CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30178,
+    "name": "CARTUCHERA 20X8CM PLUSH C/OREJAS Y OJOS C/CIERRE SURT 5 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30179,
+    "name": "CARTUCHERA 20X10CM PLUSH \"SUMMER\" C/CIERRE C/POMPOM DEGRADE",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30180,
+    "name": "CARTUCHERA 20X9CM PLUSH \"UNICORN\" C/CIERRE DEGRADE SURT 3 CL",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30181,
+    "name": "CARTUCHERA 20X4,5X4CM PLUSH C/ESTRELLA C/CIERRE SURT 5 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30182,
+    "name": "CARTUCHERA 20X7X6CM PLUSH F/ANIMAL C/OREJAS CIERRE SURT 5 CL",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30183,
+    "name": "CARTUCHERA 20X10CM PLUSH C/OREJAS CONEJO C/CIERRE SRT 4 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30184,
+    "name": "CANOPLA 21X9CM PLAST C/PLUSH F/CONEJITO SURT 4CLRS ROSA/VIOL",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30185,
+    "name": "CANOPLA 21X8,5CM PLAST C/PLUSH C/POMPOM DSÑO ESPACIO SURT 4",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30186,
+    "name": "CANOPLA 18X7X6CM PLUSH F/PERRITO SURT 3CLRS MARR/VERDE/ROSA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30187,
+    "name": "CANOPLA 18X7CM PLASTICO C/CIERRE DSÑO \"SMILE\"/\"HAPPY\"/\"SWEET",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30188,
+    "name": "CANOPLA 20X8CM SILICONA C/CIERRE CLRS TRANSP ROSA/LILA/VERDE",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30189,
+    "name": "CANOPLA 20X9CM PLAST C/PLUSH F/CARA CONEJO C/CIERRE SURT 3",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30190,
+    "name": "CANOPLA 20X8,5CM PLUSH C/DSÑO UNICORNIO SURT 3 CLRS CELESTE/",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30191,
+    "name": "CANOPLA 20X8CM PLUSH C/DSÑO HUELLITA GATO SURT 4 CLRS AZ/ROS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30192,
+    "name": "CANOPLA 20X8CM PLUSH C/DSÑO SMILEY \"SWEET\" SURT 3 CLRS ROSA/",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30193,
+    "name": "CANOPLA 19X5,5CM PLAST DSÑO \"BLACK WHITE\" C/CRUCES O FELCHAS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30194,
+    "name": "CANOPLA 19X5,5CM PLAST DSÑO PARIS SURT 2 CLRS BLANCA/NEGRA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30195,
+    "name": "CANOPLA 19X5,5CM PLAST DSÑO \"YOU…\" SURT 2 CLRS BLANCA/NEGRA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30196,
+    "name": "CANOPLA SILICONA+PLAST F/GUSANO SURT CLRS C/PELOS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30197,
+    "name": "2 CANOPLA SILICONA F/GARRA SURT 2 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30198,
+    "name": "CANOPLA SILICONA F/GARRA SURT 5 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30199,
+    "name": "BOLSITO P/VIAJE 24X14,5X5CM TELA ACOLCHADA SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30200,
+    "name": "CARTUCHERA 1 CIERRE 22X15,5CM M/AUTOS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30201,
+    "name": "CARTUCHERA 1 CIERRE 22X15,5CM M/PONY PECES OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30202,
+    "name": "Y CANOPLA 20X9X4CM M/PATITO SURT 4 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30203,
+    "name": "CANOPLA 19X7X3,5CM M/COLORES SURT 3 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30204,
+    "name": "CANOPLA 18X8X4CM M/PIANO SURT 2 CLRS OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 30205,
+    "name": "CANOPLA 18X8X6CM M/ASTRONAUTA OPP",
+    "current_cat": "文具办公"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

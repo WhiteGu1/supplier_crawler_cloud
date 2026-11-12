@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29956,
+    "name": "CARTERA 33X25X10CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29957,
+    "name": "CARTERA 40X27X13CM T/BOLSA 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29958,
+    "name": "CARTERA 49X30X13CM T/BOLSA 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29959,
+    "name": "BOLSO REFRIGERANTE 23X22X14CM 1 BOLSILLO SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29960,
+    "name": "BOLSO REFRIGERANTE 27X25X15CM 1 BOLSILLO SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29961,
+    "name": "BOLSITO 19X13X4CM 1 CIERRE SURT 2 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29962,
+    "name": "CARTERITA DAMA 18X11CM C/DSÑ M 2 CIERRES SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29963,
+    "name": "CARTERITA DAMA 18X11CM C/DSÑ CUADROS ESCOCES 2 CIERRES SURT 3CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29964,
+    "name": "RIÑONERA 14X22X4,5CM POLYESTER C/4CIERRES PLAST SURT 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29965,
+    "name": "MORRAL PU+PLASTICO 23X25CM C/BROCHES 2 CIERRES SURT 2 CLRS G",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29966,
+    "name": "BOLSA DE PLAYA 46X38X12CM C/DSÑO OSITO MITAD LISO MITAD DIBUJO GRUESO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29967,
+    "name": "MOCHILA 46X26X15CM NGR/CLR C/CIERRE X4 BOLSILLO X2 2 CLR SUR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29968,
+    "name": "MOCHILA 46X26X15CM NGR/CLR C/CIERRE X3 BOLSILLO X2 2 CLR SUR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29969,
+    "name": "MOCHILA 42X30X12CM ESTAMPADO CAMOUFLAGE 2 CIERRES 2 BOLSILLO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29970,
+    "name": "MOCHILA 42X30X12CM ESTAMPADO CAMOUFLAGE CLRS 2 CIERRES 2 BOL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29971,
+    "name": "MOCHILA 44X30X14CM NGR /CLR CIERRE X3 MANIJA AGARRE ALMOHADI",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29972,
+    "name": "MOCHILA 44X29X14CM NGR C/TEXTURA CIERRE X3 OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29973,
+    "name": "MOCHILA 47X31X17CM NGR/CLR CIERRE X1 LAT X2 3 CLRS SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29974,
+    "name": "MOCHILA 47X31X17CM NGR/CLR BIS CIERRE LAT X2 3 CLRS SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29975,
+    "name": "X1 MOCHILA 45X31X15CM ESTAMPADO GEOM CLR FLUOR CIERRE X4 2 ESTA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29976,
+    "name": "MOCHILA 45X31X15CM ESTAMPADO PINCELADAS CLR FLUOR CIERRE X3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29977,
+    "name": "MOCHILA 45X32X14CM CLR CIERRE X4 ALMOHADILLA ESPALDA 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29978,
+    "name": "MOCHILA 45X32X14CM CIERRE X3 NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29979,
+    "name": "MOCHILA 45X31X14CM DSÑ URBANO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29980,
+    "name": "MOCHILA 45X31X14CM NEGRA ST SPORT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29981,
+    "name": "MOCHILA 45X31X14CM ROSA SPORT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29982,
+    "name": "MOCHILA 41X29X12CM GRIS CIERRE CRUZADO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29983,
+    "name": "MOCHILA 41X29X12CM GRIS TOPO BOLSILLO GRANDE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29984,
+    "name": "MOCHILA 49X35X15CM NEGRA LISA DOBLE COMPARTIMENTO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29985,
+    "name": "MOCHILA 43X30X12CM MAT. 600D M/\"RAPMONSTER\" SURT 4 CLRS VER",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29986,
+    "name": "MOCHILA 46X32X15CM SURT 4CLRS GRIS C/ADORNOS AMARILLOS Y NAR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29987,
+    "name": "MOCHILA 46X32X15CM SURT 4CLRS GRIS C/ADORNOS AMARILLOS Y NAR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29988,
+    "name": "MOCHILA P/NOTEBOOK 46X32X15CM SURT 3CLRS ROJO/NEGRO/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29989,
+    "name": "MOCHILA P/NOTEBOOK 46X32X15CM SURT 3CLRS ROJO/NEGRO/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29990,
+    "name": "MOCHILA P/NOTEBOOK 46X32X15CM SURT 3CLRS ROJO/NEGRO/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29991,
+    "name": "MOCHILA P/NOTEBOOK 46X32X15CM SURT 3CLRS ROJO/NEGRO/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29992,
+    "name": "MOCHILA P/NOTEBOOK 46X34X15CM SURT CLRS NEGRO/GRIS/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29993,
+    "name": "3 MOCHILA P/NOTEBOOK 46X34X15CM SURT 3 CLRS NEGRO/GRIS/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29994,
+    "name": "MOCHILA P/NOTEBOOK 46X34X15CM SURT CLRS NEGRO/GRIS/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29995,
+    "name": "3 MOCHILA P/NOTEBOOK 46X34X15CM SURT CLRS NEGRO/GRIS/AZUL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29996,
+    "name": "3 MOCHILA 43X30X15CM SURT 3CLRS C/CABLE USB OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29997,
+    "name": "MOCHILA 40X28X12CM SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29998,
+    "name": "MOCHILA 40X29X12CM SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29999,
+    "name": "MOCHILA 40X30X10CM SURT 2 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30000,
+    "name": "MOCHILA 30X23X11CM C/PASTEL SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30001,
+    "name": "MOCHILA 35X25X11CM C/PASTEL SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30002,
+    "name": "MOCHILA 45X30X14CM SPORT W C/5 ZIPPERS 3 CORES SORT (AZ/PTO/",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30003,
+    "name": "MOCHILA 45X30X14CM SPORT W C/5 ZIPPERS 3 CORES SORT (VM/AZ/C",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30004,
+    "name": "MOCHILA 45X30X14CM SPORT W C/5 ZIPPERS 3 CORES SORT (VM/AZ/C",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30005,
+    "name": "MOCHILA 45X30X14CM SPORT W C/5 ZIPPERS 3 CORES SORT (AZ/PTO/",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

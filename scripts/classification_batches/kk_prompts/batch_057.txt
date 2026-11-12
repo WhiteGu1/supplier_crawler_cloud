@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30706,
+    "name": "SET CAJAS X3 24,5X17X6,5/29X21X9/33,5X25X11,5CM C/MOÑO BRILLOSO SURT CLR BEIGE/GRIS",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30707,
+    "name": "SET CAJA X3PCS 23X16,8X6,5/20,5X14,4X5,2/18,2X11,8X4CM T/LIB",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30708,
+    "name": "CAJAS X3PCS CUADRADAS 26X26X16,7CM/23,5X23,5X15,3CM / 21X21X14CM NEGRA TAPA BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30709,
+    "name": "CAJAS X3PCS CUADRADAS 32X23X15CM/30X21X13,7CM/28X19X11,7CM NEGRA TAPA BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30710,
+    "name": "CAJAS X3PCS CUADRADAS 23X23X16,7CM / 20,5X20,5X15,5CM / 18X18X14CM NEGRA TAPA BEIGE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30711,
+    "name": "SET CAJAS X4 26X26X10 23,5X23,5X9 21X21X8 18,5X18,5X7-CLR",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30712,
+    "name": "SET CAJAS X4 -30X22X10/27X20X9/24X18X8/21X16X7 -CLR NARANJA",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30713,
+    "name": "CAJA X4PCS CUADRADA 19X19X15CM/16,5X16,5X13CM / 14X14X11,3CM / 11,5X11,5X9,3CM DSÑ FLORAL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30714,
+    "name": "CAJA X4PCS RECTANGULAR 25X18,5X17CM/22,5X16X,5X15CM / 20X14,5X13CM / 17,5X12,5X11CM DSÑ FLORAL",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30715,
+    "name": "CAJA X3 TERCIOPELO/EVA/POLIESTER 36X26X18/29X23X16/24X17X14 -CREMA -OPP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30716,
+    "name": "SET CAJAS X2PCS 18X17,5/15,5X12CM RED NGRA C/CAJON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30717,
+    "name": "SET CAJAS X3PCS 19X16/16,5X14/14X12CM CUAD 2 CLRS MAR",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30718,
+    "name": "SURT CAJAS X3PCS 31X19X10CM/24X14,7X8CM18X11X6,5CM F/NUVE C/DSÑO BALLENA",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30719,
+    "name": "CAJAS X3PCS 27X22,7X10CM / 20X16,8X8CM / 15X12X6,5CM 2 SURT GATO/TIGRE",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30720,
+    "name": "SET CAJA X3 19X19X14/22X22X16/24X24X18 BASE TAPA CLR CLARO C/HILOY TELA ALPILLERA CUADRADA 2 CLR SURT BULK PACK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30721,
+    "name": "CLR SET CAJA X4PCS 25X19X9/23X17X8/21X15X7/19X13X6CM RECT SURT",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 30722,
+    "name": "PORTABOTELLA HIERRO 16X15X24 F/HOMBRE C/CANASTA -CAJA BLANC",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30723,
+    "name": "PORTABOTELLA HIERRO 21X16X23 F/HOMBRE C/DESTAPADOR -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30724,
+    "name": "PORTABOTELLA HIERRO 18X16X23 F/CHEF -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30725,
+    "name": "PORTABOTELLA HIERRO 17X14X21 F/CHEF -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30726,
+    "name": "PORTABOTELLA HIERRO 19X16X21 F/CHEF -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30727,
+    "name": "PORTABOTELLA HIERRO 22X15X21 F/CHEF -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30728,
+    "name": "PORTABOTELLA HIERRO 18X15X22 F/CHEF -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30729,
+    "name": "PORTABOTELLA HIERRO 15X15X29 F/DOCTOR (SIN PARAGUAS) -CAJA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30730,
+    "name": "PORTABOTELLA HIERRO 16X14X21 F/PARRILLERO - CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30731,
+    "name": "PORTABOTELLA HIERRO 18X15X22 F/COCINERO SARTEN -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30732,
+    "name": "PORTABOTELLA HIERRO 16X14X24 F/BARTENDER PIRAMIDE COPAS -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30733,
+    "name": "ADORNO HIERRO 16X10X21 F/GOLFISTA JUGANDO - CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30734,
+    "name": "PORTABOTELLA HIERRO 19X13X19 F/HOMBRES CARGANDO BOTELLA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30735,
+    "name": "PORTABOTELLA HIERRO 13X11X20 F/FUTBOLISTA CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30736,
+    "name": "- PORTABOTELLA HIERRO 15X9X20 F/GUITARRISTA - CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30737,
+    "name": "PORTABOTELLA HIERRO 14X14X22 F/TENISTA CAMPEON -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30738,
+    "name": "PORTABOTELLA HIERRO 19X18X21 F/BATERISTA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30739,
+    "name": "PORTABOTELLA HIERRO 24X11X35 F/SURFISTA SOBRE OLA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30740,
+    "name": "PORTABOTELLA HIERRO 11X9X20 F/MECANICO RUEDA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30741,
+    "name": "PORTABOTELLA HIERRO 19X16X28 F/MECANICO C/LLAVE /2 RUEDAS -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30742,
+    "name": "PORTABOTELLA HIERRO 30X17X20 F/MOTO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30743,
+    "name": "PORTABOTELLA HIERRO 36X12X23 F/PAREJA EN -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30744,
+    "name": "MOTO PORTABOTELLA HIERRO 39X15X24 F/MOTO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30745,
+    "name": "PORTABOTELLA HIERRO 39X13X24 F/MOTO CORCHOS -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30746,
+    "name": "PORTABOTELLA HIERRO 19X19X23 F/MARINERO TIMON -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30747,
+    "name": "PORTABOTELLA HIERRO 26X13X22 F/ENAMORADOS BANCO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30748,
+    "name": "PORTABOTELLA HIERRO 29X19X30 F/PAREJA BODA - CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30749,
+    "name": "PORTABOTELLA HIERRO 37X15X24 F/PAREJA BRINDANDO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30750,
+    "name": "PORTABOTELLA HIERRO 21X11X26 F/PAREJA CORAZON -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30751,
+    "name": "PORTABOTELLA HIERRO 25X14X28 F/BORRACHO TOMANDO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30752,
+    "name": "PORTABOTELLA HIERRO 28X11X28 F/CUPIDO ARCO FLECHA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30753,
+    "name": "Y PORTABOTELLA HIERRO 24X12X26 F/BAJISTA -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30754,
+    "name": "PORTABOTELLA HIERRO 25X17X65 F/GUITARRA 3 HUECOS -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30755,
+    "name": "PORTABOTELLA HIERRO 23X23X56 -F/VIOLIN -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

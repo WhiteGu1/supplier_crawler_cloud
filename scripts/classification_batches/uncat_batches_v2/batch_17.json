@@ -1,0 +1,85 @@
+{
+  "batch_id": 17,
+  "items": [
+    {
+      "id": 35968,
+      "supplier_id": 3,
+      "name": "RALLADOR CONICO 3 USOS 15 CM TK (S01021B1-AE)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/9797d4bc00787db014c12536f70b59fb.jpg"
+    },
+    {
+      "id": 35969,
+      "supplier_id": 3,
+      "name": "RALLADOR PLANO 3 USOS 22 CM TK (S01033B1-AA)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/816439b4f17aedd7db8d2145da6e6fa5.jpg"
+    },
+    {
+      "id": 35970,
+      "supplier_id": 3,
+      "name": "RALLADOR PLANO 4 CARAS 23 CM TK (S01055B1-AP)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/4ec09da2872218673da5687d369c5044.jpg"
+    },
+    {
+      "id": 35971,
+      "supplier_id": 3,
+      "name": "RALLADOR PLANO 4 USOS 30 CM TK (S01036B1-AA)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/286d474755baa2ba1a5d214e3eaa3c4e.jpg"
+    },
+    {
+      "id": 35972,
+      "supplier_id": 3,
+      "name": "RALLADOR CON RECIPIENTE TK (S01291-A2)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/d39f166e6839087bbd5717c302c028f6.jpg"
+    },
+    {
+      "id": 35973,
+      "supplier_id": 3,
+      "name": "BALANZA P/ PERSONAS BAMBU ELECTRONICA TK (EBS-013)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/74351efe14d6a012fd95d787842d54a6.jpg"
+    },
+    {
+      "id": 35974,
+      "supplier_id": 3,
+      "name": "PACK X6 VASO WHISKY MARINE TK (OCT-K80593S)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/85a52f0f4d2d3944d634642f03cb2f7c.jpg"
+    },
+    {
+      "id": 35975,
+      "supplier_id": 3,
+      "name": "CAFETERA VIDRIO BOROSILICATO TAPA BAMBU 600 CC TK(BV102-600)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/6171d01fc0ab407ac3e7a9026ba7514c.jpg"
+    },
+    {
+      "id": 35976,
+      "supplier_id": 3,
+      "name": "TETERA VIDRIO CON INFUSOR 800 ML TK (QXA123)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/db14098c4fb6901a13fc422b5bb6a6e9.jpg"
+    },
+    {
+      "id": 35977,
+      "supplier_id": 3,
+      "name": "VASO DOBLE VIDRIO OSITO X2 TK (AN002)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/Trapoman/294cd86be99d2a9aa7cc9a3141f38ef5.jpg"
+    }
+  ]
+}

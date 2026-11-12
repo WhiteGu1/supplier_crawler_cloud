@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29806,
+    "name": "MARCADORES PLAST 5CM CAPUCHON HUELLA GATO X4PCS CLRS PASTEL CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29807,
+    "name": "MARCADORES PLAST 5CM CAPUCHON HUELLA GATO X4PCS CLRS BRILLANTES CAJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29808,
+    "name": "SET RESALTADORES X6PC CAJA PLAST M/SMILE",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29809,
+    "name": "SET RESALTADORES X6PCS M/HUELLITA DISPLAY BOX X36PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29810,
+    "name": "RESALTADOR 13,5CM F/MONSTRUITOS 6 CLRS 5 DSÑO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29811,
+    "name": "RESALTADOR 13,5CM F/GALLETITAS 6CLR 5DSÑO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29812,
+    "name": "RESALTADOR 13,5CM F/DEPORTES 6CLR 5 DSÑO DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29813,
+    "name": "RESALTADOR 11,5CM BRILLANTE F/CORAZON 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29814,
+    "name": "RESALTADOR 12CM BRILLANTE F/HUELLA 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29815,
+    "name": "RESALTADOR 12CM BRILLANTE F/OSO 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29816,
+    "name": "RESALTADOR 12CM BRILLANTE F/UNICORNIO 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29817,
+    "name": "RESALTADOR 12CM M/CASTOR 6CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29818,
+    "name": "RESALTADOR 12CM M/BOQUITA C/OJOS SALTONES 6CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29819,
+    "name": "RESALTADOR 11CM MULTICOLOR BOLAS M/CARPINCHO 6DSÑO DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29820,
+    "name": "RESALTADOR 10CM M/PELOTA HUELLITA SURT 2 DSÑ DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29821,
+    "name": "RESALTADOR 10CM M/HUELLITA C/SACHET 6CLRS DISPLAY BOX X36",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29822,
+    "name": "RESALTADOR 7,5CM M/ROSAS SURT 6 CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29823,
+    "name": "LUPA 4CM BORDES NEGROS MANGO PLATEADO",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29824,
+    "name": "ACUARELAS 16X8CM 12 CLRS C/PINCEL M/RECICLADO CJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29825,
+    "name": "ACUARELA 16X6,5CM 12CLRS C/PINCEL OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29826,
+    "name": "SET PINTURA ACRILICA X12POTES 5CM X25ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29827,
+    "name": "SET PINTURA ACRILICA X12POTES C/PINCEL 5CM X25ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29828,
+    "name": "SET PINTURA ACRILICA X6 SACHET 14,5CM X75ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29829,
+    "name": "SET TEMPERAS X12PCS 22X10CM X12ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29830,
+    "name": "SET PINTURA ACRILICA X6POTES 5CM X25ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29831,
+    "name": "SET PINTURA ACRILICA X12POTES CON PALETA Y PINCEL 5CM X25ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29832,
+    "name": "SET TEMPERAS X12 X12ML 12,5X10,5CM CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29833,
+    "name": "SET TEMPERAS X12 X12ML 12,5X10,5CM CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29834,
+    "name": "SET PINTURAS ACRILICAS C/PINCEL X12 X25ML CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29835,
+    "name": "SET PINTURAS ACRILICAS C/PINCEL X12 X25ML CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29836,
+    "name": "SET TEMPERAS X6PCS 8CM X14ML OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29837,
+    "name": "SET TEMPERAS X6PCS 11X14CM X25ML CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29838,
+    "name": "SET PITURAS ACRILICAS F/SACHET X6 27X14,8CM X75ML CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29839,
+    "name": "SET PINTURAS ACRILICAS X6 C/PINCEL 24,5X4,8CM X25ML CAJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29840,
+    "name": "BIROME CLRS 15CM X8PCS CJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29841,
+    "name": "SET BIROMES MULTICOLOR X6PCS M/FRUTITOS BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29842,
+    "name": "SET BIROMES MULTICOLOR X6PCS M/DRAGON BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29843,
+    "name": "SET ART. LIBRERÍA 28X20CM X10PCS RESALTADORES/BLOCK HOJAS BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29844,
+    "name": "SET ART. LIBRERÍA 28X20CM X11PCS RESALTADORES/BIROMES/CORRECTOR BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29845,
+    "name": "SET ART. LIBRERÍA 28X20CM X10PCS BIROMES/BLOCK NOTAS/CORRECTOR BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29846,
+    "name": "SET ART. LIBRERÍA 11X20CM X4PCS BIROMES BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29847,
+    "name": "SET ART. LIBRERÍA 11X20CM X4PCS BIROMES X2 RESALTADORES X2 BOLSA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29848,
+    "name": "RESALTADOR SURT GATOS/OSITOS/FRUTILLAS/PANDA X6 DSÑO CAJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29849,
+    "name": "SACAPUNTA METAL 3X3CM PARA 2 TAMAÑOS CJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29850,
+    "name": "SACAPUNTA METAL 3CM CJA REG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29851,
+    "name": "SACAPUNTAS 7CM PLAST F/CONEJO ASTRONAUTA SURT 4CLRS CAJA DISPLAY X 24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29852,
+    "name": "SACAPUNTAS 8,5CM F/UNICORNIO SURT 4 CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29853,
+    "name": "SACAPUNTAS 6CM F/PANDA 1 CLR CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29854,
+    "name": "SACAPUNTAS 4,5CM F/CARPINCHO 1CLR CAJA DISPLYA X24PCS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29855,
+    "name": "SACAPUNTAS 5,5CM F/OSO SURT 4CLRS CAJA DISPLAY X24PCS",
+    "current_cat": "文具办公"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29206,
+    "name": "CARAMELERA VIDRO 17X13CM CUPULA TPA VIDRO COLOR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29207,
+    "name": "CARAMELERA VIDRIO 24X15CM C/PIE BROWN BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29208,
+    "name": "CARAMELERA DE VIDRIO 16X16CM C/ TAPA LABRADO EN MONTAÑAS CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29209,
+    "name": "CARAMELERA DE VIDRIO 12X10 REDONDA C/TAPA POMPOM TRAMA HOJAS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29210,
+    "name": "CARAMELERA DE VIDRIO 19X17CM C/ TAPA LABRADO EN PICOS CLR BO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29211,
+    "name": "CARAMELERA DE VIDRIO 20X18CM C/ TAPA LABRADO EN ROMBOS CLR B",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29212,
+    "name": "CARAMELERA DE VIDRO 6X7CN F/CORAZON COLOR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29213,
+    "name": "CARAMELERA VIDRIO 40X16CM C/PIE REDONDA BROWN BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29214,
+    "name": "CARAMELERA 13X9CM LABRADA C/TAPA VIDRIO CJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29215,
+    "name": "CARAMELERA VIDRO 15X17CM F/FLOR DORADA COLOR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29216,
+    "name": "ALHAJERO VIDRIO 15,5X8,5CM FORMA COPA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29217,
+    "name": "CENTRO DE MESA VIDRIO 25X17 F/COPA C/TAPA POMPON TRAMA SIMET",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29218,
+    "name": "ALHAJERO VIDRIO 15.5X8.5CM F/ COPA C/ TAPA PICO CALADO HOJAS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29219,
+    "name": "VASO VIDRIO 10X9CM 320ML X3 LUNARES CJA VENT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29220,
+    "name": "VASO VIDRIO (X6) 9,2X8,4CM 340ML D/ROMBOS 300G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29221,
+    "name": "VASO VIDRIO (X6) 9,2X8,4CM 340ML D/CRUCES 300G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29222,
+    "name": "VASO VIDRIO (X6) 9,2X8,4CM 330ML D/RAYAS 300G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29223,
+    "name": "VASO VIDRIO 10X9CM 320ML X3 ACANALADO CJA VENT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29224,
+    "name": "VASO VIDRIO (X6) 9,5X7,1CM 350ML 210G CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29225,
+    "name": "VASO VIDRIO 13X7CM 280ML X3 BASE ACANALADA CJA VENT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29226,
+    "name": "COPA VINO X6 NEGRA CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29227,
+    "name": "SET COPA VINO X6 TRANSPARENTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29228,
+    "name": "COPA VINO X6 TRANSPARENTE C/BORDE DORADO CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29229,
+    "name": "CHOPP VIDRIO 14,6CM 465ML SET X6 C/MANIJA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29230,
+    "name": "ENSALADERA DE VIDRIO CUADRADA 20X10CM C/ 4 COMPOTERAS DE VID",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29231,
+    "name": "MANTEQUERA DE VIDRIO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29232,
+    "name": "MANTEQUERA DE VIDRIO 15X12X7CM C/ TAPA LABRADO EN ROMBOS CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29233,
+    "name": "JARRO MEDIDOR 11X11,5CM 600ML TRANSP CJA BLANCA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29234,
+    "name": "TAZA VIDRIO 7CM 190ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29235,
+    "name": "TAZA CAFÉ VIDRIO 7,4CM 205ML SET X6 CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 29236,
+    "name": "BOLSA REGALO 39X29X9CM C/MANIJA SURT 4 COLORES OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29237,
+    "name": "BOLSA REGALO 45X33X10CM C/MANIJA SURT 4 COLORES OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29238,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO HAPPY BIRTHDAY BRILLOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29239,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO HAPPY BIRTHDAY BRILLOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29240,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO HAPPY BIRTHDAY BRILLOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29241,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO HAPPY BIRTHDAY DORADO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29242,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO HAPPY BIRTHDAY DORADO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29243,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO HAPPY BIRTHDAY DORADO",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29244,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO HAPPY BIRTHDAY LETRAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29245,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO HAPPY BIRTHDAY LETRAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29246,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO HAPPY BIRTHDAY LETRAS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29247,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO HAPPY BIRTHDAY 18X23X10",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29248,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO HAPPY BIRTHDAY 26X32X12",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29249,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO HAPPY BIRTHDAY 31X42X12",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29250,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO CORAZONES 18X23X10CM C/MANIJA TELA SURT 2 CLRS BLANCA-NEGRA/ ROJA-BLANCA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29251,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO CORAZONES",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29252,
+    "name": "BOLSA REGALO PAPEL LAMINADO 31X42X12CM DSÑO CORAZONES",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29253,
+    "name": "BOLSA REGALO PAPEL LAMINADO C/DISEÑO CORAZONES 31X42X12CM C/MANIJA TELA SURT 2 CLRS BLANCA-NEGRA/ ROJA-BLANCA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29254,
+    "name": "BOLSA REGALO PAPEL LAMINADO 18X23X10CM DSÑO PUNTOS",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29255,
+    "name": "BOLSA REGALO PAPEL LAMINADO 26X32X12CM DSÑO PUNTOS",
+    "current_cat": "派对用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

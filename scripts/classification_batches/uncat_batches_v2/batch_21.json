@@ -1,0 +1,85 @@
+{
+  "batch_id": 21,
+  "items": [
+    {
+      "id": 36008,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa negro HUDSON x 3 Linea Basic (BNF3)",
+      "sku": "BNF3",
+      "brand": "",
+      "image_local": "images/osa/f8795cd885a7a1c8839e5baee1e44d41.webp"
+    },
+    {
+      "id": 36009,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa azul HUDSON x 12 Linea Basic (BAK12)",
+      "sku": "BAK12",
+      "brand": "",
+      "image_local": "images/osa/7b16ac3336f5f3d82b209e7509cac990.webp"
+    },
+    {
+      "id": 36010,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa negro HUDSON x 12 Linea Basic (BNK12)",
+      "sku": "BNK12",
+      "brand": "",
+      "image_local": "images/osa/216ff65e298f0b7cea06317011e061f5.webp"
+    },
+    {
+      "id": 36011,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa azul HUDSON x 3 Linea Basic (BAK3)",
+      "sku": "BAK3",
+      "brand": "",
+      "image_local": "images/osa/5ee7714690372471b4988ff42964ec6c.webp"
+    },
+    {
+      "id": 36012,
+      "supplier_id": 5,
+      "name": "Cuchillo de Mesa negro HUDSON x 3 Linea Basic (BNK3)",
+      "sku": "BNK3",
+      "brand": "",
+      "image_local": "images/osa/c6c16ac62d9bd9b1d0ae8b013c4c35e4.webp"
+    },
+    {
+      "id": 36013,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Daily 24 piezas (DNSET24)",
+      "sku": "DNSET24",
+      "brand": "",
+      "image_local": "images/osa/e5dad75d972eeb949b6223af4d433717.webp"
+    },
+    {
+      "id": 36014,
+      "supplier_id": 5,
+      "name": "Juego de cubiertos HUDSON Linea Daily 16 piezas (DNSET16)",
+      "sku": "DNSET16",
+      "brand": "",
+      "image_local": "images/osa/2cfa3c413913f4557db10723c626d6b3.webp"
+    },
+    {
+      "id": 36015,
+      "supplier_id": 5,
+      "name": "Cuchara de te negro HUDSON x12 Linea Daily (DNT12)",
+      "sku": "DNT12",
+      "brand": "",
+      "image_local": "images/osa/0f7bad2ab9d9f0b804a5c9ac8cb4d877.webp"
+    },
+    {
+      "id": 36016,
+      "supplier_id": 5,
+      "name": "Cuchara de Mesa negro HUDSON x12 Linea Daily (DNS12)",
+      "sku": "DNS12",
+      "brand": "",
+      "image_local": "images/osa/817d96af4f929ae686c44124d201e11c.webp"
+    },
+    {
+      "id": 36017,
+      "supplier_id": 5,
+      "name": "Tenedor de Mesa negro HUDSON x12 Linea Daily (DNF12)",
+      "sku": "DNF12",
+      "brand": "",
+      "image_local": "images/osa/1404559646e309879ab1bd13ffd64db6.webp"
+    }
+  ]
+}

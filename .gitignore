@@ -1,0 +1,45 @@
+# Secrets & local configs
+.env
+.env.*
+!.env.example
+whatsapp_config.json
+client_secret*.json
+*service_account*.json
+*.pem
+*.key
+
+# Large media & binary caches (hosted on Google Drive / Cloudflare R2 instead of Git)
+images/
+downloads/
+.whatsapp_profile/
+pdf_parsers/samples/
+*.pdf
+*.zip
+*.xlsx
+*.xls
+*.docx
+*.db
+*.sqlite*
+
+# Logs, debug artifacts & temp scratch files
+*.log
+err.txt
+debug_*.html
+scratch_*
+scratch_tables/
+classify_cache/
+scripts/classification_batches/classify_cache/
+scripts/maintenance/*.png
+scripts/maintenance/*.jpg
+scripts/temp/
+api/test_img.bin
+
+# Python / OS / IDE noise
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+start_edge_debug.bat

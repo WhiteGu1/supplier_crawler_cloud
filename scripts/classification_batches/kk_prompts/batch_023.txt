@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29006,
+    "name": "BOWL CUADRADO 23,9X18,4X8,5CM 1,070ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29007,
+    "name": "BOWL CUADRADO 20,3X15,6X7,4CM 670ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29008,
+    "name": "BOWL CUADRADO 23,9X18,4X8,5CM 1,070ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29009,
+    "name": "BOWL CUADRADO 20,3X15,6X7,4CM 670ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29010,
+    "name": "BOWL CUADRADO 17,8X13,8X6,8CM 400ML VIDRIO C/TAPA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29011,
+    "name": "FRASCO 20X10CM 200G PLAST C/RELIEVE ROMBOS TRANSP CLR BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29012,
+    "name": "FRASCO 15X10CM 161G PLAST C/RELIEVE ROMBOS TRANSP CLR BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29013,
+    "name": "FRASCO 27X10CM 213G PLAST C/RELIEVE ROMBOS TRANSP CLR BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29014,
+    "name": "FRASCO 10CM 133G PLAST C/RELIEVE ROMBOS TRANSP CLR BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29015,
+    "name": "FRASCOS VIDRIO X3 C/TAPA Y BASE BAMBOO 520ML CAJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29016,
+    "name": "FRASCO VIDRIO 10X12CM C/TAPA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29017,
+    "name": "FRASCO VIDRIO 10X15CM C/TAPA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29018,
+    "name": "FRASCO VIDRIO 10X9,6CM 450ML DSÑO CILINDRO C/LINEAS C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29019,
+    "name": "FRASCO VIDRIO 10X26,5CM 1700ML DSÑO CILINDRO C/LINEAS C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29020,
+    "name": "FRASCO VIDRIO 10X16,5CM 950ML DSÑO CILINDRO C/LINEAS C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29021,
+    "name": "FRASCO VIDRIO 10X21,5CM 1350ML DSÑO CILINDRO C/LINEAS C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29022,
+    "name": "FRASCO VIDRIO 12X16CM 1350ML DSÑO CILINDRO LISO C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29023,
+    "name": "FRASCO VIDRIO 14X23,5CM 3,1L DSÑO CILINDRO LISO C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29024,
+    "name": "FRASCO VIDRIO 13X18,5CM 2L DSÑO CILINDRO LISO C/TAPA ACACIA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29025,
+    "name": "FRASCO VIDRIO 8,5X12CM C/TAPA Y CUCHARA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29026,
+    "name": "FRASCO VIDRIO 8,5X15CM C/TAPA Y CUCHARA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29027,
+    "name": "FRASCO VIDRIO 8X12CM C/TAPA Y CUCHARA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29028,
+    "name": "FRASCO 8,3X12CM 650ML VIDRIO REDONDO C/PORTA CUCHARA T/BAMBU CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29029,
+    "name": "FRASCO VIDRIO 10X12CM C/TAPA Y CUCHARA BAMBOO CJA BLCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29030,
+    "name": "FRASCO VIDRIO 10X19,5CM DSÑO RECTANG LISO C/TAPA ACACIA C/LENGUETA CUERINA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29031,
+    "name": "FRASCO VIDRIO 10X11,5CM DSÑO RECTANG LISO C/TAPA ACACIA C/LENGUETA CUERINA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29032,
+    "name": "FRASCO SET X3 10,9X13,5CM VIDRIO \"COFFE/SUGAR/TEA\" C/TAPA BAMBU CJA CLR",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29033,
+    "name": "FRASCO VIDRIO C/TAPA BAMBOO C/SELLO 1600ML",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29034,
+    "name": "FRASCO BAMBOO Y VIDRIO 12X12CM CUBICO CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29035,
+    "name": "FRASCO BAMBOO Y VIDRIO 15X15X9,8CM PRISMA CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29036,
+    "name": "FRASCO BAMBOO Y VIDRIO 15X18X9,8CM PRISMA CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29037,
+    "name": "FRASCO BAMBOO Y VIDRIO 12X15CM PRISMA CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29038,
+    "name": "FRASCO BAMBOO Y VIDRIO 12X18CM PRISMA CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29039,
+    "name": "FRASCO BAMBOO Y VIDRIO 15X21X9,8CM PRISMA CAJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29040,
+    "name": "FRASCO 10X7,5CM CUADRADO BOCA REDONDA VIDRIO C/TAPA MADERA 3",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29041,
+    "name": "FRASCO 13X22CM 2,2L VIDRIO C/TAPA METAL WHITE BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29042,
+    "name": "FRASCO 19X12,5CM 1,8L VIDRIO TRANSP WHITE BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29043,
+    "name": "FRASCO 14,5X12,5CM 1,3L VIDRIO TRANSP WHITE BOX",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29044,
+    "name": "FRASCO VIDRIO 12,2X18,2CM DSÑO CILINDRO LISO C/TAPA VIDRIO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29045,
+    "name": "FRASCO VIDRIO 10,5X16CM DSÑO CILINDRO LISO C/TAPA VIDRIO",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29046,
+    "name": "MIELERA 14X7,5CM VIDRIO C/CUCHARA MIELERA RELIEVE/ONDAS CJA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29047,
+    "name": "MIELERA 14X5CM VIDRIO C/CUCHARA MIELERA CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29048,
+    "name": "MIELERA 12X7CM VIDRIO C/MIELERO RELIEVE/ONDAS CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29049,
+    "name": "MIELERA 12X7CM VIDRIO C/CUCHARA MIELERA CJA BLANCA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29050,
+    "name": "MIELERA 13CM 350ML DE VIDRIO C/TAPA MADERA Y CUCHARA PARA MI",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29051,
+    "name": "MIELERA VIDRIO 13CM 350ML C/TAPA MADERA CAJA REG",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29052,
+    "name": "FRASCO 10X15,6CM VIDRIO \"COFFE/SUGAR/TEA\" C/TAPA BAMBU CJA",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29053,
+    "name": "FRASCOS VIDRIO 9,5X17,2CM 950ML F/CILINDRO C/TAPA CLR GRIS",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29054,
+    "name": "FRASCO VIDRIO 13,2X9,2X17,3CM 1,3L F/CILINDRO C/TAPA CLRS SU",
+    "current_cat": "厨房储物"
+  },
+  {
+    "id": 29055,
+    "name": "FRASCO VIDRIO 9,5X27,9CM 1,6L F/CILINDRO C/TAPA",
+    "current_cat": "厨房储物"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

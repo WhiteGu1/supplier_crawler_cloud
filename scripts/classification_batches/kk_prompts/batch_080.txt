@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31856,
+    "name": "SET DINOSAURIOS X6 17C10CM C/3 DINOSARIIOS/HUEVO/PLANTAS PVC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31857,
+    "name": "SET MASCOTA 14X17X9CM C/ACCS X3PCS BAÑERA PLAST CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31858,
+    "name": "SET MASCOTA 22X41CM PERRO X3 C/ACC X15 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31859,
+    "name": "SET MASCOTA 32X19CM PERRO X3 C/ACC X6 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31860,
+    "name": "SET MASCOTA 40X24CM PERROS X5 /ACC X7 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31861,
+    "name": "SET MASCOTA 41X24,5CM PERRO X4 /ACC X13 CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31862,
+    "name": "SET MASCOTA X21PCS SILLA/CUCHA/PERRITOS BLISTER 9X13CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31863,
+    "name": "SET MASCOTAS 29X19CM X8PCS PERROS/CALESITA/MOCHILAS PLAST BL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31864,
+    "name": "SET MASCOTAS 34,5X24CM X7PS PERROS/JAULA/COMEDERO SURT 2 DSÑ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31865,
+    "name": "SET MASCOTAS 44X32CM PLAST X18PCS GATOS/CUCHA/CASA SURT 2 CL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31866,
+    "name": "SET MASCOTAS 44X32CM PLAST X18PCS GATOS/CUCHA/CASA SURT 2 CL",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31867,
+    "name": "SET MASCOTAS X10PCS CUCHA/PERRITOS/PLATITO SURT 2 DSÑ BLISTE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31868,
+    "name": "SET MUÑECOS GOMA FONDO DE MAR X5PCS SURT 2 DSÑ BOLSA PVC 25X",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31869,
+    "name": "SET MUÑECOS Y AUTITOS PLAST X13PCS 47X32CM RUEDA LIBRE BLSTE",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31870,
+    "name": "SET MUÑECOS Y AUTITOS PLAST X19PCS 50X25X6CM PLAST RUEDA LI",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31871,
+    "name": "SET PESCA 21X26CM F/PATO C/CAÑA X2 /RED /PATITOS X8 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31872,
+    "name": "SET PONY X6 14X15CM C/PARQUE DIVERSIONES CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31873,
+    "name": "TELEFONO A PILA F/ANIMAL SURT 2 DSÑ BOLSA PVC 13X20CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31874,
+    "name": "TORRE GIRATORIA 14X24CM F/CHANCHO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31875,
+    "name": "TORRE GIRATORIA 14X24CM F/PERRO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31876,
+    "name": "TORTUGA DESARMABLE C/CUERDA BOLSAPVC 18X26CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31877,
+    "name": "UNICORNIO SALTARIN 10X7CM CLR SURT CJA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31878,
+    "name": "CUNERO A PILA 387X26X7CM C/ SONIDO MORDILLOS F/ ANIMAL CLR M",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31879,
+    "name": "ELEFANTE CUNERO 14X11CM A CUERDA BLISTER",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31880,
+    "name": "SET SONAJERO X5 10X10CM C/SONIDO A PILA CJA VENTANA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31881,
+    "name": "SET SONAJEROS X3 12X9CM BOLSA PVC",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31882,
+    "name": "SET SONAJEROS X3 13,5X6CM BOLSA PVC",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31883,
+    "name": "SET X2 SONAJERO 20CM DSÑO ANIMALES OPP (EX SD23038)",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31884,
+    "name": "SONAJERO 12CM BOLA RED",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31885,
+    "name": "SONAJERO 12X12CM F/PANDERETA DSÑO UNICORNIO DISPLAY X10",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31886,
+    "name": "SONAJERO 12X16CM F/RANA OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31887,
+    "name": "SONAJERO 12X18 CASCABEL X3 C/MANGO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31888,
+    "name": "SONAJERO 13CM F/PAYASO X2 BOLSA PVC 16X20CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31889,
+    "name": "SONAJERO 13X11CM F/KOALA C/RL SURT 2 DISEÑO BOLSA PVC",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31890,
+    "name": "SONAJERO 13X12X5 REY PATO 2 ASAS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31891,
+    "name": "SONAJERO 15CM F/FLOR OPP 8X18CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31892,
+    "name": "SONAJERO 17,5X19CM F/UNICORNIO C/LUZ SONIDO A PILA CJA VENTANA",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31893,
+    "name": "Y SONAJERO 17X8CM F/SAPO PLAST OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31894,
+    "name": "SONAJERO 17X9 UNICORNIO SONIDO PILA RELOJ DISPLAY X",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31895,
+    "name": "SONAJERO 19X11,5CM F/CARPINCHO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31896,
+    "name": "SONAJERO 19X15,5CM C/LUZ F/CARPINCHO OPP A PILA RELOJ",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31897,
+    "name": "SONAJERO A PILA 12X13CM F/OSO C/ PANDERETA DISPLAY X10",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31898,
+    "name": "SONAJERO A PILA F/BIBERON CJA VENT 19X19X9",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31899,
+    "name": "SONAJERO A PILA X11 F/ANIMAL VARIOS MOD CJA VENT MALETIN",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31900,
+    "name": "SONAJERO C/MANGO C/ELEFANTE OPP 10X20CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31901,
+    "name": "SONAJERO C/RUEDITAS F/PERRITO BOLSA PVC HEADER 21X18CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31902,
+    "name": "SONAJERO F/MARIPOSA OPP 11X21CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31903,
+    "name": "SONAJERO F/NENE 15X13CM OPP 16X19CM",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31904,
+    "name": "SONAJERO PLAST 18X7CM C/CABEZA ANIMAL COLORIDO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 31905,
+    "name": "SONAJERO X2 F/BICHITO Y F/ELEFANTE BOLSA PVC 19X20CM",
+    "current_cat": "派对用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

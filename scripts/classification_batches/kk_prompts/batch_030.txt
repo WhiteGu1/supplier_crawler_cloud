@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29356,
+    "name": "ADORNO F/NUMEROS 19X13CM DEL 1 AL 9 F/GLOBOS SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29357,
+    "name": "GLOBOS F/NUMEROS 18\" DEL 0-9 SURT CLRS DORADO/PLATEADO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29358,
+    "name": "GLOBOS F/NUMEROS 32\" DEL 0-9 SURT CLRS DORADO/PLATEADO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29359,
+    "name": "GLOBO TRANSPARENTE 20CM C/VARILLA C/LUZ 80M OPP A PILA RELOJ",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29360,
+    "name": "ADORNOS C/FIGURAS 19X13CM F/GLOBO SURT 2 DSÑ CORAZON/ESTRELLA SURT CLRS OP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29361,
+    "name": "GLOBOS CUMPLEAÑOS X10 CLR VIOLETA METALIZADO OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29362,
+    "name": "GLOBOS CUMPLEAÑOS X10 SURT CLRS OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29363,
+    "name": "GLOBOS CUMPLEAÑOS X8 SURT CLRS OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29364,
+    "name": "GLOBOS CUMPLEAÑOS X8 SURT CLRS OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29365,
+    "name": "VELAS P/TORTA 5CM X24 SURT CLRS BLISTER",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29366,
+    "name": "VELAS FELIZ CUMPLEAÑOS 4CM SURT DORADO/PLATEADO CAJA PVC",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29367,
+    "name": "GUIRNALDA TRIANGULAR LISA 20X16CM SURT 2 CLRS OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29368,
+    "name": "GUIRNALDA TRIANGULAR FELIZ CUMPLEAÑOS 20X16CM SURT 2 CLRS OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29369,
+    "name": "VINCHAS C/NUMEROS 28X23CM DEL 1 AL 9 SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29370,
+    "name": "ADORNOS P/TORTAS 26X13CM SURT 3DÑS SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29371,
+    "name": "VINCHAS C/NUMEROS 28X23CM DEL 10 AL 50 SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29372,
+    "name": "ADORNO P/TORTAS 23CM SURT 3 DSÑ SURT CLRS BLISTER",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29373,
+    "name": "ADORNO P/TORTAS 13CM SURT 6 DSÑ CAJA PVC",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29374,
+    "name": "VINCHA C/FIGURAS 28X23CM SURT 3 DSÑ BOCAS/ESTRELLAS/CORAZONES SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29375,
+    "name": "VINCHAS FELIZ CUMPLEAÑOS 28X23CM SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29376,
+    "name": "ADORNO FELIZ CUMPLEAÑOS P/TORTAS 16X15CM SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29377,
+    "name": "SET PLATOS 20X1,8CM PLASTICO 16PCS VERDE CARTON",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29378,
+    "name": "BOMBITAS DE AGUA X100 SURT CLRS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29379,
+    "name": "SET CUCHILLOS PLASTICOS 14CM X20U SURT CLRS BLANCO Y NEGRO OPP HEADCART",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29380,
+    "name": "2 SERVILLETAS PAPEL 33CM X 33CM CLR BLANCO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29381,
+    "name": "SERVILLETAS X20 33X33CM PAPEL SURT 30%NEGRO 70% BLANCO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29382,
+    "name": "SERVILLETAS PAPEL 33CM X 33CM M/FELIZ CUMPLEAÑOS OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 29383,
+    "name": "SET BAÑO X4 VIDRIO DISPENSER 8X14,6 VASO 8X9,8 TARRO 11X9,5 JABONERA 11X2,5CM CLR GRIS TRANSP CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29384,
+    "name": "SET BAÑO X3 VIDRIO DISPENSER 8,7X18,6 VASO 8,7X10,9 JABONERA 13,4X8,9X2,6CM CLR NEGRO TRANSP CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29385,
+    "name": "SET DE BAÑO X3 -DISPENSER JABON/CEPILLO DE BAÑO/PORTA CEPILLO DE DIENTES -C/ACE INOX.-60X40X40 -CLR GRIS -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29386,
+    "name": "SET BAÑO X6PCS CIRCULAR TACHO/CEPILLO/DISPENSER/JABONERA/PORT ACEPILLO/VASO T/BAMBU LISO CLR BLANCO CJA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29387,
+    "name": "SET BAÑO X6PCS CUADRADO TACHO/CEPILLO/DISPENSER/JABONERA/PORT ACEPILLO/VASO T/BAMBU ONDULADO CLR BLANCO CJA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29388,
+    "name": "SET BAÑO X6PCS CIRCULAR TACHO/CEPILLO/DISPENSER/JABONERA/PORT ACEPILLO/VASO T/BAMBU ONDULADO CLR GRIS CJR CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29389,
+    "name": "SET BAÑO X6 DISPENSER/ ESCOBILLA/ VASO X2/ JABONERA/ BANDEJA CLR NEGRO C/BORDE MADERA CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29390,
+    "name": "SET DE BAÑO X4 -JABONERA/CEPILLO DE BAÑO/DISPENSER JABON/RECIPIENTE - 60X40X40 -C/BAMBOO -CLR NEGRO - CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29391,
+    "name": "SET BAÑO X4 DISPENSER 7,4X14CM ESCOBILLA 11,9X31,6 VASO 7,5X10,3 JABONERA 12,5X10,5X1,9CM CLR NEGRO MADERA CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29392,
+    "name": "SET DE BAÑO X4 -JABONERA/CEPILLO DE BAÑO/DISPENSER JABON/PORTA CEPILLO DE DIENTES -60X40X40 -BAMBOO -CLR BAMBOO -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29393,
+    "name": "SET BAÑO X6PCS CUADRADO TACHO/CEPILLO/DISPENSER/JABONERA/PORT ACEPILLO/VASO T/BAMBU LISO CLR NGRO CJA CLR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29394,
+    "name": "SET DE BAÑO X6 DISPENSER JABON 7,6X16,3CM VASO 7,5X10,8CM JABONERA 16X8X2CM PORTACEPILLO 6,6X13X10,2CM PORTAESCOBILLA 9,7X4,3X36CM CESTO 19,2X24,9CM C/TAPA BAMBU SHRINK",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29395,
+    "name": "SET BAÑO X4 PCS VASO PORTACEPILLOS T/PLAST 330ML DISPENSER JABON C/BOTON PLASTICO 420ML C/BASE BAMBOO CAJA BLCA",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29396,
+    "name": "SET DE BAÑO X3 15,7X19 VASO/DISPENSER JABON/BANDEJA -CLR GRIS -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29397,
+    "name": "SET BAÑO X4 DISPENSER 8,8X18,8 ESCOBILLA 9,5X35,4 VASO 7,3X11,1 JABONERA 11,8X1,8CM DSÑO MARMOL GRIS CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29398,
+    "name": "SET BAÑO X4 DISPENSER 10X18,2 ESCOBILLA 9,6X38,2 VASO 7,5X10,5 JABONERA 13X9X2,4CM CLR GRIS CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29399,
+    "name": "SET BAÑO X5 DISPENSER 8,1X16,3 ESCOBILLA 10,4X36,5 VASO 7,5X10,1 JABONERA 13,8X10,5X2,8 BANDEJA 20X11X2,8CM DSÑO MARMOL GRIS CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29400,
+    "name": "SET DE BAÑO X3 16X18,5 -VASO/DISPENSER JABON/BANDEJA -CLR NEGRO -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29401,
+    "name": "SET DE BAÑO X4 -CEPILLO / JABONERA / DISPENSER JABON -42X37X60CM -CLR NEGRO -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29402,
+    "name": "SET DE BAÑO X3 -DISPENSER JABON/CEPILLO DE BAÑO/PORTA CEPILLO DE DIENTES - 60X40X40 -DSÑO MARMOL -CAJA COLOR",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29403,
+    "name": "SET BAÑO X5 DISPENSER 7,1X17,4 ESCOBILLA 9,6X39,7 VASO 7,2X11 JABONERA 12,5X2,4 BANDEJA 26,5X13,4X2,3CM CLR LINEAS MARRONES CJA MARRON",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29404,
+    "name": "CEPILLO DE BAÑO PLASTICO 10X10X38 - C/MANGO AC. INOX. -CLR NEGRO -OPP",
+    "current_cat": "卫浴用品"
+  },
+  {
+    "id": 29405,
+    "name": "CEPILLO DE BAÑO POLIRESINA 7,1X17,5 - C/MANGO AC. INOX -CLR",
+    "current_cat": "卫浴用品"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

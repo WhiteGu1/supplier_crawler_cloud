@@ -1,0 +1,76 @@
+{
+  "batch_id": 11,
+  "total": 10,
+  "products": [
+    {
+      "id": 35608,
+      "name": "DISFRAZ DE BRUJA C/U",
+      "sku": "35177300",
+      "brand": "",
+      "image_local": "images/sfpanda/1e448afc71af832fd354bc06736f381c.webp"
+    },
+    {
+      "id": 35609,
+      "name": "TOALLAS DE MANO PCS*6",
+      "sku": "35177274",
+      "brand": "",
+      "image_local": "images/sfpanda/68a3c893cf9f420926e3dcd3992689bb.webp"
+    },
+    {
+      "id": 35610,
+      "name": "ORGANIZADOR C/U",
+      "sku": "35176939",
+      "brand": "",
+      "image_local": "images/sfpanda/750716e11f59b1c81eb04d97394dddc2.webp"
+    },
+    {
+      "id": 35611,
+      "name": "CESTO PCS*3",
+      "sku": "35176918",
+      "brand": "",
+      "image_local": "images/sfpanda/a769e62bbf6b6e4229bf2d6922485f19.webp"
+    },
+    {
+      "id": 35612,
+      "name": "MANTA C/U",
+      "sku": "35176908",
+      "brand": "",
+      "image_local": "images/sfpanda/2a5ed39d4272be82c2360ac18a996645.webp"
+    },
+    {
+      "id": 35613,
+      "name": "CESTO C/U",
+      "sku": "35176899",
+      "brand": "",
+      "image_local": "images/sfpanda/c2d87d8e1ef4d71f9531c60411f38c51.webp"
+    },
+    {
+      "id": 35614,
+      "name": "BOLA DE CRISTAL C/U",
+      "sku": "35176882",
+      "brand": "",
+      "image_local": "images/sfpanda/5f492e473bcd20c19a5d91f0b3c54242.webp"
+    },
+    {
+      "id": 35615,
+      "name": "CESTO C/U",
+      "sku": "35176621",
+      "brand": "",
+      "image_local": "images/sfpanda/8e383ea683d12eee9d7c23258936ac43.webp"
+    },
+    {
+      "id": 35616,
+      "name": "CESTO C/U",
+      "sku": "35176617",
+      "brand": "",
+      "image_local": "images/sfpanda/c5d11c13a95ae0ebcd89b88a056ced64.webp"
+    },
+    {
+      "id": 35617,
+      "name": "CESTO C/U",
+      "sku": "35176536",
+      "brand": "",
+      "image_local": "images/sfpanda/4ff76deb9c48f1ed7ddad2c5d4341a84.webp"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33569,
+    "supplier_id": 11,
+    "sku": "24032",
+    "name": "SLIME STITCH COLORES",
+    "image": "/images/panda_99/24032.jpg"
+  },
+  {
+    "id": 33570,
+    "supplier_id": 11,
+    "sku": "24101",
+    "name": "SLIME CABEZA STITCH COLORES",
+    "image": "/images/panda_99/24101.jpg"
+  },
+  {
+    "id": 33571,
+    "supplier_id": 11,
+    "sku": "24100",
+    "name": "SLIME AUTITOS",
+    "image": "/images/panda_99/24100.jpg"
+  },
+  {
+    "id": 33575,
+    "supplier_id": 11,
+    "sku": "22128",
+    "name": "CARTERA C/ACC(168)",
+    "image": "/images/panda_99/22128.jpg"
+  },
+  {
+    "id": 33576,
+    "supplier_id": 11,
+    "sku": "24125",
+    "name": "MINECRAFT 12PCS",
+    "image": "/images/panda_99/24125.jpg"
+  },
+  {
+    "id": 33578,
+    "supplier_id": 11,
+    "sku": "24168",
+    "name": "ROMPECABEZAS 50PCS",
+    "image": "/images/panda_99/24168.jpg"
+  },
+  {
+    "id": 33581,
+    "supplier_id": 11,
+    "sku": "24043",
+    "name": "JUEGO CUBOS 100PCS",
+    "image": "/images/panda_99/24043.jpg"
+  },
+  {
+    "id": 33582,
+    "supplier_id": 11,
+    "sku": "24047",
+    "name": "JUEGO CUBOS 24PCS",
+    "image": "/images/panda_99/24047.jpg"
+  },
+  {
+    "id": 33583,
+    "supplier_id": 11,
+    "sku": "24091",
+    "name": "JUEGO CUBOS 12PCS",
+    "image": "/images/panda_99/24091.jpg"
+  },
+  {
+    "id": 33584,
+    "supplier_id": 11,
+    "sku": "24128",
+    "name": "TELEFONO BARCO PARA BEBE(72)",
+    "image": "/images/panda_99/24128.jpg"
+  }
+]

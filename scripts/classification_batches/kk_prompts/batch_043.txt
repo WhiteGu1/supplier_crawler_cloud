@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30006,
+    "name": "MOCHILA 34X17CM PU INTERIOR POLYESTER MANGA NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30007,
+    "name": "1 MOCHILA BRILLOSA 28X17X7CM C/1 CIERRE AZUL OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30008,
+    "name": "MOCHILA BRILLOSA 28X17X7CM C/3 CIERRES AZUL OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30009,
+    "name": "MOCHILA BRILLOSA 44X30X14CM C/1 BROCHE Y 2 CIERRES SURT 3 CLRS AZUL/GRIS CLARO OSCURO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30010,
+    "name": "MOCHILA BRILLOSA 44X30X14CM C/1 BROCHE Y Y 2 CIERRES SURT 2 CLRS NEGRA/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30011,
+    "name": "MOCHILA 41X30X11CM 2 CIERRES SURT 3 CLRS AZUL/GRIS/NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30012,
+    "name": "MOCHILA BRILLOSA 41X30X11CM 4 CIERRES SURT 2 CLRS GRIS/NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30013,
+    "name": "MOCHILA 43X30X13CM 3 CIERRES BROCHES CIERRE NEGRO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30014,
+    "name": "MOCHILA 48,5X33X15CM 5 CIERRES + BOLSILLO ESPACIO NOTEBOOK SURT 3CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30015,
+    "name": "MOCHILA 48,5X33X15CM 5 CIERRES ESPACIO NOTEBOOK SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30016,
+    "name": "MOCHILA 48X31X18CM 4 CIERRES ESPACIO NOTEBOOK DSÑ GAME SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30017,
+    "name": "MOCHILA 47,5X33X15CM 4 CIERRES ESPACIO NOTEBOOK SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30018,
+    "name": "MOCHILA 49X34X20CM 3 CIERRES ESPACIO NOTEBOOK DÑS CUADRICULADO SURT 5CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30019,
+    "name": "MOCHILA 50X33X20CM 4 CIERRES ESPACIO NOTEBOOK SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30020,
+    "name": "MOCHILA 50X34X21CM 4 CIERRES ESPACIO NOTEBOOK SURT 4CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30021,
+    "name": "MOCHILA 44X31X12CM DSÑ LISO \"FASHION\" CIERRES C/MONEDERITO SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30022,
+    "name": "3 MOCHILA 46X32X12CM DÑS LISO 3 CIERRES C/PELUCHE PANDA SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30023,
+    "name": "MOCHILA 48X33X13CM DSÑO LISO 3 CIERRES C/LOGO RELAMPAGO SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30024,
+    "name": "MOCHILA 48X33X13CM DSÑO LISO 4 CIERRES LISA SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30025,
+    "name": "MOCHILA 42X30X12CM 2 CIERRES LISA SURT CLRS NEGRO/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30026,
+    "name": "2 MOCHILA 40X30X15CM ESTAMP Y F/AUTO C/CIERRE X2 BOLSILLOS X2",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30027,
+    "name": "MOCHILA 32X25CM RIGIDA ESTAMP F1 C/CIERRE 2 BOLSILLO 2 CLR S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30028,
+    "name": "MOCHILA 45X31X15CM ESTAMPADO GEOM BIS CLR FLUOR CIERRE X4 2",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30029,
+    "name": "MOCHILA 45X30X13CM VIOLETA C/ LETRAS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30030,
+    "name": "MOCHILA 37X28X12CM DEPORTIVA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30031,
+    "name": "MOCHILA 40X30X13CM DEPORTIVA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30032,
+    "name": "MOCHILA 40X30X13CM DEPORTIVA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30033,
+    "name": "MOCHILA 24X19X9CM COLORIDAS CON ANIMALES 5 DSÑ SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30034,
+    "name": "MOCHILA 43X30X13CM LILA PASTEL 3DSÑ SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30035,
+    "name": "MOCHILA 43X30X13CM VIO/ROS 2 CLR SURT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30036,
+    "name": "MOCHILA 43X30X12CM MAT. 600D M/\"BLACKPINK\" SURT 4 CLRS VERD",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30037,
+    "name": "MOCHILA 45X32X15CM C/PASTEL SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30038,
+    "name": "MOCHILA 40X30X12CM C/3 ZIPPERS 3 BOLSO NENA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30039,
+    "name": "MOCHILA 44X30X12CM C/4 ZIPPERS 3 BOLSO NENA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30040,
+    "name": "MOCHILA 44X30X12CM C/3 ZIPPERS 4 BOLSOS C/2 TRAVAS 3 CORES S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30041,
+    "name": "MOCHILA 44X30CM C/3 ZIPPERS 4 BOLSOS C/2 TRAVAS 3 CORES SORT",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30042,
+    "name": "MOCHILA 44X31X14CM POLYESTER C/3 COMPARTIMIENTOS CIERRE PLAS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30043,
+    "name": "MOCHILA 44X31X14CM POLYESTER C/3 COMPARTIMIENTOS CIERRE PLAS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30044,
+    "name": "MOCHILA 44X31X14CM POLYESTER C/4 COMPARTIMIENTOS CIERRE PLAS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30045,
+    "name": "MOCHILA 44X31X14CM POLYESTER C/4 COMPARTIMIENTOS \"SIRENITA\"",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30046,
+    "name": "MOCHILA PLASTICA + PU 39X28X19CM INFANTIL 2 BOLSILLOS SURT 2 DISEÑOS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30047,
+    "name": "MOCHILA PLASTICA + PU 36X28X13CM INFANTIL 1 BOLSILLO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30048,
+    "name": "MOCHILA 46X31X15CM 4 CIERRES CAMUFLADA \"SPORT\" SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30049,
+    "name": "MOCHILA 46X31X15CM 4 CIERRES CAMUFLADA \"SPORT HAPPY\" SURT 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30050,
+    "name": "MOCHILA 40X30X15CM 3 CIERRES DIBUJO C/RELIEVES SURT 2 DSÑ PELOTAS / ARCOIRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30051,
+    "name": "MOCHILA 29X24CM RIGIDA PLASTICO CARA OSO CARICATURA C/CIERRE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30052,
+    "name": "MOCHILA PLUSH 25X21X5CM PATITO C/BRAZOS/PIES 1 CIERRES CLR S",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30053,
+    "name": "MOCHILA 25CM RED INFANTIL F/CARA GATITO 4 CLR SURT OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30054,
+    "name": "MOCHILA 31X24CM RELIEVE ESTAMP NENA CIERRE X1 2 ESTAMP/CLR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30055,
+    "name": "MOCHILA 30X24X4CM INFANTIL F/AVION RIGIDA CIERRE X1 3 CLRS",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

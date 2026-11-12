@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 28756,
+    "name": "BOTELLA 750ML 23CM PLAST DSÑO CAPIBARA SURT CLR OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28757,
+    "name": "BOTELLA PLASTICO 1200ML 27CM \"TWINKLE\" CLR SURT OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28758,
+    "name": "BIDÓN 1500ML AI204 C/TAPA PLAST C/SORBETE SILICONA SURT 2CLRS CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28759,
+    "name": "BOTELLA 20X8CM PLAST C/CORREA DSÑO OJITOS OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28760,
+    "name": "BOTELLA 21,5X10,5CM PLAST C/CORREA DSÑO BOQUITA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28761,
+    "name": "BOTELLA PLASTICO 600ML 13CM F/CAMARA CLR VIOLETA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28762,
+    "name": "BOTELLA PLASTICO 650ML 20CM TAPA/PANDA ESTAMP/PANDA CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28763,
+    "name": "BOTELLA PLASTICO 800ML CLR RJO/CELESTE POLYBAG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28764,
+    "name": "BOTELLA PLASTICO 1600ML 24CM SAPO C/CORREA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28765,
+    "name": "BIDÓN 1900ML AI304 C/TAPA PLAST CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28766,
+    "name": "BOTELLA 17X8CM C/TAPA BOTON C/SORBETE SILICONA DSÑO OSO ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28767,
+    "name": "BOTELLA SILICONA 24X7CM 500ML PLEGLABLE FUELLE 4CLR SURT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28768,
+    "name": "BOTELLA 20X9CM C/TAPA BOTON C/SORBETE SILICONA DSÑO BOOM OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28769,
+    "name": "BOTELLA 24X7CM A201 750ML OPP SURT 3CLRS AZUL/GRIS/NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28770,
+    "name": "BOTELLA 23X7CM A201 750ML OPP SURT 3CLRS ROSA/ROJO/NEGRO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28771,
+    "name": "BOTELLA A201 24X7CM A201 750ML OPP SURT 3CLRS AZUL/ROJO/NEGR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28772,
+    "name": "BOTELLA 18X7CM ALUMINIO 600ML OPP SURT 3CLRS AZUL/AMARILLO/R",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28773,
+    "name": "BOTELLA 21CM 500ML DSÑO ASTRONAUT CLR AZUL CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28774,
+    "name": "BOTELLA 21,5X6,5CM M/BRONCE REDONDA 400ML C/TAPA A R",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28775,
+    "name": "BOTELLA ALUMINIO 21X6,6CM 500ML SURT CAMIONES SURT CLR EGG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28776,
+    "name": "BOTELLA PLASTICA 23 X 7 CM 550ML COLORES SURTIDO Y DSÑOS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28777,
+    "name": "BOTELLA PLASTICA 21.5 X 7 CMS COLORES SURTIDOS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28778,
+    "name": "BOTELLA PLASTICA 26.5 X 9.5 CM 1500 ML COLORES SURTIDOS CO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28779,
+    "name": "BOTELLA PLASTICA 30 X 10.5 CM 2000 ML COLORES SURTIDOS TAP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28780,
+    "name": "BOTELLA PLASTICA 10.5 X 28.5 CM 2100ML COLORES SURTIDO",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28781,
+    "name": "BOTELLA TERMICA 500ML 19CM F/OREJA OSO CLR SURT CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28782,
+    "name": "BOTELLA 750ML A201 23X7CM \"SPORT\" SURT 3CLRS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28783,
+    "name": "BOTELLA 1000ML AI304 C/TAPA VASO TIPO TERMO C/BOMBILLA SURT 3 CLR CAJA REG",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28784,
+    "name": "BOTELLA ALUMINIO 26 ALUMINIO C.ANTIDESLIZANTE C.TAPA PICO (V",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28785,
+    "name": "BOTELLA 24,5X7,5CM NEGRA 650ML C/AGARRE T/PLASTICA S",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28786,
+    "name": "BOTELLA 17CM 500ML ESTAMP DINO C/SOGA CLR CELESTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28787,
+    "name": "BOTELLA PLASTICA DSN P/LECHE 20,5CM 500ML",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28788,
+    "name": "BOTELLA ALUMINIO 21CM 600ML TAPA PLASTICA NEGRA C/PICO ACANA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28789,
+    "name": "BOTELLAALUMINIO21CM500MLTAPAPLASTIC ABRILLANTE(PLATEAD",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28790,
+    "name": "BOTELLA TERMICA 400ML 19CM DSÑO ANIMAL C/ANTEOJOS CJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28791,
+    "name": "BOTELLA ALUMINIO 600ML \"SPORT\" CAJA CLR",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28792,
+    "name": "BOTELLA 1000ML AI304 C/TAPA VASO TIPO TERMO C/BOMBILLA CLR R",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28793,
+    "name": "CANTIMPLORA 15X13CM PLAST 2 PICOS F/CAMARA AZUL OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28794,
+    "name": "CANTIMPLORA 20X13,5CM PLAST C/CORREA C/TAPA ROSA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28795,
+    "name": "CANTIMPLORA 15X13CM PLAST C/CORREA C/SORBETE F/HUELLA NEGRA OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28796,
+    "name": "CANTIMPLORA 13,5X13CM PLAST 2 PICOS F/PEZ OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28797,
+    "name": "CANTIMPLORA 17X12X7CM 850ML ESTAMP PANDA C/CORREA CLR AZUL OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28798,
+    "name": "3 CANTIMPLORA PLASTICA 16CM ESTAMP C/TAPA Y TIRA CLR SURT OPP",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28799,
+    "name": "CANTIMPLORA 18X14CM FORMA PATO C/ CUBRE PICO Y PICO FLEX 2CL",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28800,
+    "name": "CANTIMPLORA 15CM 500ML ESTAMP OSO CLR CELESTE CLR BOX",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28801,
+    "name": "BOTELLON PLASTICO C/PICO C/MANIA REDONDO 2LTS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28802,
+    "name": "BOTELLON PLASTICO C/PICO REDONDO 1500MLS",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28803,
+    "name": "FUNDA 23X11 P/BOTELLA 2000ML C/VENTANA CON CORREA",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28804,
+    "name": "FUNDA 24X8 P/VASOS 1200ML C/CORREA 3 CLRS BRILLANTINA SURT",
+    "current_cat": "厨房餐具"
+  },
+  {
+    "id": 28805,
+    "name": "BOTELLON 16,5X12CM PLAST DSÑO OSITO CLR VIOLETA OPP",
+    "current_cat": "厨房餐具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

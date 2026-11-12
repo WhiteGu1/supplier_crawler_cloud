@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32106,
+    "name": "ABACO 22,5X16X1CM PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32107,
+    "name": "ABACO 22X21 F/RANA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32108,
+    "name": "ABACO F/CANGREJO 24X12CM OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32109,
+    "name": "BURBUJERO 14X9X9CM F/CAMARA PLAST A PILA BLSTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32110,
+    "name": "BURBUJERO 21X10 F/ASTRONAUTA DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32111,
+    "name": "BURBUJERO 23X19X6CM PLAST F/PEZ BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32112,
+    "name": "BURBUJERO A PILA 13X12 F/CAMARA CAMALEON CJA REG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32113,
+    "name": "BURBUJERO A PILA 16X10 F/CAMARA ELEFANTE CJA REG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32114,
+    "name": "BURBUJERO A PILA 17X13 MINIGUN CON COCODRILO INF CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32115,
+    "name": "BURBUJERO A PILA 17X17 DELFIN BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32116,
+    "name": "BURBUJERO A PILA 17X17 F/COCODRILO CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32117,
+    "name": "BURBUJERO A PILA 19X17 NEMO BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32118,
+    "name": "BURBUJERO A PILA 26X15 MINIGUN C/UNICORNIO CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32119,
+    "name": "BURBUJERO DSÑO ELEFANTE 18,2X4,6X4,2CM SURT 3 CLRS DISPLAY X9 (EX SD30680)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32120,
+    "name": "CAMARA LANZA BURBUJAS 12X17CM F/RANA C/LUZ Y SONIDO A PILA CAJA REG",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32121,
+    "name": "CAMARA PROYECTOR A PILA 11X12CM C/SONIDO DISPLAY X 12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32122,
+    "name": "CUBO MAGICO 5,5 OPP(PC778-A080)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32123,
+    "name": "CUBO MAGICO 7CM OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32124,
+    "name": "DISCO FRISBIE PLAST 20,5X2CM 3 COLORS SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32125,
+    "name": "INFLADOR 10X16CM F/GATO/OSO/CERDO/TIGRE C/AUTO X2 /GLOBO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32126,
+    "name": "JUEGO AGUA 10X10,5CM C/TIBURON DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32127,
+    "name": "JUEGO AGUA 10X11 F/SAPO DISPLAY BOX X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32128,
+    "name": "JUEGO AGUA 10X11,5CM C/JIRAFA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32129,
+    "name": "JUEGO AGUA 10X11CM C/DRAGON DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32130,
+    "name": "JUEGO AGUA 10X11CM C/RANA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32131,
+    "name": "JUEGO AGUA 7X10 F/OSO DISPLAY BOX X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32132,
+    "name": "JUEGO DE AGUA 10CM F/PELOTA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32133,
+    "name": "JUEGO DE AGUA 10X1,2CM DSÑ SURT FRUTAS DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32134,
+    "name": "JUEGO DE AGUA 11,5X6X2CM PLAST DISPLAY BOX X24PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32135,
+    "name": "JUEGO DE AGUA 11,5X6X2CM PLAST DISPLAY BOX X24PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32136,
+    "name": "JUEGO DE AGUA 11X7,5CM PLASTICO OVAL ASTRONAUTA DISPLAY BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32137,
+    "name": "JUEGO DE AGUA 11X7,5CM RECT MONSTROS DISPLAY BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32138,
+    "name": "JUEGO DE AGUA 11X9 F/SAPO DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32139,
+    "name": "JUEGO DE AGUA 12X10 F/OVNI 2 MOD SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32140,
+    "name": "JUEGO DE AGUA 12X9 F/TELEFONO OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32141,
+    "name": "JUEGO DE AGUA 13,5X11,5X2CM PLAST SJRT 2DSÑ DISPLAY BOX X24P",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32142,
+    "name": "JUEGO DE AGUA 13X12,5CM F/VOLANTE CAJA DISPLAY X12PC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32143,
+    "name": "JUEGO DE AGUA 14X10CM PLASTICO JOYSTICK DINO DISPLAY BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32144,
+    "name": "JUEGO DE AGUA 14X10CM PLASTICO JOYSTICK UNICORNIO DISPLAY BO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32145,
+    "name": "JUEGO DE AGUA 14X7 F/PSP EMBOCA ANILLOS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32146,
+    "name": "JUEGO DE AGUA 14X7CM RECT UNICORNIO DISPLAY BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32147,
+    "name": "JUEGO DE AGUA 15,5X7X2CM M/MARINO PLAST CAJA DISPLAY X24PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32148,
+    "name": "JUEGO DE AGUA 17X3X2 CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32149,
+    "name": "JUEGO DE AGUA 8,4X10CM F/HELADO SURT CLRS CAJA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32150,
+    "name": "3 JUEGO DE AGUA 8X10 OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32151,
+    "name": "JUEGO DE AGUA F/DRAGON SURT 3 CLRS CAJA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32152,
+    "name": "JUEGO DE AGUA F/OSO SURT 3 CLRS CAJA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32153,
+    "name": "JUEGO DE AGUA F/VOLANTE SURT 4 MOD 15X18 OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32154,
+    "name": "JUEGO DE AGUA M/CONEJO CAJA DISPLAY X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 32155,
+    "name": "JUEGO DE AGUA M/PATITO CAJA DISPLAY X24 9,5X11,5CM",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

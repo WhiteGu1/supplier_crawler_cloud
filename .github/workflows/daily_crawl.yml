@@ -1,0 +1,68 @@
+name: Daily Cloud Crawl & Sync
+
+on:
+  schedule:
+    # 06:30 UTC = 03:30 Argentina (UTC-3), ready before morning work hours
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+    inputs:
+      suppliers:
+        description: "Comma-separated supplier IDs (or 'default' for all pure-HTTP suppliers)"
+        required: false
+        default: "default"
+      max_copy:
+        description: "Maximum new images to upload in this run"
+        required: false
+        default: "2000"
+
+concurrency:
+  group: supplier-cloud-sync
+  cancel-in-progress: false
+
+jobs:
+  crawl_and_sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements-cloud.txt"
+
+      - name: Install headless dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-cloud.txt
+
+      - name: Run HTTP crawlers, auto-classify, and sync catalog
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT || '4000' }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_NAME: ${{ secrets.DB_NAME || 'supplier_crawler' }}
+          DB_USE_SSL: "1"
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID || '1uM4bqickgGQjoAf7v1cdlJ16mDhMDvxP' }}
+          GDRIVE_DAT_FILE_ID: ${{ secrets.GDRIVE_DAT_FILE_ID || '1Wywu6NtTkiY5gUztbsmjoPuey8JvRLEC' }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+          R2_UPLOAD_SCOPE: ${{ secrets.R2_UPLOAD_SCOPE || 'local_only' }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST || 'smtp.qq.com' }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT || '465' }}
+          SMTP_SENDER: ${{ secrets.SMTP_SENDER }}
+          SMTP_AUTH_CODE: ${{ secrets.SMTP_AUTH_CODE }}
+        run: |
+          python scripts/cloud_runner.py --task crawl --suppliers "${{ inputs.suppliers || 'default' }}" --max-copy "${{ inputs.max_copy || '2000' }}"

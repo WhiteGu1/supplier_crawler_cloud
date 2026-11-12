@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32756,
+    "name": "SILLA METAL 43X43X94CM CLR BLANCO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32757,
+    "name": "SILLA METALICA + ALMOHADILLA 78X44X47CM BLANCA VENTA X BULTO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32758,
+    "name": "SILLA 71X54X56CM MADERA RECUBIERTA PU ESTRUCTURA DE HIERRO SURT 2 CLRS BEIGE FILM",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32759,
+    "name": "SILLAS 50X50X70CM RECUBIERTA PU + APOYOS MADERA ESTRUCTURA DE HIERRO GRIS/MADERA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32760,
+    "name": "SILLA 48X48X82CM MADERA + ESPONJA ALTA DENSIDAD RECUBIERTA PU ESTRUCTURA DE HIERRO NEGRA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32761,
+    "name": "SILLON 90X60X84CM MADERA + ESPONJA ALTA DENSIDAD RECUBIERTO PU ESTRUCTURA HIERRO C/CARBON SHUO NEGRO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32762,
+    "name": "SILLA MADERA+PLASTICO 45X40X80CM BLANCA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32763,
+    "name": "SILLA MADERA+PLASTICO 45X40X80CM NEGRA VENTA X BULTO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32764,
+    "name": "SILLON ESCRITORIO 107X50X52CM CON APOYA CABEZA EJE Y PATAS M",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32765,
+    "name": "SILLON PERRO 70X36X60X36CM ESTRUCTURA MADERA RELLENO DE ESPONJA RECUBIERTO PAÑO CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32766,
+    "name": "SILLÓN PERRO 55X33X52X32CM ESTRUCTURA MADERA RELLENO ESPONJA RECUBIERTO PAÑO CLR ROSA CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32767,
+    "name": "SILLÓN PERRO 55X33X52X32CM ESTRUCTURA MADERA RELLENO ESPONJA RECUBIERTO PAÑO CLR BLANCO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32768,
+    "name": "SILLON PERRO 70X36X60X36CM ESTRUCTURA MADERA RELLENO DE ESPONJA RECUBIERTO PAÑO CLR GRIS CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32769,
+    "name": "SILLÓN PUFF 50X50X36CM F/PELOTA ESTRUCTURA MADERA RELLENO DE ESPONJA RECUBIERTO PAÑO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32770,
+    "name": "SILLON 68X78X65CM F/PANDA ALGODÓN Y MOLDEADO RECUBIERTO PAÑO BAIL BAG",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32771,
+    "name": "SILLON 58X58X52CM F/ANIMAL SURT 3 DSÑ ESTRUCTURA MADERA RELLENO DE ESPONJA RECUBIERTO PAÑO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32772,
+    "name": "SILLON 58X58X52CM F/ANIMAL SURT 3 DSÑ Y ESTRUCTURA MADERA RELLENO DE ESPONJA RECUBIERTO PAÑO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32773,
+    "name": "ASIENTO 38X38X38CM PLUSH TIPO PANA Y GUARDAROPA PLEGABLE ROSA SURT 2 CLRS ROSA/NEGRO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32774,
+    "name": "ASIENTO 38X38X38CM PLUSH PELUDO GUARDAROPA PLEGABLE BLANCO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32775,
+    "name": "ASIENTO 35X35X35CM GUARDAROPA PLEGABLE TAPA PLUSH SURT 3 BLANCO/MARRON/GRIS CLRS OPP",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32776,
+    "name": "ASIENTO 30X30X30CM GUARDAROPA PLEGABLE BLANCA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32777,
+    "name": "ASIENTO 38X38X38CM PLUSH GUARDAROPA PLEGABLE CREMA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32778,
+    "name": "ASIENTO PLEGABLE 37X30CM CILINDRICO C/PLUSH GUARDAROPA SURT 3CLRS BEIGE/BLANCO/GRIS OPP",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32779,
+    "name": "PUFF BAULERA 38CM MDF+ESPONJA+PIEL SINTETICA SHRINK",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32780,
+    "name": "BAULERA 90X35X30CM MADERA RIGIDA C/PLUSH + 6X ALMOHADON 50X28CM C/PLUSH SURT 3 CLRS BLANCO/BEIGE/GRIS OPP",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32781,
+    "name": "JUEGO MESA 80X80X75CM DE MDF + 4 SILLAS 45X60X70CM RECUBIERTA PU REDONDA BLANCO ASIENTOS BICOLOR NARANJA/GRIS ESTRUCTURA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32782,
+    "name": "JUEGO MESA 80X80X75CM DE PIEDRA + 4 SILLAS 45X60X70CM RECUBIERTA PU REDONDA BLANCO ESTRUCTURA HIERRO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32783,
+    "name": "JUEGO MESA 80X80X75CM DE PIEDRA + 4 SILLAS 45X60X70CM RECUBIERTA PU REDONDA MESA NEGRA ASIENTOS ROJOS ESTRUCTURA HIERRO",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32784,
+    "name": "JUEGO MESA 80X80X75CM DE MDF + 4 SILLAS 45X60X70CM RECUBIERTA PU CUADRADA DSÑO MDF ESTRUCTURA HIERRO CAJA MARRON",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32785,
+    "name": "JUEGO MESA 80X80X75CM DE VIDRIO + 4 SILLAS 45X60X70CM RECUBIERTA PU ROJO NEGRO CUADRADA ESTRUCTURA DE HIERRO CAJA MARR",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32786,
+    "name": "JUEGO DE MESA COMEDOR PARA EXTERIOR MESA CUADRADA DE PE Y BA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32787,
+    "name": "JUEGO DE MESA COMEDOR PARA EXTERIOR MESA CUADRADA DE PE Y BA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32788,
+    "name": "JUEGO DE MESA COMEDOR PARA EXTERIOR MESA RECTANGULAR DE PE Y",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32789,
+    "name": "JUEGO DE MESA COMEDOR PARA EXTERIOR MESA RECTANGULAR DE PE Y",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32790,
+    "name": "JUEGO MESA + SILLAS ACERO + PLASTICO SIMIL RATAN C/VIDRIO 80X70/69X64X80CM REDONDA MARRON CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32791,
+    "name": "JUEGO MESA + SILLAS ACERO + PLASTICO SIMIL RATAN C/VIDRIO 90X90X72/66X62X90CM CUADRADA MARRON CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32792,
+    "name": "JUEGO MESA + SILLAS ACERO + PLASTICO SIMIL RATAN C/VIDRIO 90X72 / 57X47X93CM RECTANGULAR NEGRA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32793,
+    "name": "JUEGO SILLAS + MESA RATONA ALUMINIO + SOGA ALGODÓN 50X55/61X67X73CM BLANCA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32794,
+    "name": "JUEGO SILLAS + MESA RATONA ALUMINIO + SOGA ALGODÓN 50X57/56X61X78CM MARRON CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32795,
+    "name": "JUEGO SILLONES + MESA RATONA ACERO + PLASTICO SIMIL RATAN 90X45X43/70X63X72/145X63X72CM MARRON ALMOHADONES POLIESTER BLA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32796,
+    "name": "JUEGO SILLONES + MESA RATONA ACERO + PLASTICO SIMIL RATAN 75X36,5X38/58X59X83/58X101X83CM NEGRA ALMOHADONES POLIESTER BL",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32797,
+    "name": "JUEGO SILLONES + MESA RATONA ACERO + PLASTICO SIMIL RATAN 90X45X43/70X63X72/145X63X72CM GRIS ALMOHADONES POLIESTER BLANC",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32798,
+    "name": "JUEGO MESA + SILLAS ACERO + TELA C/VIDRIO 80X72/55X67X92CM REDONDA NEGRA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32799,
+    "name": "JUEGO MESA + SILLAS ACERO + TELA C/VIDRIO 80X80X72/55X67X92CM CUADRADA NEGRA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32800,
+    "name": "JUEGO MESA + SILLAS ACERO + TELA C/VIDRIO 150X90X72/55X67X92CM RECTANGULAR NEGRA CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32801,
+    "name": "JUEGO COMEDOR MESA + SILLAS 8 PERSONAS 160/240X100X72 / 77X63X98CM EXTENDIBLE CLR GRIS CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32802,
+    "name": "JUEGO COMEDOR MESA + SILLAS 6 PERSONAS 160X90X72/55X57X90CM SIMIL MAD + ALUMINIO CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32803,
+    "name": "JUEGO COMEDOR MESA + SILLAS 8 PERSONAS 160/240X100X72 / 67X58X106CM SILLA NEGRA CON POSICIÓN S CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32804,
+    "name": "JUEGO COMEDOR MESA + SILLAS 4 PERSONAS 90X90X72/56X57X91CM SIMIL MAD + ALUMINIO CAJA",
+    "current_cat": "家居家具"
+  },
+  {
+    "id": 32805,
+    "name": "JUEGO SOFA + CAMASTRO + MESA RATONA ACERO + PLASTICO SIMIL RATAN 60X80X65/80X80X65/70X75X36CM MARRON ALMOHADONES POLIEST",
+    "current_cat": "家居家具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

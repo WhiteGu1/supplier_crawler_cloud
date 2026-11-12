@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29506,
+    "name": "TOALLA 34X70 DOBLADO F/ELEF. CLR SURT OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29507,
+    "name": "TOALLA 33X73 RAYADA CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29508,
+    "name": "TOALLA 33X73 LISO 4 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29509,
+    "name": "TOALLON 68X136 C/COSTURA BCO. AZUL 4 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29510,
+    "name": "TOALLON 68X136 C/COSTURA BCO. AZUL 4 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29511,
+    "name": "SET TOALLONES X2PCS 140X70/35X75CM RED",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29512,
+    "name": "TOALLON 70X140 MICROFIBRA 5 CLR SURT CARTON",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29513,
+    "name": "TOALLON 70X140 LISO 4 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29514,
+    "name": "TOALLON 70X140 TELA 3 CLR SURT PVC PACK",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29515,
+    "name": "SET TOALLONES X3PCS 140X70/65X27/15X7CM SURT CLRS CARTON",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29516,
+    "name": "TOALLON 70X140CM SURT CLRS CARTON",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29517,
+    "name": "TOALLA C/GORRO Y VINCHA 25X65/ 25X28/8X18 CLR AZUL/GRIS/ROSA",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29518,
+    "name": "TOALLA 25X65 P/SECAR PELO CLR SURT CARTON",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29519,
+    "name": "TOALLA GORRO 26X33CM CARA ANIMAL SURT CAJA PVC",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29520,
+    "name": "GORRO TOALLA OPP BAG",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29521,
+    "name": "TOALLA X3 34X70 CLR SURT PVC BAG",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29522,
+    "name": "TOALLON 70X140 RAYADA CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29523,
+    "name": "PAÑO X3 30CM MICROFIBRA RAYADO CLR SURT. HEADER BLIST",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29524,
+    "name": "SET MANICURA X8 ALICATE X3/LIMA PIES/SEPARA DEDOS 3 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29525,
+    "name": "ESPONJA 21X10CM BAÑO F/MANI SURT 4 CLRS",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29526,
+    "name": "CEPILLO ESPONJA C/5 PUNTAS INTERCAMBIABLES USB CAJA REGALO",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29527,
+    "name": "SET DE BAÑO PLAST+BAMBOO C/ESPEJO SHK",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29528,
+    "name": "ESPONJA BAÑO POMPON F/CAPIBARA 9CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29529,
+    "name": "ESPONJA BAÑO POMPON F/UNICORNIO 9CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29530,
+    "name": "ESPONJA BAÑO POMPON F/SAPO 6CM CLR VERDE DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29531,
+    "name": "ESPONJA BAÑO POMPON F/CORONA 6CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29532,
+    "name": "ESPONJA BAÑO POMPON F/UNICORNIO 6CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29533,
+    "name": "ESPONJA BAÑO POMPON F/CANDY 6CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29534,
+    "name": "ESPONJA BAÑO POMPON F/HELADO 9CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29535,
+    "name": "ESPONJA BAÑO POMPON F/DINO 9CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29536,
+    "name": "ESPONJA BAÑO POMPON F/ANIMALES 9CM SURT CLR DISPLAY BOX",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29537,
+    "name": "CEPILLO PLASTICO MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29538,
+    "name": "CEPILLO PLASTICO 23CM MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29539,
+    "name": "CEPILLO PLASTICO 23CM MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29540,
+    "name": "CEPILLO PLASTICO 23CM MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29541,
+    "name": "CEPILLO PLASTICO 23CM MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29542,
+    "name": "CEPILLO PLASTICO 25CM MANGO LISO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29543,
+    "name": "CEPILLO PLASTICO 11CM C/DIBUJO ANIMALES SURT 3CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29544,
+    "name": "CEPILLO PLASTICO 17CM SURT 2 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29545,
+    "name": "CEPILLO PLASTICO 18CM F/FLOR SURT 3 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29546,
+    "name": "CEPILLO PLASTICO 22,5CM MANGO NUDO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29547,
+    "name": "CEPILLO PLASTICO 22,5CM MANGO NUDO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29548,
+    "name": "CEPILLO PLASTICO 25CM MANGO NUDO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29549,
+    "name": "CEPILLO PLASTICO 23CM NEGRO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29550,
+    "name": "CEPILLO PLASTICO 23CM NEGRO CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29551,
+    "name": "SET MANICURA X8 TIJERA/CEPILLO/LIMA PIES/ALICATE 3 CLR SURT",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29552,
+    "name": "CEPILLO DE PELO 23,5X5,8CM PLAST OVAL NGRO C/COBRE OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29553,
+    "name": "SET PEINE Y ESPEJO 9,3X8,6CM/ 9,3X4CM CLR CREMA OPP",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29554,
+    "name": "PEINE PLASTICO 22CM SURT 4 CLRS CART",
+    "current_cat": "美妆个护"
+  },
+  {
+    "id": 29555,
+    "name": "CEPILLO PLASTICO 18CM C/CARA GATITO SURT 3 CLRS CART",
+    "current_cat": "美妆个护"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

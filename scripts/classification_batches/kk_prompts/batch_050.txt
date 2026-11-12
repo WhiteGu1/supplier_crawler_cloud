@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30356,
+    "name": "ADORNO POLIRESINA 11CM PAREJA SENTADA EN CARTEL LOVE SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30357,
+    "name": "ADORNO POLIRESINA 12CM PAREJA JOVEN C/GORROS Y CARTEL LOVE CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30358,
+    "name": "ADORNO POLIRESINA 12CM PAREJA ANCIANOS C/CARTEL LOVE CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30359,
+    "name": "ADORNO POLIRESINA 14CM PAREJA SENTADA EN ROCAS C/CARTEL LOVE SURT 2 CLRS CAJA MARRON PILAS RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30360,
+    "name": "ADORNO POLIRESINA 15CM PAREJA POR DARSE C/CARTEL LOVE YOU SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30361,
+    "name": "BESO ADORNO POLIRESINA 10CM PAREJA SENTADA SOBRE ARCOIRIS C/CARTEL LOVE YOU SURT 2 DSÑ CAJA MARRON PILAS RELOJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30362,
+    "name": "ADORNO POLIRESINA 8X11CM PAREJA ANCIANA SENTADA TOMANDO CAFÉ SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30363,
+    "name": "ADORNO POLIRESINA 15CM PAREJA ANCIANA PARADA C/RAMO FLORES SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30364,
+    "name": "ADORNO PORLIRESINA 14CM PAREJA ANCIANA PARADA C/TORTA FELIZ CUMPLEAÑOS SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30365,
+    "name": "ADORNO POLIRESINA 9,5CM PAREJA ANCIANA C/GATOS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30366,
+    "name": "ADORNO POLIRESINA 12,5CM FAMILIA C/2 CHICOS 6CM CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30367,
+    "name": "AODRNO POLIRESINA 18CM FAMILIA C/2 HIJOS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30368,
+    "name": "6CM ADORNO POLIRESINA 6CM PAREJA SOBRE TRONCO SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30369,
+    "name": "ADORNO POLIRESINA 16CM PAREJA SOBRE LETRERO LOVE SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30370,
+    "name": "ADORNO POLIRESINA 6CM PAREJA DENTRO TAZA TE SURT 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30371,
+    "name": "DE ADORNO POLIRESINA 5CM PAREJA DENTRO TAZA DE TE SURT 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30372,
+    "name": "ADORNO POLIRESINA 9X6CM PANDAS DENTRO BAMBOO SURT 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30373,
+    "name": "CAÑO ADORNO POLIRESINA 5CM GATOS EN CANASTA 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30374,
+    "name": "SURT ADORNO POLIRESINA 5CM GATOS EN CANASTA SURT 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30375,
+    "name": "ADORNO POLIRESINA 8X5CM PERRO DENTRO DE CAJA SURT 2 DSÑO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30376,
+    "name": "ADORNO POLIRESINA 7CM ELEFANTES DENTRO TAZA SURT 2 CLRS CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30377,
+    "name": "DE GLOBO TERRAQUEO -HIERRO -29X14 -CLR DORADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30378,
+    "name": "GLOBO TERRAQUEO -HIERRO -34X14,5 -CLR DORADO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30379,
+    "name": "TELESCOPIO TRANSPARENTE -HIERRO Y CRISTAL 22X18 -CLR DOR",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30380,
+    "name": "- TELESCOPIO TRANSPARENTE -HIERRO Y CRISTAL - 28X26 -CLR DOR",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30381,
+    "name": "TELESCOPIO TRANSPARENTE -HIERRO+VIDRIO 28X26 -SURT CLR DORADO/NEGRO CAJA BLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30382,
+    "name": "- TELESCOPIO TRANSPARENTE -HIERRO+VIDRIO 22X18 -SURT CLR DORADO/NEGRO CAJABLANCA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30383,
+    "name": "- HOMBRE PENSANDO SOBRE ESCALERA -HIERRO Y RESINA -30X20 -C",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30384,
+    "name": "HOMBRE PENSANDO CON ESFERA TRANSPARENTE HIERRO, RESINA Y",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30385,
+    "name": "- ADORNO 23X10CM C/BASE HIERRO DOR Y BOLA VIDRIO LINEA DECO",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30386,
+    "name": "DE ADORNO 37X9X20CM CANOA METALICA DOR C/2 FIGURAS RESINA NGRA",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30387,
+    "name": "ADORN 24X16X9CM BOLA METALICA C/FIGURA HOMBRE METALICA BASE NEGRA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30388,
+    "name": "ADORNO MANOS 180X160X110CM C/PAJARITO DEDO CERAMICO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30389,
+    "name": "EN ADORNO MANOS 250X220X150CM C/PAJARITO EN DEDO CERAMICO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30390,
+    "name": "ADORNO METALICO 48X39X10CM F/ARBOL C/DIGES BASE NEGRA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30391,
+    "name": "ADORNO METALICO 38X28X10CM F/ARBOL C/DIGES BASE NEGRA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30392,
+    "name": "ADORNO METALICO 34X20CM F/ARBOL C/DIGES ROSAS CLR DORADO CAJ",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30393,
+    "name": "ADORNO METALICO 28X20CM F/ARBOL C/DIGES ROSAS CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30394,
+    "name": "ADORNO METALICO 41X31X10CM F/ARBOL C/DIGES F/ROSA BLANCA CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30395,
+    "name": "ADORNO METALICO 28X20CM F/ARBOL C/DIGES F/ROSA BLANCA CLR DORADO CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30396,
+    "name": "ADORNO 50X35X15CM VUELTA AL MUNDO METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30397,
+    "name": "ADORNO 36X30X12CM VUELTA AL MUNDO METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30398,
+    "name": "ADORNO METALICO 25X15,5X10CM F/GLOBO TERRAQUEO C/BASE BLANCA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30399,
+    "name": "ADORNO METALICO 26X15,5X10CM F/GLOBO TERRAQUEO C/BASE BLANCA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30400,
+    "name": "ADORNO METALICO 24X11X22CM F/GLOBO TERRAQUEO ROTADO C/BASE BLANCA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30401,
+    "name": "ADORNO METALICO 33X11X30CM F/GLOBO TERRAQUEO ROTADO C/BASE BLANCA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30402,
+    "name": "ADORNO 26X17CM F/GLOBO TERRAQUEO ROTADO VIDRIO C/BASE NEGRA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30403,
+    "name": "ADORNO 18X13X9CM ASTROLABIO METALICO BASE NEGRA CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30404,
+    "name": "ADORNO 38X21X7CM TOBOGAN METALICO C/BOLA DE VIDRIO Y HOMBRES PENSANTES CAJA MARRON",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30405,
+    "name": "ADORNO 31X15X19CM HOMBRE EN HAMACA ESTRUCTURA METALICA CAJA MARRON",
+    "current_cat": "家居装饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

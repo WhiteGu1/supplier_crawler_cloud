@@ -1,0 +1,72 @@
+[
+  {
+    "id": 33489,
+    "supplier_id": 11,
+    "sku": "18001K",
+    "name": "CASTILLO",
+    "image": "/images/panda_99/18001K.jpg"
+  },
+  {
+    "id": 33490,
+    "supplier_id": 11,
+    "sku": "22249",
+    "name": "MUÑECA CM CON MOTO(96)4",
+    "image": "/images/panda_99/22249.jpg"
+  },
+  {
+    "id": 33491,
+    "supplier_id": 11,
+    "sku": "22292",
+    "name": "PISTOLA(96)5",
+    "image": "/images/panda_99/22292.jpg"
+  },
+  {
+    "id": 33492,
+    "supplier_id": 11,
+    "sku": "22293",
+    "name": "PISTOLA(96)5",
+    "image": "/images/panda_99/22293.jpg"
+  },
+  {
+    "id": 33493,
+    "supplier_id": 11,
+    "sku": "22294",
+    "name": "PISTOLA C/ACC(48)",
+    "image": "/images/panda_99/22294.jpg"
+  },
+  {
+    "id": 33494,
+    "supplier_id": 11,
+    "sku": "22311",
+    "name": "PIZARRA MAGICA(120)",
+    "image": "/images/panda_99/22311.jpg"
+  },
+  {
+    "id": 33495,
+    "supplier_id": 11,
+    "sku": "22317",
+    "name": "REGISTRADORA C/LUZ Y SONIDO(48)5",
+    "image": "/images/panda_99/22317.jpg"
+  },
+  {
+    "id": 33496,
+    "supplier_id": 11,
+    "sku": "22339",
+    "name": "SET CABALLEROS(18)",
+    "image": "/images/panda_99/22339.jpg"
+  },
+  {
+    "id": 33497,
+    "supplier_id": 11,
+    "sku": "22340",
+    "name": "SET CABALLEROS(36)",
+    "image": "/images/panda_99/22340.jpg"
+  },
+  {
+    "id": 33498,
+    "supplier_id": 11,
+    "sku": "22342",
+    "name": "SET CABALLEROS(48)",
+    "image": "/images/panda_99/22342.jpg"
+  }
+]

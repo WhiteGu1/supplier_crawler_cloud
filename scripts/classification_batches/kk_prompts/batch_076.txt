@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31656,
+    "name": "CAMIONETA 12X6X5 MILITAR POLICIA C/SOLDADO/ PULLBACK PERRO P",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31657,
+    "name": "LARGAVISTAS 8,5X10CM DSÑO CAMUFLAJE SURT CLR AZL/VRD/ARENA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31658,
+    "name": "MUÑECO 10CM CAJA PVC CAJA DISPLAY X24 25X20X10CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31659,
+    "name": "MUÑECO 16CM C/ARMA SURT 2 CLRS CAJA VENT 25X12CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31660,
+    "name": "MUÑECO 25X34CM C/ACCESORIOS X5PCS ARMAS/CHALECO SURT 2 CLRS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31661,
+    "name": "MUÑECO 29CM ESPACIAL C/ACCS X2 SURT 2 MOD CJA DISPLAY X6",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31662,
+    "name": "MUÑECO 8CM C/ACCS X 3PCS ARMAS/CHALECO 22X16CM PLAST BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31663,
+    "name": "MUÑECO 8CM C/ACCS X2PCS HERRAMIENTAS/CHALECO SURT 2 DSÑ PLAS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31664,
+    "name": "MUÑECO A PILA C/ LUZ Y SONIDO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31665,
+    "name": "MUÑECO X4 12X6 MILITAR 4 MOD SURT C/ARMA PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31666,
+    "name": "MUÑECOS 20CM X2 MILITARES C/ACCESORIOS X4 BOLSA PVC 19X28CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31667,
+    "name": "PISTOLA LANZA DARDO 25X10CM C/CASCO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31668,
+    "name": "PISTOLA LANZA DARDO 25X14CM C/CASCO MILITAR CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31669,
+    "name": "SET MUÑECOS SOLDADOS CARMA X6PCS SURT 4 DSÑ CAJA VENT 43X24X",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31670,
+    "name": "SET TANQUES X2 16X9CM C/DESTORNILLADOR DESARMABLES BOLSA PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31671,
+    "name": "SOLDADO 18CM CLR SURT CJA PVC DISPLAY BOX X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31672,
+    "name": "SOLDADO 19CM C/ACCESORIOS PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31673,
+    "name": "SOLDADO 19CM C/GARRA CREDENCIAL PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31674,
+    "name": "SOLDADO 8CM MINI 24 MOD SURT CJA PVC DISPLAY BOX X24",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31675,
+    "name": "SOLDADO C/ARMAS Y AVION BLISTER 30X19",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31676,
+    "name": "ASTRONAUTAS X12PCS PIÑATA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31677,
+    "name": "OVNI 12X12 C/ASTRONAUTA CLR SURT DISPLAY X9",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31678,
+    "name": "SET ESPACIAL 35X28X2CM PLAST X9ACC COHETE/SATELITE/ASTRONAUR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31679,
+    "name": "MUÑECO TRANSFORMER C/ARMA CAJA PVC SURT 3 DSÑ DISPLAY BOX X6",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31680,
+    "name": "ROBOT 11X10 FRIC CLR SURT DISPLAY BOX X12",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31681,
+    "name": "ROBOT 15X25 SURT 2 CLR MIX AZL/AMLL/ROJO OPP",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31682,
+    "name": "ROBOT 24X15X7CM PLAST A PILA C/LUZ Y SONIDO AMARILLO CJA VEN",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31683,
+    "name": "ROBOT FRICCION 7,8X11X11CM C/RUEDA PATONA SURT 4 CLRS CAJA D",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31684,
+    "name": "ROBOT FRICCION SURT 3 CLRS OPP 7X10CM",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31685,
+    "name": "ROBOT P/B SURTIDO 3 CLRS OPP 7X10CM",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31686,
+    "name": "ROBOT R/C A PILA C/LUZ SONIDO Y MOVIMIENTO CAJA VENT 24X37X1",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31687,
+    "name": "TRANSFORMER 12X12X7CM AVION FRICC PLAST CJA DISPLAY X 12PCS",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31688,
+    "name": "TRANSFORMER 12X9CM F/AUTO OPP",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31689,
+    "name": "TRANSFORMER 15XX22CM F/GRUA CJA ABIERTA",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31690,
+    "name": "TRANSFORMER 16X10 F/MOTO BLISTER",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31691,
+    "name": "TRANSFORMER14X14X8AVIOINF4MODSURT BLIST",
+    "current_cat": "电器电子"
+  },
+  {
+    "id": 31692,
+    "name": "SET BOMBERO 42X24X4CM PLAST MUÑECOS 8CM X6 ARMAS X6 2 MOD SU",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31693,
+    "name": "SET CONSTRUCCION 48X243CM PLAST ACC X10 SURT BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31694,
+    "name": "SET HERRAMIENTAS 20X30CM VALIJA F/DINO SURT/SET DOC CARTON",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31695,
+    "name": "SET HERRAMIENTAS 21X28CM C/SERRUCHO /LLAVE INGLESA BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31696,
+    "name": "SET HERRAMIENTAS 22X31CM C/LLAVE INGLESA /PINZA BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31697,
+    "name": "SET HERRAMIENTAS 22X31CM C/MASCARA /LLAVE INGLESA BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31698,
+    "name": "SET HERRAMIENTAS 23X18 CASCO/MARTILLO/TALADRO BLIST",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31699,
+    "name": "SET HERRAMIENTAS 30X23 CASCO/CHALECO/TALADRO/MARTILLO BLIST",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31700,
+    "name": "SET HERRAMIENTAS 34X22X11CM F/STAND CJA VENTANA",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31701,
+    "name": "SET HERRAMIENTAS PLAST 43X30X6CM ACC X8 TALADRO ANTEOJO BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31702,
+    "name": "SET HERRAMIENTAS PLAST 56X26X8CM ACC X9 SURT CASCO TALADRO BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31703,
+    "name": "SET HERRAMIENTAS PLAST 63X43X8CM ACC X17 SURT CASCO CHALECO TALADRO MARTILLO BLISTER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31704,
+    "name": "SET HERRAMIENTAS X17 CIERRA/TALADRO/SERRUCHO BLISTER 33X54X3",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 31705,
+    "name": "SET HERRAMINETAS PLAST 31X22X3CM ACC X6 SURT TALADRO BLISTER",
+    "current_cat": "五金工具"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

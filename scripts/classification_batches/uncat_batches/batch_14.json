@@ -1,0 +1,76 @@
+{
+  "batch_id": 14,
+  "total": 10,
+  "products": [
+    {
+      "id": 35638,
+      "name": "Especiero Giratorio cuadrado +  12 Frascos",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/982676ad0876e736567f5ad860a3b8fa.jpg"
+    },
+    {
+      "id": 35639,
+      "name": "Abrelatas Uña 9,5cm 21594",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7ff9c90cd1eb2ac9aa18709fc6a3f70a.png"
+    },
+    {
+      "id": 35640,
+      "name": "Bandeja De Bambu Rectangular Con 3 Div, 25X10X1,5 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/6cc2f464bbb9a7ce2d8b6a7acd1a8a0d.jpg"
+    },
+    {
+      "id": 35641,
+      "name": "Set De 3 Bandejas De Bambu (2 Cuadradas + 1 Rectangular)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/eaaa9f843f90237019aeb019161ba399.jpg"
+    },
+    {
+      "id": 35642,
+      "name": "Bandeja De Bambu Rectangular, 24X12X1,5 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/b60d739b93c19e883cabbec2a357dd9c.jpg"
+    },
+    {
+      "id": 35643,
+      "name": "Bandeja De Bambu Ovalada, 30X14X1,5 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/21837f1b277799763b629525a6726fe3.jpg"
+    },
+    {
+      "id": 35644,
+      "name": "Set De 4 Piezas De Bambu (3 Bowl Redondos + 1 Bandeja Ovalada)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/1816694e34c15ddb6d71be402fc46ec6.png"
+    },
+    {
+      "id": 35645,
+      "name": "Set De 4 Piezas De Bambu (3 Bowl Cuadrados + 1 Bandeja Rectangular)",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/cbfd5e015ce6c4e59d0addf813b14c1a.png"
+    },
+    {
+      "id": 35646,
+      "name": "Tabla De Cortar, Redonda, De Marmol Y Madera 25 cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/2051d6a527704cfea69db1be1f1a083b.jpg"
+    },
+    {
+      "id": 35647,
+      "name": "Tabla De Cortar, Redonda, De Marmol Y Madera 30 cm 59065",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/c5cc6742e41d96d19d7994ed39827cf5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29906,
+    "name": "MOCHILA 35X23CM PU INTERIOR POLYESTER 1 MANGA NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29907,
+    "name": "BOLSO PU+PLASTICO 49X22X25CM 3 CIERRES SURT 2 CLRS GRIS/NEGR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29908,
+    "name": "BOLSO PU+PLASTICO 45X16X23CM 2 CIERRES SURT 2 CLRS GRIS/NEGR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29909,
+    "name": "BOLSO PU+PLASTICO 46X18X23CM 1 CIERRE SURT 2 CLRS GRIS/NEGRO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29910,
+    "name": "BOLSO PU+PLASTICO 48X25X25CM 4 CIERRES SURT 2 CLRS GRIS/NEGR",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29911,
+    "name": "MORRAL BRILLOSA 32X22X10CM C/2BROCHES NEGRO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29912,
+    "name": "MORRAL BRILLOSA 32X22X10CM C/2BROCHES SURT 4 CLRS AZUL/NEGRO/VERDE/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29913,
+    "name": "BOLSO BRILLOSA 21X18X11CM C/3 CIERRES AZUL OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29914,
+    "name": "BOLSO BRILLOSA 38X20X15CM C/BROCHES C/2 CIERRES GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29915,
+    "name": "BOLSO BRILLOSA 40X30X12CM C/BROCHES C/2 CIERRES GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29916,
+    "name": "BOLSO BRILLOSA 49X25X19CM 1 CIERRE SURT 5CLRS AZUL/PLATEADO/ROJO/GRIS/NEGRO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29917,
+    "name": "BOLSO 50X25X28CM 2 CIERRES Y RED 1 COLOR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29918,
+    "name": "BOLSO 52X34X19CM 1 CIERRE SURT 4 CLRS NEGRO/ROSA/AZUL/VERDE OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29919,
+    "name": "BOLSO 45X32X14CM 1 CIERRE \"SK FASHION\" SURT 2 CLRS NEGRO/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29920,
+    "name": "BOLSO 48X23X21CM 2 CIERRE \"SK FASHION\" SURT 2 CLRS NEGRO/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29921,
+    "name": "BOLSA 47X24X21CM 3 CIERRES \"HAVE A GOOD TRIP\" SURT 4 CLRS NEGRO/AZUL/GRIS/VERDE OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29922,
+    "name": "BOLSO DE PLAYA 45X33X17CM 1 CIERRE PLASTICO BRILLOSO SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29923,
+    "name": "BOLSO 46X22X15CM 1 CIERRE PLASTICO BRILLOSO SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29924,
+    "name": "BOLSA DE PLAYA 53X40X15CM C/DSÑO CIUDADES ITALIA/LONDRES/PARIS MITAD DIBUJO GRUESO MITAD FINO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29925,
+    "name": "RIÑONERA CRUZADA 26X20X8CM SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29926,
+    "name": "BOLSO C/CORREA TELA AVION",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29927,
+    "name": "BOLSO C/MANIJAS TELA AVION SURT 5 CLRS PLATEADO/NEGRO/AZUL/",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29928,
+    "name": "BOLSO MANO C/CORREA TELA AVION",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29929,
+    "name": "BOLSO MANO C/CORREA TELA AVION",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29930,
+    "name": "BOLSO MANO C/MANIJA Y CORREA TELA AVION",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29931,
+    "name": "BOLSO 22X27X10CM POLYESTER C/4 CIERRES PLAST SURT 3 CLRS VDE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29932,
+    "name": "BOLSO 23X34X10CM POLYESTER C/4 CIERRES PLAST SURT 3 CLRS VDE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29933,
+    "name": "BOLSO DE MANO 18X22X9,5CM POLYESTER C/4 CIERRES PLAST SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29934,
+    "name": "BOLSO 26X28X20CM POLYESTER C/3 CIERRES PLAST SURT 3 CLRS VDE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29935,
+    "name": "CARTERA 28X32CM PU INTERIOR POLYESTER C/BROCHE NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29936,
+    "name": "BOLSA DE PLAYA 50X35X13CM PLASTICA \"HELLO SUMMER\" SURT 4 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29937,
+    "name": "BOLSA PAPEL 38X37CM TEJIDA SURT 2 CLRS HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29938,
+    "name": "BOLSA PAPEL 40X36CM TEJIDA SURT 2 CLRS HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29939,
+    "name": "BOLSA PAPEL 32X31CM TEJIDA MARRON HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29940,
+    "name": "BOLSA PAPEL 39X38CM TEJIDA BLANCA HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29941,
+    "name": "CARTERA 25CM REDONDA C/CORREA SURT CLRS AZUL/VERDE/BLANCA/MARRON HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29942,
+    "name": "4 BOLSA 45X34CM TEJIDA C/MANIJAS NEGRAS SURT 2 CLRS BEIGE/MARRON HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29943,
+    "name": "BOLSA DE PLAYA 53X40X15CM C/DSÑO ZAPATILLAS C/CORDONES DIBUJO FINO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29944,
+    "name": "BOLSA DE PLAYA 53X40X15CM C/DSÑO ZAPATILLAS C/CORDONES DIBUJO GRUESO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29945,
+    "name": "CARTERA 36X28X8CM T/BOLSA 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29946,
+    "name": "BOLSO 48X28X24CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29947,
+    "name": "CARTERA 39X25X12CM 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29948,
+    "name": "CARTERA 42X27X10CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29949,
+    "name": "CARTERA 48X30X17CM 1 CIERRE T/BOLSA 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29950,
+    "name": "BOLSA PICNIC 41X29X16CM T/MIMBRE C/BOTON 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29951,
+    "name": "BOLSO 50X30X17CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29952,
+    "name": "CARTERA 44X28X10CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29953,
+    "name": "BOLSO CUERO 42X24X21CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29954,
+    "name": "BOLSA PICNIC 44X28X8CM 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 29955,
+    "name": "CARTERA 38X28X14CM T/BOLSA 1 CIERRE 1 CLR OPP",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

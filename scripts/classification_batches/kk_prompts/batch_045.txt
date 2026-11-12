@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30106,
+    "name": "MOCHILA PLASTICA + PU C/CARRITO 36X26X14CM ALUMINIO 2 BOLSILLOS SURT 6 DSÑ",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30107,
+    "name": "MOCHILA 30X17CM PU INTERIOR POLYESTER 1 MANGA NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30108,
+    "name": "MOCHILA 39X28CM PU INTERIOR POLYESTER CIERRES NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30109,
+    "name": "3 MOCHILA 44X31CM PU INTERIOR POLYESTER CIERRES NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30110,
+    "name": "2 MOCHILA 40X30CM PU INTERIOR POLYESTER 4 CIERRES NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30111,
+    "name": "MOCHILA 40X30CM PU INTERIOR POLYESTER CIERRES NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30112,
+    "name": "4 MOCHILA 43X31CM PU INTERIOR POLYESTER CIERRES NEGRA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30113,
+    "name": "3 BOLSO MOCHILA 43X28CM PU INTERIOR POLYESTER 3 CIERRES NEGRO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30114,
+    "name": "MOCHILA PU+PLASTICO 40X30X12CM C/BROCHES 2 CIERRES SURT 2 CL",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30115,
+    "name": "MOCHILA PU+PLASTICO 37X28X12 C/BROCHES 3 CIERRES SURT 2 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30116,
+    "name": "MOCHILA PU+PLASTICO 42X28X11CM 3 CIERRES SURT 2 CLRS GRIS/NE",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30117,
+    "name": "MOCHILA BRILLOSA 28X17X7CM C/2 CIERRES NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30118,
+    "name": "MOCHILA BRILLOSA 44X30X14CM C/1 BROCHE Y 2 CIERRES SURT 3 CLRS AZUL/GRIS CLARO OSCURO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30119,
+    "name": "MOCHILA BRILLOSA 40X27X13CM 2 CIERRES Y SURT 2 CLRS GRIS/NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30120,
+    "name": "MOCHILA 40X27X13CM 4 CIERRES SURT 2 CLRS GRIS/NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30121,
+    "name": "MOCHILA BRILLOSA 40X27X13CM 1 CIERRE SURT 4 CLRS AZUL/VERDE/GRIS/NEGRA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30122,
+    "name": "MOCHILA 43X30X13CM 3 CIERRES SURT 2 CLRS NEGRO/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30123,
+    "name": "MOCHILA 43X30X13CM 3 CIERRES SURT 2 CLRS NEGRO/GRIS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30124,
+    "name": "MOCHILA 43X30X13CM 3 CIERRES SURT 2 CLRS NEGRO/GRIS CIERRE NEGRO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30125,
+    "name": "BOLSO MOCHILA 53X30X20CM 2 CIERRES CUERINA SURT 3 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30126,
+    "name": "MOCHILA 45X30X12CM P/NOTEBOOK C/CABLE USB 4 CIERRES LISA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30127,
+    "name": "MOCHILA 43X31X12CM P/NOTEBOOK C/CABLE USB 3 CIERRES LISA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30128,
+    "name": "MOCHILA BRILLANTE M/CORAZON 28X23X10CM SURT 2CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30129,
+    "name": "MOCHILA F/CARPINCHO 29X25X9CM C/PLUSH 1 CIERRE SURT 2CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30130,
+    "name": "MOCHILA F/OSO 31X27X9CM PLUSH 1 CIERRE SURT 2 CLRS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30131,
+    "name": "MOCHILA 24X18X6CM PLUSH F/CARPINCHO SURT 3 DSÑ 1 CIERRE OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30132,
+    "name": "MOCHILA PLUSH 27X20X12CM M/UNICORNIO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30133,
+    "name": "MOCHILA PLUSH 29X22X13CM M/GATITO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30134,
+    "name": "MORRAL PLUSH 23X23X12CM M/UNICORNIO OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30135,
+    "name": "SET MOCHILA + BOLSO BIANDA + CARTUCHERA M/CON RELIEVE SURT 3 DSÑ",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30136,
+    "name": "SET MOCHILA + BOLSO BIANDA + CARTUCHERA M/CON RELIEVE SURT 4 DSÑ",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30137,
+    "name": "SET MOCHILA + BOLSO BIANDA + CARTUCHERA M/CON RELIEVE SURT 3 DSÑ",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30138,
+    "name": "SET MOCHILA + BOLSO BIANDA + CARTUCHERA M/CON RELIEVE SURT 3 DSÑ",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30139,
+    "name": "SET MOCHILA + BOLSO BIANDA + CARTUCHERA M/GOOD LUCK SURT 2 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30140,
+    "name": "MOCHILA 40X30X13CM 3 CIERRES C/BOLSO VIANDA 23X21X8CM Y CARTUCHERA 22X10X5,5CM SURT 2 DSÑ UNICORNIO/PRINCESA OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30141,
+    "name": "MOCHILA 40X30X14CM 3 CIERRES C/CARTUCHERA 22X10X5,5CM SURT 2 DSÑ UNICORNIOS / DINOS OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30142,
+    "name": "RIÑONERA CRUZADA 28X17X7CM SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30143,
+    "name": "RIÑONERA CRUZADA 30X17X8CM SURT 3CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30144,
+    "name": "BOLSO MANO BOTINERO TELA LISO 72X30CM SURT 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30145,
+    "name": "BOLSO MORRAL TELA C/CIERRE 72X30CM",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30146,
+    "name": "MORRAL 32X25X7CM RECT C/MANIJA DE GOMA TIRA REGULABLE SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30147,
+    "name": "BOLSO MORRAL 24X20CM POLYESTER C/4 CIERRES PLAST SURT 3 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30148,
+    "name": "BOLSO MORRAL 22X26X10CM POLYESTER C/4 CIERRES PLAST SURT 3",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30149,
+    "name": "BOLSITO 19X14CM PU INTERIOR POLYESTER NEGRO",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30150,
+    "name": "MORRAL PU+PLASTICO 23X25CM C/1 BROCHE 2 CIERRES SURT 2 CLRS",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30151,
+    "name": "RIÑONERA 34X13X5CM CLR C/CIERRES X4 3 CLR SURT OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30152,
+    "name": "RIÑONERA 33X14X13CM CAMOUFLAGE CLRS CIERRE X4 3 CLR SURT OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30153,
+    "name": "RIÑONERA 34X14X13CM CLR RUSTICO CIERRE X4 3 CLR SURT OPP",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30154,
+    "name": "RIÑONERA 30X14CM PU F/CORAZONES C/CIERRE PLATEADO DEGRADE SU",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30155,
+    "name": "RIÑONERA 30X14CM PU C/CIERRE PLATEADO CUADRILLE METALIZADA S",
+    "current_cat": "箱包配件"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

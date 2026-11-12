@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 32206,
+    "name": "GUANTES INVIERNO 20X9CM SURT 4 CLRS NEGRO/BLANCO/GRIS/ROJO O",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32207,
+    "name": "GUANTES INVIERNO 22X10CM SURT 3 CLRS NEGRO/GRIS/AZUL OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32208,
+    "name": "GUANTES INVIERNO 22X10CM SURT 5 CLRS GRIS/NEGRO/AZUL OSCURO",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32209,
+    "name": "GUANTES NIEVE DE MUJER",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32210,
+    "name": "GUANTES INVIERNO S/DEDOS 16X10CM SURT 4 CLRS VIOL/AZUL/NEGRO",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32211,
+    "name": "GUANTES SIN DEDOS 18X11CM SURT CLRS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32212,
+    "name": "GUANTES P/BICI 13X9CM SURT CLRS OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32213,
+    "name": "GUANTES INVIERNO DAMA 16X10CM CLRS MIX OPP",
+    "current_cat": "五金工具"
+  },
+  {
+    "id": 32214,
+    "name": "MEDIAS INVISIBLE X12 TALLE 7-9 SOLO BLANCA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32215,
+    "name": "MEDIAS SOQUETE X12 SURT 4 DSÑ 2 CLRS BLANCA/NEGRA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32216,
+    "name": "MEDIAS SOQUETE X12 LISA SURT 2 CLRS BLANCA/NEGRA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32217,
+    "name": "MEDIAS SOQUETE X12 DSÑ SPORT SURT 3 CLRS NEGRO/BLANCO/GRIS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32218,
+    "name": "MEDIAS INVISIBLES X12 LISA SURT 3 CLRS BLANCO/NEGRO/GRIS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32219,
+    "name": "MEDIAS INVISIBLES X12 LISA SURT 3 CLRS BLANCO/GRIS/NEGRO OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32220,
+    "name": "GORRO INVIERNO C/POMPOM 22X20CM 2 SURT CLRS ROSA/BLANCO OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32221,
+    "name": "GORRO INVIERNO C/POMPOM 21X20CM CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32222,
+    "name": "GORRO INVIERNO 20X25CM SURT 3 CLRS NEGRO/BLANCO/MARRON OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32223,
+    "name": "GORRO INVIERNO 21X18CM CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32224,
+    "name": "GORRO INVIERNO C/POMPOM 21X20CM PLUSH CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32225,
+    "name": "GORRO INVIERNO 20X17CM POLIESTER 3CLRS 60%NEGRO/20%GRIS/20%AZUL OSCURO OPP X12 BAIL BAG",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32226,
+    "name": "GORRO INVIERNO C/POMPOM 21X20CM CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32227,
+    "name": "BOINA INVIERNO 27CM CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32228,
+    "name": "GORRO INVIERNO 19X17CM CLRS SURT OPP",
+    "current_cat": "派对用品"
+  },
+  {
+    "id": 32229,
+    "name": "CORPIÑO C/ARO C/ENCAJE X12 TALLE 34-38A SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32230,
+    "name": "CORPIÑO X12 TALLE 36-42C SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32231,
+    "name": "CORPIÑO C/ARO X12 TALLE 46-52D SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32232,
+    "name": "CORPIÑO C/ARO DEPORTIVO X12 TALLE 36- 42B SURT 11CLR OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32233,
+    "name": "CORPIÑO DEPORTIVO X12 CLR ROSA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32234,
+    "name": "CORPIÑO C/TAZA SOFT X12 36-42B CLR ROSA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32235,
+    "name": "CORPIÑO C/ENCAJE DEPORTIVO X12 TALLE 46-52D SURT 6CLR OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32236,
+    "name": "TOP X12 TALLE FREE CLR MARRON OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32237,
+    "name": "CORPIÑO C/ENCAJE C/VOLADO X12 TALLE 34-42B SURT 5 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32238,
+    "name": "CORPIÑO C/ARO X12 TALLE 34-40B SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32239,
+    "name": "CORPIÑO C/ENCAJE X12 TALLE 36-42C SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32240,
+    "name": "CORPIÑO C/ARO X12 TALLE 36-42B SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32241,
+    "name": "CORPIÑO C/ENCAJE X12 TALLE 38-44C SURT 6 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32242,
+    "name": "CORPIÑO STRAPLESS X12 TALLE A-D SURT 2 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32243,
+    "name": "CORPIÑO STRAPLESS X12 TALLE A-D SURT 2 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32244,
+    "name": "BOMBACHA INFANTIL X12 TALLE L/XL/XXL/XXXL DSÑ BAILARINA SURT 4 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32245,
+    "name": "BOMBACHA CULOTE X12 TALLE S/M/L/XL CLR ROSA OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32246,
+    "name": "CORPIÑO STRAPLESS X12 TALLE A-C SURT 2 CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32247,
+    "name": "BOMBACHA C/ENCAJE X12 TALLE L-XL-XXL CLR BEIGE OPP PRECIO VENTAX 12",
+    "current_cat": "服装服饰"
+  },
+  {
+    "id": 32248,
+    "name": "BOMBACHA X12 CLR BEIGE OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32249,
+    "name": "SLIP X12 SURT 3 CLRS GRIS/AZUL/NEGRO OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32250,
+    "name": "BOXER X12 TALLE L/XL-XXL/XXXL 32-34 SURT 6 CLRS M/SPORT OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32251,
+    "name": "BOXER X12 TALLE L/XL-XXL/XXXL 32-34 SURT 6 CLRS M/LINEAS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32252,
+    "name": "CONJUNTO CORPIÑO C/ARO + BOMBACHA X12 TALLE 34-38A SURT 6CLRS OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32253,
+    "name": "COLALES X12 TALLE S/M/L/XL SURT 2 CLRS AZUL/MARRON OPP PRECIO VENTAX 12",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32254,
+    "name": "BUZO PIJAMA CANGURO PLUSH TALLE XL/XXL/XXXL SURT DSÑ OSO/PANDA SURT 2 CLRS OPP",
+    "current_cat": "家居纺织"
+  },
+  {
+    "id": 32255,
+    "name": "BUZO PIJAMA CANGURO PLUSH TALLE XL/XXL/XXXL SURT DSÑ GATO/CONEJO SURT 2 CLRS OPP",
+    "current_cat": "家居纺织"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

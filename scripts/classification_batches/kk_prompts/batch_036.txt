@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29656,
+    "name": "CESTA P/FRUTAS 22X7,3CM CIRCULAR HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29657,
+    "name": "CESTA P/FRUTAS 24X12,7CM CUADRADA HIERRO C/BASE BAMBU HANGTAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29658,
+    "name": "EXHIBIDOR DE ZAPATILLAS CAJA X3 PLAST 54X26X35CM CAJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29659,
+    "name": "EXHIBIDOR DE ZAPATILLAS CAJA X6 PLAST 106X26X35CM CAJA MARRO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29660,
+    "name": "ORGANIZADOR 3DIV PLEGABLE 30X30X9CM C/MARCO BAMBU CLR GRIS SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29661,
+    "name": "ORGANIZADOR 2 LVL 42X34X84,5CM C/MARCO BAMBU CLR GRIS CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29662,
+    "name": "ORGANIZADOR 3 LVL 42X33X96CM C/MARCO BAMBU /3 CAJONES 40X33X22 CLR GRIS CJA MARRON",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29663,
+    "name": "ORGANIZADOR 5 CAJONES 63X28X65CM C/MARCO PINO CLR GRIS SHRINK",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29664,
+    "name": "ORGANIZADOR 21X20X7,5CM F/CAJON CLR VERDE CLARO",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29665,
+    "name": "ORGANIZADOR 44X29,5X15CM TRANSP C/TAPA BLANCA",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29666,
+    "name": "ORGANIZADOR 27X19X17CM 5,5L C/TRABA MANIJAS TRANSP",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29667,
+    "name": "CESTA ALMACENAMIENTO 4 DIVISIONES 26,5X13X8CM C/DIV BAMBU CLR BLANCO POLYBAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29668,
+    "name": "ORGANIZADOR 32X32X12CM MALLA NYLON C/6 DIV POLYBAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29669,
+    "name": "ORGANIZADOR 12X32X12CM MALLA NYLON C/7 DIV POLYBAG",
+    "current_cat": "家居收纳"
+  },
+  {
+    "id": 29670,
+    "name": "ALFOMBRA BAÑO 40X60CM GAMUZA ARTIFICIAL SURT CLR BLANCO /BEIGE HANGTAG",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 29671,
+    "name": "ALFOMBRA BAÑO ANTIDESLIZANTE - 40X60X2,5 -C/FRASE \"HOME\" -OPP",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 29672,
+    "name": "ORGANIZADOR LIMPIEZA 40X25X18,5 C/MANIJA PP CLR NEGRO MATE HANGTAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29673,
+    "name": "ORGANIZADOR LIMPIEZA 3DIV 22X20,5X15CM C/MANIJA PP CLR GRIS MATE HANGTAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29674,
+    "name": "ORGANIZADOR LIMPIEZA 3DIV 32X23X19CM C/MANIJA PP CLR GRIS HANGTAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29675,
+    "name": "BOLSA LAVANDERIA 30X40CM 60GSM POLYBAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29676,
+    "name": "BOLSA LAVANDERIA 50X60CM 60GSM POLYBAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29677,
+    "name": "BOLSA LAVANDERIA X5 20 A 60CM 50GSM TARJETA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29678,
+    "name": "BOLSA LAVANDERIA 45X65CM 60GSM POLYBAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29679,
+    "name": "PERCHAMADERA44X23",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29680,
+    "name": "PERCHA SET X10 PLAST 45X22X0,5CM C/GANCHO METAL DSÑO PURPURINA TJTA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29681,
+    "name": "CANASTO F/PERCHA 24X7X25,5CM SURT CLR BLANCO/NEGRO STICKER",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29682,
+    "name": "CANASTO F/PERCHA 28X10X31,8CM SURT CLR BLANCO/NEGRO STICKER",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29683,
+    "name": "PORTAPERCHAS 36X33CM C/6 PERCHAS 1/2 ESTRUCTURA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29684,
+    "name": "PERCHAMADERA44CM",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29685,
+    "name": "TENDER PLASTICO 23,5CM C/8 GANCHOS REDONDO OPP (EX 809T)",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29686,
+    "name": "BROCHES DE CLRS 7CM X20 OPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29687,
+    "name": "PLUMERO CLRS 57CM OPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29688,
+    "name": "PLUMERO80CMCLRSOPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29689,
+    "name": "PLUMERO CLRS EXTENSIBLE 79-106CM OPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29690,
+    "name": "ROCIADOR SPRAY 20,5X8CM 500ML PLAST TRANSP SURT CLR OPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29691,
+    "name": "ROCIADOR SPRAY 20,5X8CM 400ML PLAST F/GOTA TRANSP SURT CLR OPP",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29692,
+    "name": "ROCIADOR 26 X 9 CM 700 ML SURTIDO 3-4 COLORES",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29693,
+    "name": "CEPILLO LIMPIEZA ELECTRICO 19,5X11,5X6CM BATERUA 1200MAH CJA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29694,
+    "name": "TABLA PLANCHAR 128X34X82CM HIERRO C/MANTA ANTIFUEGO CLR NEGRO SHRINK",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29695,
+    "name": "SACA PELUSAS 4,2X22,5CM C/30 HOJAS /MANGO PLAST CLR NEGRO HANGTAG",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29696,
+    "name": "TABLA PLANCHAR 128,5X33X86,5CM HIERRO C/ESPONJA SURT 2 DSÑOS GRIS Y BLANCO RAYAS SHRINK",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29697,
+    "name": "CESTO DE BASURA DE 5L DE ACERO INOXIDABLE INTERIOR PP S/CIERRE SUAVE - 20,5X28 -SHINY -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29698,
+    "name": "CESTO DE BASURA DE 5L DE ACERO INOXIDABLE INTERIOR PP C/CIERRE SUAVE - 22,5X14X30 -CLR PLATEADO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29699,
+    "name": "CESTO DE BASURA DE 7L DE ACERO INOXIDABLE INTERIOR PP S/CIERRE SUAVE - 20,5X31,5 -SHINY -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29700,
+    "name": "CESTO BASURA SET 5L 29,5X14,5X31CM + 16,7L 37X21X46CM ACERO INOX RECTANGULAR A PEDAL C/CIERRE SUAVE CJA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29701,
+    "name": "CESTO BASURA 16,7L 37X21X44CM ACERO INOX RECTANGULAR A PEDAL C/CIERRE SUAVE CJA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29702,
+    "name": "CESTO BASURA 45L 50,5X27,5X64CM ACERO INOX RECTANGULAR A PEDAL C/CIERRE SUAVE CJA CLR",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29703,
+    "name": "CESTO BASURA 5L 20,5X26,2CM C/TAPA BAMBU CLR BEIGE -CAJA BL",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29704,
+    "name": "CESTO DE BASURA DE 5L DE HIERRO INTERIOR PP C/TAPA BAMBU -22X20,8X28,5 -CLR NEGRO MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29705,
+    "name": "CESTO BASURA 5L 20,5X25,8CM C/TAPA BAMBU CLR BEIGE",
+    "current_cat": "家居清洁"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

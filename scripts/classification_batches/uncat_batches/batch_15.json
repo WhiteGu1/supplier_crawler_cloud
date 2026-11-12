@@ -1,0 +1,76 @@
+{
+  "batch_id": 15,
+  "total": 10,
+  "products": [
+    {
+      "id": 35648,
+      "name": "Tabla De Cortar, Redonda, De Marmol Y Madera30 cm 59066",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7629a9f5c9342d147fea2b4e0eb0a825.jpg"
+    },
+    {
+      "id": 35649,
+      "name": "Tabla De Cortar De Marmol Y Madera De Acacia, 35×18cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/423e0670a2abcd21e8966d0875bd7801.jpg"
+    },
+    {
+      "id": 35650,
+      "name": "Tabla De Cortar De Marmol Y Madera, 42X20Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/e9cb5303057f39d914f4480b4574bf88.jpg"
+    },
+    {
+      "id": 35651,
+      "name": "Tabla Redonda De Cortar De Marmol Y Madera, 25Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/d8a9cbaf9c35515dd36f560ebdc792fe.jpg"
+    },
+    {
+      "id": 35652,
+      "name": "Bowl Acero Inoxidable, Dorado, 17X6Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/cf265f2331b4788403552e0d093d31a7.jpg"
+    },
+    {
+      "id": 35653,
+      "name": "Bowl De Acero Inoxidable Dorado, 24X5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/9e4198d97348ead641416cf350c14183.jpg"
+    },
+    {
+      "id": 35654,
+      "name": "Bowl De Acero Inoxidable, Dorado, 12X4.5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a71637ed622c8a81956ad64f29fe0eec.jpg"
+    },
+    {
+      "id": 35655,
+      "name": "Bowl De Acero Inoxidable, Dorado, 16Cm, 700Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/5039efbdf0cd793bff588d2b21bf77d6.png"
+    },
+    {
+      "id": 35656,
+      "name": "Bowl De Acero Inoxidable, Dorado, 22Cm, 1600Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/7c1c4e5fe8cc457e005a5e9d4ef47b34.png"
+    },
+    {
+      "id": 35657,
+      "name": "Bowl De Acero Inoxidable, Dorado, 25Cm, 2000Ml",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/5f7728dee47ed9b8566b58de1c527eb0.png"
+    }
+  ]
+}

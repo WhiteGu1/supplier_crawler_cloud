@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 29706,
+    "name": "CESTO BASURA 5L 20,5X26,2CM C/TAPA BAMBU CLR NEGRO -CAJA BL",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29707,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X27 -CLRS BEIGE MATE/AZUL MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29708,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE 1",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29709,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X27 -CLRS GRIS MATE/CELESTE MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29710,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X25,5 -DISEÑO MARMOL -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29711,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE 1",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29712,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X24,5 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29713,
+    "name": "CESTO DE BASURA DE 3L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16X21,7X24,7 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29714,
+    "name": "CESTO DE BASURA DE 5L DE HIERRO INTERIOR PP C/CIERRE SUAVE 2",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29715,
+    "name": "CESTO DE BASURA DE 5L DE HIERRO INTERIOR PP C/CIERRE SUAVE -22,5X14X30 -CLR NEGRO MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29716,
+    "name": "CESTO DE BASURA DE 5L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X24,5 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29717,
+    "name": "CESTO DE BASURA DE 6L DE HIERRO INTERIOR PP C/CIERRE SUAVE -20X20X30,5 -CLRS BLANCO MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29718,
+    "name": "CESTO DE BASURA DE 12L DE HIERRO INTERIOR PP C/CIERRE SUAVE -23X23X39,5 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29719,
+    "name": "CESTO DE BASURA DE 7L DE HIERRO INTERIOR PP C/CIERRE SUAVE -20,5X30,5 -CLRS BEIGE MATE/AZUL MATE -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29720,
+    "name": "CESTO DE BASURA DE 7L DE HIERRO INTERIOR PP C/CIERRE SUAVE 2",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29721,
+    "name": "CESTO DE BASURA DE 7L DE HIERRO INTERIOR PP C/CIERRE SUAVE -16,8X24,5 -CLR BLANCO -OPP + CAJA BLANCA",
+    "current_cat": "家居清洁"
+  },
+  {
+    "id": 29722,
+    "name": "LAPIZ COLOR X24 17,5CM MADERA CJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29723,
+    "name": "LAPIZ COLOR X12 9CM MADERA CJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29724,
+    "name": "LAPIZ COLOR X12 17,5CM MADERA CJA VENT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29725,
+    "name": "TIJERA 13,5CM INFANTIL CORTA ZIGZAG RECUBIERTO PLAST OPP(NS0",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29726,
+    "name": "TIJERA 13CM C/REGLA EN HOJA MANGO PLAST CLR BOLSA X12 (NS079",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29727,
+    "name": "TIJERA 14CM MANGO PLASTICO FILO METALICO SURT 3 CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29728,
+    "name": "TIJERA 13,5CM MANGO Y FILO PLASTICO SURT 3 CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29729,
+    "name": "TIJERA 13,52CM MANGO PLASTICO FILO METALICO SURT 3 CLRS DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29730,
+    "name": "TIJERA 15CM MANGO PLASTICO FILO METALICO CLRS PASTEL DISPLAY BOX X24",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29731,
+    "name": "REGLA X2 30CM MIDE CM Y PULGADAS TRANSP CLR OPP HEAD",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29732,
+    "name": "REGLA 30CM X2 C/LETRAS ADENTRO Y C/MANGO MIDE PULGAD/CM OPP",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29733,
+    "name": "SET REGLAS PLASTICO X4 REGLA/2 ESCUADRAS/1 TRANSPORTADOR 5",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29734,
+    "name": "REGLA PLASTICO 30X4 CM Y PULGADAS POLYBAG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29735,
+    "name": "REGLA PLASTICO 30X4 CM Y PULGADAS 5 CLR POLYBAG",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29736,
+    "name": "BIROME CLRS 15CM X6PCS CJA PVC",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29737,
+    "name": "BIROME 13,5CM PLAST C/REVESTIDO PLUSH 4CLRS EN 1 CAJA PVC DI",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29738,
+    "name": "BIROME 16,5CM PLAST C/REVESTIDO PLUSH UNICORNIO 4CLRS EN 1",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29739,
+    "name": "Y BIROME 13,5CM PLAST C/REVESTIDO PLUSH Y PALTA 4CLRS EN 1 CAJ",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29740,
+    "name": "BIROME 17CM PLAST C/CISNE SURT 3 CLRS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29741,
+    "name": "BIROME 17,5CM PLAST C/CONEJO SURT 3 CLRS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29742,
+    "name": "BIROME 16,5CM PLAST C/OSO SURT 3 CLRS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29743,
+    "name": "BIROME 16CM PLAST C/OSO SURT 3 CLRS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29744,
+    "name": "BIROME 16CM PLAST C/PALTA 4 CLRS EN 1 CLRS DISPLAY BOX",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29745,
+    "name": "BIROME 18CM PLAST LETRAS INTERCAMBIABLES C/3 DSÑOS COMIDA RA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29746,
+    "name": "BIROME 18CM PLAST LETRAS INTERCAMBIABLES C/DSÑO ARCOIRIS SUR",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29747,
+    "name": "BIROME 18CM PLAST LETRAS INTERCAMBIABLES C/DSÑO DONAS SURT 3",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29748,
+    "name": "BIROME 17,5CM PLAST ROSA C/POMPOM PLUSH CAJA DISPLAY",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29749,
+    "name": "BIROME 16,5CM PLAST C/POMPOM PLUSH Y UNICORNIO SURT 3 CLRS",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29750,
+    "name": "BIROME 16,56CM PLAST DSÑO COMIDA RAPIDA HAMBURG/PAPAS/BEBIDA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29751,
+    "name": "BIROME 16CM PLAST PUNTAS INTERCAMBIABLES DSÑO ARCOIRIS SURT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29752,
+    "name": "BIROME 16CM PLAST PUNTAS INTERCAMBIABLES DSÑO UNICORNIO SURT",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29753,
+    "name": "BIROME 16CM PLAST PUNTAS INTERCAMBIABLES DSÑO COMIDA RAPIDA",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29754,
+    "name": "BIROME 9CM PLAST 4 EN 1 DSÑO COMIDA RAPIDA HAMBURG/PAPAS/BEB",
+    "current_cat": "文具办公"
+  },
+  {
+    "id": 29755,
+    "name": "BIROME 9CM PLAST 4 EN 1 DSÑO ARCOIRIS CLRS SURT CAJA DISPLAY",
+    "current_cat": "文具办公"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

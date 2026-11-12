@@ -1,0 +1,76 @@
+{
+  "batch_id": 18,
+  "total": 10,
+  "products": [
+    {
+      "id": 35678,
+      "name": "Palillos De Bambu, 15 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/2afcf9a9a0d099fe61a808065151ea30.jpg"
+    },
+    {
+      "id": 35679,
+      "name": "Pisapapas 2 en 1, Acero Inoxidable, 24Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/310a5402e8bf6b044d16429a62ade2be.jpg"
+    },
+    {
+      "id": 35680,
+      "name": "Dispenser De Liquidos, Con Base De Bambu, 3,6 L",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/da29c4773caabf02bfd4c28711c732d3.png"
+    },
+    {
+      "id": 35681,
+      "name": "Panquequera De Hierro Con Recubrimiento, 22Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/f2df3695a03fd2014fc3b6d923e16a41.jpg"
+    },
+    {
+      "id": 35682,
+      "name": "Sarten De Hierro, 20Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/a2e49260f07608315e85c339790fc410.jpg"
+    },
+    {
+      "id": 35683,
+      "name": "Bandeja De Hierro, 36X22,5X1,5Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/314b6cc56eed4c741929280dff6df9b2.png"
+    },
+    {
+      "id": 35684,
+      "name": "Bandeja De Hierro, 32,5X19,4X2Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/dd68a24dd3530a811f7d7995a3e1593a.png"
+    },
+    {
+      "id": 35685,
+      "name": "Bandeja De Hierro, 36X22,5X1,5Cm 65853",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/6100e38b80cb5f5e71c2117d2349ada1.png"
+    },
+    {
+      "id": 35686,
+      "name": "Mantel De Poliester 140X180 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/80b94036679b945a87c73750c9c2c20c.png"
+    },
+    {
+      "id": 35687,
+      "name": "Mantel De Poliester 140X220 Cm",
+      "sku": "",
+      "brand": "",
+      "image_local": "images/benabi/80142735d797d79baf7768edfb91d473.png"
+    }
+  ]
+}

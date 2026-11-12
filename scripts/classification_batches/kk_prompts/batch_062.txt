@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30956,
+    "name": "ELASTICO P/EJERCICIOS 1,2MTS SURT 3 CLRS CAJA REGALO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30957,
+    "name": "SOGA P/SALTAR 2,8MTS PLAST SURT 4 CLRS OPP HEADER",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30958,
+    "name": "COLCHONETA PARA AEROBICOS 100X50X5CM C/RELLENO CRL SOLIDO BU",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30959,
+    "name": "BANQUILLO STEP 66X27CM PLASTICO NEGRO C/ROJO Y GRIS",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30960,
+    "name": "BARRA DE PUERTA P/DOMINADAS ACERO 65-85CM CAJA MARRON",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30961,
+    "name": "BLOQUE YOGA 8X8X23CM SHK PACK",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30962,
+    "name": "GUANTES P/GIMNASIO 9,5X14,5CM OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30963,
+    "name": "GUANTES UFC 21X11CM CUERINA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30964,
+    "name": "GUANTES MMA 21X12CM",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30965,
+    "name": "GUANTES BOX 36X15CM",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30966,
+    "name": "SET PROTECTORES ANTEBRAZOS 34X13CM OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30967,
+    "name": "PROTECTORES CABEZA 18X27CM",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30968,
+    "name": "FOCOS P/ARTES MARCIALES 26X19CM CUERINA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30969,
+    "name": "ESCUDO P/ARTES MARCIALES 63X32CM NEGRO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30970,
+    "name": "PLATO PLAST P/MASCOTAS 15X5CM CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30971,
+    "name": "PLATO SILICONA PLEGABLE P/MASCOTA 12CM CART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30972,
+    "name": "PLATO SILICONA PLEGABLE P/MASCOTA 16CM CART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30973,
+    "name": "CORREA TELA 1,25MTS P/MASCOTA 4 CLRS SURT FLUOR/REFLECTIVA M",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30974,
+    "name": "CORREA TELA + BROCHES METALICOS MASCOTA 2X1,2MTS CART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30975,
+    "name": "CHALECO P/MASCOTAS TALLES S/M/L + SOGA 1,6MTS SURT 4 CLRS OP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30976,
+    "name": "MORDILLO PLASTICO Y TELA P/MASCOTA 20CM C/SOGA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30977,
+    "name": "MORDILLO PLASTICO Y TELA P/MASCOTA 19CM C/SOGA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30978,
+    "name": "MORDILLO PLASTICO Y TELA P/MASCOTA 22CM C/SOGA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30979,
+    "name": "MORDILLO TELA P/MASCOTA 10CM CART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30980,
+    "name": "MORDILLO GOMA P/MASCOTA 6,5CM CART",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30981,
+    "name": "LATAS SET X2 16X18/ 13X17CM \"DOG FOOD\" C/TAPA MANIJA CLR BLANCO",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 30982,
+    "name": "PARASOL DEFLECTOR VENTANA OPP CARTON",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30983,
+    "name": "ASIENTO BEBE 35X37CM P/COCHE NEGRO OPP",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30984,
+    "name": "PINZA8\"BLIST",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30985,
+    "name": "ALFOMBRA AUTO GOMA 45X63CM COLGANTE",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30986,
+    "name": "ESPEJO ADAPTABLE AL AUTO PARA VIGILAR NIÑOS DOBLE BLISTER",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30987,
+    "name": "CUBRE PEDALES AUTO HIERRO+PLAST 12X7,5CM/12,5X5,5CM DOBLE BL",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30988,
+    "name": "CUBRE PEDALES AUTO HIERRO+PLAST 12X7,5CM/12,5X5,5CM DETALLES",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30989,
+    "name": "PERCHA PARA AUTO BLISTER",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30990,
+    "name": "PARASOL 140X70CM P/LUNETA PLATEADO OPP",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30991,
+    "name": "ALFOMBRA AUTO GOMA 44X34CM COLGANTE",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30992,
+    "name": "TRABA VOLANTES 50CM DOBLE AGARRE BLISTER",
+    "current_cat": "其他"
+  },
+  {
+    "id": 30993,
+    "name": "CASCO P/BICICLETA NGRO OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30994,
+    "name": "LINTERNA P/BICICLETA PVC BOX",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30995,
+    "name": "TIMBRE ACERO Y PLAST P/BICICLETA NEGRA OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30996,
+    "name": "TIMBRE ACERO P/BICICLETA PLATEADA OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30997,
+    "name": "GUANTES SIN DEDOS P/BICICLETA GRIS/NGRO",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30998,
+    "name": "OPP CASCO P/BICICLETA ROSA C/DSÑO OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 30999,
+    "name": "CASCO P/BICICLETA CELESTE OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31000,
+    "name": "PORTA BOTELLA PLAST P/BICI CLR NEGRO OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31001,
+    "name": "GUANTES SIN DEDOS P/BICICLETA AZUL/NGRO OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31002,
+    "name": "CASCO P/BICICLETA BLANCO Y ROJO OPP",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31003,
+    "name": "SILLITA NIÑOS P/BICI",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31004,
+    "name": "LINTERNA P/MOCHILA SURT 2 CLRS ROJO/PLATEADA",
+    "current_cat": "运动户外"
+  },
+  {
+    "id": 31005,
+    "name": "CONSERVADORA TELA 4L 21X15X15CM CLR ROJO POLYBAG",
+    "current_cat": "运动户外"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

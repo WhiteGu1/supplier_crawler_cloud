@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 30756,
+    "name": "PORTAVINO P/6 BOT 21,5X19,7X34CM 3 LVL HIERRO NEGRO HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30757,
+    "name": "PORTAVINO P/9 BOT 43X15X42CM 3 LVL HIERRO NEGRO HANGTAG",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30758,
+    "name": "PORTABOTELLA HIERRO 15X13X21 F/CAPITAN BARCO CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30759,
+    "name": "- PORTABOTELLA HIERRO 15X14X21 F/VIAJERO -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30760,
+    "name": "PORTABOTELLA HIERRO 15X13X24 F/PESCADOR C/PECES -CAJA BLANCA",
+    "current_cat": "箱包配件"
+  },
+  {
+    "id": 30761,
+    "name": "ESPEJO PORTARETRATO C/LUZ CARGA USB 18 X CMS",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30762,
+    "name": "16 PORTA RETRATO 10X15CM RECTANG DSÑO MADERA C/BORDE DORADO CLR BEIGE/NATURAL SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30763,
+    "name": "PORTA RETRATO 10X15CM RECTANG DSÑO BORDE NEGRO CLR DORADO/PLATEADO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30764,
+    "name": "PORTA RETRATO 4X6CM RECTANG BLNCO BORDE DORADO CLR BLANCO/NEGRO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30765,
+    "name": "PORTA RETRATO 4X6CM RECTANG DSÑO CUADRADOS BORDE BLCO CLR GRIS/NEGRO/GRIS OSCURO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30766,
+    "name": "PORTA RETRATO 4X6CM RECTANG DSÑO ROMBO C/BORDE DORADO CLR BLANCO/BEIGE/DORADO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30767,
+    "name": "PORTA RETRATO 4X6CM BORDE DORADO/PLATEADO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30768,
+    "name": "PORTA RETRATO 5X7CM MARCO NEGRO C/DORADO RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30769,
+    "name": "PORTA RETRATO 5X7CM MARCO SIMIL MADERA BLCA C/BORDE METAL RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30770,
+    "name": "PORTA RETRATO 6X8CM MARCO SIMIL MADERA C/BORDE METAL RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30771,
+    "name": "BLCA PORTA RETRATO 5X7CM MARCO GRIS C/PLATEADO RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30772,
+    "name": "PORTA RETRATO 5X7CM MARCO PLATEADO C/BORDE METAL RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30773,
+    "name": "PORTA RETRATO 5X7CM MARCO SIMIL MADERA CLARA Y OSCURA RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30774,
+    "name": "PORTA RETRATO 6X8CM MARCO NEGRO C/DORADO RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30775,
+    "name": "PORTA RETRATO 6X8CM MARCO GRIS C/PLATEADO RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30776,
+    "name": "PORTA RETRATO 6X8CM MARCO GRIS C/BORDE METAL RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30777,
+    "name": "PORTA RETRATO 8X10CM RECTANG BLNCO BORDE DORADO CLR BLANCO/NEGRO SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30778,
+    "name": "PORTA RETRATO 6X8CM MARCO SIMIL MADERA CLARA Y OSCURA RECTANG SHRINK",
+    "current_cat": "家居装饰"
+  },
+  {
+    "id": 30779,
+    "name": "RELOJ DE PARED 30CM \"3/6/9/12\" GRANDES SURT GRIS/ NEGRO/ VERDE",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30780,
+    "name": "CLR RELOJ PARED 27X5X27 CLRS VERDE/ROSA/GRIS CAJA BLANCA C/VEN",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30781,
+    "name": "- RELOJ PARED -CLRS GRIS/ROSA -CAJA BLANCA C/VENTANA TRANSPA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30782,
+    "name": "RELOJ PARED PLASTICO -20X4,2X20,3CM DSÑO PASTELES/CORAZON SURT CLR CELESTE/BEIGE VENTANA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30783,
+    "name": "CLRS RELOJ PARED PLASTICO -20X4CM DSÑO CJA MONO/ZEBRA/PERRO C/NUM BLANCOS SURT CLR/DSÑOS -CJA DISPLAY SHRINK",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30784,
+    "name": "RELOJ PARED PLASTICO -25X4,2CM DSÑO PERRO/VACA/ELEF C/NUM NEGROS SURT CLR/DSÑOS -CJA DISPLAY SHRINK",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30785,
+    "name": "RELOJ PARED PLASTICO 35,7X5 CLRS GRIS/BLANCO CAJA BLANCA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30786,
+    "name": "- RELOJ PARED PLASTICO 30X4,7 CLRS BLANCO/NEGRO -CAJA BLANCA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30787,
+    "name": "RELOJ DE PARED 30X4,7X30 SIMIL MADERA -CAJA BLANCA C/VENTAN",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30788,
+    "name": "RELOJ DE PARED 16,2X4,2CM RED ALUMINIO DIAL BLCO NUM DORADOS",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30789,
+    "name": "RELOJ PARED METAL -24X6X24 -CLRS GRIS/ROSA CAJA BLANCA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30790,
+    "name": "- RELOJ PARED ALUMINIO -31X4,2X31 CLRO COBRE - CAJA BLANCA C/",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30791,
+    "name": "RELOJ DE MESA ALUMINIO -19,3X6,5X18,5 -CLRS GRIS/BEIGE -C",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30792,
+    "name": "RELOJ PLASTICO 30X4,3CM AGUJA DORADO SURT CLR PASTEL VRDE CLARO/ BLCO-NGRO CJA BLANCA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30793,
+    "name": "RELOJ PARED PLAST 38X38CM INFANTIL F/ABEJA CAJA VENT",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30794,
+    "name": "RELOJ PARED PLAST 33X35CM INFANTIL F/ABEJA CAJA VENT",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30795,
+    "name": "RELOJ PARED PLAST 40X27CM INFANTIL F/MARIPOSA CAJA VENT",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30796,
+    "name": "RELOJ PARED PLAST 35X23CM INFANTIL F/MARIPOSA CAJA VENT",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30797,
+    "name": "RELOJ PARED27,5CM XD880 MARCO GRUESO CLR VLTA/NEGRO/BLANCO CJA VENTANA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30798,
+    "name": "RELOJ DE MESA PLASTICO 14,5X4,4X13,7 REDONDO CLRS GRIS/MENTA",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30799,
+    "name": "RELOJ DESPERTADOR PLAST SIMIL MADERA USB 6,5CM PRISMA LUZ RO",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30800,
+    "name": "RELOJ DESPERTADOR PLASTICO USB 16X6X3CM ROJA Y BLANCA CL",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30801,
+    "name": "LUZ RELOJ DESPERTADOR DIGITAL 14X5,5CM CUERPO NEGRO DISPLAY PLATEADO USB Y PILA CAJA REG",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30802,
+    "name": "RELOJ DESPERTADOR DIGITAL 15X5,5CM SURT BLANCO Y NEGRO DISPLAY PLATEADO USB Y PILA CAJA REG",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30803,
+    "name": "RELOJ DESPERTADOR DIGITAL 15X6CM CUERPO COLOR DISPLAY MADERA SURT 4 CLRS USB Y PILA CAJA REG",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30804,
+    "name": "RELOJ DESPERTADOR DIGITAL 15X7,5CM CUERPO BLANCO DISPLAY MADERA USB CAJA REG",
+    "current_cat": "时尚配饰"
+  },
+  {
+    "id": 30805,
+    "name": "RELOJ DESPERTADOR DIGITAL 16X8CM CUERPO NEGRO DISPLAY PLATEADO USB Y PILA CAJA REG",
+    "current_cat": "时尚配饰"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

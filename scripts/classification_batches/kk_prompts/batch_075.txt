@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31606,
+    "name": "CUATRICICLO 20X16 R/C FULL PILOTO LUZ RUEDAS CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31607,
+    "name": "MOTO 12X7 P/B DELIVERY CLR SURT OPP HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31608,
+    "name": "MOTO 18X12X5 FRIC CARRERA C/PILOTO BLIST BURB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31609,
+    "name": "MOTO 20X18 C/CONDUCTORA PULLSTRING OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31610,
+    "name": "MOTO 28X15CM T/PISTA PLAST FRICC OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31611,
+    "name": "MOTO 9X5CM PLAST PULLBACK SURT 6PCS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31612,
+    "name": "MOTO DIECAST 20X12 1000CC CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31613,
+    "name": "MOTO P/B PISTA 10CM SURT 6 DISEÑOS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31614,
+    "name": "MOTO PISTA 12X6X3,5CM PLAST SURT X 6 DÑS PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31615,
+    "name": "MOTO PISTA 14X11CM C/LANZADOR RUEDA LIBRE PLAST BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31616,
+    "name": "MOTO PISTA 15X9X5CM PLAST PULLBACK OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31617,
+    "name": "MOTO R/L C/MUÑECO SURT 3 DSÑ OPP 5X16CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31618,
+    "name": "MOTO X12PCS CLR TRANSP PIÑATA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31619,
+    "name": "MOTO X4 11X6 P/B TIPO TAXI TAILANDES PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31620,
+    "name": "MOTOX310X6X4P/BDEPORTIVA3CLRBLIS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31621,
+    "name": "MOTOCROSS 18X11 NARANJA LUZ/SONIDO PILA RELOJ CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31622,
+    "name": "AVION 10X10 P/B INF OJOS DISPLAY X12",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31623,
+    "name": "AVION 10X9 P/B INFANT C/OJOS PVC HEAD",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31624,
+    "name": "AVION 15X15 P/B 4 CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31625,
+    "name": "AVION 17X5CM PULLSTRING OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31626,
+    "name": "AVION A PILA R/C SURT CLR BLANCO BLISTER (EX SD27580)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31627,
+    "name": "AVION DESARMABLE C/ACC X1 OPP (EX SD18215)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31628,
+    "name": "AVION JUMBO P/B OPP 14X14CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31629,
+    "name": "AVION TRANSFORMER 12X13X6CM FRICC PLAST DISPLAY BOX X9PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31630,
+    "name": "AVIONP/BSURT7CLRSOPP4X10CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31631,
+    "name": "AVIONESBIMOTORX12PCSPIÑATAOPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31632,
+    "name": "AVIONSITOS GOMA R/L X3 9X6,5X9CM C/CARITA SURT 2 DISEÑOS CAJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31633,
+    "name": "HELICOPTERO 18,5CM C/LANZADOR MILITAR BLISTER EX SD4722",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31634,
+    "name": "HELICOPTERO A PILA 29X14X12CM C/ LUZ Y SONIDO 2 MOD SURT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31635,
+    "name": "PORTA AVIONES 16X5X4CM PULLBACK SURT2CLRS PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31636,
+    "name": "SET AEROPUERTO 38X28CM C/AVION /CAMION X3 /ACC X6 BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31637,
+    "name": "SET AVIONES P/B X4PC CAJA VENT 5X43X7CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31638,
+    "name": "SET AVIONES X12 PIÑATA OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31639,
+    "name": "ESTACION DE SERVICIO 15X4CM C/LANZADOR/AUTOS/PISTA/SEÑALES CAJA VALIJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31640,
+    "name": "ESTACION DE SERVICIO 16X13X8CM AUTOX2 C/LANZADOR PISTA Y SEÑALES CAJA VALIJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31641,
+    "name": "ESTACION SERVICIO LANZADOR C/2 AUTOS ESTUCHE PLAST 16X13X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31642,
+    "name": "ESTACIONAMIENTO C/AUTOS HELICOPTEROS F/CAMION CARTON",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31643,
+    "name": "SET POLICIA X9 19X16,5CM CJA VALIJA DISPLAY X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31644,
+    "name": "SET POLICIA X10 PISTOLA X2 15X10 CHALECO DARDOS ANTIPARRA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31645,
+    "name": "SET POLICIA X4 PISTOLA 16X10 BLANCO DARDOS SOP X2 BLISTER 26",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31646,
+    "name": "SET PISTOLA POLICIA X2 C/FUNDA CLR NEGRO BLISTER (EX SD15002)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31647,
+    "name": "MUÑECO P/ARMAR 8X12CM DSÑO POLICIA DISPLAY X16",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31648,
+    "name": "MUÑECO P/ARMAR 14X12CM DSÑO CONSTRUCCION CJA CLR DISPLAY X8",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31649,
+    "name": "MUÑECO POLICIA 16X12CM C/MOTO Y ACCS C/LUZ CAJA REG DISPLAY X8 A PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31650,
+    "name": "REVOLVER 10X9CM C/WALKIE TALKIE/GAFAS 31X22X3CM BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31651,
+    "name": "METRALLETA MILITAR 32X16X3 C/SON PVC HEAD CAR",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31652,
+    "name": "ESPADA 56X13 TRANSFORMER OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31653,
+    "name": "SET GUERRERO CON ESPADA Y ESCUDO CARTON 49X14",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31654,
+    "name": "SET GUERRERO X3 ESPADA 53CM ESCUDO MANOPLA CART 57X25",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31655,
+    "name": "SETGUERREROX2ESPADA48C/ESCUDOCAR T63,5X18",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。

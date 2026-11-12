@@ -1,0 +1,298 @@
+你是商品分类复查助手。以下是KK供应商的50条商品数据，每条包含id、name（西班牙语商品名）、current_cat（当前分类）。
+请逐一检查分类是否正确，基于商品名称的语义判断。
+
+可选标准分类（34个）：
+厨房餐具 / 厨房炊具 / 厨房储物 / 餐饮用品 / 清洁用品 / 卫浴用品 / 装饰品 / 收纳整理 / 日用百货 / 文具办公 / 个人防护 / 电器电子 / 美妆个护 / 玩具游戏 / 派对用品 / 宠物用品 / 季节商品 / 婴幼儿用品 / 运动户外 / 其他 / 五金工具 / 照明灯具 / 鞋履护理 / 食品饮料 / 数码科技 / 箱包配件 / 家居纺织 / 家居家具 / 家居收纳 / 家居清洁 / 家居百货 / 家居装饰 / 旅行用品 / 时尚配饰 / 服装服饰 / 针线缝纫 / 园艺户外 / 圣诞用品
+
+常见西班牙语关键词参考：
+- TAZA/VASO/PLATO/BOTELLA/JARRA/VAJILLA/CRISTALERIA = 餐具杯壶 → 厨房餐具
+- OLLA/SARTEN/UTENSILIOS/COCINA/MOLDES/CONDIMENTEROS = 炊具 → 厨房炊具
+- FRASCO/TUPPERS/TERMICO/CONTENEDOR/LATA = 储物容器 → 厨房储物
+- MOCHILA/BOLSO/BILLETERA/RIÑONERA/CARTERA = 包袋 → 箱包配件
+- SILLA/MESA/BANQUETA/BAULERA/PUFF/MUEBLES = 家具 → 家居家具
+- TOALLA/SABANA/ACOLCHADO/PIJAMA/MANTELERIA/MEDIAS/ROPA = 纺织品 → 家居纺织或服装服饰
+- BOMBACHA/CULOTE/ROPA INTERIOR = 内衣 → 服装服饰
+- FUNDAS = 套子 → 箱包配件
+- GUANTE = 手套 → 五金工具（劳保）或个人防护
+- PELOCHE/MUÑECA/JUEGO/CARROZA/XILOFON/SOLDADOS/AVIONES/VEHICULO = 玩具 → 玩具游戏
+- LLAVERO/SOMBRERO/GORRO/SONAJERO/COTILLON = 派对 → 派对用品
+- BOLSA REGALO = 礼品袋 → 派对用品
+- BIROME/CUADERNO/CARTUCHERA/AGENDA/PIZARRA = 文具 → 文具办公
+- PARLANTE/AURICULAR/CABLE/CARGADOR/CAMARA/TRANSFORMER = 电子 → 电器电子
+- RELOJ = 钟表 → 时尚配饰
+- BANO/JABONERA/SOPAPA = 浴室 → 卫浴用品
+- LIMPIEZA/PLUMERO/CEPILLO = 清洁 → 家居清洁
+- BEBE = 婴儿 → 婴幼儿用品
+- DEPORTE/GUANTES GIMNASIO = 运动 → 运动户外
+- HERRAMIENTAS = 工具 → 五金工具
+- LUCES/LAMPARA = 灯 → 照明灯具（功能性）或家居装饰（装饰性）
+- FLORERO = 花瓶 → 园艺户外
+- ESPEJO/VELADOR/ADORNO/ALFOMBRA/DECORACION = 装饰 → 家居装饰
+- ORGANIZADOR/CANASTA/CANASTO/CAJA = 收纳 → 家居收纳
+- VIAJE = 旅行 → 旅行用品
+- ACCESORIOS MODA = 时尚配饰
+
+注意：
+- LAMPARA DE MESA（台灯）如果是装饰性归"家居装饰"，如果是照明功能归"照明灯具"
+- GUANTE（手套）如果是厨房用归"厨房炊具"，如果是劳保用归"五金工具"
+- SET COCINA（厨房套装）归"厨房炊具"
+- BOLSA（袋子）如果礼品袋归"派对用品"，如果购物袋归"日用百货"
+
+数据：
+[
+  {
+    "id": 31456,
+    "name": "SET LIVING X7PCS 21,5X14CM PLAST SILLA/MESA/CUBIERTOS BLSTER",
+    "current_cat": "日用百货"
+  },
+  {
+    "id": 31457,
+    "name": "AUTO 16X9X9 FRIC POLICIA RUEDAS GRANDES CAJA VENTA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31458,
+    "name": "AUTO 9X7X8CM PLAST X2 FRICCION C/CARITA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31459,
+    "name": "AUTO DIECAST X3 7CM R/L CARRERA CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31460,
+    "name": "AUTO F1 FRICC C/SONIDO FRICC BURB 11,5X28CM A PILA RELOJ",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31461,
+    "name": "AUTO X10 7X3 FREE WHEEL DIE CAST CLR SURT CJA VENT BLIST",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31462,
+    "name": "AUTO X3 R/L F/ANIMAL INFANTIL CJA EXHIB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31463,
+    "name": "AUTOX49X4X4F/WDIECAST DEPORTIVOPOLICIACJAPVC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31464,
+    "name": "AUTO19X8X5 CM DÑS CARRERA FRICCION BURBUJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31465,
+    "name": "CAMION C/TRAILER DSÑO CARRERA SURT CLR X3 PVC",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31466,
+    "name": "CAMION X4 13X13 P/B CONSTRUCCION C/ACCESORIOS CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31467,
+    "name": "CAMION X4 BULLBACK DSÑO AEROPUERTO CJA VENTANA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31468,
+    "name": "CAMIONETA 11X8X7CM FRICC PLAST DISPLAY BOX X9PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31469,
+    "name": "CAMIONETA 12X8X8 FRIC JEEP MILITAR BURB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31470,
+    "name": "CAMIONETA DIE CAST 12X7X9 R/L ICECREAM TRUCK 2 MOD SURT CJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31471,
+    "name": "CAMIONETA DIE CAST 12X7X9 R/L POLICIA 2 MOD SURT CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31472,
+    "name": "CAMIONETA DIE CAST 12X7X9 R/L VEGIE TRUCK 2 MOD SURT CJA VEN",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31473,
+    "name": "CAMIONETA MONSTER 14X13X11CM FRICC C/SONID A PILA RELOJ DISP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31474,
+    "name": "JEEP PATONA 12X8X8 FRICCION SURT 2 MOD BURBUJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31475,
+    "name": "SET AUTOS X3 P/B F1 CAJA VENT 28X9X9CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31476,
+    "name": "SET CAMION X2 P/B GRUA CAJA VENT 22X11X9,5CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31477,
+    "name": "SET MAQUINAS EXCAVADORAS X3 12X6CM FRICC CAJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31478,
+    "name": "SET VEHICULOS 34X16X12CM PLAST X3 CAMION/AVION/AUTO FRICCION",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31479,
+    "name": "SET VEHICULOS P/B X5 C/MUÑECO Y SURTIDOR CAJA VENT 40X31X7,5",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31480,
+    "name": "SET VEHICULOS R/L X6PCS C/MUÑECO Y SURTIDOR CAJA VENT 40,5X3",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31481,
+    "name": "SET VEHICULOS X6 DSÑO PERRITOS RESCATE CJA VENTANA (EX SD26594)",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31482,
+    "name": "SET MUÑECO POLICIA C/6 VEHICULOS PULLBACK CJA VENTANA 29X42CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31483,
+    "name": "TRACTOR 18X9X7CM PLAST FRICCION X3 SURT PVC HEADER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31484,
+    "name": "TRACTOR X2 41X17X12CM RETROEXCAVADORA Y CAMION WINDOW BOX",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31485,
+    "name": "VEHICULOS 10X7 X3 INFANTIL LOCOMOTORA AVION CAMION FRICC CJA",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31486,
+    "name": "VEHICULOS X3PCS 34X16X12CM FRICC PLAST CJA VENT",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31487,
+    "name": "AUTITOS R/L X12 OPP 17X21CM",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31488,
+    "name": "AUTO 10X5,5X4CM M/CARRERA RUEDA LIBRE PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31489,
+    "name": "AUTO 10X5X5 PULLBACK POLICIA 4 CLR SURT VENT AB OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31490,
+    "name": "AUTO 11,5X5X4 CARRERA FRIC 4 CLRS SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31491,
+    "name": "AUTO 11X5 P/B ESCARABAJO POLICIA CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31492,
+    "name": "AUTO 11X5X3CM RUEDA LIBRE SURT 4PCS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31493,
+    "name": "AUTO 11X5X3CM RUEDA LIBRE SURT 5PCS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31494,
+    "name": "AUTO 13X5X3CM DEPORTIVO PULLBACK SURT 4 CLRS PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31495,
+    "name": "AUTO 13X6X3CM POLICIA RUEDA LIBRE SURT X6 CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31496,
+    "name": "AUTO 13X6X5CM PLAST CONTROL REMOTO PILA BLISTER",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31497,
+    "name": "AUTO 15X3X6CM DEPORTIUVO PULLBACK SURT X 4CLRS OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31498,
+    "name": "AUTO 17X9X8 DEPORTIVO CLR AMARILLO FRIC OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31499,
+    "name": "AUTO 18X10X10CM PULLSTRING SURT 2CLRS PLAST PLB",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31500,
+    "name": "AUTO 21X10X5 FRIC FERRARI 2 MOD OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31501,
+    "name": "AUTO 24X11X7CM DEPORTIVO FRICC OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31502,
+    "name": "AUTO 7X5 P/B 3 CLR SURT OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31503,
+    "name": "AUTO 8,5X5,5X2,5CM M/CARTING RUEDA LIBRE PLAST OPP",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31504,
+    "name": "AUTO 9X4X4CM POLICIA RUEDA LIBRE SURT 4PCS",
+    "current_cat": "玩具游戏"
+  },
+  {
+    "id": 31505,
+    "name": "AUTO ANTIGUO 13X5X5CM PLAST SURT 4 DSÑ PULLBACK PLB",
+    "current_cat": "玩具游戏"
+  }
+]
+
+请输出JSON数组，仅包含你认为分类有误的商品：
+[{"id": ID, "old_cat": "旧分类", "new_cat": "新分类", "reason": "原因"}]
+
+如果全部正确，输出空数组 []。
